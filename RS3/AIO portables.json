@@ -1,1 +1,334 @@
-{"Variables":[{"name":"Portable","value":"Portable","type":"GO"},{"name":"Portable action","value":"Fletch","type":"ACTION"},{"name":"Material","value":"Logs","type":"SPRITE_ITEM"},{"name":"Bank preset #","value":"2","type":"NUMBER"},{"name":"true","value":"true","type":"BOOL"},{"name":"Stop bot when portable is not available","value":"false","type":"BOOL"},{"name":"Material2","value":"","type":"SPRITE_ITEM"}],"NodeCollection":[{"name":"StartCondition","base":{"id":"b5c2f395-7621-4706-a6fa-981b9da3727d","position":{"x":"0.0","y":"0.0"},"flowTasks":{"success":"5d1cacbd-3642-41ab-85b5-e97755b9c211"},"delayMultiplier":1.0},"variables":{"GameMode":"RS3","IntervalLow":686.8030052586146,"IntervalHigh":1105.1209407262093}},{"name":"InventoryCondition","base":{"id":"5d1cacbd-3642-41ab-85b5-e97755b9c211","position":{"x":"336.0","y":"369.0"},"flowTasks":{"success":"8771cd15-c48a-46a3-9ba3-0cda225e5a90","failure":"dbc2bc00-093c-4269-b42e-57cda4aaab77"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Material"],"ItemRegex":true,"Condition":"Contains all of:"}},{"name":"GameObjectCondition","base":{"id":"e4596fc9-20a2-4ed7-a4d5-2faa4cd2e4b1","position":{"x":"1541.0","y":"320.0"},"flowTasks":{"success":"132e2396-9780-48a8-b9b7-7397d574829d","failure":"80810d60-8801-4c8a-ad8f-bdcef037cc47"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"ItemValues":["Portable"],"ItemRegex":true,"ActionValues":["Portable action"],"ActionRegex":true}},{"name":"MakeXWindowCondition","base":{"id":"8771cd15-c48a-46a3-9ba3-0cda225e5a90","position":{"x":"650.0","y":"-37.0"},"flowTasks":{"success":"5f66bf05-e2ef-4785-b249-64e213e4f287","failure":"a6d45a08-5dc3-418c-88cb-223eedd6945c"},"delayMultiplier":1.0},"variables":{"Values":[],"ItemRegex":false,"Condition":"Is open"}},{"name":"MakeXWindowAction","base":{"id":"5f66bf05-e2ef-4785-b249-64e213e4f287","position":{"x":"1577.0","y":"-206.0"},"flowTasks":{},"delayMultiplier":0.5495495495495496},"variables":{"Values":["true"],"ItemRegex":false,"Condition":"Confirm"}},{"name":"BooleanCheckModulator","base":{"id":"80810d60-8801-4c8a-ad8f-bdcef037cc47","position":{"x":"1914.0","y":"542.0"},"flowTasks":{"success":"f78f7f6c-78b0-4972-985b-7f0d3bffa33b","failure":"c23a28dc-cd86-4771-8af5-9bd1340e8865"},"delayMultiplier":1.0},"variables":{"Values":["Stop bot when portable is not available"],"ItemRegex":false}},{"name":"InteractionAction","base":{"id":"132e2396-9780-48a8-b9b7-7397d574829d","position":{"x":"1919.0","y":"109.0"},"flowTasks":{},"delayMultiplier":1.0900900900900903,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Portable"],"ItemRegex":true,"ActionValues":["Portable action"],"ActionRegex":true}},{"name":"StopAction","base":{"id":"f78f7f6c-78b0-4972-985b-7f0d3bffa33b","position":{"x":"2352.0","y":"425.0"},"flowTasks":{},"delayMultiplier":1.0}},{"name":"PauseAction","base":{"id":"c23a28dc-cd86-4771-8af5-9bd1340e8865","position":{"x":"2351.0","y":"604.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"PauseMode":"Random duration","IntervalLow":2000.0,"IntervalHigh":4983.168901136811}},{"name":"BankWithdrawAction","base":{"id":"dbc2bc00-093c-4269-b42e-57cda4aaab77","position":{"x":"808.0","y":"693.0"},"flowTasks":{},"delayMultiplier":0.6846846846846848},"variables":{"Values":["Bank preset #"],"ItemRegex":false,"Condition":"Preset (#)"}},{"name":"MakeXWindowCondition","base":{"id":"a6d45a08-5dc3-418c-88cb-223eedd6945c","position":{"x":"1112.0","y":"175.0"},"flowTasks":{"failure":"e4596fc9-20a2-4ed7-a4d5-2faa4cd2e4b1"},"delayMultiplier":1.0},"variables":{"Values":[],"ItemRegex":false,"Condition":"Is crafting"}}],"BotCategory":"OTHER","inventoryData":{}}
+{
+	"Variables": [{
+			"name": "Portable action",
+			"value": "Smith",
+			"type": "ACTION"
+		},{
+			"name": "Material",
+			"value": "Bronze bar",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Material2",
+			"value": "Tin ore",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Chat dialog option",
+			"value": "Something",
+			"type": "STRING"
+		}, {
+			"name": "MinimumQuantity",
+			"value": "7",
+			"type": "NUMBER"
+		}, {
+			"name": "SelectedItem",
+			"value": "2h",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Stop bot when portable is not available",
+			"value": "false",
+			"type": "BOOL"
+		},{
+			"name": "Portable",
+			"value": "Portable",
+			"type": "GO"
+		},{
+			"name": "Bank preset #",
+			"value": "2",
+			"type": "NUMBER"
+		}, {
+			"name": "true",
+			"value": "true",
+			"type": "BOOL"
+		}
+	],
+	"NodeCollection": [{
+			"name": "StartCondition",
+			"base": {
+				"id": "90f1e6b2-cf93-48b1-ba48-2c4d891be57f",
+				"position": {
+					"x": "-380.0",
+					"y": "-267.0"
+				},
+				"flowTasks": {
+					"success": "5b0633e3-d210-4ff9-99c7-9c36dc5e2593"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"GameMode": "RS3",
+				"IntervalLow": 410.058266073436,
+				"IntervalHigh": 828.3762015410315
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "b57a0ba2-88ec-4ae1-9769-8c85cfe1315a",
+				"position": {
+					"x": "650.0",
+					"y": "411.0"
+				},
+				"flowTasks": {
+					"success": "669a1196-685d-4f0c-8131-4a6485041e22",
+					"failure": "4bc9209e-e148-4f9e-beae-cd180b9eb37c"
+				},
+				"delayMultiplier": 1.0,
+				"enableQuery": true,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": [],
+					"list3": ["MinimumQuantity"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Material"],
+				"ItemRegex": true,
+				"Condition": "Contains all of:"
+			}
+		}, {
+			"name": "GameObjectCondition",
+			"base": {
+				"id": "3dbd1097-43ab-429f-8b21-84d7ede53c9a",
+				"position": {
+					"x": "1408.0",
+					"y": "432.0"
+				},
+				"flowTasks": {
+					"success": "f96b198d-5890-4b0b-b2bd-4b9da0e71bff",
+					"failure": "4479cebb-e560-498a-8447-a66800261bb6"
+				},
+				"delayMultiplier": 1.0,
+				"enableQuery": false,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": [],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Portable"],
+				"ItemRegex": true,
+				"ActionValues": ["Portable action"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "MakeXWindowCondition",
+			"base": {
+				"id": "669a1196-685d-4f0c-8131-4a6485041e22",
+				"position": {
+					"x": "964.0",
+					"y": "5.0"
+				},
+				"flowTasks": {
+					"success": "e5bf1222-e970-4c81-ac46-3baa9dbe968b",
+					"failure": "3dbd1097-43ab-429f-8b21-84d7ede53c9a"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "MakeXWindowAction",
+			"base": {
+				"id": "4677972b-2e70-4015-8abb-73090a77dc10",
+				"position": {
+					"x": "1856.0",
+					"y": "-247.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.1801801801801801
+			},
+			"variables": {
+				"Values": ["true"],
+				"ItemRegex": false,
+				"Condition": "Confirm"
+			}
+		}, {
+			"name": "BooleanCheckModulator",
+			"base": {
+				"id": "4479cebb-e560-498a-8447-a66800261bb6",
+				"position": {
+					"x": "1872.0",
+					"y": "679.0"
+				},
+				"flowTasks": {
+					"success": "65c6eb5b-6f5a-4def-9803-41181b347be1",
+					"failure": "5d18da5d-42b2-4753-928c-2d6d7aab08a2"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Stop bot when portable is not available"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "f96b198d-5890-4b0b-b2bd-4b9da0e71bff",
+				"position": {
+					"x": "1866.0",
+					"y": "280.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0900900900900903,
+				"enableQuery": false,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": [],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Portable"],
+				"ItemRegex": true,
+				"ActionValues": ["Portable action"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "StopAction",
+			"base": {
+				"id": "65c6eb5b-6f5a-4def-9803-41181b347be1",
+				"position": {
+					"x": "2328.0",
+					"y": "559.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			}
+		}, {
+			"name": "PauseAction",
+			"base": {
+				"id": "5d18da5d-42b2-4753-928c-2d6d7aab08a2",
+				"position": {
+					"x": "2330.0",
+					"y": "759.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"PauseMode": "Random duration",
+				"IntervalLow": 2000.0,
+				"IntervalHigh": 4983.168901136811
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "4bc9209e-e148-4f9e-beae-cd180b9eb37c",
+				"position": {
+					"x": "1150.0",
+					"y": "764.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0450450450450453
+			},
+			"variables": {
+				"Values": ["Bank preset #"],
+				"ItemRegex": true,
+				"Condition": "Preset (#)"
+			}
+		}, {
+			"name": "MakeXWindowCondition",
+			"base": {
+				"id": "5b0633e3-d210-4ff9-99c7-9c36dc5e2593",
+				"position": {
+					"x": "-333.0",
+					"y": "118.0"
+				},
+				"flowTasks": {
+					"failure": "f37302bf-dc0a-47cf-9a23-fb53734e7426"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": [],
+				"ItemRegex": false,
+				"Condition": "Is crafting"
+			}
+		}, {
+			"name": "ChatDialogAction",
+			"base": {
+				"id": "e20ccc17-ea08-4d47-963a-667a51ea692c",
+				"position": {
+					"x": "454.0",
+					"y": "179.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Chat dialog option"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "ChatDialogCondition",
+			"base": {
+				"id": "f37302bf-dc0a-47cf-9a23-fb53734e7426",
+				"position": {
+					"x": "67.0",
+					"y": "355.0"
+				},
+				"flowTasks": {
+					"success": "e20ccc17-ea08-4d47-963a-667a51ea692c",
+					"failure": "b57a0ba2-88ec-4ae1-9769-8c85cfe1315a"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Chat dialog option"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "MakeXWindowCondition",
+			"base": {
+				"id": "e5bf1222-e970-4c81-ac46-3baa9dbe968b",
+				"position": {
+					"x": "1379.0",
+					"y": "-90.0"
+				},
+				"flowTasks": {
+					"success": "4677972b-2e70-4015-8abb-73090a77dc10",
+					"failure": "76dac1bd-de60-4916-bab0-55634a4a933c"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["SelectedItem"],
+				"ItemRegex": true,
+				"Condition": "Selected item"
+			}
+		}, {
+			"name": "MakeXWindowAction",
+			"base": {
+				"id": "76dac1bd-de60-4916-bab0-55634a4a933c",
+				"position": {
+					"x": "1844.0",
+					"y": "1.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["SelectedItem"],
+				"ItemRegex": true,
+				"Condition": "Select item"
+			}
+		}
+	],
+	"BotCategory": "OTHER",
+	"inventoryData": {}
+}
