@@ -1,0 +1,205 @@
+{
+	"Variables": [{
+			"name": "Item to craft",
+			"value": "Gold bracelet",
+			"type": "STRING"
+		},{
+			"name": "Gold bar",
+			"value": "Gold bar",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Furnace",
+			"value": "Furnace",
+			"type": "GO"
+		},  {
+			"name": "Make-All",
+			"value": "Make-All",
+			"type": "ACTION"
+		}, {
+			"name": "Crafting container id",
+			"value": "446",
+			"type": "NUMBER"
+		}, {
+			"name": "Selection item object",
+			"value": "",
+			"type": "INTERFACE_OBJECT"
+		}, {
+			"name": "Smelt",
+			"value": "Smelt",
+			"type": "ACTION"
+		}
+	],
+	"NodeCollection": [{
+			"name": "StartCondition",
+			"base": {
+				"id": "98339d1a-e4cf-459c-81cb-8bee3033321c",
+				"position": {
+					"x": "0.0",
+					"y": "0.0"
+				},
+				"flowTasks": {
+					"success": "37e3b807-7688-4ae8-90cd-11e41ee1c0a6"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"GameMode": "RS3",
+				"IntervalLow": 712.0531952935335,
+				"IntervalHigh": 1320.386528626867
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "2e4a7503-7189-4bac-ae3d-dded011ddb8f",
+				"position": {
+					"x": "537.0",
+					"y": "502.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Gold preset"],
+				"ItemRegex": false,
+				"Condition": "VisualRm preset",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "37e3b807-7688-4ae8-90cd-11e41ee1c0a6",
+				"position": {
+					"x": "117.0",
+					"y": "268.0"
+				},
+				"flowTasks": {
+					"success": "2e4a7503-7189-4bac-ae3d-dded011ddb8f",
+					"failure": "8d4bc0a7-d47f-47ab-b884-7f67b3cfddd8"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Gold bar"],
+				"ItemRegex": false,
+				"Condition": "Contains none of:"
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "8d4bc0a7-d47f-47ab-b884-7f67b3cfddd8",
+				"position": {
+					"x": "495.0",
+					"y": "169.0"
+				},
+				"flowTasks": {
+					"failure": "1db33995-842f-409d-bde3-2712798ac98c"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "",
+				"Condition": "Is animating (2s delay):"
+			}
+		}, {
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "1db33995-842f-409d-bde3-2712798ac98c",
+				"position": {
+					"x": "959.0",
+					"y": "261.0"
+				},
+				"flowTasks": {
+					"success": "9cec798e-67fe-4b5f-84e5-b72541b36082",
+					"failure": "ed6d78b9-2a76-4b82-a620-a3cc054f9fc2"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": true,
+					"bool1": false,
+					"bool2": false,
+					"list3": ["Item to craft"],
+					"TypeList": ["MODEL"],
+					"type": "ICQuery"
+				}
+			},
+			"variables": {
+				"TextValues": [],
+				"TextRegex": false,
+				"ActionValues": ["Make-All"],
+				"ActionRegex": false,
+				"InterfaceObject": "Selection item object",
+				"Cache container": true
+			}
+		}, {
+			"name": "InterfaceAction",
+			"base": {
+				"id": "9cec798e-67fe-4b5f-84e5-b72541b36082",
+				"position": {
+					"x": "1469.0",
+					"y": "143.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "Action",
+				"Values": ["Selection item object"],
+				"ActionValues": ["Make-All"],
+				"ItemRegex": false,
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "ed6d78b9-2a76-4b82-a620-a3cc054f9fc2",
+				"position": {
+					"x": "1472.0",
+					"y": "478.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list3": ["Smelt"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Furnace"],
+				"ItemRegex": false,
+				"ActionValues": ["Smelt"],
+				"ActionRegex": false
+			}
+		}
+	],
+	"BotCategory": "OTHER",
+	"inventoryData": {
+		"invPreset_Gold preset": [{
+				"name": "Gold bar",
+				"id": 2357,
+				"noted": false,
+				"quantity": 27,
+				"selected": true
+			}, {
+				"name": "Bracelet mould",
+				"id": 11065,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}
+		],
+		"invPresets": ["Gold preset"]
+	}
+}
