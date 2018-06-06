@@ -1,0 +1,2212 @@
+{
+	"Variables": [{
+			"name": "Start coordinate",
+			"value": "(3015, 5629, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Small pouch",
+			"value": "Small pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Medium pouch",
+			"value": "Medium pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Large pouch",
+			"value": "Large pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Giant pouch",
+			"value": "Giant pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "\u0027Bird\u0027s-Eye\u0027 Jack",
+			"value": "\u0027Bird\u0027s-Eye\u0027 Jack",
+			"type": "NPC"
+		}, {
+			"name": "Bank",
+			"value": "Bank",
+			"type": "ACTION"
+		}, {
+			"name": "Withdraw-All",
+			"value": "Withdraw-All",
+			"type": "ACTION"
+		}, {
+			"name": "true",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Giant pouch degraded",
+			"value": "5515",
+			"type": "NUMBER"
+		}, {
+			"name": "CheckLargPouch",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "CheckDegradedPouch",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Pure essence sprite",
+			"value": "Pure essence",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Pure essence text",
+			"value": "Pure essence",
+			"type": "STRING"
+		}, {
+			"name": "bank interface",
+			"value": "12",
+			"type": "INTERFACE_OBJECT"
+		}, {
+			"name": "Pure essence bank id",
+			"value": "0",
+			"type": "NUMBER"
+		}, {
+			"name": "empty slots 21",
+			"value": "21",
+			"type": "NUMBER"
+		}, {
+			"name": "Fill",
+			"value": "Fill",
+			"type": "ACTION"
+		}, {
+			"name": "Close",
+			"value": "Close",
+			"type": "ACTION"
+		}, {
+			"name": "empty slots 1",
+			"value": "1",
+			"type": "NUMBER"
+		}, {
+			"name": "Withdraw-21",
+			"value": "Withdraw-21",
+			"type": "ACTION"
+		}, {
+			"name": "Checkwalktoaltar",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "empty slots 13",
+			"value": "13",
+			"type": "NUMBER"
+		}, {
+			"name": "small pouch",
+			"value": "603",
+			"type": "VARBIT"
+		}, {
+			"name": "medium pouch",
+			"value": "604",
+			"type": "VARBIT"
+		}, {
+			"name": "large pouch",
+			"value": "605",
+			"type": "VARBIT"
+		}, {
+			"name": "giant pouch",
+			"value": "606",
+			"type": "VARBIT"
+		}, {
+			"name": "Varbit 0",
+			"value": "0",
+			"type": "NUMBER"
+		}, {
+			"name": "distance 8",
+			"value": "8",
+			"type": "NUMBER"
+		}, {
+			"name": "Checkgotobank",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Coordinate altar",
+			"value": "(3055, 5579, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Npc contact interface",
+			"value": "75",
+			"type": "INTERFACE_OBJECT"
+		}, {
+			"name": "Dark Mage",
+			"value": "Dark Mage",
+			"type": "ACTION"
+		}, {
+			"name": "Continue",
+			"value": "Continue",
+			"type": "STRING"
+		}, {
+			"name": "Altar",
+			"value": "Altar",
+			"type": "GO"
+		}, {
+			"name": "Craft-rune",
+			"value": "Craft-rune",
+			"type": "ACTION"
+		}, {
+			"name": "12",
+			"value": "12",
+			"type": "NUMBER"
+		}, {
+			"name": "9",
+			"value": "9",
+			"type": "NUMBER"
+		}, {
+			"name": "Empty",
+			"value": "Empty",
+			"type": "ACTION"
+		}, {
+			"name": "distance 4",
+			"value": "4",
+			"type": "NUMBER"
+		}, {
+			"name": "Coordinate gate",
+			"value": "(2109, 3915, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Stamina potion",
+			"value": "Stamina potion",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Vial",
+			"value": "Vial",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Drop",
+			"value": "Drop",
+			"type": "ACTION"
+		}, {
+			"name": "Eniola",
+			"value": "Eniola",
+			"type": "NPC"
+		}, {
+			"name": "Runecrafting altar",
+			"value": "Runecrafting altar",
+			"type": "GO"
+		}, {
+			"name": "Mind rune",
+			"value": "Mind rune",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Nature rune",
+			"value": "Nature rune",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Air rune",
+			"value": "Air rune",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Chaos rune",
+			"value": "Chaos rune",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Water rune",
+			"value": "Water rune",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Deposit inventory",
+			"value": "Deposit inventory",
+			"type": "ACTION"
+		}, {
+			"name": "6",
+			"value": "6",
+			"type": "NUMBER"
+		}, {
+			"name": "3",
+			"value": "3",
+			"type": "NUMBER"
+		}, {
+			"name": "Large pouch degraded ID",
+			"value": "5513",
+			"type": "NUMBER"
+		}, {
+			"name": "15",
+			"value": "15",
+			"type": "NUMBER"
+		}, {
+			"name": "18",
+			"value": "18",
+			"type": "NUMBER"
+		}, {
+			"name": "Cosmic rune",
+			"value": "Cosmic rune",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "16",
+			"value": "16",
+			"type": "NUMBER"
+		}, {
+			"name": "50",
+			"value": "50",
+			"type": "NUMBER"
+		}, {
+			"name": "Shark",
+			"value": "Shark",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Eat",
+			"value": "Eat",
+			"type": "ACTION"
+		}, {
+			"name": "7936",
+			"value": "7936",
+			"type": "NUMBER"
+		}, {
+			"name": "Bank booth",
+			"value": "Bank booth",
+			"type": "GO"
+		}, {
+			"name": "Coordinate bank booth",
+			"value": "(2099, 3920, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "8",
+			"value": "8",
+			"type": "NUMBER"
+		}, {
+			"name": "22",
+			"value": "22",
+			"type": "NUMBER"
+		}
+	],
+	"NodeCollection": [{
+			"name": "StartCondition",
+			"base": {
+				"id": "7ba4068b-672f-4e18-8bd5-c7434b3d6d74",
+				"position": {
+					"x": "0.0",
+					"y": "0.0"
+				},
+				"flowTasks": {
+					"success": "65d42da8-f54e-4f28-bee6-c732d3136490"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"GameMode": "OSRS",
+				"IntervalLow": 108.46905749568194,
+				"IntervalHigh": 215.6548391386367
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "ed4fac30-be34-46c2-b702-e09ed2cbd994",
+				"position": {
+					"x": "2137.0",
+					"y": "166.0"
+				},
+				"flowTasks": {
+					"success": "3c9149f3-baa0-4d8a-bb54-5affe259466a",
+					"failure": "79df2b87-1c35-470e-9675-a609bf0d6548"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": ["Giant pouch degraded"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "3c9149f3-baa0-4d8a-bb54-5affe259466a",
+				"position": {
+					"x": "2108.0",
+					"y": "-69.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "CheckDegradedPouch",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "287916b1-ec7f-452c-abf5-88501ac31ba7",
+				"position": {
+					"x": "4073.0",
+					"y": "-481.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.3153153153153153,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InterfaceAction",
+			"base": {
+				"id": "525419aa-4788-44e0-a9c4-ca02941ec1d9",
+				"position": {
+					"x": "5544.0",
+					"y": "-1513.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.5045045045045045
+			},
+			"variables": {
+				"Condition": "Action",
+				"Values": ["bank interface", "Withdraw-All"],
+				"ActionValues": [],
+				"ItemRegex": false,
+				"ActionRegex": false
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "930e7960-fc1d-41e8-a779-320bb4389c51",
+				"position": {
+					"x": "3507.0",
+					"y": "-693.0"
+				},
+				"flowTasks": {
+					"success": "99bef2a1-1f4d-4d5f-a28e-e0d2a54158c2",
+					"failure": "1fbdffa9-3d02-4fd9-b65f-5ac079b3fa8e"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "ee47cb0e-74af-40f7-a049-377f1e88cace",
+				"position": {
+					"x": "3154.0",
+					"y": "-947.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.18018018018018,
+				"queryData": {
+					"list4": ["Bank"],
+					"within": "",
+					"type": "NpcQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Npc",
+				"ItemValues": ["Eniola"],
+				"ItemRegex": true,
+				"ActionValues": ["Bank"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "149ede8c-e963-4080-bf45-069ef742098f",
+				"position": {
+					"x": "3505.0",
+					"y": "-412.0"
+				},
+				"flowTasks": {
+					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
+					"failure": "287916b1-ec7f-452c-abf5-88501ac31ba7"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InterfaceAction",
+			"base": {
+				"id": "d6b4b66d-02e2-4049-85fc-5070eaeb9b88",
+				"position": {
+					"x": "5548.0",
+					"y": "-569.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.13513513513513514
+			},
+			"variables": {
+				"Condition": "Action",
+				"Values": ["bank interface", "Close"],
+				"ActionValues": [],
+				"ItemRegex": false,
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "9516a371-f527-4e9f-80c9-66dd8be25953",
+				"position": {
+					"x": "4358.0",
+					"y": "-21.0"
+				},
+				"flowTasks": {
+					"success": "d6b4b66d-02e2-4049-85fc-5070eaeb9b88"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"TypeList": [],
+					"type": "ICQuery"
+				}
+			},
+			"variables": {
+				"TextValues": [],
+				"TextRegex": false,
+				"ActionValues": ["Close"],
+				"ActionRegex": false,
+				"InterfaceObject": "bank interface",
+				"Cache container": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "3287d3b9-3e37-499c-ba3b-1606f5736178",
+				"position": {
+					"x": "3085.0",
+					"y": "-157.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.49549549549549543,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "20fe33c4-a902-4c17-b1ea-dba6a90d2a1e",
+				"position": {
+					"x": "3004.0",
+					"y": "182.0"
+				},
+				"flowTasks": {
+					"success": "04071959-a710-4b7b-9bdc-789eb0c2ffd4",
+					"failure": "6b479612-d943-4fec-8648-0c3109eff8e2"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "8cbfd8b6-729f-4cc6-826c-3490ea27b19f",
+				"position": {
+					"x": "3825.0",
+					"y": "90.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.27927927927927926,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Medium pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "5d970e90-296e-4aba-918c-b2bb89914f1c",
+				"position": {
+					"x": "3062.0",
+					"y": "587.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.3693693693693695,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Small pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "3a65a66f-9c4f-472a-ae24-dfbff3498eeb",
+				"position": {
+					"x": "2577.0",
+					"y": "598.0"
+				},
+				"flowTasks": {
+					"success": "4b57e0f2-655a-435c-a71d-6f969182a0c9",
+					"failure": "5d970e90-296e-4aba-918c-b2bb89914f1c"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["9"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "70b6d1b4-a305-41f3-8ae0-13105be9459f",
+				"position": {
+					"x": "1481.0",
+					"y": "1413.0"
+				},
+				"flowTasks": {
+					"success": "bf39337e-3b75-48bf-b57e-d92ee2575bc9",
+					"failure": "b8a0e8a7-4563-4e12-8f66-b8e14e86d818"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance 8",
+				"Comparators": ["Coordinate altar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "b8a0e8a7-4563-4e12-8f66-b8e14e86d818",
+				"position": {
+					"x": "2427.0",
+					"y": "1011.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.3693693693693694
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "Coordinate altar",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "d34caf56-2e4e-4284-b073-387d3196a3cf",
+				"position": {
+					"x": "583.0",
+					"y": "-805.0"
+				},
+				"flowTasks": {
+					"success": "437f8aea-1658-4c23-a414-5237ca66e633"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "CheckDegradedPouch"
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "87d1838a-d946-47d4-81d1-1500e585fe35",
+				"position": {
+					"x": "2045.0",
+					"y": "-573.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Npc contact"],
+				"ValueRegex": false,
+				"Comparators": ["Lunar"],
+				"CompRegex": false,
+				"Condition": "Cast magic",
+				"Type": ""
+			}
+		}, {
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "ec49692f-1b46-4656-a1d1-1ca1be724c22",
+				"position": {
+					"x": "1602.0",
+					"y": "-526.0"
+				},
+				"flowTasks": {
+					"success": "b5f35460-6457-4622-9f2f-4464ddd7ce7e",
+					"failure": "87d1838a-d946-47d4-81d1-1500e585fe35"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"TypeList": [],
+					"type": "ICQuery"
+				}
+			},
+			"variables": {
+				"TextValues": [],
+				"TextRegex": false,
+				"ActionValues": ["Dark Mage"],
+				"ActionRegex": false,
+				"InterfaceObject": "Npc contact interface",
+				"Cache container": false
+			}
+		}, {
+			"name": "InterfaceAction",
+			"base": {
+				"id": "b5f35460-6457-4622-9f2f-4464ddd7ce7e",
+				"position": {
+					"x": "2011.0",
+					"y": "-1797.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.045045045045045
+			},
+			"variables": {
+				"Condition": "Action",
+				"Values": ["Npc contact interface", "Dark Mage"],
+				"ActionValues": [],
+				"ItemRegex": false,
+				"ActionRegex": false
+			}
+		}, {
+			"name": "ChatDialogCondition",
+			"base": {
+				"id": "437f8aea-1658-4c23-a414-5237ca66e633",
+				"position": {
+					"x": "166.0",
+					"y": "-590.0"
+				},
+				"flowTasks": {
+					"success": "a15d6deb-3264-4347-91de-e05bf2cd8ae5",
+					"failure": "58e3b6f1-5d47-4b73-bd52-a999a7608bc3"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Continue"]
+			}
+		}, {
+			"name": "ChatDialogAction",
+			"base": {
+				"id": "a15d6deb-3264-4347-91de-e05bf2cd8ae5",
+				"position": {
+					"x": "1322.0",
+					"y": "-586.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Continue"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "f7fbd369-77cf-4ad8-ac87-fd20c1cb77dd",
+				"position": {
+					"x": "1132.0",
+					"y": "-384.0"
+				},
+				"flowTasks": {
+					"failure": "ec49692f-1b46-4656-a1d1-1ca1be724c22"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
+				"position": {
+					"x": "3399.0",
+					"y": "1360.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0000000000000002,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list3": ["Craft-rune"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Runecrafting altar"],
+				"ItemRegex": true,
+				"ActionValues": ["Craft-rune"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "f9ebfdf3-c816-4d4b-ae37-8c75b22978f1",
+				"position": {
+					"x": "2388.0",
+					"y": "1775.0"
+				},
+				"flowTasks": {
+					"success": "d969fe7a-65cc-43b9-8da8-d19b8245924c",
+					"failure": "e9bf42f5-30bb-4fd8-b11a-482b126bfd72"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["large pouch"],
+				"Condition": "More then (\u003e)"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "e9bf42f5-30bb-4fd8-b11a-482b126bfd72",
+				"position": {
+					"x": "2382.0",
+					"y": "2079.0"
+				},
+				"flowTasks": {
+					"success": "b78e7220-ffe7-4388-a9d9-06cf60df5ace",
+					"failure": "f539fdc0-bf1b-42ad-aa12-088bd6f5005e"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["medium pouch"],
+				"Condition": "More then (\u003e)"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "f539fdc0-bf1b-42ad-aa12-088bd6f5005e",
+				"position": {
+					"x": "2380.0",
+					"y": "2371.0"
+				},
+				"flowTasks": {
+					"success": "9b54d9cd-15e1-4987-9adb-15fbd5dc9a81",
+					"failure": "775f97d5-d778-4c3b-9c0e-7a47268a4153"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["small pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "9b54d9cd-15e1-4987-9adb-15fbd5dc9a81",
+				"position": {
+					"x": "2862.0",
+					"y": "2727.0"
+				},
+				"flowTasks": {
+					"success": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
+					"failure": "c47a9fee-a86a-45f2-b2e7-3b27ab021b24"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Pure essence sprite"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "b7b08feb-9739-41c6-874f-1c67f7c8c4e2",
+				"position": {
+					"x": "2890.0",
+					"y": "1461.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.5495495495495496,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "d969fe7a-65cc-43b9-8da8-d19b8245924c",
+				"position": {
+					"x": "2874.0",
+					"y": "1782.0"
+				},
+				"flowTasks": {
+					"success": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
+					"failure": "1bf0ae67-5082-4108-bf60-164e37a2939c"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["empty slots 1"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "1bf0ae67-5082-4108-bf60-164e37a2939c",
+				"position": {
+					"x": "3351.0",
+					"y": "1765.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.9999999999999998,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "bf39337e-3b75-48bf-b57e-d92ee2575bc9",
+				"position": {
+					"x": "1987.0",
+					"y": "1490.0"
+				},
+				"flowTasks": {
+					"success": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
+					"failure": "ad4f6be0-aef0-44d0-ac27-96f4a566128e"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "b78e7220-ffe7-4388-a9d9-06cf60df5ace",
+				"position": {
+					"x": "2894.0",
+					"y": "2052.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.5495495495495497,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Medium pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "775f97d5-d778-4c3b-9c0e-7a47268a4153",
+				"position": {
+					"x": "2905.0",
+					"y": "2367.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.4144144144144145,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Small pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "531beb28-74ed-40a1-be62-1d6d78bdfa99",
+				"position": {
+					"x": "3622.0",
+					"y": "2663.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.045045045045045
+			},
+			"variables": {
+				"Values": ["Ourania teleport"],
+				"ValueRegex": false,
+				"Comparators": ["Lunar"],
+				"CompRegex": false,
+				"Condition": "Cast magic",
+				"Type": ""
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "65d42da8-f54e-4f28-bee6-c732d3136490",
+				"position": {
+					"x": "413.0",
+					"y": "-85.0"
+				},
+				"flowTasks": {
+					"success": "64e27c55-9cd6-45b6-b6ec-849137f0952d",
+					"failure": "70b6d1b4-a305-41f3-8ae0-13105be9459f"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "empty slots 21",
+				"Comparators": ["Start coordinate"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "dfa8a79d-0700-4257-9091-cf15ab41e67a",
+				"position": {
+					"x": "1730.0",
+					"y": "388.0"
+				},
+				"flowTasks": {
+					"success": "ed4fac30-be34-46c2-b702-e09ed2cbd994",
+					"failure": "7f64615a-294f-4802-9731-2841d6a86785"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "43547172-f0c0-41d2-ba25-1761d8bcfc3a",
+				"position": {
+					"x": "3499.0",
+					"y": "-1210.0"
+				},
+				"flowTasks": {
+					"success": "b069abbf-5883-42c0-804d-16a6d6692db3",
+					"failure": "e2ed54f3-c44f-4f90-8a00-b239ec783c1f"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Stamina potion"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "e2ed54f3-c44f-4f90-8a00-b239ec783c1f",
+				"position": {
+					"x": "3508.0",
+					"y": "-1493.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Stamina potion"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "99bef2a1-1f4d-4d5f-a28e-e0d2a54158c2",
+				"position": {
+					"x": "3503.0",
+					"y": "-973.0"
+				},
+				"flowTasks": {
+					"success": "5dda6202-8871-495b-980b-9ef3c1ff6f12",
+					"failure": "43547172-f0c0-41d2-ba25-1761d8bcfc3a"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Mind rune", "Nature rune", "Air rune", "Chaos rune", "Water rune", "Cosmic rune"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "5dda6202-8871-495b-980b-9ef3c1ff6f12",
+				"position": {
+					"x": "3996.0",
+					"y": "-919.0"
+				},
+				"flowTasks": {
+					"success": "0de552da-e993-40f2-9d72-6d4a243a68d6"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"TypeList": [],
+					"type": "ICQuery"
+				}
+			},
+			"variables": {
+				"TextValues": [],
+				"TextRegex": false,
+				"ActionValues": ["Deposit inventory"],
+				"ActionRegex": false,
+				"InterfaceObject": "bank interface",
+				"Cache container": false
+			}
+		}, {
+			"name": "InterfaceAction",
+			"base": {
+				"id": "0de552da-e993-40f2-9d72-6d4a243a68d6",
+				"position": {
+					"x": "5551.0",
+					"y": "-1018.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.1441441441441442
+			},
+			"variables": {
+				"Condition": "Action",
+				"Values": ["bank interface", "Deposit inventory"],
+				"ActionValues": [],
+				"ItemRegex": false,
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "ac5be8c1-f9c4-4b8e-bbc7-b6a8d0ada18b",
+				"position": {
+					"x": "2572.0",
+					"y": "-198.0"
+				},
+				"flowTasks": {
+					"success": "3287d3b9-3e37-499c-ba3b-1606f5736178",
+					"failure": "5eca696c-7921-478e-880c-4964bcc7ef83"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["12"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "6b479612-d943-4fec-8648-0c3109eff8e2",
+				"position": {
+					"x": "2575.0",
+					"y": "348.0"
+				},
+				"flowTasks": {
+					"success": "3a65a66f-9c4f-472a-ae24-dfbff3498eeb",
+					"failure": "48311785-9d3c-4a3b-9da9-08761b363c09"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["6"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "79df2b87-1c35-470e-9675-a609bf0d6548",
+				"position": {
+					"x": "2369.0",
+					"y": "-442.0"
+				},
+				"flowTasks": {
+					"success": "b563589d-d5bf-4c91-9f6d-9b1bac533e15",
+					"failure": "6dd66e88-0da9-4b56-bd89-c4d4cd9110b0"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "5eca696c-7921-478e-880c-4964bcc7ef83",
+				"position": {
+					"x": "2588.0",
+					"y": "53.0"
+				},
+				"flowTasks": {
+					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
+					"failure": "6b479612-d943-4fec-8648-0c3109eff8e2"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["empty slots 21"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "b563589d-d5bf-4c91-9f6d-9b1bac533e15",
+				"position": {
+					"x": "3017.0",
+					"y": "-438.0"
+				},
+				"flowTasks": {
+					"success": "149ede8c-e963-4080-bf45-069ef742098f",
+					"failure": "20fe33c4-a902-4c17-b1ea-dba6a90d2a1e"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "12",
+				"Varbits": ["giant pouch"],
+				"Condition": "Less then(\u003c)"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "4b57e0f2-655a-435c-a71d-6f969182a0c9",
+				"position": {
+					"x": "3422.0",
+					"y": "530.0"
+				},
+				"flowTasks": {
+					"success": "70b6d1b4-a305-41f3-8ae0-13105be9459f",
+					"failure": "930e7960-fc1d-41e8-a779-320bb4389c51"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "6dd66e88-0da9-4b56-bd89-c4d4cd9110b0",
+				"position": {
+					"x": "2382.0",
+					"y": "-771.0"
+				},
+				"flowTasks": {
+					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
+					"failure": "2c75f0e6-bf8c-43e6-9190-60c8d27ddfb7"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Pure essence sprite"],
+				"ItemRegex": false,
+				"Condition": "Contains none of:"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "48311785-9d3c-4a3b-9da9-08761b363c09",
+				"position": {
+					"x": "3425.0",
+					"y": "216.0"
+				},
+				"flowTasks": {
+					"success": "8cbfd8b6-729f-4cc6-826c-3490ea27b19f",
+					"failure": "4b57e0f2-655a-435c-a71d-6f969182a0c9"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["medium pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "9cf78df4-b709-4ca8-a54d-3c9c691b8e77",
+				"position": {
+					"x": "2399.0",
+					"y": "1400.0"
+				},
+				"flowTasks": {
+					"success": "b7b08feb-9739-41c6-874f-1c67f7c8c4e2",
+					"failure": "f9ebfdf3-c816-4d4b-ae37-8c75b22978f1"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["giant pouch"],
+				"Condition": "More then (\u003e)"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "7f64615a-294f-4802-9731-2841d6a86785",
+				"position": {
+					"x": "2130.0",
+					"y": "587.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "CheckLargPouch",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "8a223e80-f627-4320-8b02-82475bf5097a",
+				"position": {
+					"x": "3925.0",
+					"y": "951.0"
+				},
+				"flowTasks": {
+					"success": "1302a237-5138-4af9-b158-cb2d47a8b8bb"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "CheckLargPouch"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "1302a237-5138-4af9-b158-cb2d47a8b8bb",
+				"position": {
+					"x": "4194.0",
+					"y": "1138.0"
+				},
+				"flowTasks": {
+					"success": "fedeac53-dfe6-4d46-8ceb-5a1cb99909c4",
+					"failure": "2c1181bf-4805-4a85-a51c-6ac5189819a1"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": ["Large pouch degraded ID"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "fedeac53-dfe6-4d46-8ceb-5a1cb99909c4",
+				"position": {
+					"x": "4348.0",
+					"y": "924.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "CheckDegradedPouch",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "2c1181bf-4805-4a85-a51c-6ac5189819a1",
+				"position": {
+					"x": "4034.0",
+					"y": "1409.0"
+				},
+				"flowTasks": {
+					"success": "49995937-6998-4274-aa9b-08c7cb04e809",
+					"failure": "b89669d5-a3a1-445e-8fd1-b11d0db467d2"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "49995937-6998-4274-aa9b-08c7cb04e809",
+				"position": {
+					"x": "4176.0",
+					"y": "1686.0"
+				},
+				"flowTasks": {
+					"success": "6e9b5d62-6dd7-4b6f-9b77-30e70c752b2f",
+					"failure": "41d244db-e525-4b5d-871b-f442aa49a887"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["9"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "1c54335d-1ec8-4129-a70b-dfe0e58a5a87",
+				"position": {
+					"x": "5132.0",
+					"y": "1507.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.2792792792792793,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "41d244db-e525-4b5d-871b-f442aa49a887",
+				"position": {
+					"x": "4122.0",
+					"y": "1940.0"
+				},
+				"flowTasks": {
+					"success": "bfa322d3-0e4c-4aee-806e-b88ace45f638",
+					"failure": "e1d7624b-e417-499b-9ddd-9bd673306f7f"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["15"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "3c2cfb9f-71ef-40af-aa84-5b73c4c930d2",
+				"position": {
+					"x": "5413.0",
+					"y": "1866.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.5045045045045047,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Medium pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "bfa322d3-0e4c-4aee-806e-b88ace45f638",
+				"position": {
+					"x": "4199.0",
+					"y": "2243.0"
+				},
+				"flowTasks": {
+					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
+					"failure": "98ce2419-4d27-44c7-bcea-fee6f9725caa"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["18"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "3b5c551d-2550-4899-affd-e1ea27241492",
+				"position": {
+					"x": "4756.0",
+					"y": "2225.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.2792792792792793,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Small pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "98ce2419-4d27-44c7-bcea-fee6f9725caa",
+				"position": {
+					"x": "4202.0",
+					"y": "2528.0"
+				},
+				"flowTasks": {
+					"success": "70b6d1b4-a305-41f3-8ae0-13105be9459f",
+					"failure": "3b5c551d-2550-4899-affd-e1ea27241492"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "6e9b5d62-6dd7-4b6f-9b77-30e70c752b2f",
+				"position": {
+					"x": "4711.0",
+					"y": "1613.0"
+				},
+				"flowTasks": {
+					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
+					"failure": "1c54335d-1ec8-4129-a70b-dfe0e58a5a87"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "e1d7624b-e417-499b-9ddd-9bd673306f7f",
+				"position": {
+					"x": "4627.0",
+					"y": "1901.0"
+				},
+				"flowTasks": {
+					"success": "5067204b-6117-476a-9792-360c20d35cd5",
+					"failure": "b1ccdbe8-e190-4c32-b00f-9e956fb6c63e"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["medium pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "b89669d5-a3a1-445e-8fd1-b11d0db467d2",
+				"position": {
+					"x": "4522.0",
+					"y": "1343.0"
+				},
+				"flowTasks": {
+					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
+					"failure": "49995937-6998-4274-aa9b-08c7cb04e809"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Pure essence sprite"],
+				"ItemRegex": false,
+				"Condition": "Contains none of:"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "ad4f6be0-aef0-44d0-ac27-96f4a566128e",
+				"position": {
+					"x": "1953.0",
+					"y": "1713.0"
+				},
+				"flowTasks": {
+					"success": "9cf78df4-b709-4ca8-a54d-3c9c691b8e77",
+					"failure": "f9ebfdf3-c816-4d4b-ae37-8c75b22978f1"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "5067204b-6117-476a-9792-360c20d35cd5",
+				"position": {
+					"x": "4991.0",
+					"y": "1922.0"
+				},
+				"flowTasks": {
+					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
+					"failure": "3c2cfb9f-71ef-40af-aa84-5b73c4c930d2"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "eb279b21-7236-4610-9ed5-bd0dc46da674",
+				"position": {
+					"x": "133.0",
+					"y": "-393.0"
+				},
+				"flowTasks": {
+					"success": "f7fbd369-77cf-4ad8-ac87-fd20c1cb77dd",
+					"failure": "8b4cea22-74d8-4092-827f-e50c693fdf61"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Cosmic rune"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "8b4cea22-74d8-4092-827f-e50c693fdf61",
+				"position": {
+					"x": "728.0",
+					"y": "-380.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Cosmic rune"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "TimerCondition",
+			"base": {
+				"id": "58e3b6f1-5d47-4b73-bd52-a999a7608bc3",
+				"position": {
+					"x": "711.0",
+					"y": "-603.0"
+				},
+				"flowTasks": {
+					"success": "eb279b21-7236-4610-9ed5-bd0dc46da674"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "empty slots 1",
+				"Condition": "Every X seconds"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "b1ccdbe8-e190-4c32-b00f-9e956fb6c63e",
+				"position": {
+					"x": "3695.0",
+					"y": "2283.0"
+				},
+				"flowTasks": {
+					"success": "1c54335d-1ec8-4129-a70b-dfe0e58a5a87",
+					"failure": "bfa322d3-0e4c-4aee-806e-b88ace45f638"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["16"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "StatusCondition",
+			"base": {
+				"id": "64e27c55-9cd6-45b6-b6ec-849137f0952d",
+				"position": {
+					"x": "52.0",
+					"y": "304.0"
+				},
+				"flowTasks": {
+					"success": "e19abb3c-bf36-41e2-9612-924018066343",
+					"failure": "dfa8a79d-0700-4257-9091-cf15ab41e67a"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "50",
+				"Condition": "Less than (\u003c)",
+				"Type": "Health (%)"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "4edffeea-89e7-4a14-bd96-44141fc83aea",
+				"position": {
+					"x": "1358.0",
+					"y": "-72.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Shark"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "6260fca7-1dda-4ff3-8e21-e5187f16b244",
+				"position": {
+					"x": "943.0",
+					"y": "-15.0"
+				},
+				"flowTasks": {
+					"success": "4edffeea-89e7-4a14-bd96-44141fc83aea",
+					"failure": "d6e05d88-4692-4e08-bbd5-840357ab911e"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "d6e05d88-4692-4e08-bbd5-840357ab911e",
+				"position": {
+					"x": "1359.0",
+					"y": "243.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.045045045045045,
+				"queryData": {
+					"list4": ["Bank"],
+					"within": "",
+					"type": "NpcQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Npc",
+				"ItemValues": ["Eniola"],
+				"ItemRegex": true,
+				"ActionValues": ["Bank"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "e19abb3c-bf36-41e2-9612-924018066343",
+				"position": {
+					"x": "490.0",
+					"y": "354.0"
+				},
+				"flowTasks": {
+					"success": "28c19843-0e8f-4aab-a661-2e7e402b7842",
+					"failure": "6260fca7-1dda-4ff3-8e21-e5187f16b244"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Shark"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "28c19843-0e8f-4aab-a661-2e7e402b7842",
+				"position": {
+					"x": "985.0",
+					"y": "291.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Eat"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Shark"],
+				"ItemRegex": true,
+				"ActionValues": ["Eat"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "8c1dbe6f-b26a-4476-928e-f8f4f7295d48",
+				"position": {
+					"x": "4247.0",
+					"y": "-1541.0"
+				},
+				"flowTasks": {
+					"success": "525419aa-4788-44e0-a9c4-ca02941ec1d9"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list4": ["Pure essence bank id"],
+					"TypeList": [],
+					"type": "ICQuery"
+				}
+			},
+			"variables": {
+				"TextValues": [],
+				"TextRegex": true,
+				"ActionValues": ["Withdraw-All"],
+				"ActionRegex": true,
+				"InterfaceObject": "bank interface",
+				"Cache container": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "2c75f0e6-bf8c-43e6-9190-60c8d27ddfb7",
+				"position": {
+					"x": "2760.0",
+					"y": "-669.0"
+				},
+				"flowTasks": {
+					"success": "b563589d-d5bf-4c91-9f6d-9b1bac533e15",
+					"failure": "ac5be8c1-f9c4-4b8e-bbc7-b6a8d0ada18b"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["9"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "b069abbf-5883-42c0-804d-16a6d6692db3",
+				"position": {
+					"x": "3895.0",
+					"y": "-1212.0"
+				},
+				"flowTasks": {
+					"success": "dde24495-c3a4-408a-8063-d16b6c826e8b",
+					"failure": "8c1dbe6f-b26a-4476-928e-f8f4f7295d48"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Vial"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "BankDepositAction",
+			"base": {
+				"id": "dde24495-c3a4-408a-8063-d16b6c826e8b",
+				"position": {
+					"x": "3911.0",
+					"y": "-1525.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Vial"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "04071959-a710-4b7b-9bdc-789eb0c2ffd4",
+				"position": {
+					"x": "3421.0",
+					"y": "-52.0"
+				},
+				"flowTasks": {
+					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
+					"failure": "4b57e0f2-655a-435c-a71d-6f969182a0c9"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "c47a9fee-a86a-45f2-b2e7-3b27ab021b24",
+				"position": {
+					"x": "3247.0",
+					"y": "2827.0"
+				},
+				"flowTasks": {
+					"failure": "531beb28-74ed-40a1-be62-1d6d78bdfa99"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "1fbdffa9-3d02-4fd9-b65f-5ac079b3fa8e",
+				"position": {
+					"x": "2745.0",
+					"y": "-929.0"
+				},
+				"flowTasks": {
+					"failure": "ee47cb0e-74af-40f7-a049-377f1e88cace"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is moving:"
+			}
+		}
+	],
+	"BotCategory": "OTHER",
+	"inventoryData": {
+		"invPreset_Pure essence withdraw": [{
+				"name": "Giant pouch",
+				"id": 5514,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
+			}, {
+				"name": "Rune pouch",
+				"id": 12791,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
+			}, {
+				"name": "Large pouch",
+				"id": 5512,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
+			}, {
+				"name": "Medium pouch",
+				"id": 5510,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
+			}, {
+				"name": "Small pouch",
+				"id": 5509,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
+			}, {
+				"name": "Pure essence",
+				"id": 7936,
+				"noted": false,
+				"quantity": 23,
+				"selected": true
+			}
+		],
+		"invPresets": ["Withdraw pures"],
+		"invPreset_Withdraw pures": [{
+				"name": "Pure essence",
+				"id": 7936,
+				"noted": false,
+				"quantity": 23,
+				"selected": true
+			}
+		]
+	}
+}
