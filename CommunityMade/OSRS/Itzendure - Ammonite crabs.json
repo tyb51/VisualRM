@@ -1,0 +1,1154 @@
+{
+	"Variables": [{
+			"name": "Health threshold",
+			"value": "9",
+			"type": "NUMBER"
+		}, {
+			"name": "Distance away",
+			"value": "30",
+			"type": "NUMBER"
+		}, {
+			"name": "Pot condition",
+			"value": "75",
+			"type": "NUMBER"
+		}, {
+			"name": "Fight radius",
+			"value": "7",
+			"type": "NUMBER"
+		}, {
+			"name": "Drink pot at level",
+			"value": "75",
+			"type": "NUMBER"
+		}, {
+			"name": "Eat",
+			"value": "Eat",
+			"type": "ACTION"
+		}, {
+			"name": "Attack",
+			"value": "Attack",
+			"type": "ACTION"
+		}, {
+			"name": "Drink",
+			"value": "Drink",
+			"type": "ACTION"
+		}, {
+			"name": "Take",
+			"value": "Take",
+			"type": "ACTION"
+		}, {
+			"name": "Drop",
+			"value": "Drop",
+			"type": "ACTION"
+		}, {
+			"name": "true",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Has clicked around",
+			"value": "false",
+			"type": "BOOL"
+		}, {
+			"name": "Has re-agrod",
+			"value": "false",
+			"type": "BOOL"
+		}, {
+			"name": "false",
+			"value": "false",
+			"type": "BOOL"
+		}, {
+			"name": "Drop pots and food for fossils",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Using pots",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Using ranged",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Fight location",
+			"value": "Coordinate(3733, 3845, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "re-agro loc",
+			"value": "Coordinate(3737, 3800, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Unindentified rare fossil",
+			"value": "Unindentified rare fossil",
+			"type": "GI"
+		}, {
+			"name": "Unindentified large fossil",
+			"value": "Unindentified large fossil",
+			"type": "GI"
+		}, {
+			"name": "Me",
+			"value": "Me",
+			"type": "NPC"
+		}, {
+			"name": "Ammonite Crab",
+			"value": "Ammonite Crab",
+			"type": "NPC"
+		}, {
+			"name": "Fossil Rock",
+			"value": "Fossil Rock",
+			"type": "NPC"
+		}, {
+			"name": "Range ammo ",
+			"value": "Steel dart",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Food",
+			"value": "Monkfish",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Potions",
+			"value": "Ranging potion",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Eat checkpoint",
+			"value": "Eat checkpoint",
+			"type": "STRING"
+		}, {
+			"name": "Bank checkpoint",
+			"value": "Bank checkpoint",
+			"type": "STRING"
+		}, {
+			"name": "Combat checkpoint",
+			"value": "Combat checkpoint",
+			"type": "STRING"
+		}, {
+			"name": "Click surrounding stone",
+			"value": "Click surrounding stone",
+			"type": "STRING"
+		}, {
+			"name": "Traverse to re-agro",
+			"value": "Traverse to re-agro",
+			"type": "STRING"
+		}, {
+			"name": "Eat checkpoint",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Bank checkpoint",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Combat checkpoint",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Traverse to re-agro",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Click surrounding stone",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Pot checkpoint",
+			"value": "pot checkpoint",
+			"type": "CHECKPOINT"
+		}
+	],
+	"NodeCollection": [{
+			"name": "StartCondition",
+			"base": {
+				"id": "159400b6-adb6-46c4-84ba-68f090588e2a",
+				"position": {
+					"x": "-584.0",
+					"y": "-21.0"
+				},
+				"flowTasks": {
+					"success": "028b2b03-7038-4983-a725-d423a9266317"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"GameMode": "OSRS",
+				"IntervalLow": 1000.0,
+				"IntervalHigh": 1616.0415308951654
+			}
+		}, {
+			"name": "StatusCondition",
+			"base": {
+				"id": "a6712a4b-5a9e-4204-8595-a3300031084c",
+				"position": {
+					"x": "260.0",
+					"y": "325.0"
+				},
+				"flowTasks": {
+					"success": "e82dae59-5d09-42d2-a5af-7fc1679a278b",
+					"failure": "326a4e96-f2cd-461f-8ec1-1f9964bb3d70"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "Health threshold",
+				"Condition": "Less than (\u003c)",
+				"Type": "Health (amount)"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "e82dae59-5d09-42d2-a5af-7fc1679a278b",
+				"position": {
+					"x": "690.0",
+					"y": "404.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Eat checkpoint",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "b142c089-3c08-4377-a18e-79b9fe818575",
+				"position": {
+					"x": "464.0",
+					"y": "-398.0"
+				},
+				"flowTasks": {
+					"success": "1f7304db-f78a-43fa-a036-4b75f44410db"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "Eat checkpoint"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "1f7304db-f78a-43fa-a036-4b75f44410db",
+				"position": {
+					"x": "651.0",
+					"y": "-234.0"
+				},
+				"flowTasks": {
+					"success": "ff304f3b-6f64-41dc-9c0d-bdd32cf82832",
+					"failure": "a0a4c39e-92c1-47cc-9c91-e36f7c664a31"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Food"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "ff304f3b-6f64-41dc-9c0d-bdd32cf82832",
+				"position": {
+					"x": "1066.0",
+					"y": "-445.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Eat"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Food"],
+				"ItemRegex": false,
+				"ActionValues": ["Eat"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "a0a4c39e-92c1-47cc-9c91-e36f7c664a31",
+				"position": {
+					"x": "1144.0",
+					"y": "-138.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Bank checkpoint",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "1fe3c154-ec8e-4d40-b63c-2594bcc71979",
+				"position": {
+					"x": "1515.0",
+					"y": "-490.0"
+				},
+				"flowTasks": {
+					"success": "6e937f25-ad07-49d0-8105-467dce6138df"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "Bank checkpoint"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "927e62f5-d441-4d9a-b45b-30e15f26fced",
+				"position": {
+					"x": "2039.0",
+					"y": "-427.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Range pot"],
+				"ItemRegex": true,
+				"Condition": "VisualRm preset",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "5979fd2c-fde7-4f2a-879a-b9624106476b",
+				"position": {
+					"x": "2026.0",
+					"y": "-178.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "To nearest bank:",
+				"Coordinate": "",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "175edbeb-5f94-4deb-8eb0-3eba348e44cd",
+				"position": {
+					"x": "1479.0",
+					"y": "449.0"
+				},
+				"flowTasks": {
+					"success": "d9eff7af-6ca7-419e-8bdd-9aee056f877e",
+					"failure": "a9b2724b-e8d2-4cb9-a708-4637b333ac7f"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Has target:"
+			}
+		}, {
+			"name": "PauseAction",
+			"base": {
+				"id": "5adf2375-18ac-4d78-a159-38349294dedf",
+				"position": {
+					"x": "2779.0",
+					"y": "303.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"PauseMode": "Random duration",
+				"IntervalLow": 735.7017497158115,
+				"IntervalHigh": 1562.3404939905856
+			}
+		}, {
+			"name": "NpcCondition",
+			"base": {
+				"id": "a9b2724b-e8d2-4cb9-a708-4637b333ac7f",
+				"position": {
+					"x": "1820.0",
+					"y": "635.0"
+				},
+				"flowTasks": {
+					"success": "0de4d238-f806-4478-8f45-c2d7eaeff09a",
+					"failure": "9f030531-6423-4f86-b5b1-c8a46aa6e626"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool5": true,
+					"list4": ["Attack"],
+					"within": "Fight radius",
+					"type": "NpcQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Ammonite Crab"],
+				"ItemRegex": false,
+				"ActionValues": ["Attack"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "0de4d238-f806-4478-8f45-c2d7eaeff09a",
+				"position": {
+					"x": "2255.0",
+					"y": "491.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool5": true,
+					"list4": ["Attack"],
+					"within": "Fight radius",
+					"type": "NpcQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Npc",
+				"ItemValues": ["Ammonite Crab"],
+				"ItemRegex": false,
+				"ActionValues": ["Attack"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "NpcCondition",
+			"base": {
+				"id": "aafd61d0-e952-4c3d-b519-712f02a70be4",
+				"position": {
+					"x": "218.0",
+					"y": "1072.0"
+				},
+				"flowTasks": {
+					"success": "2cf79e5c-66f6-49f5-9dfc-9bacf5b40239",
+					"failure": "90bf6af9-516c-45a0-9fc5-5a9b8bf30d07"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"within": "Fight radius",
+					"type": "NpcQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Fossil Rock"],
+				"ItemRegex": false,
+				"ActionValues": [],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "PauseAction",
+			"base": {
+				"id": "90bf6af9-516c-45a0-9fc5-5a9b8bf30d07",
+				"position": {
+					"x": "681.0",
+					"y": "1162.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"PauseMode": "Indefinite",
+				"IntervalLow": 20.0,
+				"IntervalHigh": 70.0
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "84927492-d157-4ac4-bf7f-964bbe7e6799",
+				"position": {
+					"x": "1081.0",
+					"y": "843.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 2.531531531531531,
+				"queryData": {
+					"within": "Fight radius",
+					"type": "NpcQuery"
+				}
+			},
+			"variables": {
+				"Values": ["Fossil Rock"],
+				"ValueRegex": false,
+				"Comparators": [],
+				"CompRegex": false,
+				"Condition": "Click",
+				"Type": "NPC"
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "6e937f25-ad07-49d0-8105-467dce6138df",
+				"position": {
+					"x": "1630.0",
+					"y": "-250.0"
+				},
+				"flowTasks": {
+					"success": "927e62f5-d441-4d9a-b45b-30e15f26fced",
+					"failure": "5979fd2c-fde7-4f2a-879a-b9624106476b"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "326a4e96-f2cd-461f-8ec1-1f9964bb3d70",
+				"position": {
+					"x": "666.0",
+					"y": "590.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Combat checkpoint",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "c3d53362-bdcb-49dd-a24d-d7221057016b",
+				"position": {
+					"x": "1259.0",
+					"y": "190.0"
+				},
+				"flowTasks": {
+					"success": "5a77b7f4-935e-4e9d-b8f0-2268cbaa97fb"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "Combat checkpoint"
+			}
+		}, {
+			"name": "BooleanModulator",
+			"base": {
+				"id": "2cf79e5c-66f6-49f5-9dfc-9bacf5b40239",
+				"position": {
+					"x": "634.0",
+					"y": "927.0"
+				},
+				"flowTasks": {
+					"success": "84927492-d157-4ac4-bf7f-964bbe7e6799"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": "true",
+				"Booleans": "Has clicked around"
+			}
+		}, {
+			"name": "BooleanCheckModulator",
+			"base": {
+				"id": "9f030531-6423-4f86-b5b1-c8a46aa6e626",
+				"position": {
+					"x": "2247.0",
+					"y": "797.0"
+				},
+				"flowTasks": {
+					"success": "1b2ff33b-c4ea-493e-83b6-9471e2518a5d",
+					"failure": "32f2b113-045f-4bd0-b3bf-2c7f163594b2"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Has clicked around"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "1b2ff33b-c4ea-493e-83b6-9471e2518a5d",
+				"position": {
+					"x": "2685.0",
+					"y": "711.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Traverse to re-agro",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "32f2b113-045f-4bd0-b3bf-2c7f163594b2",
+				"position": {
+					"x": "2675.0",
+					"y": "883.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Click surrounding stone",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "20196bfa-c6cc-4426-adda-d7d8b70e3bd5",
+				"position": {
+					"x": "127.0",
+					"y": "846.0"
+				},
+				"flowTasks": {
+					"success": "aafd61d0-e952-4c3d-b519-712f02a70be4"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "Click surrounding stone"
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "7e6a2c93-6a03-4293-8966-c2c8e2644ca8",
+				"position": {
+					"x": "-137.0",
+					"y": "1375.0"
+				},
+				"flowTasks": {
+					"success": "9848fe0e-e882-4124-ab27-b5fcc9634b07"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "Traverse to re-agro"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "9848fe0e-e882-4124-ab27-b5fcc9634b07",
+				"position": {
+					"x": "-308.0",
+					"y": "1866.0"
+				},
+				"flowTasks": {
+					"success": "9011d6c3-f1f4-4ee9-b474-009978119fa6",
+					"failure": "fed0ba75-0624-4029-8ced-648c1e1c1df7"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Distance away",
+				"Comparators": ["Fight location"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "7414f50f-44e0-4bb9-82cc-ae9842649236",
+				"position": {
+					"x": "1197.0",
+					"y": "1825.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "re-agro loc",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "BooleanModulator",
+			"base": {
+				"id": "fed0ba75-0624-4029-8ced-648c1e1c1df7",
+				"position": {
+					"x": "658.0",
+					"y": "2166.0"
+				},
+				"flowTasks": {
+					"success": "ad16b05e-1398-4655-96af-4f43a394aaa9"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": "true",
+				"Booleans": "Has re-agrod"
+			}
+		}, {
+			"name": "BooleanCheckModulator",
+			"base": {
+				"id": "9011d6c3-f1f4-4ee9-b474-009978119fa6",
+				"position": {
+					"x": "623.0",
+					"y": "1945.0"
+				},
+				"flowTasks": {
+					"success": "ad16b05e-1398-4655-96af-4f43a394aaa9",
+					"failure": "7414f50f-44e0-4bb9-82cc-ae9842649236"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Has re-agrod"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "ad16b05e-1398-4655-96af-4f43a394aaa9",
+				"position": {
+					"x": "1212.0",
+					"y": "2090.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "Fight location",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "BooleanModulator",
+			"base": {
+				"id": "d9eff7af-6ca7-419e-8bdd-9aee056f877e",
+				"position": {
+					"x": "1768.0",
+					"y": "192.0"
+				},
+				"flowTasks": {
+					"success": "2b320eb1-3642-42ad-bed3-267b4354b83d"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": "false",
+				"Booleans": "Has clicked around"
+			}
+		}, {
+			"name": "BooleanModulator",
+			"base": {
+				"id": "2b320eb1-3642-42ad-bed3-267b4354b83d",
+				"position": {
+					"x": "2250.0",
+					"y": "287.0"
+				},
+				"flowTasks": {
+					"success": "5adf2375-18ac-4d78-a159-38349294dedf"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": "false",
+				"Booleans": "Has re-agrod"
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "dfac39d7-2eeb-4c33-83c4-6ee5c9108e06",
+				"position": {
+					"x": "306.0",
+					"y": "-101.0"
+				},
+				"flowTasks": {
+					"success": "38960419-2c24-4e7b-86dd-1bfe9b2e0525"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "Pot checkpoint"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "38960419-2c24-4e7b-86dd-1bfe9b2e0525",
+				"position": {
+					"x": "474.0",
+					"y": "41.0"
+				},
+				"flowTasks": {
+					"success": "101db58b-23ab-4270-96fb-2fd0045e6b3f",
+					"failure": "e27102aa-1e5c-4e66-a2ac-989ce3786a8c"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Potions"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "101db58b-23ab-4270-96fb-2fd0045e6b3f",
+				"position": {
+					"x": "859.0",
+					"y": "-33.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Drink"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Potions"],
+				"ItemRegex": true,
+				"ActionValues": ["Drink"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "e27102aa-1e5c-4e66-a2ac-989ce3786a8c",
+				"position": {
+					"x": "806.0",
+					"y": "266.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Bank checkpoint",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "EquipmentCondition",
+			"base": {
+				"id": "1334e588-9364-4242-bb3f-b700d74dafb7",
+				"position": {
+					"x": "-271.0",
+					"y": "95.0"
+				},
+				"flowTasks": {
+					"success": "28ebe461-1676-48f6-95e2-86b4476795bd",
+					"failure": "eef969cd-892c-4dea-bf03-f0d2dfc11952"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": ["Range ammo "],
+				"ItemRegex": false,
+				"Condition": "Contains none of:"
+			}
+		}, {
+			"name": "SkillCondition",
+			"base": {
+				"id": "c6acf711-1df0-4ed2-98ee-b906ee417f45",
+				"position": {
+					"x": "-116.0",
+					"y": "523.0"
+				},
+				"flowTasks": {
+					"success": "f0622614-cd4b-4330-a0a2-d2b34fbc9d3a",
+					"failure": "a6712a4b-5a9e-4204-8595-a3300031084c"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "Pot condition",
+				"Condition": "Less than (\u003c)",
+				"Type": "Ranged"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "f0622614-cd4b-4330-a0a2-d2b34fbc9d3a",
+				"position": {
+					"x": "311.0",
+					"y": "643.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Pot checkpoint",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "GroundItemCondition",
+			"base": {
+				"id": "5a77b7f4-935e-4e9d-b8f0-2268cbaa97fb",
+				"position": {
+					"x": "1117.0",
+					"y": "570.0"
+				},
+				"flowTasks": {
+					"success": "8b06442a-312e-4363-879c-19b6bc9f2620",
+					"failure": "175edbeb-5f94-4deb-8eb0-3eba348e44cd"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"bool4": false,
+					"bool5": false,
+					"list7": ["Take"],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Unindentified rare fossil", "Unindentified large fossil"],
+				"ItemRegex": false,
+				"ActionValues": ["Take"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "8b06442a-312e-4363-879c-19b6bc9f2620",
+				"position": {
+					"x": "1643.0",
+					"y": "951.0"
+				},
+				"flowTasks": {
+					"success": "44dbd99a-edc8-4a66-819d-3b8d2729710a",
+					"failure": "fa215f19-9a64-429f-810f-f243fd86efb9"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "fa215f19-9a64-429f-810f-f243fd86efb9",
+				"position": {
+					"x": "1861.0",
+					"y": "1329.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"bool4": false,
+					"bool5": false,
+					"list7": ["Take"],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Ground item",
+				"ItemValues": ["Unindentified rare fossil", "Unindentified large fossil"],
+				"ItemRegex": false,
+				"ActionValues": ["Take"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "BooleanCheckModulator",
+			"base": {
+				"id": "44dbd99a-edc8-4a66-819d-3b8d2729710a",
+				"position": {
+					"x": "2035.0",
+					"y": "1049.0"
+				},
+				"flowTasks": {
+					"success": "382a499b-da13-4402-a1d9-a734903157a7"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Drop pots and food for fossils"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "33afdb4c-b0e8-4471-b1da-4a4058fed7bf",
+				"position": {
+					"x": "3004.0",
+					"y": "1157.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Eat"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Food"],
+				"ItemRegex": false,
+				"ActionValues": ["Eat"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "382a499b-da13-4402-a1d9-a734903157a7",
+				"position": {
+					"x": "2469.0",
+					"y": "1099.0"
+				},
+				"flowTasks": {
+					"success": "33afdb4c-b0e8-4471-b1da-4a4058fed7bf",
+					"failure": "8b7861d0-6eb0-4322-982d-465774ceb6c0"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Food"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "8b7861d0-6eb0-4322-982d-465774ceb6c0",
+				"position": {
+					"x": "2739.0",
+					"y": "1370.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Drop"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Potions"],
+				"ItemRegex": false,
+				"ActionValues": ["Drop"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "BooleanCheckModulator",
+			"base": {
+				"id": "eef969cd-892c-4dea-bf03-f0d2dfc11952",
+				"position": {
+					"x": "-491.0",
+					"y": "509.0"
+				},
+				"flowTasks": {
+					"success": "c6acf711-1df0-4ed2-98ee-b906ee417f45",
+					"failure": "a6712a4b-5a9e-4204-8595-a3300031084c"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Using pots"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "BooleanCheckModulator",
+			"base": {
+				"id": "028b2b03-7038-4983-a725-d423a9266317",
+				"position": {
+					"x": "-624.0",
+					"y": "284.0"
+				},
+				"flowTasks": {
+					"success": "1334e588-9364-4242-bb3f-b700d74dafb7",
+					"failure": "eef969cd-892c-4dea-bf03-f0d2dfc11952"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Using ranged"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "PauseAction",
+			"base": {
+				"id": "28ebe461-1676-48f6-95e2-86b4476795bd",
+				"position": {
+					"x": "169.0",
+					"y": "101.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"PauseMode": "Indefinite",
+				"IntervalLow": 100.0,
+				"IntervalHigh": 2000.0
+			}
+		}
+	],
+	"BotCategory": "OTHER",
+	"inventoryData": {
+		"invPreset_Lobster \u0026 skill neck": [{
+				"name": "Skills necklace(5)",
+				"id": 11970,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Lobster",
+				"id": 379,
+				"noted": false,
+				"quantity": 27,
+				"selected": true
+			}
+		],
+		"invPresets": ["Lobster \u0026 skill neck", "Range pot"],
+		"invPreset_Range pot": [{
+				"name": "Ranging potion(4)",
+				"id": 2444,
+				"noted": false,
+				"quantity": 24,
+				"selected": true
+			}, {
+				"name": "Monkfish",
+				"id": 7946,
+				"noted": false,
+				"quantity": 4,
+				"selected": true
+			}
+		]
+	}
+}
