@@ -1,0 +1,1032 @@
+{
+	"Variables": [{
+			"name": "Coordinate Bank",
+			"value": "(2443, 3083, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "10",
+			"value": "10",
+			"type": "NUMBER"
+		}, {
+			"name": "0",
+			"value": "0",
+			"type": "NUMBER"
+		}, {
+			"name": "Varbit Giant pouch",
+			"value": "606",
+			"type": "VARBIT"
+		}, {
+			"name": "Pure essence",
+			"value": "Pure essence",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "true",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Giant pouch",
+			"value": "Giant pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Fill",
+			"value": "Fill",
+			"type": "ACTION"
+		}, {
+			"name": "Large pouch",
+			"value": "Large pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Varbit Large pouch",
+			"value": "605",
+			"type": "VARBIT"
+		}, {
+			"name": "12",
+			"value": "12",
+			"type": "NUMBER"
+		}, {
+			"name": "Binding necklace",
+			"value": "Binding necklace",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Ring of dueling",
+			"value": "Ring of dueling",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "15",
+			"value": "15",
+			"type": "NUMBER"
+		}, {
+			"name": "Degraded Giant pouch ID",
+			"value": "5515",
+			"type": "NUMBER"
+		}, {
+			"name": "Duel arena tp",
+			"value": "Duel Arena",
+			"type": "ACTION"
+		}, {
+			"name": "Coordinate duel arena",
+			"value": "(3315, 3235, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Duel Arena op",
+			"value": "Duel Arena",
+			"type": "STRING"
+		}, {
+			"name": "Altar",
+			"value": "Altar",
+			"type": "GO"
+		}, {
+			"name": "Coordinate fire altar",
+			"value": "(2584, 4837, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Mysterious ruins",
+			"value": "Mysterious ruins",
+			"type": "GO"
+		}, {
+			"name": "Coordinate ruins",
+			"value": "(3311, 3252, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Enter",
+			"value": "Enter",
+			"type": "ACTION"
+		}, {
+			"name": "Checkcraft",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Earth rune",
+			"value": "Earth rune",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Altar ID",
+			"value": "14901",
+			"type": "NUMBER"
+		}, {
+			"name": "Degraded pouch",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "4",
+			"value": "4",
+			"type": "NUMBER"
+		}, {
+			"name": "Empty",
+			"value": "Empty",
+			"type": "ACTION"
+		}, {
+			"name": "18",
+			"value": "18",
+			"type": "NUMBER"
+		}, {
+			"name": "Castle wars",
+			"value": "Castle Wars",
+			"type": "STRING"
+		}, {
+			"name": "2",
+			"value": "2",
+			"type": "NUMBER"
+		}, {
+			"name": "Area altar",
+			"value": "(2582, 4842, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "6",
+			"value": "6",
+			"type": "NUMBER"
+		}
+	],
+	"NodeCollection": [{
+			"name": "StartCondition",
+			"base": {
+				"id": "7a7cf3df-b29d-4964-b2e7-080153f94d1f",
+				"position": {
+					"x": "0.0",
+					"y": "0.0"
+				},
+				"flowTasks": {
+					"success": "e15045d3-3157-41cc-badc-16ca4e6f89f7"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"GameMode": "OSRS",
+				"IntervalLow": 100.0,
+				"IntervalHigh": 358.573834101359
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "e15045d3-3157-41cc-badc-16ca4e6f89f7",
+				"position": {
+					"x": "-23.0",
+					"y": "413.0"
+				},
+				"flowTasks": {
+					"success": "ccd10361-6781-44e8-9a75-179543028cf6",
+					"failure": "d125f20a-e047-4ea4-a4b3-65d43a3c5c11"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "15",
+				"Comparators": ["Coordinate Bank"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "94b22d70-bcd9-4758-ac4a-e2476b76601a",
+				"position": {
+					"x": "2430.0",
+					"y": "555.0"
+				},
+				"flowTasks": {
+					"success": "d96a5b85-d8dc-4ab1-8186-44a3a7f1b88a",
+					"failure": "e4e8ae40-3a0f-4fc7-88ee-5c9037846057"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "12",
+				"Varbits": ["Varbit Giant pouch"],
+				"Condition": "Less then(\u003c)"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "3ec57a9e-b467-4d19-9794-3f47d34543bd",
+				"position": {
+					"x": "2416.0",
+					"y": "106.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Pure essence"],
+				"ItemRegex": true,
+				"Condition": "VisualRm preset",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "d96a5b85-d8dc-4ab1-8186-44a3a7f1b88a",
+				"position": {
+					"x": "3024.0",
+					"y": "534.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"ActionValues": ["Fill"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "e4e8ae40-3a0f-4fc7-88ee-5c9037846057",
+				"position": {
+					"x": "2439.0",
+					"y": "956.0"
+				},
+				"flowTasks": {
+					"success": "8d17c8a4-63b0-4c1b-b67a-c589a95a573a",
+					"failure": "c027fbb4-48ed-4961-b7b9-3687e7b0b6a1"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "0",
+				"Varbits": ["Varbit Large pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "8d17c8a4-63b0-4c1b-b67a-c589a95a573a",
+				"position": {
+					"x": "3004.0",
+					"y": "889.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": false,
+				"ActionValues": ["Fill"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "EquipmentCondition",
+			"base": {
+				"id": "7d82eca7-bf69-4408-8ad2-b6f6a886312f",
+				"position": {
+					"x": "1090.0",
+					"y": "360.0"
+				},
+				"flowTasks": {
+					"success": "5bdff61e-2784-4158-aa69-8677b87a22e9",
+					"failure": "ecd2abb7-4a0b-4861-8e28-3e3f6427163c"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": ["Binding necklace"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "EquipmentCondition",
+			"base": {
+				"id": "5bdff61e-2784-4158-aa69-8677b87a22e9",
+				"position": {
+					"x": "1542.0",
+					"y": "358.0"
+				},
+				"flowTasks": {
+					"success": "63446c9f-acf5-4494-b834-35645ab17f13",
+					"failure": "45cbf2fd-9211-478d-afa9-a5e99e1a54f8"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": ["Ring of dueling"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "ecd2abb7-4a0b-4861-8e28-3e3f6427163c",
+				"position": {
+					"x": "1072.0",
+					"y": "619.0"
+				},
+				"flowTasks": {
+					"success": "426cc00e-8411-440b-a716-c70cfe789a9c",
+					"failure": "01a8af12-45b2-4c58-8cf4-490a93498da8"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Binding necklace"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "426cc00e-8411-440b-a716-c70cfe789a9c",
+				"position": {
+					"x": "1192.0",
+					"y": "902.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Values": ["Binding necklace"],
+				"ValueRegex": true,
+				"Comparators": [],
+				"CompRegex": false,
+				"Condition": "Click",
+				"Type": "Inventory item"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "01a8af12-45b2-4c58-8cf4-490a93498da8",
+				"position": {
+					"x": "830.0",
+					"y": "908.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Binding necklace"],
+				"ItemRegex": false,
+				"Condition": "All of",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "45cbf2fd-9211-478d-afa9-a5e99e1a54f8",
+				"position": {
+					"x": "1550.0",
+					"y": "608.0"
+				},
+				"flowTasks": {
+					"success": "504b5e53-ff78-4dde-a4f4-3eecbf676a07",
+					"failure": "372d1f85-acdc-4401-9650-2fa71b3739c6"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Ring of dueling"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "504b5e53-ff78-4dde-a4f4-3eecbf676a07",
+				"position": {
+					"x": "2008.0",
+					"y": "587.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Values": ["Ring of dueling"],
+				"ValueRegex": true,
+				"Comparators": [],
+				"CompRegex": false,
+				"Condition": "Click",
+				"Type": "Inventory item"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "372d1f85-acdc-4401-9650-2fa71b3739c6",
+				"position": {
+					"x": "1588.0",
+					"y": "901.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Ring of dueling"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "63446c9f-acf5-4494-b834-35645ab17f13",
+				"position": {
+					"x": "1967.0",
+					"y": "251.0"
+				},
+				"flowTasks": {
+					"success": "3ec57a9e-b467-4d19-9794-3f47d34543bd",
+					"failure": "94b22d70-bcd9-4758-ac4a-e2476b76601a"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["15"],
+				"ItemRegex": false,
+				"Condition": "Has \u003e then # empty slots"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "c027fbb4-48ed-4961-b7b9-3687e7b0b6a1",
+				"position": {
+					"x": "1974.0",
+					"y": "1276.0"
+				},
+				"flowTasks": {
+					"success": "8955f245-47be-4386-8516-404a01f5c288",
+					"failure": "3ec57a9e-b467-4d19-9794-3f47d34543bd"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "ccd10361-6781-44e8-9a75-179543028cf6",
+				"position": {
+					"x": "498.0",
+					"y": "370.0"
+				},
+				"flowTasks": {
+					"success": "7e87d47c-da3f-451d-a48d-f008f0bac378",
+					"failure": "7d82eca7-bf69-4408-8ad2-b6f6a886312f"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": ["Degraded Giant pouch ID"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "7e87d47c-da3f-451d-a48d-f008f0bac378",
+				"position": {
+					"x": "858.0",
+					"y": "100.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Degraded pouch",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "d125f20a-e047-4ea4-a4b3-65d43a3c5c11",
+				"position": {
+					"x": "-27.0",
+					"y": "856.0"
+				},
+				"flowTasks": {
+					"success": "68099c07-a7a3-452c-9b95-b13dfe2064ef",
+					"failure": "ea4b448e-65ed-4c53-a210-a6464aa5e399"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "18",
+				"Comparators": ["Area altar"],
+				"CompRegex": true,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "8955f245-47be-4386-8516-404a01f5c288",
+				"position": {
+					"x": "2363.0",
+					"y": "1454.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "Teleport accessory:",
+				"Coordinate": "Ring of dueling",
+				"Exact": false,
+				"Radius": "Duel Arena op"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "ea4b448e-65ed-4c53-a210-a6464aa5e399",
+				"position": {
+					"x": "-5.0",
+					"y": "1293.0"
+				},
+				"flowTasks": {
+					"success": "8e84e17a-da63-4701-929f-38aa4c5bc72b",
+					"failure": "76d37524-5e08-46d5-80cb-44cc59199faa"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Value": "10",
+				"Comparators": ["Mysterious ruins"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Game Object"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "76d37524-5e08-46d5-80cb-44cc59199faa",
+				"position": {
+					"x": "433.0",
+					"y": "1456.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.3153153153153152
+			},
+			"variables": {
+				"Condition": "To coordinate (no tele):",
+				"Coordinate": "Coordinate ruins",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "8e84e17a-da63-4701-929f-38aa4c5bc72b",
+				"position": {
+					"x": "447.0",
+					"y": "1059.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list3": ["Enter"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Mysterious ruins"],
+				"ItemRegex": true,
+				"ActionValues": ["Enter"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "68099c07-a7a3-452c-9b95-b13dfe2064ef",
+				"position": {
+					"x": "413.0",
+					"y": "729.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "Checkcraft",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "bcde6ccd-556c-4d41-82a6-0ecfb52ea5d4",
+				"position": {
+					"x": "-379.0",
+					"y": "1874.0"
+				},
+				"flowTasks": {
+					"success": "ff998b5d-22a4-411b-90e5-174786ddcf8d"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "Checkcraft"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "c6929c25-1185-47d7-bfc7-ca353d387c6b",
+				"position": {
+					"x": "186.0",
+					"y": "2390.0"
+				},
+				"flowTasks": {
+					"success": "45f1a346-ff59-44a5-a9db-d08a60949d0a",
+					"failure": "ef22f206-8909-49cd-ab45-179ea7a952d8"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "45f1a346-ff59-44a5-a9db-d08a60949d0a",
+				"position": {
+					"x": "691.0",
+					"y": "1939.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list1": ["Coordinate fire altar"],
+					"list2": ["Altar ID"],
+					"TypeList": ["PRIMARY"],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Values": ["Altar"],
+				"ValueRegex": false,
+				"Comparators": ["Earth rune"],
+				"CompRegex": false,
+				"Condition": "Use item on",
+				"Type": "Game Object",
+				"invQuery": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "ff998b5d-22a4-411b-90e5-174786ddcf8d",
+				"position": {
+					"x": "-211.0",
+					"y": "2090.0"
+				},
+				"flowTasks": {
+					"success": "c6929c25-1185-47d7-bfc7-ca353d387c6b",
+					"failure": "86162e93-8591-4088-afe2-5f5242d7e70d"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "6",
+				"Comparators": ["Area altar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "86162e93-8591-4088-afe2-5f5242d7e70d",
+				"position": {
+					"x": "239.0",
+					"y": "1997.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "Coordinate fire altar",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "97076eb6-deab-43d0-a639-48869b201894",
+				"position": {
+					"x": "660.0",
+					"y": "2373.0"
+				},
+				"flowTasks": {
+					"success": "97b0764e-335f-4449-b717-bebff7013cd6",
+					"failure": "ac63edab-af73-4258-ad6d-e7c121aeccf5"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "0",
+				"Varbits": ["Varbit Giant pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "97b0764e-335f-4449-b717-bebff7013cd6",
+				"position": {
+					"x": "1159.0",
+					"y": "2121.0"
+				},
+				"flowTasks": {
+					"success": "2990ac4a-bdfd-4600-9f95-e192ab693258",
+					"failure": "7e0497f6-5fb4-46ac-a01f-e3902ab5c1f5"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "0",
+				"Varbits": ["Varbit Large pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "ac63edab-af73-4258-ad6d-e7c121aeccf5",
+				"position": {
+					"x": "1134.0",
+					"y": "2505.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"ActionValues": ["Empty"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "7e0497f6-5fb4-46ac-a01f-e3902ab5c1f5",
+				"position": {
+					"x": "1543.0",
+					"y": "2521.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": false,
+				"ActionValues": ["Empty"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "2990ac4a-bdfd-4600-9f95-e192ab693258",
+				"position": {
+					"x": "1696.0",
+					"y": "2091.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "Teleport accessory:",
+				"Coordinate": "Ring of dueling",
+				"Exact": false,
+				"Radius": "Castle wars"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "ef22f206-8909-49cd-ab45-179ea7a952d8",
+				"position": {
+					"x": "188.0",
+					"y": "2645.0"
+				},
+				"flowTasks": {
+					"success": "45f1a346-ff59-44a5-a9db-d08a60949d0a",
+					"failure": "97076eb6-deab-43d0-a639-48869b201894"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["2"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "a86b82dc-e91c-4d03-b2a0-e7cabc20d77b",
+				"position": {
+					"x": "2817.0",
+					"y": "304.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}
+	],
+	"BotCategory": "OTHER",
+	"inventoryData": {
+		"invPreset_Dragonhides": [{
+				"name": "Red dragonhide",
+				"id": 1749,
+				"noted": false,
+				"quantity": 25,
+				"selected": true
+			}, {
+				"name": "Astral rune",
+				"id": 9075,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Nature rune",
+				"id": 561,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Coins",
+				"id": 995,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}
+		],
+		"invPresets": ["Dragonhides", "Red dragonhides", "Pure essence"],
+		"invPreset_Red dragonhides": [{
+				"name": "Red dragonhide",
+				"id": 1749,
+				"noted": false,
+				"quantity": 25,
+				"selected": true
+			}, {
+				"name": "Astral rune",
+				"id": 9075,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Nature rune",
+				"id": 561,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Coins",
+				"id": 995,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}
+		],
+		"invPreset_Pure essence": [{
+				"name": "Earth rune",
+				"id": 557,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Large pouch",
+				"id": 5512,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Pure essence",
+				"id": 7936,
+				"noted": false,
+				"quantity": 22,
+				"selected": true
+			}, {
+				"name": "Lava rune",
+				"id": 4699,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Giant pouch",
+				"id": 5514,
+				"noted": false,
+				"quantity": 1,
+				"selected": true
+			}, {
+				"name": "Earth talisman",
+				"id": 1440,
+				"noted": false,
+				"quantity": 2,
+				"selected": true
+			}
+		]
+	}
+}

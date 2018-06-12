@@ -137,7 +137,7 @@
 			"type": "STRING"
 		}, {
 			"name": "Altar",
-			"value": "Altar",
+			"value": "Runecrafting altar",
 			"type": "GO"
 		}, {
 			"name": "Craft-rune",
@@ -267,18 +267,26 @@
 			"name": "22",
 			"value": "22",
 			"type": "NUMBER"
+		}, {
+			"name": "Coordinate outside bank",
+			"value": "(2100, 3916, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "2",
+			"value": "2",
+			"type": "NUMBER"
 		}
 	],
 	"NodeCollection": [{
 			"name": "StartCondition",
 			"base": {
-				"id": "7ba4068b-672f-4e18-8bd5-c7434b3d6d74",
+				"id": "835f3c74-f22c-407d-bec7-ef886e29a274",
 				"position": {
 					"x": "0.0",
 					"y": "0.0"
 				},
 				"flowTasks": {
-					"success": "65d42da8-f54e-4f28-bee6-c732d3136490"
+					"success": "c6aac936-c2b8-424c-83e9-e873f6c11d8c"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -290,14 +298,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "ed4fac30-be34-46c2-b702-e09ed2cbd994",
+				"id": "dc5b4ab2-9528-4da4-9189-608e9aa0b53e",
 				"position": {
 					"x": "2137.0",
 					"y": "166.0"
 				},
 				"flowTasks": {
-					"success": "3c9149f3-baa0-4d8a-bb54-5affe259466a",
-					"failure": "79df2b87-1c35-470e-9675-a609bf0d6548"
+					"success": "7b08b4dd-ec7f-48fc-9994-e45783581157",
+					"failure": "cff2d70b-84fb-4192-b84e-558636acfa57"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -316,7 +324,7 @@
 		}, {
 			"name": "CheckpointEndTask",
 			"base": {
-				"id": "3c9149f3-baa0-4d8a-bb54-5affe259466a",
+				"id": "7b08b4dd-ec7f-48fc-9994-e45783581157",
 				"position": {
 					"x": "2108.0",
 					"y": "-69.0"
@@ -331,13 +339,13 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "287916b1-ec7f-452c-abf5-88501ac31ba7",
+				"id": "67eb44fc-6177-4326-b0a8-0cee83ece7dd",
 				"position": {
 					"x": "4073.0",
 					"y": "-481.0"
 				},
 				"flowTasks": {},
-				"delayMultiplier": 0.3153153153153153,
+				"delayMultiplier": 0.6306306306306306,
 				"queryData": {
 					"bool0": false,
 					"bool1": false,
@@ -356,7 +364,7 @@
 		}, {
 			"name": "InterfaceAction",
 			"base": {
-				"id": "525419aa-4788-44e0-a9c4-ca02941ec1d9",
+				"id": "c83f1d83-847e-4f87-8583-7d68b63662e1",
 				"position": {
 					"x": "5544.0",
 					"y": "-1513.0"
@@ -366,22 +374,22 @@
 			},
 			"variables": {
 				"Condition": "Action",
-				"Values": ["bank interface", "Withdraw-All"],
-				"ActionValues": [],
+				"Values": ["bank interface"],
+				"ActionValues": ["Withdraw-All"],
 				"ItemRegex": false,
 				"ActionRegex": false
 			}
 		}, {
 			"name": "BankCondition",
 			"base": {
-				"id": "930e7960-fc1d-41e8-a779-320bb4389c51",
+				"id": "c5a6e3ff-6b05-43eb-93a0-48023d1c3842",
 				"position": {
 					"x": "3507.0",
 					"y": "-693.0"
 				},
 				"flowTasks": {
-					"success": "99bef2a1-1f4d-4d5f-a28e-e0d2a54158c2",
-					"failure": "1fbdffa9-3d02-4fd9-b65f-5ac079b3fa8e"
+					"success": "6dd92a6d-327c-4f14-be00-95b4db898ce1",
+					"failure": "23b5eb27-d4f1-4a2f-9aec-436ce6fb343d"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -393,7 +401,7 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "ee47cb0e-74af-40f7-a049-377f1e88cace",
+				"id": "23b5eb27-d4f1-4a2f-9aec-436ce6fb343d",
 				"position": {
 					"x": "3154.0",
 					"y": "-947.0"
@@ -416,14 +424,14 @@
 		}, {
 			"name": "BankCondition",
 			"base": {
-				"id": "149ede8c-e963-4080-bf45-069ef742098f",
+				"id": "47d936cb-f525-4be5-b0e4-b6f6c3c2ae34",
 				"position": {
-					"x": "3505.0",
-					"y": "-412.0"
+					"x": "3254.0",
+					"y": "-444.0"
 				},
 				"flowTasks": {
-					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
-					"failure": "287916b1-ec7f-452c-abf5-88501ac31ba7"
+					"success": "27d2e09d-0219-472e-800a-5666cf06fa1c",
+					"failure": "67eb44fc-6177-4326-b0a8-0cee83ece7dd"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -435,7 +443,7 @@
 		}, {
 			"name": "InterfaceAction",
 			"base": {
-				"id": "d6b4b66d-02e2-4049-85fc-5070eaeb9b88",
+				"id": "549959f9-fccc-4b72-9f14-bcbea5cf4c33",
 				"position": {
 					"x": "5548.0",
 					"y": "-569.0"
@@ -445,21 +453,21 @@
 			},
 			"variables": {
 				"Condition": "Action",
-				"Values": ["bank interface", "Close"],
-				"ActionValues": [],
+				"Values": ["bank interface"],
+				"ActionValues": ["Close"],
 				"ItemRegex": false,
 				"ActionRegex": false
 			}
 		}, {
 			"name": "InterfaceCondition",
 			"base": {
-				"id": "9516a371-f527-4e9f-80c9-66dd8be25953",
+				"id": "27d2e09d-0219-472e-800a-5666cf06fa1c",
 				"position": {
 					"x": "4358.0",
 					"y": "-21.0"
 				},
 				"flowTasks": {
-					"success": "d6b4b66d-02e2-4049-85fc-5070eaeb9b88"
+					"success": "549959f9-fccc-4b72-9f14-bcbea5cf4c33"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -481,10 +489,10 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "3287d3b9-3e37-499c-ba3b-1606f5736178",
+				"id": "53b0cd25-e44b-4810-8f37-19ecb7c3e350",
 				"position": {
-					"x": "3085.0",
-					"y": "-157.0"
+					"x": "3287.0",
+					"y": "-171.0"
 				},
 				"flowTasks": {},
 				"delayMultiplier": 0.49549549549549543,
@@ -504,34 +512,15 @@
 				"ActionRegex": true
 			}
 		}, {
-			"name": "BankCondition",
-			"base": {
-				"id": "20fe33c4-a902-4c17-b1ea-dba6a90d2a1e",
-				"position": {
-					"x": "3004.0",
-					"y": "182.0"
-				},
-				"flowTasks": {
-					"success": "04071959-a710-4b7b-9bdc-789eb0c2ffd4",
-					"failure": "6b479612-d943-4fec-8648-0c3109eff8e2"
-				},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"ItemValues": [],
-				"ItemRegex": false,
-				"Condition": "Is open"
-			}
-		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "8cbfd8b6-729f-4cc6-826c-3490ea27b19f",
+				"id": "79aadda5-86ae-499d-926e-064fb68d0c85",
 				"position": {
-					"x": "3825.0",
-					"y": "90.0"
+					"x": "3808.0",
+					"y": "366.0"
 				},
 				"flowTasks": {},
-				"delayMultiplier": 0.27927927927927926,
+				"delayMultiplier": 0.5495495495495495,
 				"queryData": {
 					"bool0": false,
 					"bool1": false,
@@ -548,66 +537,16 @@
 				"ActionRegex": true
 			}
 		}, {
-			"name": "InteractionAction",
-			"base": {
-				"id": "5d970e90-296e-4aba-918c-b2bb89914f1c",
-				"position": {
-					"x": "3062.0",
-					"y": "587.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 0.3693693693693695,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"list5": ["Fill"],
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"Condition": "Inventory",
-				"ItemValues": ["Small pouch"],
-				"ItemRegex": true,
-				"ActionValues": ["Fill"],
-				"ActionRegex": true
-			}
-		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "3a65a66f-9c4f-472a-ae24-dfbff3498eeb",
-				"position": {
-					"x": "2577.0",
-					"y": "598.0"
-				},
-				"flowTasks": {
-					"success": "4b57e0f2-655a-435c-a71d-6f969182a0c9",
-					"failure": "5d970e90-296e-4aba-918c-b2bb89914f1c"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["9"],
-				"ItemRegex": false,
-				"Condition": "Has # empty slots"
-			}
-		}, {
 			"name": "CalculationCondition",
 			"base": {
-				"id": "70b6d1b4-a305-41f3-8ae0-13105be9459f",
+				"id": "4a357350-039a-4894-a60e-ffb1c8cf8399",
 				"position": {
 					"x": "1481.0",
 					"y": "1413.0"
 				},
 				"flowTasks": {
-					"success": "bf39337e-3b75-48bf-b57e-d92ee2575bc9",
-					"failure": "b8a0e8a7-4563-4e12-8f66-b8e14e86d818"
+					"success": "dec42b1a-4c46-44df-973c-67b5d5630cba",
+					"failure": "3a23105d-dfea-4a13-ad68-10ab751758d2"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -621,7 +560,7 @@
 		}, {
 			"name": "TraversalAction",
 			"base": {
-				"id": "b8a0e8a7-4563-4e12-8f66-b8e14e86d818",
+				"id": "3a23105d-dfea-4a13-ad68-10ab751758d2",
 				"position": {
 					"x": "2427.0",
 					"y": "1011.0"
@@ -638,13 +577,13 @@
 		}, {
 			"name": "CheckpointStart",
 			"base": {
-				"id": "d34caf56-2e4e-4284-b073-387d3196a3cf",
+				"id": "e583d766-68a9-411f-b042-27b0cf61f5a0",
 				"position": {
 					"x": "583.0",
 					"y": "-805.0"
 				},
 				"flowTasks": {
-					"success": "437f8aea-1658-4c23-a414-5237ca66e633"
+					"success": "ee1727cb-6527-44fc-a964-a3845fe6fd82"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -654,7 +593,7 @@
 		}, {
 			"name": "SpecialInteractionAction",
 			"base": {
-				"id": "87d1838a-d946-47d4-81d1-1500e585fe35",
+				"id": "d62b43fa-b30f-4d84-8396-45e0a65e350a",
 				"position": {
 					"x": "2045.0",
 					"y": "-573.0"
@@ -673,14 +612,14 @@
 		}, {
 			"name": "InterfaceCondition",
 			"base": {
-				"id": "ec49692f-1b46-4656-a1d1-1ca1be724c22",
+				"id": "5e7b0686-e672-44f9-83b2-b827eaf76542",
 				"position": {
 					"x": "1602.0",
 					"y": "-526.0"
 				},
 				"flowTasks": {
-					"success": "b5f35460-6457-4622-9f2f-4464ddd7ce7e",
-					"failure": "87d1838a-d946-47d4-81d1-1500e585fe35"
+					"success": "b70b1017-b068-46cb-b2c0-abb58c96e8de",
+					"failure": "d62b43fa-b30f-4d84-8396-45e0a65e350a"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -702,7 +641,7 @@
 		}, {
 			"name": "InterfaceAction",
 			"base": {
-				"id": "b5f35460-6457-4622-9f2f-4464ddd7ce7e",
+				"id": "b70b1017-b068-46cb-b2c0-abb58c96e8de",
 				"position": {
 					"x": "2011.0",
 					"y": "-1797.0"
@@ -712,22 +651,22 @@
 			},
 			"variables": {
 				"Condition": "Action",
-				"Values": ["Npc contact interface", "Dark Mage"],
-				"ActionValues": [],
+				"Values": ["Npc contact interface"],
+				"ActionValues": ["Dark Mage"],
 				"ItemRegex": false,
 				"ActionRegex": false
 			}
 		}, {
 			"name": "ChatDialogCondition",
 			"base": {
-				"id": "437f8aea-1658-4c23-a414-5237ca66e633",
+				"id": "ee1727cb-6527-44fc-a964-a3845fe6fd82",
 				"position": {
 					"x": "166.0",
 					"y": "-590.0"
 				},
 				"flowTasks": {
-					"success": "a15d6deb-3264-4347-91de-e05bf2cd8ae5",
-					"failure": "58e3b6f1-5d47-4b73-bd52-a999a7608bc3"
+					"success": "4141e4ef-63f2-4d01-b08c-ad93cfe8ac49",
+					"failure": "8580e86c-3641-43ac-a5cb-7673ce32074e"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -737,7 +676,7 @@
 		}, {
 			"name": "ChatDialogAction",
 			"base": {
-				"id": "a15d6deb-3264-4347-91de-e05bf2cd8ae5",
+				"id": "4141e4ef-63f2-4d01-b08c-ad93cfe8ac49",
 				"position": {
 					"x": "1322.0",
 					"y": "-586.0"
@@ -752,13 +691,13 @@
 		}, {
 			"name": "PlayerCondition",
 			"base": {
-				"id": "f7fbd369-77cf-4ad8-ac87-fd20c1cb77dd",
+				"id": "ef71601f-bcc6-4ee9-98c0-c6c3b1caf8b0",
 				"position": {
 					"x": "1132.0",
 					"y": "-384.0"
 				},
 				"flowTasks": {
-					"failure": "ec49692f-1b46-4656-a1d1-1ca1be724c22"
+					"failure": "5e7b0686-e672-44f9-83b2-b827eaf76542"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -769,10 +708,10 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
+				"id": "f30e07d8-b6da-4a2d-9d06-2c7787a64371",
 				"position": {
-					"x": "3399.0",
-					"y": "1360.0"
+					"x": "3460.0",
+					"y": "1361.0"
 				},
 				"flowTasks": {},
 				"delayMultiplier": 1.0000000000000002,
@@ -789,7 +728,7 @@
 			},
 			"variables": {
 				"Condition": "GameObject",
-				"ItemValues": ["Runecrafting altar"],
+				"ItemValues": ["Altar"],
 				"ItemRegex": true,
 				"ActionValues": ["Craft-rune"],
 				"ActionRegex": true
@@ -797,71 +736,71 @@
 		}, {
 			"name": "VarbitCondition",
 			"base": {
-				"id": "f9ebfdf3-c816-4d4b-ae37-8c75b22978f1",
+				"id": "fb31ba6d-1c57-4606-9ac5-21b367363dba",
 				"position": {
 					"x": "2388.0",
 					"y": "1775.0"
 				},
 				"flowTasks": {
-					"success": "d969fe7a-65cc-43b9-8da8-d19b8245924c",
-					"failure": "e9bf42f5-30bb-4fd8-b11a-482b126bfd72"
+					"success": "3b414329-1eee-4f4f-8322-d2e3815ee1e9",
+					"failure": "c7407c4f-4beb-4e61-8937-44606319a426"
 				},
 				"delayMultiplier": 1.0
 			},
 			"variables": {
-				"Value": "Varbit 0",
+				"Value": "2",
 				"Varbits": ["large pouch"],
-				"Condition": "More then (\u003e)"
+				"Condition": "Less then(\u003c)"
 			}
 		}, {
 			"name": "VarbitCondition",
 			"base": {
-				"id": "e9bf42f5-30bb-4fd8-b11a-482b126bfd72",
+				"id": "3b414329-1eee-4f4f-8322-d2e3815ee1e9",
 				"position": {
 					"x": "2382.0",
 					"y": "2079.0"
 				},
 				"flowTasks": {
-					"success": "b78e7220-ffe7-4388-a9d9-06cf60df5ace",
-					"failure": "f539fdc0-bf1b-42ad-aa12-088bd6f5005e"
+					"success": "13668643-efad-491f-9a23-586abd052844",
+					"failure": "71879746-6d88-4842-95dc-d998dc8f1afb"
 				},
 				"delayMultiplier": 1.0
 			},
 			"variables": {
-				"Value": "Varbit 0",
+				"Value": "2",
 				"Varbits": ["medium pouch"],
-				"Condition": "More then (\u003e)"
+				"Condition": "Less then(\u003c)"
 			}
 		}, {
 			"name": "VarbitCondition",
 			"base": {
-				"id": "f539fdc0-bf1b-42ad-aa12-088bd6f5005e",
+				"id": "13668643-efad-491f-9a23-586abd052844",
 				"position": {
 					"x": "2380.0",
 					"y": "2371.0"
 				},
 				"flowTasks": {
-					"success": "9b54d9cd-15e1-4987-9adb-15fbd5dc9a81",
-					"failure": "775f97d5-d778-4c3b-9c0e-7a47268a4153"
+					"success": "3c59b7fd-b5a9-455e-ad49-1b91773e8b6c",
+					"failure": "f9fc158a-35c3-4c53-a7e7-c0b10e76bf48"
 				},
 				"delayMultiplier": 1.0
 			},
 			"variables": {
-				"Value": "Varbit 0",
+				"Value": "2",
 				"Varbits": ["small pouch"],
-				"Condition": "Equals (\u003d)"
+				"Condition": "Less then(\u003c)"
 			}
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "9b54d9cd-15e1-4987-9adb-15fbd5dc9a81",
+				"id": "3c59b7fd-b5a9-455e-ad49-1b91773e8b6c",
 				"position": {
 					"x": "2862.0",
 					"y": "2727.0"
 				},
 				"flowTasks": {
-					"success": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
-					"failure": "c47a9fee-a86a-45f2-b2e7-3b27ab021b24"
+					"success": "f30e07d8-b6da-4a2d-9d06-2c7787a64371",
+					"failure": "796c1cfe-6333-4b9c-ba93-b3864351f02b"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -879,13 +818,13 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "b7b08feb-9739-41c6-874f-1c67f7c8c4e2",
+				"id": "6c6ad484-470e-4b51-8fb2-7b3e17d5baf1",
 				"position": {
-					"x": "2890.0",
-					"y": "1461.0"
+					"x": "2952.0",
+					"y": "1416.0"
 				},
 				"flowTasks": {},
-				"delayMultiplier": 0.5495495495495496,
+				"delayMultiplier": 0.6396396396396398,
 				"queryData": {
 					"bool0": false,
 					"bool1": false,
@@ -902,40 +841,15 @@
 				"ActionRegex": true
 			}
 		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "d969fe7a-65cc-43b9-8da8-d19b8245924c",
-				"position": {
-					"x": "2874.0",
-					"y": "1782.0"
-				},
-				"flowTasks": {
-					"success": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
-					"failure": "1bf0ae67-5082-4108-bf60-164e37a2939c"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["empty slots 1"],
-				"ItemRegex": false,
-				"Condition": "Has # empty slots"
-			}
-		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "1bf0ae67-5082-4108-bf60-164e37a2939c",
+				"id": "c7407c4f-4beb-4e61-8937-44606319a426",
 				"position": {
-					"x": "3351.0",
-					"y": "1765.0"
+					"x": "3014.0",
+					"y": "1729.0"
 				},
 				"flowTasks": {},
-				"delayMultiplier": 0.9999999999999998,
+				"delayMultiplier": 0.009009009009008778,
 				"queryData": {
 					"bool0": false,
 					"bool1": false,
@@ -954,14 +868,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "bf39337e-3b75-48bf-b57e-d92ee2575bc9",
+				"id": "dec42b1a-4c46-44df-973c-67b5d5630cba",
 				"position": {
-					"x": "1987.0",
-					"y": "1490.0"
+					"x": "1881.0",
+					"y": "1469.0"
 				},
 				"flowTasks": {
-					"success": "2802ea26-3f3e-4ab9-bc9f-3ba3390c46e2",
-					"failure": "ad4f6be0-aef0-44d0-ac27-96f4a566128e"
+					"success": "f30e07d8-b6da-4a2d-9d06-2c7787a64371",
+					"failure": "77c5d926-0a5b-46fc-bd33-b89062bc93f4"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -979,13 +893,13 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "b78e7220-ffe7-4388-a9d9-06cf60df5ace",
+				"id": "71879746-6d88-4842-95dc-d998dc8f1afb",
 				"position": {
-					"x": "2894.0",
-					"y": "2052.0"
+					"x": "2987.0",
+					"y": "2036.0"
 				},
 				"flowTasks": {},
-				"delayMultiplier": 0.5495495495495497,
+				"delayMultiplier": 0.7297297297297299,
 				"queryData": {
 					"bool0": false,
 					"bool1": false,
@@ -1004,13 +918,13 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "775f97d5-d778-4c3b-9c0e-7a47268a4153",
+				"id": "f9fc158a-35c3-4c53-a7e7-c0b10e76bf48",
 				"position": {
-					"x": "2905.0",
-					"y": "2367.0"
+					"x": "2959.0",
+					"y": "2357.0"
 				},
 				"flowTasks": {},
-				"delayMultiplier": 0.4144144144144145,
+				"delayMultiplier": 0.7747747747747749,
 				"queryData": {
 					"bool0": false,
 					"bool1": false,
@@ -1029,7 +943,7 @@
 		}, {
 			"name": "SpecialInteractionAction",
 			"base": {
-				"id": "531beb28-74ed-40a1-be62-1d6d78bdfa99",
+				"id": "e0b6d3c9-4e73-4a16-b0d5-4b0103c9f11c",
 				"position": {
 					"x": "3622.0",
 					"y": "2663.0"
@@ -1048,14 +962,14 @@
 		}, {
 			"name": "CalculationCondition",
 			"base": {
-				"id": "65d42da8-f54e-4f28-bee6-c732d3136490",
+				"id": "c6aac936-c2b8-424c-83e9-e873f6c11d8c",
 				"position": {
 					"x": "413.0",
 					"y": "-85.0"
 				},
 				"flowTasks": {
-					"success": "64e27c55-9cd6-45b6-b6ec-849137f0952d",
-					"failure": "70b6d1b4-a305-41f3-8ae0-13105be9459f"
+					"success": "1c752013-99c2-4139-9cf3-d5ddb9dfbc39",
+					"failure": "4a357350-039a-4894-a60e-ffb1c8cf8399"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1069,14 +983,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "dfa8a79d-0700-4257-9091-cf15ab41e67a",
+				"id": "e17c1c5d-ecdf-46b4-848a-8990aaee5898",
 				"position": {
 					"x": "1730.0",
 					"y": "388.0"
 				},
 				"flowTasks": {
-					"success": "ed4fac30-be34-46c2-b702-e09ed2cbd994",
-					"failure": "7f64615a-294f-4802-9731-2841d6a86785"
+					"success": "dc5b4ab2-9528-4da4-9189-608e9aa0b53e",
+					"failure": "df5dcd50-b977-4c53-a383-825060423e4a"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1094,14 +1008,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "43547172-f0c0-41d2-ba25-1761d8bcfc3a",
+				"id": "521161e9-45ef-4f27-8c45-618ab431f4fd",
 				"position": {
 					"x": "3499.0",
 					"y": "-1210.0"
 				},
 				"flowTasks": {
-					"success": "b069abbf-5883-42c0-804d-16a6d6692db3",
-					"failure": "e2ed54f3-c44f-4f90-8a00-b239ec783c1f"
+					"success": "25d7f998-c5d1-49e3-a6e7-43982c921447",
+					"failure": "1d1d69a5-9ee1-4a9e-8ad8-9e71bbec603d"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1119,7 +1033,7 @@
 		}, {
 			"name": "BankWithdrawAction",
 			"base": {
-				"id": "e2ed54f3-c44f-4f90-8a00-b239ec783c1f",
+				"id": "1d1d69a5-9ee1-4a9e-8ad8-9e71bbec603d",
 				"position": {
 					"x": "3508.0",
 					"y": "-1493.0"
@@ -1136,14 +1050,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "99bef2a1-1f4d-4d5f-a28e-e0d2a54158c2",
+				"id": "6dd92a6d-327c-4f14-be00-95b4db898ce1",
 				"position": {
 					"x": "3503.0",
 					"y": "-973.0"
 				},
 				"flowTasks": {
-					"success": "5dda6202-8871-495b-980b-9ef3c1ff6f12",
-					"failure": "43547172-f0c0-41d2-ba25-1761d8bcfc3a"
+					"success": "f9facefc-51a2-4248-bf2a-17f7256eafcb",
+					"failure": "521161e9-45ef-4f27-8c45-618ab431f4fd"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1161,13 +1075,13 @@
 		}, {
 			"name": "InterfaceCondition",
 			"base": {
-				"id": "5dda6202-8871-495b-980b-9ef3c1ff6f12",
+				"id": "f9facefc-51a2-4248-bf2a-17f7256eafcb",
 				"position": {
 					"x": "3996.0",
 					"y": "-919.0"
 				},
 				"flowTasks": {
-					"success": "0de552da-e993-40f2-9d72-6d4a243a68d6"
+					"success": "12892bb5-8ee7-4626-a2cf-67a6b9c098b9"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1189,7 +1103,7 @@
 		}, {
 			"name": "InterfaceAction",
 			"base": {
-				"id": "0de552da-e993-40f2-9d72-6d4a243a68d6",
+				"id": "12892bb5-8ee7-4626-a2cf-67a6b9c098b9",
 				"position": {
 					"x": "5551.0",
 					"y": "-1018.0"
@@ -1199,72 +1113,22 @@
 			},
 			"variables": {
 				"Condition": "Action",
-				"Values": ["bank interface", "Deposit inventory"],
-				"ActionValues": [],
+				"Values": ["bank interface"],
+				"ActionValues": ["Deposit inventory"],
 				"ItemRegex": false,
 				"ActionRegex": false
 			}
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "ac5be8c1-f9c4-4b8e-bbc7-b6a8d0ada18b",
-				"position": {
-					"x": "2572.0",
-					"y": "-198.0"
-				},
-				"flowTasks": {
-					"success": "3287d3b9-3e37-499c-ba3b-1606f5736178",
-					"failure": "5eca696c-7921-478e-880c-4964bcc7ef83"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["12"],
-				"ItemRegex": false,
-				"Condition": "Has # empty slots"
-			}
-		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "6b479612-d943-4fec-8648-0c3109eff8e2",
-				"position": {
-					"x": "2575.0",
-					"y": "348.0"
-				},
-				"flowTasks": {
-					"success": "3a65a66f-9c4f-472a-ae24-dfbff3498eeb",
-					"failure": "48311785-9d3c-4a3b-9da9-08761b363c09"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["6"],
-				"ItemRegex": false,
-				"Condition": "Has # empty slots"
-			}
-		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "79df2b87-1c35-470e-9675-a609bf0d6548",
+				"id": "cff2d70b-84fb-4192-b84e-558636acfa57",
 				"position": {
 					"x": "2369.0",
 					"y": "-442.0"
 				},
 				"flowTasks": {
-					"success": "b563589d-d5bf-4c91-9f6d-9b1bac533e15",
-					"failure": "6dd66e88-0da9-4b56-bd89-c4d4cd9110b0"
+					"success": "4ec8c545-9fa2-479d-8e51-773e7ca865de",
+					"failure": "e732732d-3077-4670-b903-438f8e1a8c0e"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1280,41 +1144,16 @@
 				"Condition": "Is Full"
 			}
 		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "5eca696c-7921-478e-880c-4964bcc7ef83",
-				"position": {
-					"x": "2588.0",
-					"y": "53.0"
-				},
-				"flowTasks": {
-					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
-					"failure": "6b479612-d943-4fec-8648-0c3109eff8e2"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["empty slots 21"],
-				"ItemRegex": false,
-				"Condition": "Has # empty slots"
-			}
-		}, {
 			"name": "VarbitCondition",
 			"base": {
-				"id": "b563589d-d5bf-4c91-9f6d-9b1bac533e15",
+				"id": "4ec8c545-9fa2-479d-8e51-773e7ca865de",
 				"position": {
-					"x": "3017.0",
-					"y": "-438.0"
+					"x": "2803.0",
+					"y": "-485.0"
 				},
 				"flowTasks": {
-					"success": "149ede8c-e963-4080-bf45-069ef742098f",
-					"failure": "20fe33c4-a902-4c17-b1ea-dba6a90d2a1e"
+					"success": "47d936cb-f525-4be5-b0e4-b6f6c3c2ae34",
+					"failure": "ac85e340-50e8-4256-8c9e-94a6672bf99c"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1326,39 +1165,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "4b57e0f2-655a-435c-a71d-6f969182a0c9",
-				"position": {
-					"x": "3422.0",
-					"y": "530.0"
-				},
-				"flowTasks": {
-					"success": "70b6d1b4-a305-41f3-8ae0-13105be9459f",
-					"failure": "930e7960-fc1d-41e8-a779-320bb4389c51"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["true"],
-				"ItemRegex": false,
-				"Condition": "Is Full"
-			}
-		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "6dd66e88-0da9-4b56-bd89-c4d4cd9110b0",
+				"id": "e732732d-3077-4670-b903-438f8e1a8c0e",
 				"position": {
 					"x": "2382.0",
 					"y": "-771.0"
 				},
 				"flowTasks": {
-					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
-					"failure": "2c75f0e6-bf8c-43e6-9190-60c8d27ddfb7"
+					"success": "4ec8c545-9fa2-479d-8e51-773e7ca865de",
+					"failure": "c5a6e3ff-6b05-43eb-93a0-48023d1c3842"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1371,19 +1185,19 @@
 			"variables": {
 				"ItemValues": ["Pure essence sprite"],
 				"ItemRegex": false,
-				"Condition": "Contains none of:"
+				"Condition": "Contains any of:"
 			}
 		}, {
 			"name": "VarbitCondition",
 			"base": {
-				"id": "48311785-9d3c-4a3b-9da9-08761b363c09",
+				"id": "fd07a03a-b71f-4da7-812a-5c5e85b37e83",
 				"position": {
-					"x": "3425.0",
-					"y": "216.0"
+					"x": "2732.0",
+					"y": "413.0"
 				},
 				"flowTasks": {
-					"success": "8cbfd8b6-729f-4cc6-826c-3490ea27b19f",
-					"failure": "4b57e0f2-655a-435c-a71d-6f969182a0c9"
+					"success": "435fa7f3-45e4-4efd-9ada-e3c373fe0483",
+					"failure": "1046ed0f-aa5a-4578-8a6d-e00747a46b7f"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1395,26 +1209,26 @@
 		}, {
 			"name": "VarbitCondition",
 			"base": {
-				"id": "9cf78df4-b709-4ca8-a54d-3c9c691b8e77",
+				"id": "77c5d926-0a5b-46fc-bd33-b89062bc93f4",
 				"position": {
-					"x": "2399.0",
-					"y": "1400.0"
+					"x": "2383.0",
+					"y": "1413.0"
 				},
 				"flowTasks": {
-					"success": "b7b08feb-9739-41c6-874f-1c67f7c8c4e2",
-					"failure": "f9ebfdf3-c816-4d4b-ae37-8c75b22978f1"
+					"success": "7061f75d-8b31-45b1-89fd-65c9d50de1a7",
+					"failure": "6c6ad484-470e-4b51-8fb2-7b3e17d5baf1"
 				},
 				"delayMultiplier": 1.0
 			},
 			"variables": {
-				"Value": "Varbit 0",
+				"Value": "2",
 				"Varbits": ["giant pouch"],
-				"Condition": "More then (\u003e)"
+				"Condition": "Less then(\u003c)"
 			}
 		}, {
 			"name": "CheckpointEndTask",
 			"base": {
-				"id": "7f64615a-294f-4802-9731-2841d6a86785",
+				"id": "df5dcd50-b977-4c53-a383-825060423e4a",
 				"position": {
 					"x": "2130.0",
 					"y": "587.0"
@@ -1429,13 +1243,13 @@
 		}, {
 			"name": "CheckpointStart",
 			"base": {
-				"id": "8a223e80-f627-4320-8b02-82475bf5097a",
+				"id": "4ec81be1-2b97-47e3-821a-2ce05d57764a",
 				"position": {
 					"x": "3925.0",
 					"y": "951.0"
 				},
 				"flowTasks": {
-					"success": "1302a237-5138-4af9-b158-cb2d47a8b8bb"
+					"success": "257d9852-e857-47ee-b873-9679e90969d1"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1445,14 +1259,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "1302a237-5138-4af9-b158-cb2d47a8b8bb",
+				"id": "257d9852-e857-47ee-b873-9679e90969d1",
 				"position": {
 					"x": "4194.0",
 					"y": "1138.0"
 				},
 				"flowTasks": {
-					"success": "fedeac53-dfe6-4d46-8ceb-5a1cb99909c4",
-					"failure": "2c1181bf-4805-4a85-a51c-6ac5189819a1"
+					"success": "1f3df38d-bc23-4cfc-ac79-ec4ec56c7f80",
+					"failure": "02b03001-7c3e-4aa2-90a9-a6109df034fb"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1471,7 +1285,7 @@
 		}, {
 			"name": "CheckpointEndTask",
 			"base": {
-				"id": "fedeac53-dfe6-4d46-8ceb-5a1cb99909c4",
+				"id": "1f3df38d-bc23-4cfc-ac79-ec4ec56c7f80",
 				"position": {
 					"x": "4348.0",
 					"y": "924.0"
@@ -1486,14 +1300,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "2c1181bf-4805-4a85-a51c-6ac5189819a1",
+				"id": "02b03001-7c3e-4aa2-90a9-a6109df034fb",
 				"position": {
 					"x": "4034.0",
 					"y": "1409.0"
 				},
 				"flowTasks": {
-					"success": "49995937-6998-4274-aa9b-08c7cb04e809",
-					"failure": "b89669d5-a3a1-445e-8fd1-b11d0db467d2"
+					"success": "965e2e6d-3b00-464c-8413-dd0b05e88944",
+					"failure": "118e5a50-c094-4b03-9d3e-d2c743976327"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1511,14 +1325,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "49995937-6998-4274-aa9b-08c7cb04e809",
+				"id": "965e2e6d-3b00-464c-8413-dd0b05e88944",
 				"position": {
 					"x": "4176.0",
 					"y": "1686.0"
 				},
 				"flowTasks": {
-					"success": "6e9b5d62-6dd7-4b6f-9b77-30e70c752b2f",
-					"failure": "41d244db-e525-4b5d-871b-f442aa49a887"
+					"success": "868891e7-678a-4c91-a75f-957b564db85f",
+					"failure": "7e3bbfbf-e258-4680-8633-c1ae497c2baf"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1536,7 +1350,7 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "1c54335d-1ec8-4129-a70b-dfe0e58a5a87",
+				"id": "354d3bdc-383a-4244-8f93-adb482df0eac",
 				"position": {
 					"x": "5132.0",
 					"y": "1507.0"
@@ -1561,14 +1375,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "41d244db-e525-4b5d-871b-f442aa49a887",
+				"id": "7e3bbfbf-e258-4680-8633-c1ae497c2baf",
 				"position": {
 					"x": "4122.0",
 					"y": "1940.0"
 				},
 				"flowTasks": {
-					"success": "bfa322d3-0e4c-4aee-806e-b88ace45f638",
-					"failure": "e1d7624b-e417-499b-9ddd-9bd673306f7f"
+					"success": "234d2f15-38a7-45bb-b2b9-5d5f831ec77e",
+					"failure": "9b7c257e-66a2-4e0c-99aa-c4fc9ed60c46"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1586,7 +1400,7 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "3c2cfb9f-71ef-40af-aa84-5b73c4c930d2",
+				"id": "c2d99c43-a82a-4e50-8556-a7ef52692bd7",
 				"position": {
 					"x": "5413.0",
 					"y": "1866.0"
@@ -1611,14 +1425,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "bfa322d3-0e4c-4aee-806e-b88ace45f638",
+				"id": "234d2f15-38a7-45bb-b2b9-5d5f831ec77e",
 				"position": {
 					"x": "4199.0",
 					"y": "2243.0"
 				},
 				"flowTasks": {
-					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
-					"failure": "98ce2419-4d27-44c7-bcea-fee6f9725caa"
+					"success": "c5a6e3ff-6b05-43eb-93a0-48023d1c3842",
+					"failure": "4ba944c3-a13f-4922-b453-b77ac3d32264"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1636,7 +1450,7 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "3b5c551d-2550-4899-affd-e1ea27241492",
+				"id": "6d403bb3-a266-431a-8935-8ced2af0c372",
 				"position": {
 					"x": "4756.0",
 					"y": "2225.0"
@@ -1661,14 +1475,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "98ce2419-4d27-44c7-bcea-fee6f9725caa",
+				"id": "4ba944c3-a13f-4922-b453-b77ac3d32264",
 				"position": {
 					"x": "4202.0",
 					"y": "2528.0"
 				},
 				"flowTasks": {
-					"success": "70b6d1b4-a305-41f3-8ae0-13105be9459f",
-					"failure": "3b5c551d-2550-4899-affd-e1ea27241492"
+					"success": "4a357350-039a-4894-a60e-ffb1c8cf8399",
+					"failure": "6d403bb3-a266-431a-8935-8ced2af0c372"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1686,14 +1500,14 @@
 		}, {
 			"name": "BankCondition",
 			"base": {
-				"id": "6e9b5d62-6dd7-4b6f-9b77-30e70c752b2f",
+				"id": "868891e7-678a-4c91-a75f-957b564db85f",
 				"position": {
 					"x": "4711.0",
 					"y": "1613.0"
 				},
 				"flowTasks": {
-					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
-					"failure": "1c54335d-1ec8-4129-a70b-dfe0e58a5a87"
+					"success": "27d2e09d-0219-472e-800a-5666cf06fa1c",
+					"failure": "354d3bdc-383a-4244-8f93-adb482df0eac"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1705,14 +1519,14 @@
 		}, {
 			"name": "VarbitCondition",
 			"base": {
-				"id": "e1d7624b-e417-499b-9ddd-9bd673306f7f",
+				"id": "9b7c257e-66a2-4e0c-99aa-c4fc9ed60c46",
 				"position": {
 					"x": "4627.0",
 					"y": "1901.0"
 				},
 				"flowTasks": {
-					"success": "5067204b-6117-476a-9792-360c20d35cd5",
-					"failure": "b1ccdbe8-e190-4c32-b00f-9e956fb6c63e"
+					"success": "0b9f6591-5f3a-4771-8c2e-c13ce1ce577b",
+					"failure": "cd83c0b9-1ad9-4578-9212-3237d50c0346"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1724,14 +1538,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "b89669d5-a3a1-445e-8fd1-b11d0db467d2",
+				"id": "118e5a50-c094-4b03-9d3e-d2c743976327",
 				"position": {
 					"x": "4522.0",
 					"y": "1343.0"
 				},
 				"flowTasks": {
-					"success": "930e7960-fc1d-41e8-a779-320bb4389c51",
-					"failure": "49995937-6998-4274-aa9b-08c7cb04e809"
+					"success": "c5a6e3ff-6b05-43eb-93a0-48023d1c3842",
+					"failure": "965e2e6d-3b00-464c-8413-dd0b05e88944"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1747,41 +1561,16 @@
 				"Condition": "Contains none of:"
 			}
 		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "ad4f6be0-aef0-44d0-ac27-96f4a566128e",
-				"position": {
-					"x": "1953.0",
-					"y": "1713.0"
-				},
-				"flowTasks": {
-					"success": "9cf78df4-b709-4ca8-a54d-3c9c691b8e77",
-					"failure": "f9ebfdf3-c816-4d4b-ae37-8c75b22978f1"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["Giant pouch"],
-				"ItemRegex": false,
-				"Condition": "Contains any of:"
-			}
-		}, {
 			"name": "BankCondition",
 			"base": {
-				"id": "5067204b-6117-476a-9792-360c20d35cd5",
+				"id": "0b9f6591-5f3a-4771-8c2e-c13ce1ce577b",
 				"position": {
 					"x": "4991.0",
 					"y": "1922.0"
 				},
 				"flowTasks": {
-					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
-					"failure": "3c2cfb9f-71ef-40af-aa84-5b73c4c930d2"
+					"success": "27d2e09d-0219-472e-800a-5666cf06fa1c",
+					"failure": "c2d99c43-a82a-4e50-8556-a7ef52692bd7"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1793,14 +1582,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "eb279b21-7236-4610-9ed5-bd0dc46da674",
+				"id": "e6d188f8-efe5-436c-b795-eca7e76437b7",
 				"position": {
 					"x": "133.0",
 					"y": "-393.0"
 				},
 				"flowTasks": {
-					"success": "f7fbd369-77cf-4ad8-ac87-fd20c1cb77dd",
-					"failure": "8b4cea22-74d8-4092-827f-e50c693fdf61"
+					"success": "ef71601f-bcc6-4ee9-98c0-c6c3b1caf8b0",
+					"failure": "2f6fa12e-f76e-4549-bb1e-b335a51cab83"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1818,7 +1607,7 @@
 		}, {
 			"name": "BankWithdrawAction",
 			"base": {
-				"id": "8b4cea22-74d8-4092-827f-e50c693fdf61",
+				"id": "2f6fa12e-f76e-4549-bb1e-b335a51cab83",
 				"position": {
 					"x": "728.0",
 					"y": "-380.0"
@@ -1835,31 +1624,34 @@
 		}, {
 			"name": "TimerCondition",
 			"base": {
-				"id": "58e3b6f1-5d47-4b73-bd52-a999a7608bc3",
+				"id": "8580e86c-3641-43ac-a5cb-7673ce32074e",
 				"position": {
-					"x": "711.0",
-					"y": "-603.0"
+					"x": "924.0",
+					"y": "-824.0"
 				},
 				"flowTasks": {
-					"success": "eb279b21-7236-4610-9ed5-bd0dc46da674"
+					"success": "e6d188f8-efe5-436c-b795-eca7e76437b7",
+					"failure": "e6d188f8-efe5-436c-b795-eca7e76437b7"
 				},
 				"delayMultiplier": 1.0
 			},
 			"variables": {
 				"Comparator": "empty slots 1",
-				"Condition": "Every X seconds"
+				"Condition": "Every X seconds",
+				"IntervalLow": 0.0,
+				"IntervalHigh": 1.3092967867851262
 			}
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "b1ccdbe8-e190-4c32-b00f-9e956fb6c63e",
+				"id": "cd83c0b9-1ad9-4578-9212-3237d50c0346",
 				"position": {
 					"x": "3695.0",
 					"y": "2283.0"
 				},
 				"flowTasks": {
-					"success": "1c54335d-1ec8-4129-a70b-dfe0e58a5a87",
-					"failure": "bfa322d3-0e4c-4aee-806e-b88ace45f638"
+					"success": "354d3bdc-383a-4244-8f93-adb482df0eac",
+					"failure": "234d2f15-38a7-45bb-b2b9-5d5f831ec77e"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1877,14 +1669,14 @@
 		}, {
 			"name": "StatusCondition",
 			"base": {
-				"id": "64e27c55-9cd6-45b6-b6ec-849137f0952d",
+				"id": "1c752013-99c2-4139-9cf3-d5ddb9dfbc39",
 				"position": {
 					"x": "52.0",
 					"y": "304.0"
 				},
 				"flowTasks": {
-					"success": "e19abb3c-bf36-41e2-9612-924018066343",
-					"failure": "dfa8a79d-0700-4257-9091-cf15ab41e67a"
+					"success": "88f4e379-214d-4d58-bac7-eef368b7e357",
+					"failure": "e17c1c5d-ecdf-46b4-848a-8990aaee5898"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1896,7 +1688,7 @@
 		}, {
 			"name": "BankWithdrawAction",
 			"base": {
-				"id": "4edffeea-89e7-4a14-bd96-44141fc83aea",
+				"id": "957d44a6-56c1-4cdf-91ee-fd48d97da1ce",
 				"position": {
 					"x": "1358.0",
 					"y": "-72.0"
@@ -1913,14 +1705,14 @@
 		}, {
 			"name": "BankCondition",
 			"base": {
-				"id": "6260fca7-1dda-4ff3-8e21-e5187f16b244",
+				"id": "f95422be-b59e-4fbd-9ab3-3c2d4807bc29",
 				"position": {
 					"x": "943.0",
 					"y": "-15.0"
 				},
 				"flowTasks": {
-					"success": "4edffeea-89e7-4a14-bd96-44141fc83aea",
-					"failure": "d6e05d88-4692-4e08-bbd5-840357ab911e"
+					"success": "957d44a6-56c1-4cdf-91ee-fd48d97da1ce",
+					"failure": "f6acb11e-c68d-4922-9de2-16b51fd0be12"
 				},
 				"delayMultiplier": 1.0
 			},
@@ -1932,7 +1724,7 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "d6e05d88-4692-4e08-bbd5-840357ab911e",
+				"id": "f6acb11e-c68d-4922-9de2-16b51fd0be12",
 				"position": {
 					"x": "1359.0",
 					"y": "243.0"
@@ -1955,14 +1747,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "e19abb3c-bf36-41e2-9612-924018066343",
+				"id": "88f4e379-214d-4d58-bac7-eef368b7e357",
 				"position": {
 					"x": "490.0",
 					"y": "354.0"
 				},
 				"flowTasks": {
-					"success": "28c19843-0e8f-4aab-a661-2e7e402b7842",
-					"failure": "6260fca7-1dda-4ff3-8e21-e5187f16b244"
+					"success": "c0b85645-c1e6-4b29-b3a2-a9370a868bb5",
+					"failure": "f95422be-b59e-4fbd-9ab3-3c2d4807bc29"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -1980,7 +1772,7 @@
 		}, {
 			"name": "InteractionAction",
 			"base": {
-				"id": "28c19843-0e8f-4aab-a661-2e7e402b7842",
+				"id": "c0b85645-c1e6-4b29-b3a2-a9370a868bb5",
 				"position": {
 					"x": "985.0",
 					"y": "291.0"
@@ -2005,13 +1797,13 @@
 		}, {
 			"name": "InterfaceCondition",
 			"base": {
-				"id": "8c1dbe6f-b26a-4476-928e-f8f4f7295d48",
+				"id": "5e7e874d-f358-4b0e-9517-e6ce0494f808",
 				"position": {
 					"x": "4247.0",
 					"y": "-1541.0"
 				},
 				"flowTasks": {
-					"success": "525419aa-4788-44e0-a9c4-ca02941ec1d9"
+					"success": "c83f1d83-847e-4f87-8583-7d68b63662e1"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -2034,39 +1826,14 @@
 		}, {
 			"name": "InventoryCondition",
 			"base": {
-				"id": "2c75f0e6-bf8c-43e6-9190-60c8d27ddfb7",
-				"position": {
-					"x": "2760.0",
-					"y": "-669.0"
-				},
-				"flowTasks": {
-					"success": "b563589d-d5bf-4c91-9f6d-9b1bac533e15",
-					"failure": "ac5be8c1-f9c4-4b8e-bbc7-b6a8d0ada18b"
-				},
-				"delayMultiplier": 1.0,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["9"],
-				"ItemRegex": false,
-				"Condition": "Has # empty slots"
-			}
-		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "b069abbf-5883-42c0-804d-16a6d6692db3",
+				"id": "25d7f998-c5d1-49e3-a6e7-43982c921447",
 				"position": {
 					"x": "3895.0",
 					"y": "-1212.0"
 				},
 				"flowTasks": {
-					"success": "dde24495-c3a4-408a-8063-d16b6c826e8b",
-					"failure": "8c1dbe6f-b26a-4476-928e-f8f4f7295d48"
+					"success": "3d68db0d-1ffa-491c-80b0-2005ab182a22",
+					"failure": "5e7e874d-f358-4b0e-9517-e6ce0494f808"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -2084,7 +1851,7 @@
 		}, {
 			"name": "BankDepositAction",
 			"base": {
-				"id": "dde24495-c3a4-408a-8063-d16b6c826e8b",
+				"id": "3d68db0d-1ffa-491c-80b0-2005ab182a22",
 				"position": {
 					"x": "3911.0",
 					"y": "-1525.0"
@@ -2099,16 +1866,52 @@
 				"ConditionRegex": true
 			}
 		}, {
-			"name": "InventoryCondition",
+			"name": "PlayerCondition",
 			"base": {
-				"id": "04071959-a710-4b7b-9bdc-789eb0c2ffd4",
+				"id": "796c1cfe-6333-4b9c-ba93-b3864351f02b",
 				"position": {
-					"x": "3421.0",
-					"y": "-52.0"
+					"x": "3247.0",
+					"y": "2827.0"
 				},
 				"flowTasks": {
-					"success": "9516a371-f527-4e9f-80c9-66dd8be25953",
-					"failure": "4b57e0f2-655a-435c-a71d-6f969182a0c9"
+					"failure": "e0b6d3c9-4e73-4a16-b0d5-4b0103c9f11c"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "ac85e340-50e8-4256-8c9e-94a6672bf99c",
+				"position": {
+					"x": "2777.0",
+					"y": "-174.0"
+				},
+				"flowTasks": {
+					"success": "53b0cd25-e44b-4810-8f37-19ecb7c3e350",
+					"failure": "dee2a35d-bd7a-49cf-a6eb-1c77b2ebb952"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["large pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "dee2a35d-bd7a-49cf-a6eb-1c77b2ebb952",
+				"position": {
+					"x": "2774.0",
+					"y": "175.0"
+				},
+				"flowTasks": {
+					"success": "fd07a03a-b71f-4da7-812a-5c5e85b37e83",
+					"failure": "56e02a1e-8941-48e2-a805-5ce8a7f35ef3"
 				},
 				"delayMultiplier": 1.0,
 				"queryData": {
@@ -2124,38 +1927,142 @@
 				"Condition": "Is Full"
 			}
 		}, {
-			"name": "PlayerCondition",
+			"name": "InventoryCondition",
 			"base": {
-				"id": "c47a9fee-a86a-45f2-b2e7-3b27ab021b24",
+				"id": "56e02a1e-8941-48e2-a805-5ce8a7f35ef3",
 				"position": {
-					"x": "3247.0",
-					"y": "2827.0"
+					"x": "3221.0",
+					"y": "172.0"
 				},
 				"flowTasks": {
-					"failure": "531beb28-74ed-40a1-be62-1d6d78bdfa99"
+					"success": "27cb62ca-fad4-4f31-a4f8-4dbc4eb2c121",
+					"failure": "c5a6e3ff-6b05-43eb-93a0-48023d1c3842"
 				},
-				"delayMultiplier": 1.0
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
 			},
 			"variables": {
-				"Value": "true",
-				"Condition": "Is animating:"
+				"ItemValues": ["6"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
 			}
 		}, {
-			"name": "PlayerCondition",
+			"name": "VarbitCondition",
 			"base": {
-				"id": "1fbdffa9-3d02-4fd9-b65f-5ac079b3fa8e",
+				"id": "27cb62ca-fad4-4f31-a4f8-4dbc4eb2c121",
 				"position": {
-					"x": "2745.0",
-					"y": "-929.0"
+					"x": "2812.0",
+					"y": "716.0"
 				},
 				"flowTasks": {
-					"failure": "ee47cb0e-74af-40f7-a049-377f1e88cace"
+					"success": "b5a3f11f-18c0-4ec7-8de6-5620ab0ddfc9",
+					"failure": "1046ed0f-aa5a-4578-8a6d-e00747a46b7f"
 				},
 				"delayMultiplier": 1.0
 			},
 			"variables": {
-				"Value": "true",
-				"Condition": "Is moving:"
+				"Value": "Varbit 0",
+				"Varbits": ["small pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "b5a3f11f-18c0-4ec7-8de6-5620ab0ddfc9",
+				"position": {
+					"x": "3482.0",
+					"y": "747.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Small pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "1046ed0f-aa5a-4578-8a6d-e00747a46b7f",
+				"position": {
+					"x": "3142.0",
+					"y": "1043.0"
+				},
+				"flowTasks": {
+					"success": "4a357350-039a-4894-a60e-ffb1c8cf8399",
+					"failure": "c5a6e3ff-6b05-43eb-93a0-48023d1c3842"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "435fa7f3-45e4-4efd-9ada-e3c373fe0483",
+				"position": {
+					"x": "3335.0",
+					"y": "479.0"
+				},
+				"flowTasks": {
+					"success": "27d2e09d-0219-472e-800a-5666cf06fa1c",
+					"failure": "79aadda5-86ae-499d-926e-064fb68d0c85"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "7061f75d-8b31-45b1-89fd-65c9d50de1a7",
+				"position": {
+					"x": "1884.0",
+					"y": "1776.0"
+				},
+				"flowTasks": {
+					"success": "f30e07d8-b6da-4a2d-9d06-2c7787a64371",
+					"failure": "fb31ba6d-1c57-4606-9ac5-21b367363dba"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Pure essence sprite"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}
 	],

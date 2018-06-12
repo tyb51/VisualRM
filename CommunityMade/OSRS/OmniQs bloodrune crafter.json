@@ -1,1 +1,1086 @@
-{"Variables":[{"name":"27985","value":"27985","type":"NUMBER"},{"name":"Agility 68","value":"68","type":"NUMBER"},{"name":"Agility 72","value":"72","type":"NUMBER"},{"name":"area blood altar","value":"(1719, 3827, 0)","type":"COORDINATE"},{"name":"Area dark altar","value":"(1719, 3881, 0)","type":"COORDINATE"},{"name":"area dense runestone","value":"(1763, 3850, 0)","type":"COORDINATE"},{"name":"Area rocks north","value":"(1761, 3864, 0)","type":"COORDINATE"},{"name":"Area rocks north side","value":"(1761, 3886, 0)","type":"COORDINATE"},{"name":"Bind blood altar","value":"Bind","type":"ACTION"},{"name":"Blood altar","value":"Blood Altar","type":"GO"},{"name":"Checkpoint run to altar","value":"","type":"CHECKPOINT"},{"name":"Checkpointruntorunestone","value":"","type":"CHECKPOINT"},{"name":"checkpointvenerate1","value":"","type":"CHECKPOINT"},{"name":"Chip","value":"Chip","type":"ACTION"},{"name":"Chisel","value":"Chisel","type":"SPRITE_ITEM"},{"name":"Chkpinventoryfull","value":"","type":"CHECKPOINT"},{"name":"Climb","value":"Climb","type":"ACTION"},{"name":"Climb rocks","value":"Climb","type":"ACTION"},{"name":"Continue","value":"Continue","type":"STRING"},{"name":"Coordinaat rocks north 1","value":"(1761, 3872, 0)","type":"COORDINATE"},{"name":"Coordinaat rocks north 2","value":"(1761, 3873, 0)","type":"COORDINATE"},{"name":"Coordinaat rocks west","value":"(1743, 3854, 0)","type":"COORDINATE"},{"name":"Coordinate blood altar","value":"(1715, 3828, 0)","type":"COORDINATE"},{"name":"Coordinate dark altar","value":"(1726, 3880, 0)","type":"COORDINATE"},{"name":"Dark Altar","value":"Dark Altar","type":"GO"},{"name":"Dark essence block","value":"Dark essence block","type":"SPRITE_ITEM"},{"name":"Dark essence fragments","value":"Dark essence fragments","type":"SPRITE_ITEM"},{"name":"Dense essence block","value":"Dense essence block","type":"SPRITE_ITEM"},{"name":"Dense runestone","value":"Dense runestone","type":"GO"},{"name":"distance \u003d 10","value":"10","type":"NUMBER"},{"name":"distance \u003d 15","value":"15","type":"NUMBER"},{"name":"distance 2","value":"2","type":"NUMBER"},{"name":"distance 25","value":"25","type":"NUMBER"},{"name":"Distance 4","value":"4","type":"NUMBER"},{"name":"Distance 5","value":"5","type":"NUMBER"},{"name":"distance 8","value":"8","type":"NUMBER"},{"name":"Distance 9","value":"9","type":"NUMBER"},{"name":"distance dark altar - rocks","value":"44","type":"NUMBER"},{"name":"ID rocks north 1","value":"27985","type":"NUMBER"},{"name":"Puntje north rocks","value":"(1761, 3874, 0)","type":"COORDINATE"},{"name":"Radius dark altar","value":"(1728, 3902, 0)","type":"COORDINATE"},{"name":"Rocks","value":"Rocks","type":"GO"},{"name":"Rocks north","value":"Rocks","type":"GO"},{"name":"rocks north north","value":"27984","type":"NUMBER"},{"name":"Todarkaltar","value":"(1754, 3860, 0)","type":"COORDINATE"},{"name":"true","value":"true","type":"BOOL"},{"name":"Venerate","value":"Venerate","type":"ACTION"},{"name":"Area rocks north 1","value":"(1754, 3861, 0)","type":"COORDINATE"}],"NodeCollection":[{"name":"StartCondition","base":{"id":"144ffd30-733f-41d8-b097-1648a8947de3","position":{"x":"0.0","y":"0.0"},"flowTasks":{"success":"72e222d5-1b04-4bba-8f23-3cb86461c804"},"delayMultiplier":1.0},"variables":{"GameMode":"OSRS","IntervalLow":466.0176170685038,"IntervalHigh":674.4503878094752}},{"name":"InventoryCondition","base":{"id":"72e222d5-1b04-4bba-8f23-3cb86461c804","position":{"x":"372.0","y":"-518.0"},"flowTasks":{"success":"f83f74c3-63c7-4570-ad60-936c395468ea","failure":"68f1ca0c-8169-4daf-8dee-3bcd4698d752"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Dark essence block","Dark essence fragments","Dense essence block"],"ItemRegex":false,"Condition":"Contains any of:"}},{"name":"TraversalAction","base":{"id":"689fd946-2d68-4be2-8f5a-9bb328cf3476","position":{"x":"1676.0","y":"-1230.0"},"flowTasks":{},"delayMultiplier":7.702702702702703},"variables":{"Condition":"To coordinate:","Coordinate":"area dense runestone","Exact":false,"Radius":""}},{"name":"CalculationCondition","base":{"id":"68f1ca0c-8169-4daf-8dee-3bcd4698d752","position":{"x":"827.0","y":"-817.0"},"flowTasks":{"success":"1819f324-f159-446d-9ae7-3985d870f9d9","failure":"58d002a9-cda5-4fcd-9fe6-51ea61fc43c1"},"delayMultiplier":1.0},"variables":{"Value":"distance \u003d 15","Comparator":"area dense runestone","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"PlayerCondition","base":{"id":"1819f324-f159-446d-9ae7-3985d870f9d9","position":{"x":"1230.0","y":"-609.0"},"flowTasks":{"failure":"571432d3-6044-4bfe-ba3a-3e1af76789ea"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is animating:"}},{"name":"InteractionAction","base":{"id":"ef879240-da4c-4981-9766-b0c5caed398a","position":{"x":"2039.0","y":"-797.0"},"flowTasks":{},"delayMultiplier":0.4954954954954955,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Dense runestone"],"ItemRegex":true,"ActionValues":["Chip"],"ActionRegex":true}},{"name":"InventoryCondition","base":{"id":"f83f74c3-63c7-4570-ad60-936c395468ea","position":{"x":"384.0","y":"-228.0"},"flowTasks":{"success":"799cb0f2-1711-459a-beb6-b7abb2df6476","failure":"e841b5dc-42ee-4421-9777-aa1ed5fd6b17"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Dense essence block"],"ItemRegex":false,"Condition":"Contains any of:"}},{"name":"InventoryCondition","base":{"id":"799cb0f2-1711-459a-beb6-b7abb2df6476","position":{"x":"781.0","y":"-256.0"},"flowTasks":{"success":"bbce9588-80bb-4a06-82f0-752e258ababf","failure":"68f1ca0c-8169-4daf-8dee-3bcd4698d752"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["true"],"ItemRegex":false,"Condition":"Is Full"}},{"name":"CalculationCondition","base":{"id":"bbce9588-80bb-4a06-82f0-752e258ababf","position":{"x":"1190.0","y":"-372.0"},"flowTasks":{"success":"6194281a-a540-4bba-8c6c-9b0dc440a385","failure":"c76ccd4d-fc11-4397-9d8b-f2f01764abd1"},"delayMultiplier":1.0},"variables":{"Value":"distance 8","Comparator":"Dark Altar","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Game Object"}},{"name":"InteractionAction","base":{"id":"6194281a-a540-4bba-8c6c-9b0dc440a385","position":{"x":"1660.0","y":"-60.0"},"flowTasks":{},"delayMultiplier":2.3063063063063063,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Dark Altar"],"ItemRegex":false,"ActionValues":["Venerate"],"ActionRegex":false}},{"name":"SpecialInteractionAction","base":{"id":"007415a6-b050-44ce-b15e-b613163819ae","position":{"x":"1667.0","y":"280.0"},"flowTasks":{},"delayMultiplier":2.2612612612612613},"variables":{"Value":"Dark essence block","ValueRegex":false,"Comparator":"Chisel","CompRegex":false,"Condition":"Use item on","Type":"Inventory item"}},{"name":"PlayerCondition","base":{"id":"55ca9e95-323f-420b-aec9-fed01e898845","position":{"x":"827.0","y":"-15.0"},"flowTasks":{"failure":"e0159c13-3d7d-4ca9-ba10-2bc3c3767839"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is animating (2s delay):"}},{"name":"InventoryCondition","base":{"id":"e841b5dc-42ee-4421-9777-aa1ed5fd6b17","position":{"x":"394.0","y":"37.0"},"flowTasks":{"success":"1d0fcd8a-2eb7-4dba-883d-83d154e8f7e0","failure":"4a921a66-d689-4373-858a-189ee956be4d"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Dark essence block"],"ItemRegex":false,"Condition":"Contains any of:"}},{"name":"InventoryCondition","base":{"id":"4341568f-e3f9-4030-98b7-be51e847e653","position":{"x":"819.0","y":"236.0"},"flowTasks":{"success":"68f1ca0c-8169-4daf-8dee-3bcd4698d752","failure":"d2aa4a0a-e510-437f-98a1-7b624566ba9b"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Dark essence block"],"ItemRegex":false,"Condition":"Contains none of:"}},{"name":"TraversalAction","base":{"id":"d2aa4a0a-e510-437f-98a1-7b624566ba9b","position":{"x":"1234.0","y":"351.0"},"flowTasks":{},"delayMultiplier":0.5405405405405406},"variables":{"Condition":"To coordinate:","Coordinate":"area blood altar","Exact":false,"Radius":""}},{"name":"InventoryCondition","base":{"id":"e0159c13-3d7d-4ca9-ba10-2bc3c3767839","position":{"x":"1219.0","y":"14.0"},"flowTasks":{"success":"d2aa4a0a-e510-437f-98a1-7b624566ba9b","failure":"007415a6-b050-44ce-b15e-b613163819ae"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Dark essence fragments"],"ItemRegex":false,"Condition":"Contains any of:"}},{"name":"CalculationCondition","base":{"id":"1d0fcd8a-2eb7-4dba-883d-83d154e8f7e0","position":{"x":"409.0","y":"316.0"},"flowTasks":{"success":"6202b4f9-0250-4948-b94a-1484aa8662e7","failure":"779c21f3-2622-4a41-8802-e2040b066ebc"},"delayMultiplier":1.0},"variables":{"Value":"distance \u003d 10","Comparator":"Blood altar","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Game Object"}},{"name":"InventoryCondition","base":{"id":"6202b4f9-0250-4948-b94a-1484aa8662e7","position":{"x":"429.0","y":"720.0"},"flowTasks":{"success":"a09bdceb-ad98-415f-b723-b71045308d28","failure":"93d4f18d-572c-430d-b608-d55145af3980"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Dark essence fragments"],"ItemRegex":false,"Condition":"Contains any of:"}},{"name":"PlayerCondition","base":{"id":"a926702c-27e8-4c76-b9ed-5799d78ed03d","position":{"x":"844.0","y":"987.0"},"flowTasks":{"failure":"20f09059-3dc5-451e-b6e5-6c058e7776b7"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is animating:"}},{"name":"InteractionAction","base":{"id":"d42c094b-969f-41fa-b60c-82fd5511d289","position":{"x":"1312.0","y":"699.0"},"flowTasks":{},"delayMultiplier":0.2792792792792793,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Blood altar"],"ItemRegex":false,"ActionValues":["Bind blood altar"],"ActionRegex":false}},{"name":"InventoryCondition","base":{"id":"93d4f18d-572c-430d-b608-d55145af3980","position":{"x":"420.0","y":"993.0"},"flowTasks":{"success":"a926702c-27e8-4c76-b9ed-5799d78ed03d","failure":"d42c094b-969f-41fa-b60c-82fd5511d289"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Dark essence block"],"ItemRegex":false,"Condition":"Contains any of:"}},{"name":"SpecialInteractionAction","base":{"id":"20f09059-3dc5-451e-b6e5-6c058e7776b7","position":{"x":"1303.0","y":"1068.0"},"flowTasks":{},"delayMultiplier":0.4144144144144145},"variables":{"Value":"Dark essence block","ValueRegex":false,"Comparator":"Chisel","CompRegex":false,"Condition":"Use item on","Type":"Inventory item"}},{"name":"PlayerCondition","base":{"id":"a09bdceb-ad98-415f-b723-b71045308d28","position":{"x":"896.0","y":"733.0"},"flowTasks":{"failure":"d42c094b-969f-41fa-b60c-82fd5511d289"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is animating (2s delay):"}},{"name":"CalculationCondition","base":{"id":"4a921a66-d689-4373-858a-189ee956be4d","position":{"x":"-36.0","y":"390.0"},"flowTasks":{"success":"6202b4f9-0250-4948-b94a-1484aa8662e7","failure":"68f1ca0c-8169-4daf-8dee-3bcd4698d752"},"delayMultiplier":1.0},"variables":{"Value":"distance \u003d 10","Comparator":"area blood altar","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"CalculationCondition","base":{"id":"0522d5cf-14a3-45d9-bc2a-05b7d5d5888a","position":{"x":"1259.0","y":"-1422.0"},"flowTasks":{"success":"72e784b6-f7dc-4bc7-a735-043e7a028964","failure":"689fd946-2d68-4be2-8f5a-9bb328cf3476"},"delayMultiplier":1.0},"variables":{"Value":"distance \u003d 15","Comparator":"Area rocks north side","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"InteractionAction","base":{"id":"87e67006-ff1f-42fa-866d-4ba893c5b7e6","position":{"x":"2045.0","y":"-1623.0"},"flowTasks":{},"delayMultiplier":0.1891891891891892,"enableQuery":true,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"list1":["Coordinaat rocks north 2"],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Rocks"],"ItemRegex":false,"ActionValues":["Climb"],"ActionRegex":false}},{"name":"PlayerCondition","base":{"id":"779c21f3-2622-4a41-8802-e2040b066ebc","position":{"x":"803.0","y":"514.0"},"flowTasks":{"success":"d2aa4a0a-e510-437f-98a1-7b624566ba9b","failure":"55ca9e95-323f-420b-aec9-fed01e898845"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is moving:"}},{"name":"SkillCondition","base":{"id":"c76ccd4d-fc11-4397-9d8b-f2f01764abd1","position":{"x":"1622.0","y":"-376.0"},"flowTasks":{"success":"c3e1c57e-a51d-469b-b6e6-275058ce9f9c","failure":"0686d207-c0de-4da8-b356-d9f1418914f3"},"delayMultiplier":1.0},"variables":{"Comparator":"Agility 68","Condition":"More than (\u003e)","Type":"Agility"}},{"name":"CalculationCondition","base":{"id":"c3e1c57e-a51d-469b-b6e6-275058ce9f9c","position":{"x":"2073.0","y":"-452.0"},"flowTasks":{"success":"0686d207-c0de-4da8-b356-d9f1418914f3","failure":"f12e9290-2a96-4beb-92d6-93c43055129f"},"delayMultiplier":1.0},"variables":{"Value":"distance dark altar - rocks","Comparator":"Radius dark altar","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"TraversalAction","base":{"id":"0686d207-c0de-4da8-b356-d9f1418914f3","position":{"x":"2109.0","y":"-59.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"Condition":"To coordinate:","Coordinate":"Area dark altar","Exact":false,"Radius":""}},{"name":"InteractionAction","base":{"id":"7164edff-55e6-49e0-bc0b-4ed159169efe","position":{"x":"2867.0","y":"-542.0"},"flowTasks":{},"delayMultiplier":1.3603603603603602,"enableQuery":true,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"list1":["Coordinaat rocks north 1"],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Rocks"],"ItemRegex":false,"ActionValues":["Climb"],"ActionRegex":false}},{"name":"CalculationCondition","base":{"id":"f12e9290-2a96-4beb-92d6-93c43055129f","position":{"x":"2481.0","y":"-451.0"},"flowTasks":{"success":"7164edff-55e6-49e0-bc0b-4ed159169efe","failure":"291d1ba1-06df-4792-b6e8-d65ce2631465"},"delayMultiplier":1.0},"variables":{"Value":"distance \u003d 15","Comparator":"Coordinaat rocks north 1","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"TraversalAction","base":{"id":"291d1ba1-06df-4792-b6e8-d65ce2631465","position":{"x":"2885.0","y":"-192.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"Condition":"To coordinate:","Coordinate":"Coordinaat rocks north 1","Exact":false,"Radius":""}},{"name":"SkillCondition","base":{"id":"58d002a9-cda5-4fcd-9fe6-51ea61fc43c1","position":{"x":"828.0","y":"-1142.0"},"flowTasks":{"success":"e323cb8b-e331-453f-9ff5-f593fc16488b","failure":"82e7db49-b6be-48a3-b391-95569d437562"},"delayMultiplier":1.0},"variables":{"Comparator":"Agility 72","Condition":"More than (\u003e)","Type":"Agility"}},{"name":"CalculationCondition","base":{"id":"e323cb8b-e331-453f-9ff5-f593fc16488b","position":{"x":"808.0","y":"-1579.0"},"flowTasks":{"success":"ee9e2c06-610a-40b6-8e53-9436bd045635","failure":"0522d5cf-14a3-45d9-bc2a-05b7d5d5888a"},"delayMultiplier":1.0},"variables":{"Value":"distance 8","Comparator":"Coordinaat rocks west","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"InteractionAction","base":{"id":"42dae136-9d52-459a-bbef-0ac138d4a0d6","position":{"x":"1251.0","y":"-1789.0"},"flowTasks":{},"delayMultiplier":2.3063063063063063,"enableQuery":true,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"list1":["Coordinaat rocks west"],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Rocks"],"ItemRegex":false,"ActionValues":["Climb"],"ActionRegex":false}},{"name":"SkillCondition","base":{"id":"82e7db49-b6be-48a3-b391-95569d437562","position":{"x":"1233.0","y":"-993.0"},"flowTasks":{"success":"0522d5cf-14a3-45d9-bc2a-05b7d5d5888a","failure":"0686d207-c0de-4da8-b356-d9f1418914f3"},"delayMultiplier":1.0},"variables":{"Comparator":"Agility 68","Condition":"More than (\u003e)","Type":"Agility"}},{"name":"PlayerCondition","base":{"id":"ee9e2c06-610a-40b6-8e53-9436bd045635","position":{"x":"809.0","y":"-1822.0"},"flowTasks":{"failure":"42dae136-9d52-459a-bbef-0ac138d4a0d6"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is animating:"}},{"name":"PlayerCondition","base":{"id":"571432d3-6044-4bfe-ba3a-3e1af76789ea","position":{"x":"1620.0","y":"-648.0"},"flowTasks":{"failure":"ef879240-da4c-4981-9766-b0c5caed398a"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is moving:"}},{"name":"PlayerCondition","base":{"id":"72e784b6-f7dc-4bc7-a735-043e7a028964","position":{"x":"1648.0","y":"-1478.0"},"flowTasks":{"failure":"87e67006-ff1f-42fa-866d-4ba893c5b7e6"},"delayMultiplier":1.0},"variables":{"Value":"true","Condition":"Is animating:"}}],"BotCategory":"OTHER","inventoryData":{}}
+{
+	"Variables": [{
+			"name": "27985",
+			"value": "27985",
+			"type": "NUMBER"
+		}, {
+			"name": "Agility 68",
+			"value": "68",
+			"type": "NUMBER"
+		}, {
+			"name": "Agility 72",
+			"value": "72",
+			"type": "NUMBER"
+		}, {
+			"name": "area blood altar",
+			"value": "(1719, 3827, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Area dark altar",
+			"value": "(1719, 3881, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "area dense runestone",
+			"value": "(1763, 3850, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Area rocks north",
+			"value": "(1761, 3864, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Area rocks north side",
+			"value": "(1753, 3885, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Bind blood altar",
+			"value": "Bind",
+			"type": "ACTION"
+		}, {
+			"name": "Blood altar",
+			"value": "Blood Altar",
+			"type": "GO"
+		}, {
+			"name": "Checkpoint run to altar",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Checkpointruntorunestone",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "checkpointvenerate1",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Chip",
+			"value": "Chip",
+			"type": "ACTION"
+		}, {
+			"name": "Chisel",
+			"value": "Chisel",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Chkpinventoryfull",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Climb",
+			"value": "Climb",
+			"type": "ACTION"
+		}, {
+			"name": "Climb rocks",
+			"value": "Climb",
+			"type": "ACTION"
+		}, {
+			"name": "Continue",
+			"value": "Continue",
+			"type": "STRING"
+		}, {
+			"name": "Coordinaat rocks north 1",
+			"value": "(1761, 3872, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Coordinaat rocks north 2",
+			"value": "(1761, 3873, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Coordinaat rocks west",
+			"value": "(1743, 3854, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Coordinate blood altar",
+			"value": "(1715, 3828, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Coordinate dark altar",
+			"value": "(1726, 3880, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Dark Altar",
+			"value": "Dark Altar",
+			"type": "GO"
+		}, {
+			"name": "Dark essence block",
+			"value": "Dark essence block",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Dark essence fragments",
+			"value": "Dark essence fragments",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Dense essence block",
+			"value": "Dense essence block",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Dense runestone",
+			"value": "Dense runestone",
+			"type": "GO"
+		}, {
+			"name": "distance \u003d 10",
+			"value": "10",
+			"type": "NUMBER"
+		}, {
+			"name": "distance \u003d 15",
+			"value": "15",
+			"type": "NUMBER"
+		}, {
+			"name": "distance 2",
+			"value": "2",
+			"type": "NUMBER"
+		}, {
+			"name": "distance 25",
+			"value": "25",
+			"type": "NUMBER"
+		}, {
+			"name": "Distance 4",
+			"value": "4",
+			"type": "NUMBER"
+		}, {
+			"name": "Distance 5",
+			"value": "5",
+			"type": "NUMBER"
+		}, {
+			"name": "distance 8",
+			"value": "8",
+			"type": "NUMBER"
+		}, {
+			"name": "Distance 9",
+			"value": "9",
+			"type": "NUMBER"
+		}, {
+			"name": "distance dark altar - rocks",
+			"value": "44",
+			"type": "NUMBER"
+		}, {
+			"name": "ID rocks north 1",
+			"value": "27985",
+			"type": "NUMBER"
+		}, {
+			"name": "Puntje north rocks",
+			"value": "(1761, 3874, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Radius dark altar",
+			"value": "(1728, 3902, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Rocks",
+			"value": "Rocks",
+			"type": "GO"
+		}, {
+			"name": "Rocks north",
+			"value": "Rocks",
+			"type": "GO"
+		}, {
+			"name": "rocks north north",
+			"value": "27984",
+			"type": "NUMBER"
+		}, {
+			"name": "Todarkaltar",
+			"value": "(1757, 3867, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "true",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Venerate",
+			"value": "Venerate",
+			"type": "ACTION"
+		}, {
+			"name": "Area rocks north 1",
+			"value": "(1754, 3861, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Area rocks west",
+			"value": "(1737, 3851, 0)",
+			"type": "COORDINATE"
+		}
+	],
+	"NodeCollection": [{
+			"name": "StartCondition",
+			"base": {
+				"id": "0227fd8d-a022-412a-9395-df54ecd9a06c",
+				"position": {
+					"x": "0.0",
+					"y": "0.0"
+				},
+				"flowTasks": {
+					"success": "54623fc0-13c9-4d96-88e1-b441b2730764"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"GameMode": "OSRS",
+				"IntervalLow": 466.0176170685038,
+				"IntervalHigh": 674.4503878094752
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "54623fc0-13c9-4d96-88e1-b441b2730764",
+				"position": {
+					"x": "372.0",
+					"y": "-518.0"
+				},
+				"flowTasks": {
+					"success": "a7aa094f-d879-46b5-87eb-9ecc5104244c",
+					"failure": "09c53877-c371-4aca-82ed-8cb75cde6447"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Dark essence block", "Dark essence fragments", "Dense essence block"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "a2e7ccfd-56cf-466d-a9cb-a778656b8802",
+				"position": {
+					"x": "1771.0",
+					"y": "-1167.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 7.702702702702703
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "area dense runestone",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "09c53877-c371-4aca-82ed-8cb75cde6447",
+				"position": {
+					"x": "827.0",
+					"y": "-817.0"
+				},
+				"flowTasks": {
+					"success": "25435a44-6703-4080-952a-95f5fd659a40",
+					"failure": "d3a3a370-38ef-4875-a442-1ddf0d42fcf6"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance \u003d 15",
+				"Comparators": ["area dense runestone"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "25435a44-6703-4080-952a-95f5fd659a40",
+				"position": {
+					"x": "1230.0",
+					"y": "-609.0"
+				},
+				"flowTasks": {
+					"failure": "5ff981b8-0fcf-48a5-a4ba-e7dd42b7b004"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "50cf8a0a-ff11-4a3d-a5a1-300f0c4040d9",
+				"position": {
+					"x": "2039.0",
+					"y": "-797.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.4954954954954955,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list3": ["Chip"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Dense runestone"],
+				"ItemRegex": true,
+				"ActionValues": ["Chip"],
+				"ActionRegex": true
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "a7aa094f-d879-46b5-87eb-9ecc5104244c",
+				"position": {
+					"x": "384.0",
+					"y": "-228.0"
+				},
+				"flowTasks": {
+					"success": "e02b6833-6530-4409-804b-a26cf20fa02e",
+					"failure": "6ce2800e-7bd6-4a48-b09a-c611eca5223b"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Dense essence block"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "e02b6833-6530-4409-804b-a26cf20fa02e",
+				"position": {
+					"x": "781.0",
+					"y": "-256.0"
+				},
+				"flowTasks": {
+					"success": "4e03bbb9-9fd5-4013-bda3-d39e894d8b3c",
+					"failure": "09c53877-c371-4aca-82ed-8cb75cde6447"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "4e03bbb9-9fd5-4013-bda3-d39e894d8b3c",
+				"position": {
+					"x": "1190.0",
+					"y": "-372.0"
+				},
+				"flowTasks": {
+					"success": "50071770-9d19-4d2c-b649-958a4acf3094",
+					"failure": "84a55b6c-80c7-4332-aace-8888b4c44932"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Value": "distance 8",
+				"Comparators": ["Dark Altar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Game Object"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "50071770-9d19-4d2c-b649-958a4acf3094",
+				"position": {
+					"x": "1660.0",
+					"y": "-60.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 2.3063063063063063,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list3": ["Venerate"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Dark Altar"],
+				"ItemRegex": false,
+				"ActionValues": ["Venerate"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "ef44f2ad-9e63-4bb4-83f3-c91f2fd04cfb",
+				"position": {
+					"x": "1667.0",
+					"y": "280.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 2.2612612612612613,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Values": ["Dark essence block"],
+				"ValueRegex": false,
+				"Comparators": ["Chisel"],
+				"CompRegex": false,
+				"Condition": "Use item on",
+				"Type": "Inventory item",
+				"invQuery": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "903d5848-66f5-490e-88d3-c303c29ce504",
+				"position": {
+					"x": "827.0",
+					"y": "-15.0"
+				},
+				"flowTasks": {
+					"failure": "3b1dda9f-1115-4a74-8337-bca239ca3e01"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating (2s delay):"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "6ce2800e-7bd6-4a48-b09a-c611eca5223b",
+				"position": {
+					"x": "394.0",
+					"y": "37.0"
+				},
+				"flowTasks": {
+					"success": "f69dcb8b-9669-4dea-98ee-66da58c94576",
+					"failure": "7ea9a8f2-020f-40df-94f1-cf5b97e31bbd"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Dark essence block"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "799ceba7-97bf-4099-8b31-3512143c8b23",
+				"position": {
+					"x": "819.0",
+					"y": "236.0"
+				},
+				"flowTasks": {
+					"success": "09c53877-c371-4aca-82ed-8cb75cde6447",
+					"failure": "cb525f8b-f73f-4452-b584-3e9ac13a4610"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Dark essence block"],
+				"ItemRegex": false,
+				"Condition": "Contains none of:"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "cb525f8b-f73f-4452-b584-3e9ac13a4610",
+				"position": {
+					"x": "1234.0",
+					"y": "351.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.5405405405405406
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "area blood altar",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "3b1dda9f-1115-4a74-8337-bca239ca3e01",
+				"position": {
+					"x": "1219.0",
+					"y": "14.0"
+				},
+				"flowTasks": {
+					"success": "cb525f8b-f73f-4452-b584-3e9ac13a4610",
+					"failure": "ef44f2ad-9e63-4bb4-83f3-c91f2fd04cfb"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Dark essence fragments"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "f69dcb8b-9669-4dea-98ee-66da58c94576",
+				"position": {
+					"x": "409.0",
+					"y": "316.0"
+				},
+				"flowTasks": {
+					"success": "5f7df5f2-e57a-4cef-b4c4-91b78ae2cf4e",
+					"failure": "a7a568a2-4744-446e-9a2d-25e70a79bdd7"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Value": "distance \u003d 10",
+				"Comparators": ["Blood altar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Game Object"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "5f7df5f2-e57a-4cef-b4c4-91b78ae2cf4e",
+				"position": {
+					"x": "429.0",
+					"y": "720.0"
+				},
+				"flowTasks": {
+					"success": "2bff4265-caee-40b6-ab14-c6f180b74e4e",
+					"failure": "0010c571-437b-402e-b380-52ed80a9b55b"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Dark essence fragments"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "993a9403-733e-4a94-8e0f-680e32a694ee",
+				"position": {
+					"x": "844.0",
+					"y": "987.0"
+				},
+				"flowTasks": {
+					"failure": "957160ae-7562-4af6-a992-7acbdb1a9881"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "e0e61157-cd77-4c07-a2ae-959e02dd2d88",
+				"position": {
+					"x": "1312.0",
+					"y": "699.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.2792792792792793,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list3": ["Bind"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Blood altar"],
+				"ItemRegex": false,
+				"ActionValues": ["Bind blood altar"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "0010c571-437b-402e-b380-52ed80a9b55b",
+				"position": {
+					"x": "420.0",
+					"y": "993.0"
+				},
+				"flowTasks": {
+					"success": "993a9403-733e-4a94-8e0f-680e32a694ee",
+					"failure": "e0e61157-cd77-4c07-a2ae-959e02dd2d88"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"ItemValues": ["Dark essence block"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "957160ae-7562-4af6-a992-7acbdb1a9881",
+				"position": {
+					"x": "1303.0",
+					"y": "1068.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.4144144144144145,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			},
+			"variables": {
+				"Values": ["Dark essence block"],
+				"ValueRegex": false,
+				"Comparators": ["Chisel"],
+				"CompRegex": false,
+				"Condition": "Use item on",
+				"Type": "Inventory item",
+				"invQuery": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
+				}
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "2bff4265-caee-40b6-ab14-c6f180b74e4e",
+				"position": {
+					"x": "896.0",
+					"y": "733.0"
+				},
+				"flowTasks": {
+					"failure": "e0e61157-cd77-4c07-a2ae-959e02dd2d88"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating (2s delay):"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "7ea9a8f2-020f-40df-94f1-cf5b97e31bbd",
+				"position": {
+					"x": "-36.0",
+					"y": "390.0"
+				},
+				"flowTasks": {
+					"success": "5f7df5f2-e57a-4cef-b4c4-91b78ae2cf4e",
+					"failure": "09c53877-c371-4aca-82ed-8cb75cde6447"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance \u003d 10",
+				"Comparators": ["area blood altar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "c4701409-9c74-43df-b13c-938ebb740ac1",
+				"position": {
+					"x": "1259.0",
+					"y": "-1422.0"
+				},
+				"flowTasks": {
+					"success": "2ada9a92-fe1d-48ac-ad5c-2aeae46039e0",
+					"failure": "a2e7ccfd-56cf-466d-a9cb-a778656b8802"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance \u003d 15",
+				"Comparators": ["Area rocks north side"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "2ada9a92-fe1d-48ac-ad5c-2aeae46039e0",
+				"position": {
+					"x": "1767.0",
+					"y": "-1526.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.1891891891891892,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list1": ["Coordinaat rocks north 2"],
+					"list3": ["Climb"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Rocks"],
+				"ItemRegex": false,
+				"ActionValues": ["Climb"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "a7a568a2-4744-446e-9a2d-25e70a79bdd7",
+				"position": {
+					"x": "803.0",
+					"y": "514.0"
+				},
+				"flowTasks": {
+					"success": "cb525f8b-f73f-4452-b584-3e9ac13a4610",
+					"failure": "903d5848-66f5-490e-88d3-c303c29ce504"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is moving:"
+			}
+		}, {
+			"name": "SkillCondition",
+			"base": {
+				"id": "84a55b6c-80c7-4332-aace-8888b4c44932",
+				"position": {
+					"x": "1622.0",
+					"y": "-376.0"
+				},
+				"flowTasks": {
+					"success": "d3f22737-16c4-4f56-9e13-735e4b58feb5",
+					"failure": "ad0ee24d-db78-46b2-b185-4a4c732517c3"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "Agility 68",
+				"Condition": "More than (\u003e)",
+				"Type": "Agility"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "d3f22737-16c4-4f56-9e13-735e4b58feb5",
+				"position": {
+					"x": "2073.0",
+					"y": "-452.0"
+				},
+				"flowTasks": {
+					"success": "ad0ee24d-db78-46b2-b185-4a4c732517c3",
+					"failure": "0ff24fcc-b2d0-46be-aac2-1c3d328274d3"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance dark altar - rocks",
+				"Comparators": ["Radius dark altar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "ad0ee24d-db78-46b2-b185-4a4c732517c3",
+				"position": {
+					"x": "2109.0",
+					"y": "-59.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "Area dark altar",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "7ff58c45-3afd-4108-bcfe-c8d653683285",
+				"position": {
+					"x": "2961.0",
+					"y": "-535.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.3603603603603602,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list1": ["Coordinaat rocks north 1"],
+					"list3": ["Climb"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Rocks"],
+				"ItemRegex": false,
+				"ActionValues": ["Climb"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "0ff24fcc-b2d0-46be-aac2-1c3d328274d3",
+				"position": {
+					"x": "2481.0",
+					"y": "-451.0"
+				},
+				"flowTasks": {
+					"success": "7ff58c45-3afd-4108-bcfe-c8d653683285",
+					"failure": "26b92cc2-b972-4477-a5f7-86f3e02225ac"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance \u003d 15",
+				"Comparators": ["Todarkaltar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "26b92cc2-b972-4477-a5f7-86f3e02225ac",
+				"position": {
+					"x": "2907.0",
+					"y": "-132.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "Coordinaat rocks north 1",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "SkillCondition",
+			"base": {
+				"id": "d3a3a370-38ef-4875-a442-1ddf0d42fcf6",
+				"position": {
+					"x": "828.0",
+					"y": "-1142.0"
+				},
+				"flowTasks": {
+					"success": "f46b2492-2e84-4965-abdd-332784f87ccf",
+					"failure": "f13cc3fc-e6f5-4f6c-a587-1349d530be30"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "Agility 72",
+				"Condition": "More than (\u003e)",
+				"Type": "Agility"
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "f46b2492-2e84-4965-abdd-332784f87ccf",
+				"position": {
+					"x": "808.0",
+					"y": "-1579.0"
+				},
+				"flowTasks": {
+					"success": "b6fac6ca-7f96-407b-b5b8-c0b35e3e3877",
+					"failure": "c4701409-9c74-43df-b13c-938ebb740ac1"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance 8",
+				"Comparators": ["Area rocks west"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "629fdc45-212f-46b5-9885-478027565ab3",
+				"position": {
+					"x": "1251.0",
+					"y": "-1789.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 2.3063063063063063,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list1": ["Coordinaat rocks west"],
+					"list3": ["Climb"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
+				}
+			},
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Rocks"],
+				"ItemRegex": false,
+				"ActionValues": ["Climb"],
+				"ActionRegex": false
+			}
+		}, {
+			"name": "SkillCondition",
+			"base": {
+				"id": "f13cc3fc-e6f5-4f6c-a587-1349d530be30",
+				"position": {
+					"x": "1233.0",
+					"y": "-993.0"
+				},
+				"flowTasks": {
+					"success": "c4701409-9c74-43df-b13c-938ebb740ac1",
+					"failure": "ad0ee24d-db78-46b2-b185-4a4c732517c3"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "Agility 68",
+				"Condition": "More than (\u003e)",
+				"Type": "Agility"
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "b6fac6ca-7f96-407b-b5b8-c0b35e3e3877",
+				"position": {
+					"x": "809.0",
+					"y": "-1822.0"
+				},
+				"flowTasks": {
+					"failure": "629fdc45-212f-46b5-9885-478027565ab3"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "5ff981b8-0fcf-48a5-a4ba-e7dd42b7b004",
+				"position": {
+					"x": "1620.0",
+					"y": "-648.0"
+				},
+				"flowTasks": {
+					"failure": "50cf8a0a-ff11-4a3d-a5a1-300f0c4040d9"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is moving:"
+			}
+		}
+	],
+	"BotCategory": "OTHER",
+	"inventoryData": {}
+}

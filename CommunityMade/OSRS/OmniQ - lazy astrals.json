@@ -1,2223 +1,2206 @@
 {
-	Variables[{
-			nameStart coordinate,
-			value(2099, 3919, 0),
-			typeCOORDINATE
-		}, {
-			nameSmall pouch,
-			valueSmall pouch,
-			typeSPRITE_ITEM
-		}, {
-			nameMedium pouch,
-			valueMedium pouch,
-			typeSPRITE_ITEM
-		}, {
-			nameLarge pouch,
-			valueLarge pouch,
-			typeSPRITE_ITEM
-		}, {
-			nameGiant pouch,
-			valueGiant pouch,
-			typeSPRITE_ITEM
-		}, {
-			nameu0027Birdu0027s - Eyeu0027 Jack,
-			valueu0027Birdu0027s - Eyeu0027 Jack,
-			typeNPC
-		}, {
-			nameBank,
-			valueBank,
-			typeACTION
-		}, {
-			nameWithdraw - All,
-			valueWithdraw - All,
-			typeACTION
-		}, {
-			nametrue,
-			valuetrue,
-			typeBOOL
-		}, {
-			nameGiant pouch degraded,
-			value5515,
-			typeNUMBER
-		}, {
-			nameCheckLargPouch,
-			value,
-			typeCHECKPOINT
-		}, {
-			nameCheckDegradedPouch,
-			value,
-			typeCHECKPOINT
-		}, {
-			namePure essence sprite,
-			valuePure essence,
-			typeSPRITE_ITEM
-		}, {
-			namePure essence text,
-			valuePure essence,
-			typeSTRING
-		}, {
-			namebank interface,
-			value12,
-			typeINTERFACE_OBJECT
-		}, {
-			namePure essence bank id,
-			value0,
-			typeNUMBER
-		}, {
-			nameempty slots 21,
-			value21,
-			typeNUMBER
-		}, {
-			nameFill,
-			valueFill,
-			typeACTION
-		}, {
-			nameClose,
-			valueClose,
-			typeACTION
-		}, {
-			nameempty slots 1,
-			value1,
-			typeNUMBER
-		}, {
-			nameWithdraw - 21,
-			valueWithdraw - 21,
-			typeACTION
-		}, {
-			nameCheckwalktoaltar,
-			value,
-			typeCHECKPOINT
-		}, {
-			nameempty slots 13,
-			value13,
-			typeNUMBER
-		}, {
-			namesmall pouch,
-			value603,
-			typeVARBIT
-		}, {
-			namemedium pouch,
-			value604,
-			typeVARBIT
-		}, {
-			namelarge pouch,
-			value605,
-			typeVARBIT
+	"Variables": [{
+			"name": "Start coordinate",
+			"value": "(2099, 3919, 0)",
+			"type": "COORDINATE"
+		}, {
+			"name": "Small pouch",
+			"value": "Small pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Medium pouch",
+			"value": "Medium pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Large pouch",
+			"value": "Large pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Giant pouch",
+			"value": "Giant pouch",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "\u0027Bird\u0027s-Eye\u0027 Jack",
+			"value": "\u0027Bird\u0027s-Eye\u0027 Jack",
+			"type": "NPC"
+		}, {
+			"name": "Bank",
+			"value": "Bank",
+			"type": "ACTION"
+		}, {
+			"name": "Withdraw-All",
+			"value": "Withdraw-All",
+			"type": "ACTION"
+		}, {
+			"name": "true",
+			"value": "true",
+			"type": "BOOL"
+		}, {
+			"name": "Giant pouch degraded",
+			"value": "5515",
+			"type": "NUMBER"
+		}, {
+			"name": "CheckLargPouch",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "CheckDegradedPouch",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "Pure essence sprite",
+			"value": "Pure essence",
+			"type": "SPRITE_ITEM"
+		}, {
+			"name": "Pure essence text",
+			"value": "Pure essence",
+			"type": "STRING"
+		}, {
+			"name": "bank interface",
+			"value": "12",
+			"type": "INTERFACE_OBJECT"
+		}, {
+			"name": "Pure essence bank id",
+			"value": "0",
+			"type": "NUMBER"
+		}, {
+			"name": "empty slots 21",
+			"value": "21",
+			"type": "NUMBER"
+		}, {
+			"name": "Fill",
+			"value": "Fill",
+			"type": "ACTION"
+		}, {
+			"name": "Close",
+			"value": "Close",
+			"type": "ACTION"
+		}, {
+			"name": "empty slots 1",
+			"value": "1",
+			"type": "NUMBER"
+		}, {
+			"name": "Withdraw-21",
+			"value": "Withdraw-21",
+			"type": "ACTION"
+		}, {
+			"name": "Checkwalktoaltar",
+			"value": "",
+			"type": "CHECKPOINT"
+		}, {
+			"name": "empty slots 13",
+			"value": "13",
+			"type": "NUMBER"
+		}, {
+			"name": "small pouch",
+			"value": "603",
+			"type": "VARBIT"
+		}, {
+			"name": "medium pouch",
+			"value": "604",
+			"type": "VARBIT"
+		}, {
+			"name": "large pouch",
+			"value": "605",
+			"type": "VARBIT"
 		}, {
-			namegiant pouch,
-			value606,
-			typeVARBIT
+			"name": "giant pouch",
+			"value": "606",
+			"type": "VARBIT"
 		}, {
-			nameVarbit 0,
-			value0,
-			typeNUMBER
+			"name": "Varbit 0",
+			"value": "0",
+			"type": "NUMBER"
 		}, {
-			namedistance 8,
-			value8,
-			typeNUMBER
+			"name": "distance 8",
+			"value": "8",
+			"type": "NUMBER"
 		}, {
-			nameCheckgotobank,
-			value,
-			typeCHECKPOINT
+			"name": "Checkgotobank",
+			"value": "",
+			"type": "CHECKPOINT"
 		}, {
-			nameCoordinate altar,
-			value(2154, 3864, 0),
-			typeCOORDINATE
+			"name": "Coordinate altar",
+			"value": "(2154, 3864, 0)",
+			"type": "COORDINATE"
 		}, {
-			nameNpc contact interface,
-			value75,
-			typeINTERFACE_OBJECT
+			"name": "Npc contact interface",
+			"value": "75",
+			"type": "INTERFACE_OBJECT"
 		}, {
-			nameDark Mage,
-			valueDark Mage,
-			typeACTION
+			"name": "Dark Mage",
+			"value": "Dark Mage",
+			"type": "ACTION"
 		}, {
-			nameContinue,
-			valueContinue,
-			typeSTRING
+			"name": "Continue",
+			"value": "Continue",
+			"type": "STRING"
 		}, {
-			nameAltar,
-			valueAltar,
-			typeGO
+			"name": "Altar",
+			"value": "Altar",
+			"type": "GO"
 		}, {
-			nameCraft - rune,
-			valueCraft - rune,
-			typeACTION
+			"name": "Craft-rune",
+			"value": "Craft-rune",
+			"type": "ACTION"
 		}, {
-			name12,
-			value12,
-			typeNUMBER
+			"name": "12",
+			"value": "12",
+			"type": "NUMBER"
 		}, {
-			name9,
-			value9,
-			typeNUMBER
+			"name": "9",
+			"value": "9",
+			"type": "NUMBER"
 		}, {
-			nameEmpty,
-			valueEmpty,
-			typeACTION
+			"name": "Empty",
+			"value": "Empty",
+			"type": "ACTION"
 		}, {
-			namedistance 4,
-			value4,
-			typeNUMBER
+			"name": "distance 4",
+			"value": "4",
+			"type": "NUMBER"
 		}, {
-			nameCoordinate gate,
-			value(2109, 3915, 0),
-			typeCOORDINATE
+			"name": "Coordinate gate",
+			"value": "(2109, 3915, 0)",
+			"type": "COORDINATE"
 		}, {
-			nameStamina potion,
-			valueStamina potion,
-			typeSPRITE_ITEM
+			"name": "Stamina potion",
+			"value": "Stamina potion",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameVial,
-			valueVial,
-			typeSPRITE_ITEM
+			"name": "Vial",
+			"value": "Vial",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameDrop,
-			valueDrop,
-			typeACTION
+			"name": "Drop",
+			"value": "Drop",
+			"type": "ACTION"
 		}, {
-			nameEniola,
-			valueEniola,
-			typeNPC
+			"name": "Eniola",
+			"value": "Eniola",
+			"type": "NPC"
 		}, {
-			nameRunecrafting altar,
-			valueRunecrafting altar,
-			typeGO
+			"name": "Runecrafting altar",
+			"value": "Runecrafting altar",
+			"type": "GO"
 		}, {
-			nameMind rune,
-			valueMind rune,
-			typeSPRITE_ITEM
+			"name": "Mind rune",
+			"value": "Mind rune",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameNature rune,
-			valueNature rune,
-			typeSPRITE_ITEM
+			"name": "Nature rune",
+			"value": "Nature rune",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameAir rune,
-			valueAir rune,
-			typeSPRITE_ITEM
+			"name": "Air rune",
+			"value": "Air rune",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameChaos rune,
-			valueChaos rune,
-			typeSPRITE_ITEM
+			"name": "Chaos rune",
+			"value": "Chaos rune",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameWater rune,
-			valueWater rune,
-			typeSPRITE_ITEM
+			"name": "Water rune",
+			"value": "Water rune",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameDeposit inventory,
-			valueDeposit inventory,
-			typeACTION
+			"name": "Deposit inventory",
+			"value": "Deposit inventory",
+			"type": "ACTION"
 		}, {
-			name6,
-			value6,
-			typeNUMBER
+			"name": "6",
+			"value": "6",
+			"type": "NUMBER"
 		}, {
-			name3,
-			value3,
-			typeNUMBER
+			"name": "3",
+			"value": "3",
+			"type": "NUMBER"
 		}, {
-			nameLarge pouch degraded ID,
-			value5513,
-			typeNUMBER
+			"name": "Large pouch degraded ID",
+			"value": "5513",
+			"type": "NUMBER"
 		}, {
-			name15,
-			value15,
-			typeNUMBER
+			"name": "15",
+			"value": "15",
+			"type": "NUMBER"
 		}, {
-			name18,
-			value18,
-			typeNUMBER
+			"name": "18",
+			"value": "18",
+			"type": "NUMBER"
 		}, {
-			nameCosmic rune,
-			valueCosmic rune,
-			typeSPRITE_ITEM
+			"name": "Cosmic rune",
+			"value": "Cosmic rune",
+			"type": "SPRITE_ITEM"
 		}, {
-			name16,
-			value16,
-			typeNUMBER
+			"name": "16",
+			"value": "16",
+			"type": "NUMBER"
 		}, {
-			name50,
-			value50,
-			typeNUMBER
+			"name": "50",
+			"value": "50",
+			"type": "NUMBER"
 		}, {
-			nameShark,
-			valueShark,
-			typeSPRITE_ITEM
+			"name": "Shark",
+			"value": "Shark",
+			"type": "SPRITE_ITEM"
 		}, {
-			nameEat,
-			valueEat,
-			typeACTION
+			"name": "Eat",
+			"value": "Eat",
+			"type": "ACTION"
 		}, {
-			name7936,
-			value7936,
-			typeNUMBER
+			"name": "7936",
+			"value": "7936",
+			"type": "NUMBER"
 		}, {
-			nameBank booth,
-			valueBank booth,
-			typeGO
+			"name": "Bank booth",
+			"value": "Bank booth",
+			"type": "GO"
 		}, {
-			nameCoordinate bank booth,
-			value(2099, 3920, 0),
-			typeCOORDINATE
+			"name": "Coordinate bank booth",
+			"value": "(2099, 3920, 0)",
+			"type": "COORDINATE"
 		}, {
-			name8,
-			value8,
-			typeNUMBER
+			"name": "8",
+			"value": "8",
+			"type": "NUMBER"
 		}, {
-			name22,
-			value22,
-			typeNUMBER
+			"name": "22",
+			"value": "22",
+			"type": "NUMBER"
+		}, {
+			"name": "Coordinate outside bank",
+			"value": "(2100, 3916, 0)",
+			"type": "COORDINATE"
 		}
 	],
-	NodeCollection[{
-			nameStartCondition,
-			base {
-				idce04d9a6 - 8bda - 48b7 - 8553 - 5e66dd171cb1,
-				position {
-					x0.0,
-					y0.0
+	"NodeCollection": [{
+			"name": "StartCondition",
+			"base": {
+				"id": "48363654-a902-438d-907d-7c2e1b8bf744",
+				"position": {
+					"x": "0.0",
+					"y": "0.0"
 				},
-				flowTasks {
-					success0fbd052e - 8063 - 4dba - ace9 - e0a5e9bb4e27
+				"flowTasks": {
+					"success": "c8d64fc3-1c92-4c72-bd7a-99f8fdc2ff76"
 				},
-				delayMultiplier1.0
+				"delayMultiplier": 1.0
 			},
-			variables {
-				GameModeOSRS,
-				IntervalLow108.46905749568194,
-				IntervalHigh215.6548391386367
+			"variables": {
+				"GameMode": "OSRS",
+				"IntervalLow": 108.46905749568194,
+				"IntervalHigh": 215.6548391386367
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				idceb5863b - 1592 - 44d5 - b443 - 2571d9cbd5c4,
-				position {
-					x2137.0,
-					y166.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "aa54540b-2416-4437-88a5-49a4deb2a97c",
+				"position": {
+					"x": "2137.0",
+					"y": "166.0"
 				},
-				flowTasks {
-					success5020fac6 - 9760 - 46cb - 866a - 772931f789c9,
-					failure0719e997 - c6f2 - 44b8 - ba0d - 6fc558e4ab9d
+				"flowTasks": {
+					"success": "24e86e69-fe52-4c41-8df3-4620ad5fe9a8",
+					"failure": "c9bbdd94-ed30-4dfa-86f7-960fcbc46844"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list0[Giant pouch degraded],
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": ["Giant pouch degraded"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Giant pouch],
-				ItemRegexfalse,
-				ConditionContains any of
+			"variables": {
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameCheckpointEndTask,
-			base {
-				id5020fac6 - 9760 - 46cb - 866a - 772931f789c9,
-				position {
-					x2108.0,
-					y - 69.0
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "24e86e69-fe52-4c41-8df3-4620ad5fe9a8",
+				"position": {
+					"x": "2108.0",
+					"y": "-69.0"
 				},
-				flowTasks {},
-				delayMultiplier1.0
+				"flowTasks": {},
+				"delayMultiplier": 1.0
 			},
-			variables {
-				Checkpoint nameCheckDegradedPouch,
-				ItemRegexfalse
+			"variables": {
+				"Checkpoint name": "CheckDegradedPouch",
+				"ItemRegex": false
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				idd735355a - e1c1 - 4721 - b014 - a8270671b576,
-				position {
-					x4073.0,
-					y - 481.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "0570cb60-f342-4be9-98c0-6d77d51ac048",
+				"position": {
+					"x": "4073.0",
+					"y": "-481.0"
 				},
-				flowTasks {},
-				delayMultiplier0.3153153153153153,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Fill],
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.3153153153153153,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Giant pouch],
-				ItemRegextrue,
-				ActionValues[Fill],
-				ActionRegextrue
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
 			}
 		}, {
-			nameInterfaceAction,
-			base {
-				iddfeb7cda - dc5c - 446d - 8944 - 4fcbef50d252,
-				position {
-					x5544.0,
-					y - 1513.0
+			"name": "InterfaceAction",
+			"base": {
+				"id": "4f90a712-6e6d-44ce-9aa6-8bbf7514a07a",
+				"position": {
+					"x": "5544.0",
+					"y": "-1513.0"
 				},
-				flowTasks {},
-				delayMultiplier0.5045045045045045
+				"flowTasks": {},
+				"delayMultiplier": 0.5045045045045045
 			},
-			variables {
-				ConditionAction,
-				Values[bank interface, Withdraw - All],
-				ActionValues[],
-				ItemRegexfalse,
-				ActionRegexfalse
+			"variables": {
+				"Condition": "Action",
+				"Values": ["bank interface"],
+				"ActionValues": ["Withdraw-All"],
+				"ItemRegex": false,
+				"ActionRegex": false
 			}
 		}, {
-			nameBankCondition,
-			base {
-				ideb2e286c - 9f00 - 4a9e - 9b57 - 23e24d14e48f,
-				position {
-					x3507.0,
-					y - 693.0
+			"name": "BankCondition",
+			"base": {
+				"id": "56231e46-5053-4085-a1ba-69b531af34ac",
+				"position": {
+					"x": "3507.0",
+					"y": "-693.0"
 				},
-				flowTasks {
-					successa1ef83e8 - b1ac - 4f45 - 8217 - 1a441ff7625e,
-					failure60757bf6 - 29d8 - 4cfa - a58e - d4f479397c2d
+				"flowTasks": {
+					"success": "303f5946-c8f3-4acd-b55e-5b09e15aa024",
+					"failure": "c484be07-5998-4bcd-81f5-a250588aca48"
 				},
-				delayMultiplier1.0
+				"delayMultiplier": 1.0
 			},
-			variables {
-				ItemValues[],
-				ItemRegexfalse,
-				ConditionIs open
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id6a1632c9 - c221 - 46c0 - 9be3 - eacdf9c1a1c1,
-				position {
-					x3154.0,
-					y - 947.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "e12fec21-bfab-46f1-b7ee-de016dc98bba",
+				"position": {
+					"x": "3154.0",
+					"y": "-947.0"
 				},
-				flowTasks {},
-				delayMultiplier1.18018018018018,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					bool3false,
-					list1[Coordinate bank booth],
-					list3[Bank],
-					TypeList[],
-					within,
-					typeGOQuery
+				"flowTasks": {},
+				"delayMultiplier": 1.18018018018018,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list1": ["Coordinate bank booth"],
+					"list3": ["Bank"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
 				}
 			},
-			variables {
-				ConditionGameObject,
-				ItemValues[Bank booth],
-				ItemRegextrue,
-				ActionValues[Bank],
-				ActionRegextrue
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Bank booth"],
+				"ItemRegex": true,
+				"ActionValues": ["Bank"],
+				"ActionRegex": true
 			}
 		}, {
-			nameBankCondition,
-			base {
-				id9bbaefd5 - 2579 - 4456 - be50 - 22f6e370e7be,
-				position {
-					x3505.0,
-					y - 412.0
+			"name": "BankCondition",
+			"base": {
+				"id": "5b22a072-1a93-454f-8fe0-1a9e5457bd4f",
+				"position": {
+					"x": "3254.0",
+					"y": "-444.0"
 				},
-				flowTasks {
-					successaa55e31f - 1bf4 - 48fb - 965e-665d26bfbc8b,
-					failured735355a - e1c1 - 4721 - b014 - a8270671b576
+				"flowTasks": {
+					"success": "ac0b69bb-3d1f-4cdd-b227-3b67dba6964d",
+					"failure": "0570cb60-f342-4be9-98c0-6d77d51ac048"
 				},
-				delayMultiplier1.0
+				"delayMultiplier": 1.0
 			},
-			variables {
-				ItemValues[],
-				ItemRegexfalse,
-				ConditionIs open
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
 			}
 		}, {
-			nameInterfaceAction,
-			base {
-				id6af667a2 - f84e - 4ad3 - add3 - 2e9fb9dfcbe2,
-				position {
-					x5548.0,
-					y - 569.0
+			"name": "InterfaceAction",
+			"base": {
+				"id": "37d580cb-5b97-4695-b55f-ba7d29972910",
+				"position": {
+					"x": "5548.0",
+					"y": "-569.0"
 				},
-				flowTasks {},
-				delayMultiplier0.13513513513513514
+				"flowTasks": {},
+				"delayMultiplier": 0.13513513513513514
 			},
-			variables {
-				ConditionAction,
-				Values[bank interface, Close],
-				ActionValues[],
-				ItemRegexfalse,
-				ActionRegexfalse
+			"variables": {
+				"Condition": "Action",
+				"Values": ["bank interface"],
+				"ActionValues": ["Close"],
+				"ItemRegex": false,
+				"ActionRegex": false
 			}
 		}, {
-			nameInterfaceCondition,
-			base {
-				idaa55e31f - 1bf4 - 48fb - 965e-665d26bfbc8b,
-				position {
-					x4358.0,
-					y - 21.0
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "ac0b69bb-3d1f-4cdd-b227-3b67dba6964d",
+				"position": {
+					"x": "4358.0",
+					"y": "-21.0"
 				},
-				flowTasks {
-					success6af667a2 - f84e - 4ad3 - add3 - 2e9fb9dfcbe2
+				"flowTasks": {
+					"success": "37d580cb-5b97-4695-b55f-ba7d29972910"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					TypeList[],
-					typeICQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"TypeList": [],
+					"type": "ICQuery"
 				}
 			},
-			variables {
-				TextValues[],
-				TextRegexfalse,
-				ActionValues[Close],
-				ActionRegexfalse,
-				InterfaceObjectbank interface,
-				Cache containerfalse
+			"variables": {
+				"TextValues": [],
+				"TextRegex": false,
+				"ActionValues": ["Close"],
+				"ActionRegex": false,
+				"InterfaceObject": "bank interface",
+				"Cache container": false
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				idea8e8343 - 2db9 - 4eb3 - b005 - 2141c5fcdf64,
-				position {
-					x3085.0,
-					y - 157.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "2f76824e-4eef-42d4-958b-b3bb07be660b",
+				"position": {
+					"x": "3287.0",
+					"y": "-171.0"
 				},
-				flowTasks {},
-				delayMultiplier0.49549549549549543,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Fill],
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.49549549549549543,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Large pouch],
-				ItemRegextrue,
-				ActionValues[Fill],
-				ActionRegextrue
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
 			}
 		}, {
-			nameBankCondition,
-			base {
-				idddfaddbc - 6ec1 - 40fd - a0c9 - 8485c0d77ef3,
-				position {
-					x3004.0,
-					y182.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "26c2d0b0-4611-42bc-a203-99cf7bf557f8",
+				"position": {
+					"x": "3808.0",
+					"y": "366.0"
 				},
-				flowTasks {
-					success4a0730d7 - a583 - 4e74 - 969a - 54dba4c61723,
-					failure875a362b - 2e82 - 4397 - 9350 - 2d67e8315cfe
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				ItemValues[],
-				ItemRegexfalse,
-				ConditionIs open
-			}
-		}, {
-			nameInteractionAction,
-			base {
-				idd369317a - 65f7 - 442f - acaf - 07d9452d8771,
-				position {
-					x3825.0,
-					y90.0
-				},
-				flowTasks {},
-				delayMultiplier0.27927927927927926,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Fill],
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.27927927927927926,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Medium pouch],
-				ItemRegextrue,
-				ActionValues[Fill],
-				ActionRegextrue
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Medium pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id8efef603 - 03f8 - 4057 - adbb - 9c565f588954,
-				position {
-					x3062.0,
-					y587.0
+			"name": "CalculationCondition",
+			"base": {
+				"id": "b5ab4fcc-4103-481a-9fde-eba3eb519476",
+				"position": {
+					"x": "1481.0",
+					"y": "1413.0"
 				},
-				flowTasks {},
-				delayMultiplier0.3693693693693695,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Fill],
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "6c562534-471f-4ea2-80ec-88a70b935ac1",
+					"failure": "8ad2ca10-e21d-4eab-8864-9a2104992df3"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "distance 8",
+				"Comparators": ["Coordinate altar"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "TraversalAction",
+			"base": {
+				"id": "8ad2ca10-e21d-4eab-8864-9a2104992df3",
+				"position": {
+					"x": "2427.0",
+					"y": "1011.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 0.3693693693693694
+			},
+			"variables": {
+				"Condition": "To coordinate:",
+				"Coordinate": "Coordinate altar",
+				"Exact": false,
+				"Radius": ""
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "890b2e9f-5707-4cea-84a9-d99fb0bd9dde",
+				"position": {
+					"x": "583.0",
+					"y": "-805.0"
+				},
+				"flowTasks": {
+					"success": "81896326-58f4-49ec-9415-f79585240e99"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "CheckDegradedPouch"
+			}
+		}, {
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "8e5eb07c-159b-49d9-8f28-051da3252a6d",
+				"position": {
+					"x": "2045.0",
+					"y": "-573.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Npc contact"],
+				"ValueRegex": false,
+				"Comparators": ["Lunar"],
+				"CompRegex": false,
+				"Condition": "Cast magic",
+				"Type": ""
+			}
+		}, {
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "9b44ff0b-c3a9-4c68-8ba5-da31e1705e53",
+				"position": {
+					"x": "1602.0",
+					"y": "-526.0"
+				},
+				"flowTasks": {
+					"success": "04d9d53e-c051-4ab5-802a-853dab7dc298",
+					"failure": "8e5eb07c-159b-49d9-8f28-051da3252a6d"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"TypeList": [],
+					"type": "ICQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Small pouch],
-				ItemRegextrue,
-				ActionValues[Fill],
-				ActionRegextrue
+			"variables": {
+				"TextValues": [],
+				"TextRegex": false,
+				"ActionValues": ["Dark Mage"],
+				"ActionRegex": false,
+				"InterfaceObject": "Npc contact interface",
+				"Cache container": false
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id22b9532a - 954a - 4754 - b3f0 - f55daa91911c,
-				position {
-					x2577.0,
-					y598.0
+			"name": "InterfaceAction",
+			"base": {
+				"id": "04d9d53e-c051-4ab5-802a-853dab7dc298",
+				"position": {
+					"x": "2011.0",
+					"y": "-1797.0"
 				},
-				flowTasks {
-					success8180c957 - ed0f - 43e9 - b6cd - cb6f8701cbad,
-					failure8efef603 - 03f8 - 4057 - adbb - 9c565f588954
+				"flowTasks": {},
+				"delayMultiplier": 1.045045045045045
+			},
+			"variables": {
+				"Condition": "Action",
+				"Values": ["Npc contact interface"],
+				"ActionValues": ["Dark Mage"],
+				"ItemRegex": false,
+				"ActionRegex": false
+			}
+		}, {
+			"name": "ChatDialogCondition",
+			"base": {
+				"id": "81896326-58f4-49ec-9415-f79585240e99",
+				"position": {
+					"x": "166.0",
+					"y": "-590.0"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "e721282b-3db4-4f90-a93f-460bf252ac71",
+					"failure": "231eef27-c87e-4d74-8255-14a9358dd7de"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Continue"]
+			}
+		}, {
+			"name": "ChatDialogAction",
+			"base": {
+				"id": "e721282b-3db4-4f90-a93f-460bf252ac71",
+				"position": {
+					"x": "1322.0",
+					"y": "-586.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Continue"],
+				"ItemRegex": false
+			}
+		}, {
+			"name": "PlayerCondition",
+			"base": {
+				"id": "a16bf5bd-801b-410f-a6d1-e085a59c2911",
+				"position": {
+					"x": "1132.0",
+					"y": "-384.0"
+				},
+				"flowTasks": {
+					"failure": "9b44ff0b-c3a9-4c68-8ba5-da31e1705e53"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "63020c8d-9275-43de-a95c-14fe1d1f2771",
+				"position": {
+					"x": "3399.0",
+					"y": "1360.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0000000000000002,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list3": ["Craft-rune"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
 				}
 			},
-			variables {
-				ItemValues[9],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Altar"],
+				"ItemRegex": true,
+				"ActionValues": ["Craft-rune"],
+				"ActionRegex": true
 			}
 		}, {
-			nameCalculationCondition,
-			base {
-				id52d95a8a - 43cf - 4d2a - 804e-c6e49020e9ac,
-				position {
-					x1481.0,
-					y1413.0
+			"name": "VarbitCondition",
+			"base": {
+				"id": "c5e7ad95-2598-4b84-8850-ebb9edc6f442",
+				"position": {
+					"x": "2388.0",
+					"y": "1775.0"
 				},
-				flowTasks {
-					successf190836a - a885 - 4597 - a6c2 - 4fd16900b1c4,
-					failurebd85763c - 63eb - 4585 - b21e - 872d4b795edf
+				"flowTasks": {
+					"success": "7abd5e19-68bb-4854-9555-92765c014d04",
+					"failure": "fddc33c7-1a64-40f7-83d4-46cc9e13f0f4"
 				},
-				delayMultiplier1.0
+				"delayMultiplier": 1.0
 			},
-			variables {
-				Valuedistance 8,
-				Comparators[Coordinate altar],
-				CompRegexfalse,
-				ConditionDistance to(u003c),
-				TypeCoordinate
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["large pouch"],
+				"Condition": "More then (\u003e)"
 			}
 		}, {
-			nameTraversalAction,
-			base {
-				idbd85763c - 63eb - 4585 - b21e - 872d4b795edf,
-				position {
-					x2427.0,
-					y1011.0
+			"name": "VarbitCondition",
+			"base": {
+				"id": "fddc33c7-1a64-40f7-83d4-46cc9e13f0f4",
+				"position": {
+					"x": "2382.0",
+					"y": "2079.0"
 				},
-				flowTasks {},
-				delayMultiplier0.3693693693693694
+				"flowTasks": {
+					"success": "cb39e322-e241-4cd2-a6f7-dd7adda746e1",
+					"failure": "ed4a5e66-ea42-4973-ad42-a989e087cfdb"
+				},
+				"delayMultiplier": 1.0
 			},
-			variables {
-				ConditionTo coordinate,
-				CoordinateCoordinate altar,
-				Exactfalse,
-				Radius
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["medium pouch"],
+				"Condition": "More then (\u003e)"
 			}
 		}, {
-			nameCheckpointStart,
-			base {
-				id030aa102 - 20ac - 49c4 - 8924 - f48d56125730,
-				position {
-					x583.0,
-					y - 805.0
+			"name": "VarbitCondition",
+			"base": {
+				"id": "ed4a5e66-ea42-4973-ad42-a989e087cfdb",
+				"position": {
+					"x": "2380.0",
+					"y": "2371.0"
 				},
-				flowTasks {
-					successcaab993b - 024b - 4a6e - abe9 - ff4d0dfbfc1d
+				"flowTasks": {
+					"success": "9757fe29-3ea0-480c-90e2-c130b1912bf3",
+					"failure": "fbe80bd0-d649-4dbf-84a2-fbef04613a16"
 				},
-				delayMultiplier1.0
+				"delayMultiplier": 1.0
 			},
-			variables {
-				CheckpointTask nameCheckDegradedPouch
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["small pouch"],
+				"Condition": "Equals (\u003d)"
 			}
 		}, {
-			nameSpecialInteractionAction,
-			base {
-				id79a77e8b - 5d20 - 424e-a216 - 54bfd1e4e298,
-				position {
-					x2045.0,
-					y - 573.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "9757fe29-3ea0-480c-90e2-c130b1912bf3",
+				"position": {
+					"x": "2862.0",
+					"y": "2727.0"
 				},
-				flowTasks {},
-				delayMultiplier1.0
-			},
-			variables {
-				Values[Npc contact],
-				ValueRegexfalse,
-				Comparators[Lunar],
-				CompRegexfalse,
-				ConditionCast magic,
-				Type
-			}
-		}, {
-			nameInterfaceCondition,
-			base {
-				id3e679bb5 - a7e4 - 49a0 - aeef - eda2a0334f50,
-				position {
-					x1602.0,
-					y - 526.0
+				"flowTasks": {
+					"success": "63020c8d-9275-43de-a95c-14fe1d1f2771",
+					"failure": "db246658-d6a3-4075-a6df-f1d5b5ced36e"
 				},
-				flowTasks {
-					successc29afac4 - df35 - 4c85 - 901c - bf8b30887cba,
-					failure79a77e8b - 5d20 - 424e-a216 - 54bfd1e4e298
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					TypeList[],
-					typeICQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				TextValues[],
-				TextRegexfalse,
-				ActionValues[Dark Mage],
-				ActionRegexfalse,
-				InterfaceObjectNpc contact interface,
-				Cache containerfalse
+			"variables": {
+				"ItemValues": ["Pure essence sprite"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameInterfaceAction,
-			base {
-				idc29afac4 - df35 - 4c85 - 901c - bf8b30887cba,
-				position {
-					x2011.0,
-					y - 1797.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "c3aa8baa-5ef1-4ff6-a8cd-54c1ddd76470",
+				"position": {
+					"x": "2890.0",
+					"y": "1461.0"
 				},
-				flowTasks {},
-				delayMultiplier1.045045045045045
-			},
-			variables {
-				ConditionAction,
-				Values[Npc contact interface, Dark Mage],
-				ActionValues[],
-				ItemRegexfalse,
-				ActionRegexfalse
-			}
-		}, {
-			nameChatDialogCondition,
-			base {
-				idcaab993b - 024b - 4a6e - abe9 - ff4d0dfbfc1d,
-				position {
-					x166.0,
-					y - 590.0
-				},
-				flowTasks {
-					success808cfaf4 - d981 - 434e-94b9 - 994bc38c3756,
-					failure92a7fd67 - 4026 - 40ae - a3db - 81bed0f47281
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				Values[Continue]
-			}
-		}, {
-			nameChatDialogAction,
-			base {
-				id808cfaf4 - d981 - 434e-94b9 - 994bc38c3756,
-				position {
-					x1322.0,
-					y - 586.0
-				},
-				flowTasks {},
-				delayMultiplier1.0
-			},
-			variables {
-				Values[Continue],
-				ItemRegexfalse
-			}
-		}, {
-			namePlayerCondition,
-			base {
-				id1d00d5d3 - 3e86 - 404c - 8814 - 220b867aeda1,
-				position {
-					x1132.0,
-					y - 384.0
-				},
-				flowTasks {
-					failure3e679bb5 - a7e4 - 49a0 - aeef - eda2a0334f50
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				Valuetrue,
-				ConditionIs animating
-			}
-		}, {
-			nameInteractionAction,
-			base {
-				iddbd7dd6b - cfb2 - 48f0 - b072 - 9c9ba9945169,
-				position {
-					x3399.0,
-					y1360.0
-				},
-				flowTasks {},
-				delayMultiplier1.0000000000000002,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					bool3false,
-					list3[Craft - rune],
-					TypeList[],
-					within,
-					typeGOQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.5495495495495496,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionGameObject,
-				ItemValues[Altar],
-				ItemRegextrue,
-				ActionValues[Craft - rune],
-				ActionRegextrue
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
 			}
 		}, {
-			nameVarbitCondition,
-			base {
-				id35573e9a - 38d7 - 4c8a - a86b - 069b04304eca,
-				position {
-					x2388.0,
-					y1775.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "7abd5e19-68bb-4854-9555-92765c014d04",
+				"position": {
+					"x": "2874.0",
+					"y": "1782.0"
 				},
-				flowTasks {
-					successa8b20349 - e6b5 - 4112 - 9b88 - 6b8ca4c7990d,
-					failure31dc418c - 2015 - 41b2 - bb14 - 86b6407a0abf
+				"flowTasks": {
+					"success": "63020c8d-9275-43de-a95c-14fe1d1f2771",
+					"failure": "232ac8c6-fc73-4293-a636-335f94d19e44"
 				},
-				delayMultiplier1.0
-			},
-			variables {
-				ValueVarbit 0,
-				Varbits[large pouch],
-				ConditionMore then(u003e)
-			}
-		}, {
-			nameVarbitCondition,
-			base {
-				id31dc418c - 2015 - 41b2 - bb14 - 86b6407a0abf,
-				position {
-					x2382.0,
-					y2079.0
-				},
-				flowTasks {
-					successc77e7795 - 313a - 4f70 - 9cb0 - aaf63e9806ce,
-					failure7bbf27f9 - 845e-4ac9 - a934 - 83412149dd92
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				ValueVarbit 0,
-				Varbits[medium pouch],
-				ConditionMore then(u003e)
-			}
-		}, {
-			nameVarbitCondition,
-			base {
-				id7bbf27f9 - 845e-4ac9 - a934 - 83412149dd92,
-				position {
-					x2380.0,
-					y2371.0
-				},
-				flowTasks {
-					success0fdf76e4 - a26f - 4e0b - b27e - 3e9301c875fc,
-					failure0e4566e2 - cc28 - 4251 - 8a63 - 6c210307b912
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				ValueVarbit 0,
-				Varbits[small pouch],
-				ConditionEquals(u003d)
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				id0fdf76e4 - a26f - 4e0b - b27e - 3e9301c875fc,
-				position {
-					x2862.0,
-					y2727.0
-				},
-				flowTasks {
-					successdbd7dd6b - cfb2 - 48f0 - b072 - 9c9ba9945169,
-					failuref41ca8a5 - 2995 - 4095 - a3a4 - 7f012fb5cf69
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Pure essence sprite],
-				ItemRegexfalse,
-				ConditionContains any of
+			"variables": {
+				"ItemValues": ["empty slots 1"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				idb30e984f - 9f10 - 4df1 - bc87 - 16be80910e9c,
-				position {
-					x2890.0,
-					y1461.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "232ac8c6-fc73-4293-a636-335f94d19e44",
+				"position": {
+					"x": "3351.0",
+					"y": "1765.0"
 				},
-				flowTasks {},
-				delayMultiplier0.5495495495495496,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Empty],
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.9999999999999998,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Giant pouch],
-				ItemRegextrue,
-				ActionValues[Empty],
-				ActionRegextrue
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				ida8b20349 - e6b5 - 4112 - 9b88 - 6b8ca4c7990d,
-				position {
-					x2874.0,
-					y1782.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "6c562534-471f-4ea2-80ec-88a70b935ac1",
+				"position": {
+					"x": "1987.0",
+					"y": "1490.0"
 				},
-				flowTasks {
-					successdbd7dd6b - cfb2 - 48f0 - b072 - 9c9ba9945169,
-					failure6b234b29 - ffa9 - 4adc - a57e - c42450ae7439
+				"flowTasks": {
+					"success": "63020c8d-9275-43de-a95c-14fe1d1f2771",
+					"failure": "b4dcb892-675c-4b3a-8211-1eed83dcda54"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[empty slots 1],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id6b234b29 - ffa9 - 4adc - a57e - c42450ae7439,
-				position {
-					x3351.0,
-					y1765.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "cb39e322-e241-4cd2-a6f7-dd7adda746e1",
+				"position": {
+					"x": "2894.0",
+					"y": "2052.0"
 				},
-				flowTasks {},
-				delayMultiplier0.9999999999999998,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Empty],
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.5495495495495497,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Large pouch],
-				ItemRegextrue,
-				ActionValues[Empty],
-				ActionRegextrue
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Medium pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				idf190836a - a885 - 4597 - a6c2 - 4fd16900b1c4,
-				position {
-					x1987.0,
-					y1490.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "fbe80bd0-d649-4dbf-84a2-fbef04613a16",
+				"position": {
+					"x": "2905.0",
+					"y": "2367.0"
 				},
-				flowTasks {
-					successdbd7dd6b - cfb2 - 48f0 - b072 - 9c9ba9945169,
-					failureddf72ebe - af9f - 408e-8e83 - 84d5b86a9d5b
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.4144144144144145,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Empty"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[true],
-				ItemRegexfalse,
-				ConditionIs Full
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Small pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Empty"],
+				"ActionRegex": true
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				idc77e7795 - 313a - 4f70 - 9cb0 - aaf63e9806ce,
-				position {
-					x2894.0,
-					y2052.0
+			"name": "SpecialInteractionAction",
+			"base": {
+				"id": "aed33a28-728d-426a-b0b6-08653e82e331",
+				"position": {
+					"x": "3622.0",
+					"y": "2663.0"
 				},
-				flowTasks {},
-				delayMultiplier0.5495495495495497,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Empty],
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 1.045045045045045
+			},
+			"variables": {
+				"Values": ["Moonclan teleport"],
+				"ValueRegex": false,
+				"Comparators": ["Lunar"],
+				"CompRegex": false,
+				"Condition": "Cast magic",
+				"Type": ""
+			}
+		}, {
+			"name": "CalculationCondition",
+			"base": {
+				"id": "c8d64fc3-1c92-4c72-bd7a-99f8fdc2ff76",
+				"position": {
+					"x": "413.0",
+					"y": "-85.0"
+				},
+				"flowTasks": {
+					"success": "77e0508c-8937-4783-9582-22e3bb581a82",
+					"failure": "b5ab4fcc-4103-481a-9fde-eba3eb519476"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "empty slots 21",
+				"Comparators": ["Start coordinate"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "6120f2ed-d83e-42c3-ba84-f1386311cbf7",
+				"position": {
+					"x": "1730.0",
+					"y": "388.0"
+				},
+				"flowTasks": {
+					"success": "aa54540b-2416-4437-88a5-49a4deb2a97c",
+					"failure": "44d0fdbc-6f68-4506-943a-46303279f091"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Medium pouch],
-				ItemRegextrue,
-				ActionValues[Empty],
-				ActionRegextrue
+			"variables": {
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id0e4566e2 - cc28 - 4251 - 8a63 - 6c210307b912,
-				position {
-					x2905.0,
-					y2367.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "65de1c3f-5879-4557-a9ee-d48eacc089fe",
+				"position": {
+					"x": "3499.0",
+					"y": "-1210.0"
 				},
-				flowTasks {},
-				delayMultiplier0.4144144144144145,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Empty],
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "82f78bbe-0205-4177-bb83-9b815f9b2d92",
+					"failure": "ce577054-ad09-4dbd-826e-9f2ccbfee926"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Small pouch],
-				ItemRegextrue,
-				ActionValues[Empty],
-				ActionRegextrue
+			"variables": {
+				"ItemValues": ["Stamina potion"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameSpecialInteractionAction,
-			base {
-				id803c0a37 - 48a7 - 4e0d - 8b3c - b41dc002cb74,
-				position {
-					x3622.0,
-					y2663.0
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "ce577054-ad09-4dbd-826e-9f2ccbfee926",
+				"position": {
+					"x": "3508.0",
+					"y": "-1493.0"
 				},
-				flowTasks {},
-				delayMultiplier1.045045045045045
+				"flowTasks": {},
+				"delayMultiplier": 1.0
 			},
-			variables {
-				Values[Tele group moonclan],
-				ValueRegexfalse,
-				Comparators[Lunar],
-				CompRegexfalse,
-				ConditionCast magic,
-				Type
+			"variables": {
+				"Values": ["Stamina potion"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": true
 			}
 		}, {
-			nameCalculationCondition,
-			base {
-				id0fbd052e - 8063 - 4dba - ace9 - e0a5e9bb4e27,
-				position {
-					x413.0,
-					y - 85.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "303f5946-c8f3-4acd-b55e-5b09e15aa024",
+				"position": {
+					"x": "3503.0",
+					"y": "-973.0"
 				},
-				flowTasks {
-					successd3b84fb6 - 1e01 - 4c80 - a5b1 - fcc49b21e01a,
-					failure52d95a8a - 43cf - 4d2a - 804e-c6e49020e9ac
+				"flowTasks": {
+					"success": "ccacfd40-dbbc-4c7b-b6cb-27447fb564fc",
+					"failure": "65de1c3f-5879-4557-a9ee-d48eacc089fe"
 				},
-				delayMultiplier1.0
-			},
-			variables {
-				Valueempty slots 21,
-				Comparators[Start coordinate],
-				CompRegexfalse,
-				ConditionDistance to(u003c),
-				TypeCoordinate
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				id42bffd6b - ab30 - 4540 - beb4 - 73cd64301ae7,
-				position {
-					x1730.0,
-					y388.0
-				},
-				flowTasks {
-					successceb5863b - 1592 - 44d5 - b443 - 2571d9cbd5c4,
-					failure9e972b3b - 03b6 - 4110 - 87c5 - 7a67f9eac4a4
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Giant pouch],
-				ItemRegexfalse,
-				ConditionContains any of
+			"variables": {
+				"ItemValues": ["Mind rune", "Nature rune", "Air rune", "Chaos rune", "Water rune", "Cosmic rune"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id78af7360 - 12b8 - 44dc - 807a - 6c815ad49cf6,
-				position {
-					x3499.0,
-					y - 1210.0
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "ccacfd40-dbbc-4c7b-b6cb-27447fb564fc",
+				"position": {
+					"x": "3996.0",
+					"y": "-919.0"
 				},
-				flowTasks {
-					successc15f359f - 155c - 4dca - 99a9 - 1d7fcabd9b5e,
-					failure631084c6 - e938 - 493f - 9406 - 4e42311cdbef
+				"flowTasks": {
+					"success": "bbd29d0a-cd38-4670-ac2e-5a2aa2aa3599"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"TypeList": [],
+					"type": "ICQuery"
 				}
 			},
-			variables {
-				ItemValues[Stamina potion],
-				ItemRegextrue,
-				ConditionContains any of
+			"variables": {
+				"TextValues": [],
+				"TextRegex": false,
+				"ActionValues": ["Deposit inventory"],
+				"ActionRegex": false,
+				"InterfaceObject": "bank interface",
+				"Cache container": false
 			}
 		}, {
-			nameBankWithdrawAction,
-			base {
-				id631084c6 - e938 - 493f - 9406 - 4e42311cdbef,
-				position {
-					x3508.0,
-					y - 1493.0
+			"name": "InterfaceAction",
+			"base": {
+				"id": "bbd29d0a-cd38-4670-ac2e-5a2aa2aa3599",
+				"position": {
+					"x": "5551.0",
+					"y": "-1018.0"
 				},
-				flowTasks {},
-				delayMultiplier1.0
+				"flowTasks": {},
+				"delayMultiplier": 0.1441441441441442
 			},
-			variables {
-				Values[Stamina potion],
-				ItemRegextrue,
-				ConditionAll of,
-				ConditionRegextrue
+			"variables": {
+				"Condition": "Action",
+				"Values": ["bank interface"],
+				"ActionValues": ["Deposit inventory"],
+				"ItemRegex": false,
+				"ActionRegex": false
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				ida1ef83e8 - b1ac - 4f45 - 8217 - 1a441ff7625e,
-				position {
-					x3503.0,
-					y - 973.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "c9bbdd94-ed30-4dfa-86f7-960fcbc46844",
+				"position": {
+					"x": "2369.0",
+					"y": "-442.0"
 				},
-				flowTasks {
-					success3879bf2e - fc15 - 48f4 - a837 - 3cb25e257204,
-					failure78af7360 - 12b8 - 44dc - 807a - 6c815ad49cf6
+				"flowTasks": {
+					"success": "a17bdf0b-c458-4902-a950-cc68556730f9",
+					"failure": "4c249287-c2dc-426d-afd3-025c8a3636ae"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Mind rune, Nature rune, Air rune, Chaos rune, Water rune, Cosmic rune],
-				ItemRegexfalse,
-				ConditionContains any of
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
 			}
 		}, {
-			nameInterfaceCondition,
-			base {
-				id3879bf2e - fc15 - 48f4 - a837 - 3cb25e257204,
-				position {
-					x3996.0,
-					y - 919.0
+			"name": "VarbitCondition",
+			"base": {
+				"id": "a17bdf0b-c458-4902-a950-cc68556730f9",
+				"position": {
+					"x": "2803.0",
+					"y": "-485.0"
 				},
-				flowTasks {
-					successd7fa001a - ccd2 - 415f - a754 - 02d58459e412
+				"flowTasks": {
+					"success": "5b22a072-1a93-454f-8fe0-1a9e5457bd4f",
+					"failure": "6ce8975a-d9a4-4cd7-86d4-56625e7a17c5"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					TypeList[],
-					typeICQuery
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "12",
+				"Varbits": ["giant pouch"],
+				"Condition": "Less then(\u003c)"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "4c249287-c2dc-426d-afd3-025c8a3636ae",
+				"position": {
+					"x": "2382.0",
+					"y": "-771.0"
+				},
+				"flowTasks": {
+					"success": "6ce8975a-d9a4-4cd7-86d4-56625e7a17c5",
+					"failure": "56231e46-5053-4085-a1ba-69b531af34ac"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				TextValues[],
-				TextRegexfalse,
-				ActionValues[Deposit inventory],
-				ActionRegexfalse,
-				InterfaceObjectbank interface,
-				Cache containerfalse
+			"variables": {
+				"ItemValues": ["Pure essence sprite"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameInterfaceAction,
-			base {
-				idd7fa001a - ccd2 - 415f - a754 - 02d58459e412,
-				position {
-					x5551.0,
-					y - 1018.0
+			"name": "VarbitCondition",
+			"base": {
+				"id": "f7435e25-900f-4e98-b75b-56ee74d40ad7",
+				"position": {
+					"x": "2732.0",
+					"y": "413.0"
 				},
-				flowTasks {},
-				delayMultiplier0.1441441441441442
+				"flowTasks": {
+					"success": "aebb7013-864c-41e4-abd0-38d960d3964d",
+					"failure": "5a98c03a-426e-47b4-9b8c-d4b2f6196c9e"
+				},
+				"delayMultiplier": 1.0
 			},
-			variables {
-				ConditionAction,
-				Values[bank interface, Deposit inventory],
-				ActionValues[],
-				ItemRegexfalse,
-				ActionRegexfalse
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["medium pouch"],
+				"Condition": "Equals (\u003d)"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id5838a068 - 2a8d - 4467 - ac00 - 5fc9a4a9ef13,
-				position {
-					x2572.0,
-					y - 198.0
+			"name": "VarbitCondition",
+			"base": {
+				"id": "6177cd83-f497-4e7f-93aa-05305f5d5557",
+				"position": {
+					"x": "2399.0",
+					"y": "1400.0"
 				},
-				flowTasks {
-					successea8e8343 - 2db9 - 4eb3 - b005 - 2141c5fcdf64,
-					failure8c46dec7 - 770a - 49ab - afab - fe64de6e1bff
+				"flowTasks": {
+					"success": "c3aa8baa-5ef1-4ff6-a8cd-54c1ddd76470",
+					"failure": "c5e7ad95-2598-4b84-8850-ebb9edc6f442"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["giant pouch"],
+				"Condition": "More then (\u003e)"
+			}
+		}, {
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "44d0fdbc-6f68-4506-943a-46303279f091",
+				"position": {
+					"x": "2130.0",
+					"y": "587.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "CheckLargPouch",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "CheckpointStart",
+			"base": {
+				"id": "1a3111c7-4062-43f8-8afc-eff4b2708c76",
+				"position": {
+					"x": "3925.0",
+					"y": "951.0"
+				},
+				"flowTasks": {
+					"success": "526a96b9-a504-4583-b4e5-000d10331087"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"CheckpointTask name": "CheckLargPouch"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "526a96b9-a504-4583-b4e5-000d10331087",
+				"position": {
+					"x": "4194.0",
+					"y": "1138.0"
+				},
+				"flowTasks": {
+					"success": "3530d353-0ba2-4f90-ab9b-f240ac6ccdd5",
+					"failure": "0baf020c-655e-4d46-a7f8-c6cc1b0d82df"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list0": ["Large pouch degraded ID"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[12],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id875a362b - 2e82 - 4397 - 9350 - 2d67e8315cfe,
-				position {
-					x2575.0,
-					y348.0
+			"name": "CheckpointEndTask",
+			"base": {
+				"id": "3530d353-0ba2-4f90-ab9b-f240ac6ccdd5",
+				"position": {
+					"x": "4348.0",
+					"y": "924.0"
 				},
-				flowTasks {
-					success22b9532a - 954a - 4754 - b3f0 - f55daa91911c,
-					failure17322429 - 49c2 - 4de3 - 9d85 - ce7e8f59a955
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Checkpoint name": "CheckDegradedPouch",
+				"ItemRegex": false
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "0baf020c-655e-4d46-a7f8-c6cc1b0d82df",
+				"position": {
+					"x": "4034.0",
+					"y": "1409.0"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "c44b3937-264a-45a8-b384-e10c0983ade2",
+					"failure": "1ee95761-432c-4652-a334-2f79e9aadeb0"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[6],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id0719e997 - c6f2 - 44b8 - ba0d - 6fc558e4ab9d,
-				position {
-					x2369.0,
-					y - 442.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "c44b3937-264a-45a8-b384-e10c0983ade2",
+				"position": {
+					"x": "4176.0",
+					"y": "1686.0"
 				},
-				flowTasks {
-					success69333ad4 - 276e-4a50 - b5eb - dd5093956278,
-					failure4b2d7b73 - 7944 - 4335 - a32f - 2e4b432a3887
+				"flowTasks": {
+					"success": "d721217a-4d38-4ce1-beff-c96293c76af3",
+					"failure": "2ab605d4-8b68-41c6-89f5-b1c74c5bec45"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[true],
-				ItemRegexfalse,
-				ConditionIs Full
+			"variables": {
+				"ItemValues": ["9"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id8c46dec7 - 770a - 49ab - afab - fe64de6e1bff,
-				position {
-					x2588.0,
-					y53.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "dc4d29c3-276d-40ec-8efd-8ffed8a975c4",
+				"position": {
+					"x": "5132.0",
+					"y": "1507.0"
 				},
-				flowTasks {
-					successeb2e286c - 9f00 - 4a9e - 9b57 - 23e24d14e48f,
-					failure875a362b - 2e82 - 4397 - 9350 - 2d67e8315cfe
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.2792792792792793,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[empty slots 21],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Large pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
 			}
 		}, {
-			nameVarbitCondition,
-			base {
-				id69333ad4 - 276e-4a50 - b5eb - dd5093956278,
-				position {
-					x3017.0,
-					y - 438.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "2ab605d4-8b68-41c6-89f5-b1c74c5bec45",
+				"position": {
+					"x": "4122.0",
+					"y": "1940.0"
 				},
-				flowTasks {
-					success9bbaefd5 - 2579 - 4456 - be50 - 22f6e370e7be,
-					failureddfaddbc - 6ec1 - 40fd - a0c9 - 8485c0d77ef3
+				"flowTasks": {
+					"success": "a8ad48fd-abde-4f4a-ba76-cbdd66a561fc",
+					"failure": "3c48093d-a65b-4758-9eaf-c8a71027b433"
 				},
-				delayMultiplier1.0
-			},
-			variables {
-				Value12,
-				Varbits[giant pouch],
-				ConditionLess then(u003c)
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				id8180c957 - ed0f - 43e9 - b6cd - cb6f8701cbad,
-				position {
-					x3422.0,
-					y530.0
-				},
-				flowTasks {
-					success52d95a8a - 43cf - 4d2a - 804e-c6e49020e9ac,
-					failureeb2e286c - 9f00 - 4a9e - 9b57 - 23e24d14e48f
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[true],
-				ItemRegexfalse,
-				ConditionIs Full
+			"variables": {
+				"ItemValues": ["15"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id4b2d7b73 - 7944 - 4335 - a32f - 2e4b432a3887,
-				position {
-					x2382.0,
-					y - 771.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "3c36beb4-4da1-49f4-a492-bae2b70e3777",
+				"position": {
+					"x": "5413.0",
+					"y": "1866.0"
 				},
-				flowTasks {
-					successeb2e286c - 9f00 - 4a9e - 9b57 - 23e24d14e48f,
-					failurebc7f2e52 - 753f - 4816 - a6f0 - 56edd1d60328
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.5045045045045047,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Pure essence sprite],
-				ItemRegexfalse,
-				ConditionContains none of
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Medium pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
 			}
 		}, {
-			nameVarbitCondition,
-			base {
-				id17322429 - 49c2 - 4de3 - 9d85 - ce7e8f59a955,
-				position {
-					x3425.0,
-					y216.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "a8ad48fd-abde-4f4a-ba76-cbdd66a561fc",
+				"position": {
+					"x": "4199.0",
+					"y": "2243.0"
 				},
-				flowTasks {
-					successd369317a - 65f7 - 442f - acaf - 07d9452d8771,
-					failure8180c957 - ed0f - 43e9 - b6cd - cb6f8701cbad
+				"flowTasks": {
+					"success": "56231e46-5053-4085-a1ba-69b531af34ac",
+					"failure": "f838dab9-2ba7-49dc-bc9c-e223d0ecada4"
 				},
-				delayMultiplier1.0
-			},
-			variables {
-				ValueVarbit 0,
-				Varbits[medium pouch],
-				ConditionEquals(u003d)
-			}
-		}, {
-			nameVarbitCondition,
-			base {
-				idb53df9b1 - 835f - 44ee - bacb - 88de2df9aef2,
-				position {
-					x2399.0,
-					y1400.0
-				},
-				flowTasks {
-					successb30e984f - 9f10 - 4df1 - bc87 - 16be80910e9c,
-					failure35573e9a - 38d7 - 4c8a - a86b - 069b04304eca
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				ValueVarbit 0,
-				Varbits[giant pouch],
-				ConditionMore then(u003e)
-			}
-		}, {
-			nameCheckpointEndTask,
-			base {
-				id9e972b3b - 03b6 - 4110 - 87c5 - 7a67f9eac4a4,
-				position {
-					x2130.0,
-					y587.0
-				},
-				flowTasks {},
-				delayMultiplier1.0
-			},
-			variables {
-				Checkpoint nameCheckLargPouch,
-				ItemRegexfalse
-			}
-		}, {
-			nameCheckpointStart,
-			base {
-				id33a25537 - bc7c - 4277 - 8aec - cf24b3c50465,
-				position {
-					x3925.0,
-					y951.0
-				},
-				flowTasks {
-					successf22b668d - c6c6 - 435a - 889f - 5a5c8ca99461
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				CheckpointTask nameCheckLargPouch
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				idf22b668d - c6c6 - 435a - 889f - 5a5c8ca99461,
-				position {
-					x4194.0,
-					y1138.0
-				},
-				flowTasks {
-					success17dafc1c - 8fdd - 4167 - baef - fbfffca72a39,
-					failure549a35f4 - 514e-4a9d - 9f92 - 6d4345f491a4
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list0[Large pouch degraded ID],
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Large pouch],
-				ItemRegexfalse,
-				ConditionContains any of
+			"variables": {
+				"ItemValues": ["18"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
 			}
 		}, {
-			nameCheckpointEndTask,
-			base {
-				id17dafc1c - 8fdd - 4167 - baef - fbfffca72a39,
-				position {
-					x4348.0,
-					y924.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "0508905d-7e07-4774-942a-940232dc49fd",
+				"position": {
+					"x": "4756.0",
+					"y": "2225.0"
 				},
-				flowTasks {},
-				delayMultiplier1.0
-			},
-			variables {
-				Checkpoint nameCheckDegradedPouch,
-				ItemRegexfalse
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				id549a35f4 - 514e-4a9d - 9f92 - 6d4345f491a4,
-				position {
-					x4034.0,
-					y1409.0
-				},
-				flowTasks {
-					success8311912a - ca77 - 46dc - 9b29 - 66257717a58d,
-					failure86f61003 - b3ef - 4cdb - 931b - a468ebc4f927
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 0.2792792792792793,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[true],
-				ItemRegexfalse,
-				ConditionIs Full
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Small pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": true
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id8311912a - ca77 - 46dc - 9b29 - 66257717a58d,
-				position {
-					x4176.0,
-					y1686.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "f838dab9-2ba7-49dc-bc9c-e223d0ecada4",
+				"position": {
+					"x": "4202.0",
+					"y": "2528.0"
 				},
-				flowTasks {
-					successee04487a - 66b6 - 4723 - b9f8 - 66ee365c76ca,
-					failurede04ff89 - ec2d - 489b - 8d95 - 1c4c9f542faa
+				"flowTasks": {
+					"success": "b5ab4fcc-4103-481a-9fde-eba3eb519476",
+					"failure": "0508905d-7e07-4774-942a-940232dc49fd"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[9],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id9d645b1b - 5baa - 4750 - 92b4 - 7daac3bf0155,
-				position {
-					x5132.0,
-					y1507.0
+			"name": "BankCondition",
+			"base": {
+				"id": "d721217a-4d38-4ce1-beff-c96293c76af3",
+				"position": {
+					"x": "4711.0",
+					"y": "1613.0"
 				},
-				flowTasks {},
-				delayMultiplier0.2792792792792793,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Fill],
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "ac0b69bb-3d1f-4cdd-b227-3b67dba6964d",
+					"failure": "dc4d29c3-276d-40ec-8efd-8ffed8a975c4"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "3c48093d-a65b-4758-9eaf-c8a71027b433",
+				"position": {
+					"x": "4627.0",
+					"y": "1901.0"
+				},
+				"flowTasks": {
+					"success": "ceb027fd-e2b2-4c87-8540-a4fec8c18d26",
+					"failure": "518538c0-f296-4e01-8d89-b23926406321"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["medium pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "1ee95761-432c-4652-a334-2f79e9aadeb0",
+				"position": {
+					"x": "4522.0",
+					"y": "1343.0"
+				},
+				"flowTasks": {
+					"success": "56231e46-5053-4085-a1ba-69b531af34ac",
+					"failure": "c44b3937-264a-45a8-b384-e10c0983ade2"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Large pouch],
-				ItemRegextrue,
-				ActionValues[Fill],
-				ActionRegextrue
+			"variables": {
+				"ItemValues": ["Pure essence sprite"],
+				"ItemRegex": false,
+				"Condition": "Contains none of:"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				idde04ff89 - ec2d - 489b - 8d95 - 1c4c9f542faa,
-				position {
-					x4122.0,
-					y1940.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "b4dcb892-675c-4b3a-8211-1eed83dcda54",
+				"position": {
+					"x": "1953.0",
+					"y": "1713.0"
 				},
-				flowTasks {
-					successa2e4409a - 55a4 - 478c - a720 - b4985f18d54b,
-					failure4bf4ec39 - b429 - 49b5 - 9876 - 6180ca80796e
+				"flowTasks": {
+					"success": "6177cd83-f497-4e7f-93aa-05305f5d5557",
+					"failure": "c5e7ad95-2598-4b84-8850-ebb9edc6f442"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[15],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"ItemValues": ["Giant pouch"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id0aa7410c - 79ab - 4d94 - a9f5 - 48809eab10ec,
-				position {
-					x5413.0,
-					y1866.0
+			"name": "BankCondition",
+			"base": {
+				"id": "ceb027fd-e2b2-4c87-8540-a4fec8c18d26",
+				"position": {
+					"x": "4991.0",
+					"y": "1922.0"
 				},
-				flowTasks {},
-				delayMultiplier0.5045045045045047,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Fill],
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "ac0b69bb-3d1f-4cdd-b227-3b67dba6964d",
+					"failure": "3c36beb4-4da1-49f4-a492-bae2b70e3777"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "66b76174-7e0b-437e-a4db-9d1ed65f1dd1",
+				"position": {
+					"x": "133.0",
+					"y": "-393.0"
+				},
+				"flowTasks": {
+					"success": "a16bf5bd-801b-410f-a6d1-e085a59c2911",
+					"failure": "e89e26ba-1b7f-4e6c-ad97-4f07da1c56aa"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Medium pouch],
-				ItemRegextrue,
-				ActionValues[Fill],
-				ActionRegextrue
+			"variables": {
+				"ItemValues": ["Cosmic rune"],
+				"ItemRegex": false,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				ida2e4409a - 55a4 - 478c - a720 - b4985f18d54b,
-				position {
-					x4199.0,
-					y2243.0
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "e89e26ba-1b7f-4e6c-ad97-4f07da1c56aa",
+				"position": {
+					"x": "728.0",
+					"y": "-380.0"
 				},
-				flowTasks {
-					successeb2e286c - 9f00 - 4a9e - 9b57 - 23e24d14e48f,
-					failure9a41c4ba - 3924 - 43f1 - aec1 - c3b4633e7f2e
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Cosmic rune"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "TimerCondition",
+			"base": {
+				"id": "231eef27-c87e-4d74-8255-14a9358dd7de",
+				"position": {
+					"x": "924.0",
+					"y": "-824.0"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "66b76174-7e0b-437e-a4db-9d1ed65f1dd1",
+					"failure": "66b76174-7e0b-437e-a4db-9d1ed65f1dd1"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "empty slots 1",
+				"Condition": "Every X seconds",
+				"IntervalLow": 0.0,
+				"IntervalHigh": 1.3092967867851262
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "518538c0-f296-4e01-8d89-b23926406321",
+				"position": {
+					"x": "3695.0",
+					"y": "2283.0"
+				},
+				"flowTasks": {
+					"success": "dc4d29c3-276d-40ec-8efd-8ffed8a975c4",
+					"failure": "a8ad48fd-abde-4f4a-ba76-cbdd66a561fc"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[18],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"ItemValues": ["16"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id395af8f2 - 7270 - 470e-a218 - 90e1e51a5af4,
-				position {
-					x4756.0,
-					y2225.0
+			"name": "StatusCondition",
+			"base": {
+				"id": "77e0508c-8937-4783-9582-22e3bb581a82",
+				"position": {
+					"x": "52.0",
+					"y": "304.0"
 				},
-				flowTasks {},
-				delayMultiplier0.2792792792792793,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Fill],
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "646b6562-953a-4f5f-b4ed-283bad2daf6c",
+					"failure": "6120f2ed-d83e-42c3-ba84-f1386311cbf7"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Comparator": "50",
+				"Condition": "Less than (\u003c)",
+				"Type": "Health (%)"
+			}
+		}, {
+			"name": "BankWithdrawAction",
+			"base": {
+				"id": "13dc96a1-4f58-44e4-ad59-819ebe553f50",
+				"position": {
+					"x": "1358.0",
+					"y": "-72.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Values": ["Shark"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": false
+			}
+		}, {
+			"name": "BankCondition",
+			"base": {
+				"id": "ef233add-c75d-4813-8f58-e7eb284be56c",
+				"position": {
+					"x": "943.0",
+					"y": "-15.0"
+				},
+				"flowTasks": {
+					"success": "13dc96a1-4f58-44e4-ad59-819ebe553f50",
+					"failure": "730457a2-f380-4e81-b2d4-fcc35efc5738"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "730457a2-f380-4e81-b2d4-fcc35efc5738",
+				"position": {
+					"x": "1359.0",
+					"y": "243.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.045045045045045,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"bool3": false,
+					"list1": ["Coordinate bank booth"],
+					"list3": ["Bank"],
+					"TypeList": [],
+					"within": "",
+					"type": "GOQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Small pouch],
-				ItemRegextrue,
-				ActionValues[Fill],
-				ActionRegextrue
+			"variables": {
+				"Condition": "GameObject",
+				"ItemValues": ["Bank booth"],
+				"ItemRegex": true,
+				"ActionValues": ["Bank"],
+				"ActionRegex": false
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id9a41c4ba - 3924 - 43f1 - aec1 - c3b4633e7f2e,
-				position {
-					x4202.0,
-					y2528.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "646b6562-953a-4f5f-b4ed-283bad2daf6c",
+				"position": {
+					"x": "490.0",
+					"y": "354.0"
 				},
-				flowTasks {
-					success52d95a8a - 43cf - 4d2a - 804e-c6e49020e9ac,
-					failure395af8f2 - 7270 - 470e-a218 - 90e1e51a5af4
+				"flowTasks": {
+					"success": "ffdf863e-d59d-42bf-9829-b11cfed5e0fe",
+					"failure": "ef233add-c75d-4813-8f58-e7eb284be56c"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[true],
-				ItemRegexfalse,
-				ConditionIs Full
+			"variables": {
+				"ItemValues": ["Shark"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameBankCondition,
-			base {
-				idee04487a - 66b6 - 4723 - b9f8 - 66ee365c76ca,
-				position {
-					x4711.0,
-					y1613.0
+			"name": "InteractionAction",
+			"base": {
+				"id": "ffdf863e-d59d-42bf-9829-b11cfed5e0fe",
+				"position": {
+					"x": "985.0",
+					"y": "291.0"
 				},
-				flowTasks {
-					successaa55e31f - 1bf4 - 48fb - 965e-665d26bfbc8b,
-					failure9d645b1b - 5baa - 4750 - 92b4 - 7daac3bf0155
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				ItemValues[],
-				ItemRegexfalse,
-				ConditionIs open
-			}
-		}, {
-			nameVarbitCondition,
-			base {
-				id4bf4ec39 - b429 - 49b5 - 9876 - 6180ca80796e,
-				position {
-					x4627.0,
-					y1901.0
-				},
-				flowTasks {
-					successdadc6d1f - ec7b - 45f5 - b06b - a4f318d5c490,
-					failure14c287e1 - 1b8a - 4b3b - a4f2 - 70a6eb7d9929
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				ValueVarbit 0,
-				Varbits[medium pouch],
-				ConditionEquals(u003d)
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				id86f61003 - b3ef - 4cdb - 931b - a468ebc4f927,
-				position {
-					x4522.0,
-					y1343.0
-				},
-				flowTasks {
-					successeb2e286c - 9f00 - 4a9e - 9b57 - 23e24d14e48f,
-					failure8311912a - ca77 - 46dc - 9b29 - 66257717a58d
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Eat"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Pure essence sprite],
-				ItemRegexfalse,
-				ConditionContains none of
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Shark"],
+				"ItemRegex": true,
+				"ActionValues": ["Eat"],
+				"ActionRegex": true
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				idddf72ebe - af9f - 408e-8e83 - 84d5b86a9d5b,
-				position {
-					x1953.0,
-					y1713.0
+			"name": "InterfaceCondition",
+			"base": {
+				"id": "10062591-5f2c-4603-8551-c0f7ef6d4369",
+				"position": {
+					"x": "4247.0",
+					"y": "-1541.0"
 				},
-				flowTasks {
-					successb53df9b1 - 835f - 44ee - bacb - 88de2df9aef2,
-					failure35573e9a - 38d7 - 4c8a - a86b - 069b04304eca
+				"flowTasks": {
+					"success": "4f90a712-6e6d-44ce-9aa6-8bbf7514a07a"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list4": ["Pure essence bank id"],
+					"TypeList": [],
+					"type": "ICQuery"
 				}
 			},
-			variables {
-				ItemValues[Giant pouch],
-				ItemRegexfalse,
-				ConditionContains any of
+			"variables": {
+				"TextValues": [],
+				"TextRegex": true,
+				"ActionValues": ["Withdraw-All"],
+				"ActionRegex": true,
+				"InterfaceObject": "bank interface",
+				"Cache container": true
 			}
 		}, {
-			nameBankCondition,
-			base {
-				iddadc6d1f - ec7b - 45f5 - b06b - a4f318d5c490,
-				position {
-					x4991.0,
-					y1922.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "82f78bbe-0205-4177-bb83-9b815f9b2d92",
+				"position": {
+					"x": "3895.0",
+					"y": "-1212.0"
 				},
-				flowTasks {
-					successaa55e31f - 1bf4 - 48fb - 965e-665d26bfbc8b,
-					failure0aa7410c - 79ab - 4d94 - a9f5 - 48809eab10ec
+				"flowTasks": {
+					"success": "96aef8b9-6a89-4706-99fe-aca1a43e6f78",
+					"failure": "10062591-5f2c-4603-8551-c0f7ef6d4369"
 				},
-				delayMultiplier1.0
-			},
-			variables {
-				ItemValues[],
-				ItemRegexfalse,
-				ConditionIs open
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				id85059a50 - 4ce2 - 42f3 - 9b1b - 3069db6e9d25,
-				position {
-					x133.0,
-					y - 393.0
-				},
-				flowTasks {
-					success1d00d5d3 - 3e86 - 404c - 8814 - 220b867aeda1,
-					failureb4d09cf6 - 664a - 4fb9 - ac9d - 6c770dc3ba56
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Cosmic rune],
-				ItemRegexfalse,
-				ConditionContains any of
+			"variables": {
+				"ItemValues": ["Vial"],
+				"ItemRegex": true,
+				"Condition": "Contains any of:"
 			}
 		}, {
-			nameBankWithdrawAction,
-			base {
-				idb4d09cf6 - 664a - 4fb9 - ac9d - 6c770dc3ba56,
-				position {
-					x728.0,
-					y - 380.0
+			"name": "BankDepositAction",
+			"base": {
+				"id": "96aef8b9-6a89-4706-99fe-aca1a43e6f78",
+				"position": {
+					"x": "3911.0",
+					"y": "-1525.0"
 				},
-				flowTasks {},
-				delayMultiplier1.0
+				"flowTasks": {},
+				"delayMultiplier": 1.0
 			},
-			variables {
-				Values[Cosmic rune],
-				ItemRegextrue,
-				ConditionAll of,
-				ConditionRegexfalse
+			"variables": {
+				"Values": ["Vial"],
+				"ItemRegex": true,
+				"Condition": "All of",
+				"ConditionRegex": true
 			}
 		}, {
-			nameTimerCondition,
-			base {
-				id92a7fd67 - 4026 - 40ae - a3db - 81bed0f47281,
-				position {
-					x711.0,
-					y - 603.0
+			"name": "PlayerCondition",
+			"base": {
+				"id": "db246658-d6a3-4075-a6df-f1d5b5ced36e",
+				"position": {
+					"x": "3247.0",
+					"y": "2827.0"
 				},
-				flowTasks {
-					success85059a50 - 4ce2 - 42f3 - 9b1b - 3069db6e9d25
+				"flowTasks": {
+					"failure": "aed33a28-728d-426a-b0b6-08653e82e331"
 				},
-				delayMultiplier1.0
+				"delayMultiplier": 1.0
 			},
-			variables {
-				Comparatorempty slots 1,
-				ConditionEvery X seconds
+			"variables": {
+				"Value": "true",
+				"Condition": "Is animating:"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				id14c287e1 - 1b8a - 4b3b - a4f2 - 70a6eb7d9929,
-				position {
-					x3695.0,
-					y2283.0
+			"name": "PlayerCondition",
+			"base": {
+				"id": "27f33283-5186-4374-88bb-5d329f18e629",
+				"position": {
+					"x": "2745.0",
+					"y": "-929.0"
 				},
-				flowTasks {
-					success9d645b1b - 5baa - 4750 - 92b4 - 7daac3bf0155,
-					failurea2e4409a - 55a4 - 478c - a720 - b4985f18d54b
+				"flowTasks": {
+					"failure": "e12fec21-bfab-46f1-b7ee-de016dc98bba"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "true",
+				"Condition": "Is moving:"
+			}
+		}, {
+			"name": "VarbitCondition",
+			"base": {
+				"id": "6ce8975a-d9a4-4cd7-86d4-56625e7a17c5",
+				"position": {
+					"x": "2777.0",
+					"y": "-174.0"
+				},
+				"flowTasks": {
+					"success": "2f76824e-4eef-42d4-958b-b3bb07be660b",
+					"failure": "87b97253-562b-4777-8582-9901f9cee4a1"
+				},
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["large pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InventoryCondition",
+			"base": {
+				"id": "87b97253-562b-4777-8582-9901f9cee4a1",
+				"position": {
+					"x": "2774.0",
+					"y": "175.0"
+				},
+				"flowTasks": {
+					"success": "f7435e25-900f-4e98-b75b-56ee74d40ad7",
+					"failure": "39d6fc61-e3c9-4dc4-979e-718ed628094b"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[16],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
 			}
 		}, {
-			nameStatusCondition,
-			base {
-				idd3b84fb6 - 1e01 - 4c80 - a5b1 - fcc49b21e01a,
-				position {
-					x52.0,
-					y304.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "39d6fc61-e3c9-4dc4-979e-718ed628094b",
+				"position": {
+					"x": "3221.0",
+					"y": "172.0"
 				},
-				flowTasks {
-					successa8de7457 - 4dd1 - 4a5d - 975b - 902c3edee0f7,
-					failure42bffd6b - ab30 - 4540 - beb4 - 73cd64301ae7
+				"flowTasks": {
+					"success": "7e3d2554-64b1-48eb-8082-ae7686c33a78",
+					"failure": "56231e46-5053-4085-a1ba-69b531af34ac"
 				},
-				delayMultiplier1.0
-			},
-			variables {
-				Comparator50,
-				ConditionLess than(u003c),
-				TypeHealth( % )
-			}
-		}, {
-			nameBankWithdrawAction,
-			base {
-				ide0914c3b - 0a6d - 4234 - ab1c - 65784517f58f,
-				position {
-					x1358.0,
-					y - 72.0
-				},
-				flowTasks {},
-				delayMultiplier1.0
-			},
-			variables {
-				Values[Shark],
-				ItemRegextrue,
-				ConditionAll of,
-				ConditionRegexfalse
-			}
-		}, {
-			nameBankCondition,
-			base {
-				id473bf0d1 - a023 - 4446 - 9add - 628350c86272,
-				position {
-					x943.0,
-					y - 15.0
-				},
-				flowTasks {
-					successe0914c3b - 0a6d - 4234 - ab1c - 65784517f58f,
-					failured9d42201 - e761 - 4bef - 8c9d - 7e3c28651251
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				ItemValues[],
-				ItemRegexfalse,
-				ConditionIs open
-			}
-		}, {
-			nameInteractionAction,
-			base {
-				idd9d42201 - e761 - 4bef - 8c9d - 7e3c28651251,
-				position {
-					x1359.0,
-					y243.0
-				},
-				flowTasks {},
-				delayMultiplier1.045045045045045,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					bool3false,
-					list1[Coordinate bank booth],
-					list3[Bank],
-					TypeList[],
-					within,
-					typeGOQuery
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionGameObject,
-				ItemValues[Bank booth],
-				ItemRegextrue,
-				ActionValues[Bank],
-				ActionRegexfalse
+			"variables": {
+				"ItemValues": ["6"],
+				"ItemRegex": false,
+				"Condition": "Has # empty slots"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				ida8de7457 - 4dd1 - 4a5d - 975b - 902c3edee0f7,
-				position {
-					x490.0,
-					y354.0
+			"name": "VarbitCondition",
+			"base": {
+				"id": "7e3d2554-64b1-48eb-8082-ae7686c33a78",
+				"position": {
+					"x": "2812.0",
+					"y": "716.0"
 				},
-				flowTasks {
-					success32fad859 - 0f2e - 4490 - ab8d - c6ba4a645daa,
-					failure473bf0d1 - a023 - 4446 - 9add - 628350c86272
+				"flowTasks": {
+					"success": "8b45c6c1-ba59-4776-8f46-42cb3b2d11b8",
+					"failure": "5a98c03a-426e-47b4-9b8c-d4b2f6196c9e"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
+				"delayMultiplier": 1.0
+			},
+			"variables": {
+				"Value": "Varbit 0",
+				"Varbits": ["small pouch"],
+				"Condition": "Equals (\u003d)"
+			}
+		}, {
+			"name": "InteractionAction",
+			"base": {
+				"id": "8b45c6c1-ba59-4776-8f46-42cb3b2d11b8",
+				"position": {
+					"x": "3482.0",
+					"y": "747.0"
+				},
+				"flowTasks": {},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"list5": ["Fill"],
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ItemValues[Shark],
-				ItemRegextrue,
-				ConditionContains any of
+			"variables": {
+				"Condition": "Inventory",
+				"ItemValues": ["Small pouch"],
+				"ItemRegex": true,
+				"ActionValues": ["Fill"],
+				"ActionRegex": false
 			}
 		}, {
-			nameInteractionAction,
-			base {
-				id32fad859 - 0f2e - 4490 - ab8d - c6ba4a645daa,
-				position {
-					x985.0,
-					y291.0
+			"name": "InventoryCondition",
+			"base": {
+				"id": "5a98c03a-426e-47b4-9b8c-d4b2f6196c9e",
+				"position": {
+					"x": "3142.0",
+					"y": "1043.0"
 				},
-				flowTasks {},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list5[Eat],
-					typeInventoryQuery
+				"flowTasks": {
+					"success": "b5ab4fcc-4103-481a-9fde-eba3eb519476",
+					"failure": "56231e46-5053-4085-a1ba-69b531af34ac"
+				},
+				"delayMultiplier": 1.0,
+				"queryData": {
+					"bool0": false,
+					"bool1": false,
+					"bool2": false,
+					"type": "InventoryQuery"
 				}
 			},
-			variables {
-				ConditionInventory,
-				ItemValues[Shark],
-				ItemRegextrue,
-				ActionValues[Eat],
-				ActionRegextrue
+			"variables": {
+				"ItemValues": ["true"],
+				"ItemRegex": false,
+				"Condition": "Is Full"
 			}
 		}, {
-			nameInterfaceCondition,
-			base {
-				id34eddbc7 - e0c0 - 457d - be11 - f876e313993f,
-				position {
-					x4247.0,
-					y - 1541.0
+			"name": "BankCondition",
+			"base": {
+				"id": "aebb7013-864c-41e4-abd0-38d960d3964d",
+				"position": {
+					"x": "3335.0",
+					"y": "479.0"
 				},
-				flowTasks {
-					successdfeb7cda - dc5c - 446d - 8944 - 4fcbef50d252
+				"flowTasks": {
+					"success": "ac0b69bb-3d1f-4cdd-b227-3b67dba6964d",
+					"failure": "26c2d0b0-4611-42bc-a203-99cf7bf557f8"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					list4[Pure essence bank id],
-					TypeList[],
-					typeICQuery
-				}
+				"delayMultiplier": 1.0
 			},
-			variables {
-				TextValues[],
-				TextRegextrue,
-				ActionValues[Withdraw - All],
-				ActionRegextrue,
-				InterfaceObjectbank interface,
-				Cache containertrue
+			"variables": {
+				"ItemValues": [],
+				"ItemRegex": false,
+				"Condition": "Is open"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				idbc7f2e52 - 753f - 4816 - a6f0 - 56edd1d60328,
-				position {
-					x2760.0,
-					y - 669.0
+			"name": "CalculationCondition",
+			"base": {
+				"id": "c484be07-5998-4bcd-81f5-a250588aca48",
+				"position": {
+					"x": "2690.0",
+					"y": "-1344.0"
 				},
-				flowTasks {
-					success69333ad4 - 276e-4a50 - b5eb - dd5093956278,
-					failure5838a068 - 2a8d - 4467 - ac00 - 5fc9a4a9ef13
+				"flowTasks": {
+					"success": "e12fec21-bfab-46f1-b7ee-de016dc98bba",
+					"failure": "cc7c9426-e40b-4583-8374-867b7af4c71c"
 				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
-				}
+				"delayMultiplier": 1.0
 			},
-			variables {
-				ItemValues[9],
-				ItemRegexfalse,
-				ConditionHas # empty slots
+			"variables": {
+				"Value": "6",
+				"Comparators": ["Coordinate bank booth"],
+				"CompRegex": false,
+				"Condition": "Distance to (\u003c)",
+				"Type": "Coordinate"
 			}
 		}, {
-			nameInventoryCondition,
-			base {
-				idc15f359f - 155c - 4dca - 99a9 - 1d7fcabd9b5e,
-				position {
-					x3895.0,
-					y - 1212.0
+			"name": "TraversalAction",
+			"base": {
+				"id": "cc7c9426-e40b-4583-8374-867b7af4c71c",
+				"position": {
+					"x": "3124.0",
+					"y": "-1296.0"
 				},
-				flowTasks {
-					success94426d56 - e906 - 4e39 - a6b6 - 34a230295d34,
-					failure34eddbc7 - e0c0 - 457d - be11 - f876e313993f
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
-				}
+				"flowTasks": {},
+				"delayMultiplier": 1.0
 			},
-			variables {
-				ItemValues[Vial],
-				ItemRegextrue,
-				ConditionContains any of
-			}
-		}, {
-			nameBankDepositAction,
-			base {
-				id94426d56 - e906 - 4e39 - a6b6 - 34a230295d34,
-				position {
-					x3911.0,
-					y - 1525.0
-				},
-				flowTasks {},
-				delayMultiplier1.0
-			},
-			variables {
-				Values[Vial],
-				ItemRegextrue,
-				ConditionAll of,
-				ConditionRegextrue
-			}
-		}, {
-			nameInventoryCondition,
-			base {
-				id4a0730d7 - a583 - 4e74 - 969a - 54dba4c61723,
-				position {
-					x3421.0,
-					y - 52.0
-				},
-				flowTasks {
-					successaa55e31f - 1bf4 - 48fb - 965e-665d26bfbc8b,
-					failure8180c957 - ed0f - 43e9 - b6cd - cb6f8701cbad
-				},
-				delayMultiplier1.0,
-				queryData {
-					bool0false,
-					bool1false,
-					bool2false,
-					typeInventoryQuery
-				}
-			},
-			variables {
-				ItemValues[true],
-				ItemRegexfalse,
-				ConditionIs Full
-			}
-		}, {
-			namePlayerCondition,
-			base {
-				idf41ca8a5 - 2995 - 4095 - a3a4 - 7f012fb5cf69,
-				position {
-					x3247.0,
-					y2827.0
-				},
-				flowTasks {
-					failure803c0a37 - 48a7 - 4e0d - 8b3c - b41dc002cb74
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				Valuetrue,
-				ConditionIs animating
-			}
-		}, {
-			namePlayerCondition,
-			base {
-				id60757bf6 - 29d8 - 4cfa - a58e - d4f479397c2d,
-				position {
-					x2745.0,
-					y - 929.0
-				},
-				flowTasks {
-					failure6a1632c9 - c221 - 46c0 - 9be3 - eacdf9c1a1c1
-				},
-				delayMultiplier1.0
-			},
-			variables {
-				Valuetrue,
-				ConditionIs moving
+			"variables": {
+				"Condition": "To area:",
+				"Coordinate": "Coordinate outside bank",
+				"Exact": false,
+				"Radius": "3"
 			}
 		}
 	],
-	BotCategoryOTHER,
-	inventoryData {
-		invPreset_Pure essence withdraw[{
-				nameGiant pouch,
-				id5514,
-				notedfalse,
-				quantity1,
-				selectedfalse
+	"BotCategory": "OTHER",
+	"inventoryData": {
+		"invPreset_Pure essence withdraw": [{
+				"name": "Giant pouch",
+				"id": 5514,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
 			}, {
-				nameRune pouch,
-				id12791,
-				notedfalse,
-				quantity1,
-				selectedfalse
+				"name": "Rune pouch",
+				"id": 12791,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
 			}, {
-				nameLarge pouch,
-				id5512,
-				notedfalse,
-				quantity1,
-				selectedfalse
+				"name": "Large pouch",
+				"id": 5512,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
 			}, {
-				nameMedium pouch,
-				id5510,
-				notedfalse,
-				quantity1,
-				selectedfalse
+				"name": "Medium pouch",
+				"id": 5510,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
 			}, {
-				nameSmall pouch,
-				id5509,
-				notedfalse,
-				quantity1,
-				selectedfalse
+				"name": "Small pouch",
+				"id": 5509,
+				"noted": false,
+				"quantity": 1,
+				"selected": false
 			}, {
-				namePure essence,
-				id7936,
-				notedfalse,
-				quantity23,
-				selectedtrue
+				"name": "Pure essence",
+				"id": 7936,
+				"noted": false,
+				"quantity": 23,
+				"selected": true
 			}
 		],
-		invPresets[Withdraw pures],
-		invPreset_Withdraw pures[{
-				namePure essence,
-				id7936,
-				notedfalse,
-				quantity23,
-				selectedtrue
+		"invPresets": ["Withdraw pures"],
+		"invPreset_Withdraw pures": [{
+				"name": "Pure essence",
+				"id": 7936,
+				"noted": false,
+				"quantity": 23,
+				"selected": true
 			}
 		]
 	}
