@@ -1,0 +1,760 @@
+{
+  "Variables": [
+    {
+      "name": "Brilliant memories",
+      "value": "Brilliant memories",
+      "type": "NPC"
+    },
+    {
+      "name": "Harvest",
+      "value": "Harvest",
+      "type": "ACTION"
+    },
+    {
+      "name": "Jar depot",
+      "value": "Jar depot",
+      "type": "GO"
+    },
+    {
+      "name": "Take-from",
+      "value": "Take-from",
+      "type": "ACTION"
+    },
+    {
+      "name": "Unstable rift",
+      "value": "Unstable rift",
+      "type": "GO"
+    },
+    {
+      "name": "Offer-memory",
+      "value": "Offer-memory",
+      "type": "ACTION"
+    },
+    {
+      "name": "Lustrous memories",
+      "value": "Lustrous memories",
+      "type": "NPC"
+    },
+    {
+      "name": "Radiant memories",
+      "value": "Radiant memories",
+      "type": "NPC"
+    },
+    {
+      "name": "Luminous memories",
+      "value": "Luminous memories",
+      "type": "NPC"
+    },
+    {
+      "name": "Incandescent memories",
+      "value": "Incandescent memories",
+      "type": "NPC"
+    },
+    {
+      "name": "Memory jar (empty)",
+      "value": "Memory jar (empty)",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Memory jar",
+      "value": "Memory jar",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Memory jar (full)",
+      "value": "Memory jar (full)",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Middle",
+      "value": "Coordinate(2206, 9117, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Rift",
+      "value": "Coordinate(2208, 9132, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "JarDepotLOC",
+      "value": "Coordinate(2228, 9116, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "GetJars",
+      "value": "GetJars",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "-1",
+      "value": "-1",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Faded memories",
+      "value": "Faded memories",
+      "type": "NPC"
+    },
+    {
+      "name": "Capture",
+      "value": "Capture",
+      "type": "ACTION"
+    },
+    {
+      "name": "Knowledge fragment",
+      "value": "Knowledge fragment",
+      "type": "NPC"
+    },
+    {
+      "name": "Aagi",
+      "value": "Aagi",
+      "type": "NPC"
+    },
+    {
+      "name": "Seren",
+      "value": "Seren",
+      "type": "NPC"
+    },
+    {
+      "name": "Cres",
+      "value": "Cres",
+      "type": "NPC"
+    },
+    {
+      "name": "Memory shard",
+      "value": "Memory shard",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Juna",
+      "value": "Juna",
+      "type": "NPC"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "f3adb1dd-d020-4ad7-b80e-3d3b4611ed42",
+        "position": {
+          "x": "-913.0",
+          "y": "-530.0"
+        },
+        "flowTasks": {
+          "success": "f0de3b6e-31d2-48c5-a3c1-3754712f37d2"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 356.4463482330334,
+        "IntervalHigh": 918.9463482330335
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "f0de3b6e-31d2-48c5-a3c1-3754712f37d2",
+        "position": {
+          "x": "-1019.0",
+          "y": "-266.0"
+        },
+        "flowTasks": {
+          "success": "eea1a8bb-9459-45b8-b402-e118bc213cdc",
+          "failure": "b96cf031-f846-4264-ae3e-e564ada8045b"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Memory jar (empty)",
+          "Memory jar"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains none of:"
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "d08acc0b-a6d2-4f9e-a9d5-7b120781eb58",
+        "position": {
+          "x": "437.0",
+          "y": "191.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "GetJars",
+        "ItemRegex": true
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "eea1a8bb-9459-45b8-b402-e118bc213cdc",
+        "position": {
+          "x": "93.0",
+          "y": "12.0"
+        },
+        "flowTasks": {
+          "success": "dc77f064-2159-4719-972f-f5414b5719c6",
+          "failure": "d08acc0b-a6d2-4f9e-a9d5-7b120781eb58"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Memory jar (full)"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "dc77f064-2159-4719-972f-f5414b5719c6",
+        "position": {
+          "x": "468.0",
+          "y": "-191.0"
+        },
+        "flowTasks": {
+          "success": "f879c037-719e-407c-a2b8-b750eb690f02",
+          "failure": "14b4b9ba-19a3-4c3d-951d-c1161703351f"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Offer-memory"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Unstable rift"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Offer-memory"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "14b4b9ba-19a3-4c3d-951d-c1161703351f",
+        "position": {
+          "x": "864.0",
+          "y": "37.0"
+        },
+        "flowTasks": {
+          "success": "a005417d-91ed-44d2-9b36-5680d2d2d616"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "-1",
+        "Condition": "Animation id equals:"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "a005417d-91ed-44d2-9b36-5680d2d2d616",
+        "position": {
+          "x": "1270.0",
+          "y": "8.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Rift",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "f879c037-719e-407c-a2b8-b750eb690f02",
+        "position": {
+          "x": "850.0",
+          "y": "-249.0"
+        },
+        "flowTasks": {
+          "success": "e44ee15a-6a24-45ab-832d-34e9f601f4f6"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "-1",
+        "Condition": "Animation id equals:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "e44ee15a-6a24-45ab-832d-34e9f601f4f6",
+        "position": {
+          "x": "1258.0",
+          "y": "-298.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Offer-memory"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Unstable rift"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Offer-memory"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "4dd32f98-bbbe-4ec2-a0fa-2d0c363cfce1",
+        "position": {
+          "x": "765.0",
+          "y": "326.0"
+        },
+        "flowTasks": {
+          "success": "6c855431-fd18-472c-abe6-018157bd75fd"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "GetJars"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "6c855431-fd18-472c-abe6-018157bd75fd",
+        "position": {
+          "x": "723.0",
+          "y": "520.0"
+        },
+        "flowTasks": {
+          "success": "ab77265f-5a48-4ce8-b5cc-615931866fdc",
+          "failure": "003ffe68-ba0d-4695-bccb-7b9c36e9e024"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": "Is Full"
+      }
+    },
+    {
+      "name": "ResetToStart",
+      "base": {
+        "id": "ab77265f-5a48-4ce8-b5cc-615931866fdc",
+        "position": {
+          "x": "1143.0",
+          "y": "387.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {}
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "003ffe68-ba0d-4695-bccb-7b9c36e9e024",
+        "position": {
+          "x": "1149.0",
+          "y": "603.0"
+        },
+        "flowTasks": {
+          "failure": "8d892a32-d1da-4d6d-8de1-e7e77ddf3542"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "Is animating (2s delay):"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "8d892a32-d1da-4d6d-8de1-e7e77ddf3542",
+        "position": {
+          "x": "1538.0",
+          "y": "489.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Take-from"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Jar depot"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Take-from"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "NpcCondition",
+      "base": {
+        "id": "470be291-c5d0-4657-9af5-e6dbf2e74f30",
+        "position": {
+          "x": "-580.0",
+          "y": "375.0"
+        },
+        "flowTasks": {
+          "success": "933fd72c-8ea1-432d-ab07-112d8773052b",
+          "failure": "0b7ccdb1-b798-4e03-bbbe-f2be8fd56ab0"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Harvest"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Brilliant memories"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Harvest"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "933fd72c-8ea1-432d-ab07-112d8773052b",
+        "position": {
+          "x": "-3.0",
+          "y": "412.0"
+        },
+        "flowTasks": {
+          "failure": "7b7d95de-2a18-4609-bf3c-90676a34637a"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is moving:"
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "7b7d95de-2a18-4609-bf3c-90676a34637a",
+        "position": {
+          "x": "26.0",
+          "y": "614.0"
+        },
+        "flowTasks": {
+          "failure": "c67c5b9c-ac28-42a5-9ffa-db6a0332f83d"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is animating (2s delay):"
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "179f575a-0fa1-4d66-b112-b96eb1031cab",
+        "position": {
+          "x": "-559.0",
+          "y": "815.0"
+        },
+        "flowTasks": {
+          "failure": "afcd23d4-3a51-40bf-bfa8-2b33a9b4d9ee"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is animating:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "c67c5b9c-ac28-42a5-9ffa-db6a0332f83d",
+        "position": {
+          "x": "399.0",
+          "y": "702.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Harvest"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Brilliant memories"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Harvest"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "0b7ccdb1-b798-4e03-bbbe-f2be8fd56ab0",
+        "position": {
+          "x": "-579.0",
+          "y": "624.0"
+        },
+        "flowTasks": {
+          "failure": "179f575a-0fa1-4d66-b112-b96eb1031cab"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is moving:"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "afcd23d4-3a51-40bf-bfa8-2b33a9b4d9ee",
+        "position": {
+          "x": "-169.0",
+          "y": "825.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Middle",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "NpcCondition",
+      "base": {
+        "id": "085078a6-7204-42f6-a908-e4895308e4cb",
+        "position": {
+          "x": "-1016.0",
+          "y": "221.0"
+        },
+        "flowTasks": {
+          "success": "f8122fc6-46e6-4b5d-a729-5f5516d505f7",
+          "failure": "470be291-c5d0-4657-9af5-e6dbf2e74f30"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Capture"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Knowledge fragment"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Capture"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "f8122fc6-46e6-4b5d-a729-5f5516d505f7",
+        "position": {
+          "x": "-571.0",
+          "y": "37.0"
+        },
+        "flowTasks": {
+          "failure": "e892f977-58ad-4eb5-acf2-b4614c988ad3"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is moving:"
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "e892f977-58ad-4eb5-acf2-b4614c988ad3",
+        "position": {
+          "x": "-286.0",
+          "y": "-229.0"
+        },
+        "flowTasks": {
+          "failure": "51fd6ae8-bb13-4eac-94b4-c71d5edc1924"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is animating:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "51fd6ae8-bb13-4eac-94b4-c71d5edc1924",
+        "position": {
+          "x": "133.0",
+          "y": "-331.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Harvest",
+            "Capture"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Knowledge fragment",
+          "Aagi",
+          "Seren",
+          "Cres",
+          "Juna"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Harvest",
+          "Capture"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "NpcCondition",
+      "base": {
+        "id": "b96cf031-f846-4264-ae3e-e564ada8045b",
+        "position": {
+          "x": "-1009.0",
+          "y": "-27.0"
+        },
+        "flowTasks": {
+          "success": "f8122fc6-46e6-4b5d-a729-5f5516d505f7",
+          "failure": "085078a6-7204-42f6-a908-e4895308e4cb"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Harvest"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Aagi",
+          "Seren",
+          "Cres",
+          "Juna"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Harvest"
+        ],
+        "ActionRegex": false
+      }
+    }
+  ],
+  "BotCategory": "DIVINATION",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.075268817204301,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": true
+  }
+}
