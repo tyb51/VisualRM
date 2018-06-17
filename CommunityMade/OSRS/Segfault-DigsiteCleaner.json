@@ -1,0 +1,368 @@
+{
+  "Variables": [
+    {
+      "name": "Uncleaned find",
+      "value": "Uncleaned find",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Specimen table",
+      "value": "Specimen table",
+      "type": "GO"
+    },
+    {
+      "name": "Dig Site specimen rocks",
+      "value": "Dig Site specimen rocks",
+      "type": "NPC"
+    },
+    {
+      "name": "Take",
+      "value": "Take",
+      "type": "ACTION"
+    },
+    {
+      "name": "Pottery",
+      "value": "Pottery",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Broken arrow",
+      "value": "Broken arrow",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Iron dagger",
+      "value": "Iron dagger",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Drop",
+      "value": "Drop",
+      "type": "ACTION"
+    },
+    {
+      "name": "vase",
+      "value": "vase",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "arrow",
+      "value": "arrow",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Arrowheads",
+      "value": "Arrowheads",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Clean necklace",
+      "value": "Clean necklace",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "glass",
+      "value": "glass",
+      "type": "SPRITE_ITEM"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "515706ba-93ab-4cb1-93b9-8d69fe2fb8d7",
+        "position": {
+          "x": "60.0",
+          "y": "21.0"
+        },
+        "flowTasks": {
+          "success": "f0d25241-c24d-4540-b0a5-995ed658f90c"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "OSRS",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 1000.0
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "f0d25241-c24d-4540-b0a5-995ed658f90c",
+        "position": {
+          "x": "272.0",
+          "y": "301.0"
+        },
+        "flowTasks": {
+          "success": "38bff7f0-4f62-4d85-8e8d-d80eb18c104f",
+          "failure": "40677f4e-9d37-4e09-ba25-a1a04aa8ecc6"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Uncleaned find"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "SpecialInteractionAction",
+      "base": {
+        "id": "33a78f5e-1ff8-4f31-b550-b5c7bc9b3d46",
+        "position": {
+          "x": "1122.0",
+          "y": "-89.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 2.3963963963963963,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Specimen table"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Uncleaned find"
+        ],
+        "CompRegex": false,
+        "Condition": "Use item on",
+        "Type": "Game Object",
+        "ClickRegex": false,
+        "invQuery": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "343ddd1d-693f-46c5-b3f3-4411a2286337",
+        "position": {
+          "x": "760.0",
+          "y": "448.0"
+        },
+        "flowTasks": {
+          "success": "9e841350-ace6-42da-aa78-bc9f0730942c",
+          "failure": "6d258532-f69d-458f-b5db-aa47ac4e9b1e"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Uncleaned find",
+          "Pottery",
+          "Broken arrow",
+          "Iron dagger",
+          "vase",
+          "arrow",
+          "Arrowheads",
+          "glass"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "9e841350-ace6-42da-aa78-bc9f0730942c",
+        "position": {
+          "x": "1178.0",
+          "y": "228.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list5": [
+            "Drop"
+          ],
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Inventory",
+        "ItemValues": [
+          "Uncleaned find",
+          "Pottery",
+          "Broken arrow",
+          "Iron dagger",
+          "vase",
+          "arrow",
+          "Arrowheads",
+          "glass"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Drop"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "6d258532-f69d-458f-b5db-aa47ac4e9b1e",
+        "position": {
+          "x": "1178.0",
+          "y": "569.0"
+        },
+        "flowTasks": {
+          "success": "cca8ee65-e875-461e-a0c7-30505b8a9e94"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Take"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Dig Site specimen rocks"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Take"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "cca8ee65-e875-461e-a0c7-30505b8a9e94",
+        "position": {
+          "x": "1677.0",
+          "y": "454.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 3.333333333333333,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Take"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Dig Site specimen rocks"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Take"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "38bff7f0-4f62-4d85-8e8d-d80eb18c104f",
+        "position": {
+          "x": "649.0",
+          "y": "38.0"
+        },
+        "flowTasks": {
+          "failure": "33a78f5e-1ff8-4f31-b550-b5c7bc9b3d46"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is skilling:"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "40677f4e-9d37-4e09-ba25-a1a04aa8ecc6",
+        "position": {
+          "x": "473.0",
+          "y": "648.0"
+        },
+        "flowTasks": {
+          "success": "176ba3bb-99ca-4176-b9b8-759d4bb7cb6c",
+          "failure": "343ddd1d-693f-46c5-b3f3-4411a2286337"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Clean necklace"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "176ba3bb-99ca-4176-b9b8-759d4bb7cb6c",
+        "position": {
+          "x": "893.0",
+          "y": "775.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

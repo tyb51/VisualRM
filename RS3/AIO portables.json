@@ -1,334 +1,468 @@
 {
-	"Variables": [{
-			"name": "Portable action",
-			"value": "Smith",
-			"type": "ACTION"
-		},{
-			"name": "Material",
-			"value": "Bronze bar",
-			"type": "SPRITE_ITEM"
-		}, {
-			"name": "Material2",
-			"value": "Tin ore",
-			"type": "SPRITE_ITEM"
-		}, {
-			"name": "Chat dialog option",
-			"value": "Something",
-			"type": "STRING"
-		}, {
-			"name": "MinimumQuantity",
-			"value": "7",
-			"type": "NUMBER"
-		}, {
-			"name": "SelectedItem",
-			"value": "2h",
-			"type": "SPRITE_ITEM"
-		}, {
-			"name": "Stop bot when portable is not available",
-			"value": "false",
-			"type": "BOOL"
-		},{
-			"name": "Portable",
-			"value": "Portable",
-			"type": "GO"
-		},{
-			"name": "Bank preset #",
-			"value": "2",
-			"type": "NUMBER"
-		}, {
-			"name": "true",
-			"value": "true",
-			"type": "BOOL"
-		}
-	],
-	"NodeCollection": [{
-			"name": "StartCondition",
-			"base": {
-				"id": "90f1e6b2-cf93-48b1-ba48-2c4d891be57f",
-				"position": {
-					"x": "-380.0",
-					"y": "-267.0"
-				},
-				"flowTasks": {
-					"success": "5b0633e3-d210-4ff9-99c7-9c36dc5e2593"
-				},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"GameMode": "RS3",
-				"IntervalLow": 410.058266073436,
-				"IntervalHigh": 828.3762015410315
-			}
-		}, {
-			"name": "InventoryCondition",
-			"base": {
-				"id": "b57a0ba2-88ec-4ae1-9769-8c85cfe1315a",
-				"position": {
-					"x": "650.0",
-					"y": "411.0"
-				},
-				"flowTasks": {
-					"success": "669a1196-685d-4f0c-8131-4a6485041e22",
-					"failure": "4bc9209e-e148-4f9e-beae-cd180b9eb37c"
-				},
-				"delayMultiplier": 1.0,
-				"enableQuery": true,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"list0": [],
-					"list3": ["MinimumQuantity"],
-					"type": "InventoryQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["Material"],
-				"ItemRegex": true,
-				"Condition": "Contains all of:"
-			}
-		}, {
-			"name": "GameObjectCondition",
-			"base": {
-				"id": "3dbd1097-43ab-429f-8b21-84d7ede53c9a",
-				"position": {
-					"x": "1408.0",
-					"y": "432.0"
-				},
-				"flowTasks": {
-					"success": "f96b198d-5890-4b0b-b2bd-4b9da0e71bff",
-					"failure": "4479cebb-e560-498a-8447-a66800261bb6"
-				},
-				"delayMultiplier": 1.0,
-				"enableQuery": false,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"list0": [],
-					"TypeList": [],
-					"within": "",
-					"type": "GOQuery"
-				}
-			},
-			"variables": {
-				"ItemValues": ["Portable"],
-				"ItemRegex": true,
-				"ActionValues": ["Portable action"],
-				"ActionRegex": true
-			}
-		}, {
-			"name": "MakeXWindowCondition",
-			"base": {
-				"id": "669a1196-685d-4f0c-8131-4a6485041e22",
-				"position": {
-					"x": "964.0",
-					"y": "5.0"
-				},
-				"flowTasks": {
-					"success": "e5bf1222-e970-4c81-ac46-3baa9dbe968b",
-					"failure": "3dbd1097-43ab-429f-8b21-84d7ede53c9a"
-				},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"Values": [],
-				"ItemRegex": false,
-				"Condition": "Is open"
-			}
-		}, {
-			"name": "MakeXWindowAction",
-			"base": {
-				"id": "4677972b-2e70-4015-8abb-73090a77dc10",
-				"position": {
-					"x": "1856.0",
-					"y": "-247.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 1.1801801801801801
-			},
-			"variables": {
-				"Values": ["true"],
-				"ItemRegex": false,
-				"Condition": "Confirm"
-			}
-		}, {
-			"name": "BooleanCheckModulator",
-			"base": {
-				"id": "4479cebb-e560-498a-8447-a66800261bb6",
-				"position": {
-					"x": "1872.0",
-					"y": "679.0"
-				},
-				"flowTasks": {
-					"success": "65c6eb5b-6f5a-4def-9803-41181b347be1",
-					"failure": "5d18da5d-42b2-4753-928c-2d6d7aab08a2"
-				},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"Values": ["Stop bot when portable is not available"],
-				"ItemRegex": false
-			}
-		}, {
-			"name": "InteractionAction",
-			"base": {
-				"id": "f96b198d-5890-4b0b-b2bd-4b9da0e71bff",
-				"position": {
-					"x": "1866.0",
-					"y": "280.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 1.0900900900900903,
-				"enableQuery": false,
-				"queryData": {
-					"bool0": false,
-					"bool1": false,
-					"bool2": false,
-					"list0": [],
-					"TypeList": [],
-					"within": "",
-					"type": "GOQuery"
-				}
-			},
-			"variables": {
-				"Condition": "GameObject",
-				"ItemValues": ["Portable"],
-				"ItemRegex": true,
-				"ActionValues": ["Portable action"],
-				"ActionRegex": true
-			}
-		}, {
-			"name": "StopAction",
-			"base": {
-				"id": "65c6eb5b-6f5a-4def-9803-41181b347be1",
-				"position": {
-					"x": "2328.0",
-					"y": "559.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 1.0
-			}
-		}, {
-			"name": "PauseAction",
-			"base": {
-				"id": "5d18da5d-42b2-4753-928c-2d6d7aab08a2",
-				"position": {
-					"x": "2330.0",
-					"y": "759.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"PauseMode": "Random duration",
-				"IntervalLow": 2000.0,
-				"IntervalHigh": 4983.168901136811
-			}
-		}, {
-			"name": "BankWithdrawAction",
-			"base": {
-				"id": "4bc9209e-e148-4f9e-beae-cd180b9eb37c",
-				"position": {
-					"x": "1150.0",
-					"y": "764.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 1.0450450450450453
-			},
-			"variables": {
-				"Values": ["Bank preset #"],
-				"ItemRegex": true,
-				"Condition": "Preset (#)"
-			}
-		}, {
-			"name": "MakeXWindowCondition",
-			"base": {
-				"id": "5b0633e3-d210-4ff9-99c7-9c36dc5e2593",
-				"position": {
-					"x": "-333.0",
-					"y": "118.0"
-				},
-				"flowTasks": {
-					"failure": "f37302bf-dc0a-47cf-9a23-fb53734e7426"
-				},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"Values": [],
-				"ItemRegex": false,
-				"Condition": "Is crafting"
-			}
-		}, {
-			"name": "ChatDialogAction",
-			"base": {
-				"id": "e20ccc17-ea08-4d47-963a-667a51ea692c",
-				"position": {
-					"x": "454.0",
-					"y": "179.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"Values": ["Chat dialog option"],
-				"ItemRegex": false
-			}
-		}, {
-			"name": "ChatDialogCondition",
-			"base": {
-				"id": "f37302bf-dc0a-47cf-9a23-fb53734e7426",
-				"position": {
-					"x": "67.0",
-					"y": "355.0"
-				},
-				"flowTasks": {
-					"success": "e20ccc17-ea08-4d47-963a-667a51ea692c",
-					"failure": "b57a0ba2-88ec-4ae1-9769-8c85cfe1315a"
-				},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"Values": ["Chat dialog option"],
-				"ItemRegex": false
-			}
-		}, {
-			"name": "MakeXWindowCondition",
-			"base": {
-				"id": "e5bf1222-e970-4c81-ac46-3baa9dbe968b",
-				"position": {
-					"x": "1379.0",
-					"y": "-90.0"
-				},
-				"flowTasks": {
-					"success": "4677972b-2e70-4015-8abb-73090a77dc10",
-					"failure": "76dac1bd-de60-4916-bab0-55634a4a933c"
-				},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"Values": ["SelectedItem"],
-				"ItemRegex": true,
-				"Condition": "Selected item"
-			}
-		}, {
-			"name": "MakeXWindowAction",
-			"base": {
-				"id": "76dac1bd-de60-4916-bab0-55634a4a933c",
-				"position": {
-					"x": "1844.0",
-					"y": "1.0"
-				},
-				"flowTasks": {},
-				"delayMultiplier": 1.0
-			},
-			"variables": {
-				"Values": ["SelectedItem"],
-				"ItemRegex": true,
-				"Condition": "Select item"
-			}
-		}
-	],
-	"BotCategory": "OTHER",
-	"inventoryData": {}
+  "Variables": [
+    {
+      "name": "Bank preset #",
+      "value": "2",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Chat dialog option",
+      "value": "Something",
+      "type": "STRING"
+    },
+    {
+      "name": "Material",
+      "value": "Snapdrag",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Material2",
+      "value": "Red",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "MinimumQuantity",
+      "value": "1",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Portable",
+      "value": "Portable",
+      "type": "GO"
+    },
+    {
+      "name": "Portable action",
+      "value": "Mix Potions",
+      "type": "ACTION"
+    },
+    {
+      "name": "SelectedItem",
+      "value": "Super restore",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Stop bot when portable is not available",
+      "value": "false",
+      "type": "BOOL"
+    },
+    {
+      "name": "true",
+      "value": "true",
+      "type": "BOOL"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "2dad69c8-d58b-4a4b-9187-cb756acc5172",
+        "position": {
+          "x": "0.0",
+          "y": "0.0"
+        },
+        "flowTasks": {
+          "success": "747a4720-e87f-4ac6-910a-fdce47f30d93"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 410.058266073436,
+        "IntervalHigh": 828.3762015410315
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "44184adf-74c3-438a-8782-86bb2854fb59",
+        "position": {
+          "x": "926.0",
+          "y": "641.0"
+        },
+        "flowTasks": {
+          "success": "20732bef-2cd6-4f46-996b-db255bd5034d",
+          "failure": "75c204c6-fffb-4130-8a69-984878aa00df"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list3": [
+            "MinimumQuantity"
+          ],
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Material",
+          "Material2"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains all of:"
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "f211429d-494e-49db-b615-d90bad44dce8",
+        "position": {
+          "x": "1788.0",
+          "y": "699.0"
+        },
+        "flowTasks": {
+          "success": "6cf62275-b8df-4000-9e14-c3b641f105ac",
+          "failure": "ea2220e7-cdc3-4d8b-80f1-5989fcecaae6"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Mix Potions"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Portable"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Portable action"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "MakeXWindowCondition",
+      "base": {
+        "id": "20732bef-2cd6-4f46-996b-db255bd5034d",
+        "position": {
+          "x": "1344.0",
+          "y": "272.0"
+        },
+        "flowTasks": {
+          "success": "4ceb61a1-1429-4fc1-9b93-0ea5dfbe2e5e",
+          "failure": "f211429d-494e-49db-b615-d90bad44dce8"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ItemRegex": false,
+        "Condition": "Is open"
+      }
+    },
+    {
+      "name": "MakeXWindowAction",
+      "base": {
+        "id": "8dcabb5a-3fd5-4671-ba53-f59a1105cc70",
+        "position": {
+          "x": "2236.0",
+          "y": "20.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.1801801801801801
+      },
+      "variables": {
+        "Values": [
+          "true"
+        ],
+        "ItemRegex": false,
+        "Condition": "Confirm"
+      }
+    },
+    {
+      "name": "BooleanCheckModulator",
+      "base": {
+        "id": "ea2220e7-cdc3-4d8b-80f1-5989fcecaae6",
+        "position": {
+          "x": "2252.0",
+          "y": "946.0"
+        },
+        "flowTasks": {
+          "success": "8150c695-5f51-4816-8b27-83cbeef13064",
+          "failure": "1324f276-6721-4613-af88-b93caf7c2ac6"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "Stop bot when portable is not available"
+        ],
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "6cf62275-b8df-4000-9e14-c3b641f105ac",
+        "position": {
+          "x": "2246.0",
+          "y": "547.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0900900900900903,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Mix Potions"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Portable"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Portable action"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "8150c695-5f51-4816-8b27-83cbeef13064",
+        "position": {
+          "x": "2708.0",
+          "y": "826.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "1324f276-6721-4613-af88-b93caf7c2ac6",
+        "position": {
+          "x": "2710.0",
+          "y": "1026.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "PauseMode": "Random duration",
+        "IntervalLow": 2000.0,
+        "IntervalHigh": 4983.168901136811
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "310f10f9-34a5-4903-bf49-f637224ce728",
+        "position": {
+          "x": "1414.0",
+          "y": "871.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0450450450450453,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Bank preset #"
+        ],
+        "ItemRegex": true,
+        "Condition": "Preset (#)",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "MakeXWindowCondition",
+      "base": {
+        "id": "747a4720-e87f-4ac6-910a-fdce47f30d93",
+        "position": {
+          "x": "47.0",
+          "y": "385.0"
+        },
+        "flowTasks": {
+          "failure": "1f01cf31-32eb-4e80-84c1-ad9f39566d71"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ItemRegex": false,
+        "Condition": "Is crafting"
+      }
+    },
+    {
+      "name": "ChatDialogAction",
+      "base": {
+        "id": "8da54ff0-2ea2-4dfa-a179-ccaccf8b589f",
+        "position": {
+          "x": "834.0",
+          "y": "446.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "Chat dialog option"
+        ],
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "ChatDialogCondition",
+      "base": {
+        "id": "1f01cf31-32eb-4e80-84c1-ad9f39566d71",
+        "position": {
+          "x": "447.0",
+          "y": "622.0"
+        },
+        "flowTasks": {
+          "success": "8da54ff0-2ea2-4dfa-a179-ccaccf8b589f",
+          "failure": "44184adf-74c3-438a-8782-86bb2854fb59"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "Chat dialog option"
+        ]
+      }
+    },
+    {
+      "name": "MakeXWindowCondition",
+      "base": {
+        "id": "4ceb61a1-1429-4fc1-9b93-0ea5dfbe2e5e",
+        "position": {
+          "x": "1759.0",
+          "y": "177.0"
+        },
+        "flowTasks": {
+          "success": "8dcabb5a-3fd5-4671-ba53-f59a1105cc70",
+          "failure": "1025ac72-b7e5-49aa-9535-fb4a05826100"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "SelectedItem"
+        ],
+        "ItemRegex": true,
+        "Condition": "Selected item"
+      }
+    },
+    {
+      "name": "MakeXWindowAction",
+      "base": {
+        "id": "1025ac72-b7e5-49aa-9535-fb4a05826100",
+        "position": {
+          "x": "2224.0",
+          "y": "268.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "SelectedItem"
+        ],
+        "ItemRegex": true,
+        "Condition": "Select item"
+      }
+    },
+    {
+      "name": "BankCondition",
+      "base": {
+        "id": "42f3cc44-5cf1-4ed6-92e4-52f9115fe2be",
+        "position": {
+          "x": "993.0",
+          "y": "1110.0"
+        },
+        "flowTasks": {
+          "success": "310f10f9-34a5-4903-bf49-f637224ce728",
+          "failure": "b21a5bdf-59ab-4e87-ada8-9f967a93f100"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "list3": [
+            "MinimumQuantity"
+          ],
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Material",
+          "Material2"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains all of:"
+      }
+    },
+    {
+      "name": "BankCondition",
+      "base": {
+        "id": "75c204c6-fffb-4130-8a69-984878aa00df",
+        "position": {
+          "x": "960.0",
+          "y": "880.0"
+        },
+        "flowTasks": {
+          "success": "42f3cc44-5cf1-4ed6-92e4-52f9115fe2be",
+          "failure": "310f10f9-34a5-4903-bf49-f637224ce728"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": "Is open"
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "b21a5bdf-59ab-4e87-ada8-9f967a93f100",
+        "position": {
+          "x": "1442.0",
+          "y": "1199.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "PauseMode": "Indefinite",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 2000.0
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
 }
