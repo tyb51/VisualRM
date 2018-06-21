@@ -1,0 +1,1867 @@
+{
+  "Variables": [
+    {
+      "name": "Distance 10",
+      "value": "10",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Trade",
+      "value": "Trade",
+      "type": "ACTION"
+    },
+    {
+      "name": "Tan interface",
+      "value": "",
+      "type": "INTERFACE_OBJECT"
+    },
+    {
+      "name": "Tan All",
+      "value": "All",
+      "type": "ACTION"
+    },
+    {
+      "name": "true",
+      "value": "true",
+      "type": "BOOL"
+    },
+    {
+      "name": "Green dragonhide",
+      "value": "Green dragonhide",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Blue dragonhide",
+      "value": "Blue dragonhide",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Red dragonhide",
+      "value": "Red dragonhide",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Black dragonhide",
+      "value": "Black dragonhide",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Coordinate bank",
+      "value": "Coordinate(3273, 3167, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Green dragon leather",
+      "value": "Green dragon leather",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Blue dragon leather",
+      "value": "Blue dragon leather",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Red dragon leather",
+      "value": "Red dragon leather",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Black dragon leather",
+      "value": "Black dragon leather",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Coordinate Ellis",
+      "value": "(3277, 3191, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Ellis",
+      "value": "Ellis",
+      "type": "NPC"
+    },
+    {
+      "name": "324",
+      "value": "324",
+      "type": "NUMBER"
+    },
+    {
+      "name": "130",
+      "value": "130",
+      "type": "NUMBER"
+    },
+    {
+      "name": "129",
+      "value": "129",
+      "type": "NUMBER"
+    },
+    {
+      "name": "128",
+      "value": "128",
+      "type": "NUMBER"
+    },
+    {
+      "name": "131",
+      "value": "131",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Bank",
+      "value": "12",
+      "type": "INTERFACE_OBJECT"
+    },
+    {
+      "name": "Close",
+      "value": "Close",
+      "type": "ACTION"
+    },
+    {
+      "name": "Al-Kharid Green dragonhides",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "Al-Kharid Blue dragonhides",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "Al-Kharid Red dragonhides",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "Al-Kharid Black dragonhides",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "Stamina potion",
+      "value": "Stamina potion(3)",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Magic Tanning",
+      "value": "",
+      "type": "CHECKPOINT"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "899557d6-59f0-462a-b9a2-fc21f664a35d",
+        "position": {
+          "x": "0.0",
+          "y": "0.0"
+        },
+        "flowTasks": {
+          "success": "21c86f6a-ffc8-4a8b-b655-d00f82281f26",
+          "failure": "e26816a9-1988-45aa-afa8-80a17879c7f5"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Coordinate bank"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "c921cc4a-d5b7-4142-be15-0d017ac35c65",
+        "position": {
+          "x": "4.0",
+          "y": "-412.0"
+        },
+        "flowTasks": {
+          "success": "ff4a55ab-db73-43d7-94ec-a982f9c16d4d",
+          "failure": "d169783e-94f2-4ae8-9b3e-792f600461bc"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Ellis"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "NPC"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "4018825b-1a84-4ebf-bc4f-6c67bc499706",
+        "position": {
+          "x": "-415.0",
+          "y": "-179.0"
+        },
+        "flowTasks": {
+          "success": "c921cc4a-d5b7-4142-be15-0d017ac35c65",
+          "failure": "21c86f6a-ffc8-4a8b-b655-d00f82281f26"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Blue dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "491c2902-557a-4513-8084-86c4f5dfa704",
+        "position": {
+          "x": "879.0",
+          "y": "-364.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.2702702702702706,
+        "queryData": {
+          "list4": [
+            "Trade"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Ellis"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Trade"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InterfaceAction",
+      "base": {
+        "id": "7e02dc3e-f022-4485-9eb2-508d36942946",
+        "position": {
+          "x": "876.0",
+          "y": "-689.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "Action",
+        "Values": [
+          "Tan interface"
+        ],
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ItemRegex": false,
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "InterfaceCondition",
+      "base": {
+        "id": "ff4a55ab-db73-43d7-94ec-a982f9c16d4d",
+        "position": {
+          "x": "461.0",
+          "y": "-538.0"
+        },
+        "flowTasks": {
+          "success": "7e02dc3e-f022-4485-9eb2-508d36942946",
+          "failure": "491c2902-557a-4513-8084-86c4f5dfa704"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "list0": [
+            "324"
+          ],
+          "list4": [
+            "129"
+          ],
+          "TypeList": [],
+          "type": "ICQuery"
+        }
+      },
+      "variables": {
+        "TextValues": [],
+        "TextRegex": false,
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ActionRegex": true,
+        "InterfaceObject": "Tan interface",
+        "Cache container": true
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "21c86f6a-ffc8-4a8b-b655-d00f82281f26",
+        "position": {
+          "x": "466.0",
+          "y": "137.0"
+        },
+        "flowTasks": {
+          "failure": "fd88d4a3-f838-48bc-8521-6a6eecd5b96e"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Blue dragonhide"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "e26816a9-1988-45aa-afa8-80a17879c7f5",
+        "position": {
+          "x": "465.0",
+          "y": "358.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Coordinate bank",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "d169783e-94f2-4ae8-9b3e-792f600461bc",
+        "position": {
+          "x": "461.0",
+          "y": "-180.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Coordinate Ellis",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "fd638b4b-84e8-4121-beab-46211eff6b01",
+        "position": {
+          "x": "-449.0",
+          "y": "1076.0"
+        },
+        "flowTasks": {
+          "success": "1197e8a0-052a-4dc4-96f3-70b082a0ad42",
+          "failure": "d9a8b223-0908-4b90-92be-be84f8ea7871"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Red dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "1197e8a0-052a-4dc4-96f3-70b082a0ad42",
+        "position": {
+          "x": "5.0",
+          "y": "939.0"
+        },
+        "flowTasks": {
+          "success": "5959c21f-264d-4c16-9cb0-badcc1ceceb6",
+          "failure": "3ad2c74b-7019-4844-aed0-caa40547ebe9"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Ellis"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "NPC"
+      }
+    },
+    {
+      "name": "InterfaceCondition",
+      "base": {
+        "id": "5959c21f-264d-4c16-9cb0-badcc1ceceb6",
+        "position": {
+          "x": "492.0",
+          "y": "801.0"
+        },
+        "flowTasks": {
+          "success": "97bd5aa4-0ffa-40db-80b8-f7c72648c851",
+          "failure": "a11c3051-4e9a-46cd-9783-f610fdfafc73"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list0": [
+            "324"
+          ],
+          "list4": [
+            "130"
+          ],
+          "TypeList": [],
+          "type": "ICQuery"
+        }
+      },
+      "variables": {
+        "TextValues": [],
+        "TextRegex": false,
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ActionRegex": true,
+        "InterfaceObject": "Tan interface",
+        "Cache container": false
+      }
+    },
+    {
+      "name": "InterfaceAction",
+      "base": {
+        "id": "97bd5aa4-0ffa-40db-80b8-f7c72648c851",
+        "position": {
+          "x": "900.0",
+          "y": "670.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "Action",
+        "Values": [
+          "Tan interface"
+        ],
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ItemRegex": false,
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "a11c3051-4e9a-46cd-9783-f610fdfafc73",
+        "position": {
+          "x": "908.0",
+          "y": "1001.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.3153153153153152,
+        "queryData": {
+          "list4": [
+            "Trade"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Ellis"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Trade"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "3ad2c74b-7019-4844-aed0-caa40547ebe9",
+        "position": {
+          "x": "481.0",
+          "y": "1149.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Coordinate Ellis",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "d9a8b223-0908-4b90-92be-be84f8ea7871",
+        "position": {
+          "x": "-40.0",
+          "y": "1303.0"
+        },
+        "flowTasks": {
+          "success": "4dee2548-599c-40f6-a6ac-f437e74dc613",
+          "failure": "1d76f757-d2d3-43c0-be8f-bab945d59a60"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Coordinate bank"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "4dee2548-599c-40f6-a6ac-f437e74dc613",
+        "position": {
+          "x": "433.0",
+          "y": "1456.0"
+        },
+        "flowTasks": {
+          "failure": "61d4e867-0e32-4725-98bb-cc68464cf56d"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Red dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "1d76f757-d2d3-43c0-be8f-bab945d59a60",
+        "position": {
+          "x": "449.0",
+          "y": "1703.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate:",
+        "Coordinate": "Coordinate bank",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "61d4e867-0e32-4725-98bb-cc68464cf56d",
+        "position": {
+          "x": "876.0",
+          "y": "1545.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0000000000000004,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Red dragonhides"
+        ],
+        "ItemRegex": true,
+        "Condition": "VisualRm preset",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "d851e92b-28e1-4f33-9bce-17de8b6a5672",
+        "position": {
+          "x": "-437.0",
+          "y": "-1415.0"
+        },
+        "flowTasks": {
+          "success": "df097f4e-3774-485b-a407-44b114730d47",
+          "failure": "45491e87-5e15-4af4-a074-3f96c822b57e"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Green dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "df097f4e-3774-485b-a407-44b114730d47",
+        "position": {
+          "x": "-59.0",
+          "y": "-1651.0"
+        },
+        "flowTasks": {
+          "success": "ca0b7eb9-1ead-4cfa-960f-1d2e6ef6a9ab",
+          "failure": "71629a7d-778d-463c-a748-945201cc7660"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Ellis"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "NPC"
+      }
+    },
+    {
+      "name": "InterfaceCondition",
+      "base": {
+        "id": "ca0b7eb9-1ead-4cfa-960f-1d2e6ef6a9ab",
+        "position": {
+          "x": "354.0",
+          "y": "-1824.0"
+        },
+        "flowTasks": {
+          "success": "d80e35da-47ab-4663-8a65-f0ad75000f3b",
+          "failure": "9dc59838-6e74-48c2-9926-eb2933bcb46f"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list0": [
+            "324"
+          ],
+          "list4": [
+            "128"
+          ],
+          "TypeList": [],
+          "type": "ICQuery"
+        }
+      },
+      "variables": {
+        "TextValues": [],
+        "TextRegex": false,
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ActionRegex": true,
+        "InterfaceObject": "Tan interface",
+        "Cache container": true
+      }
+    },
+    {
+      "name": "InterfaceAction",
+      "base": {
+        "id": "d80e35da-47ab-4663-8a65-f0ad75000f3b",
+        "position": {
+          "x": "777.0",
+          "y": "-1854.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "Action",
+        "Values": [
+          "Tan interface"
+        ],
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ItemRegex": false,
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "9dc59838-6e74-48c2-9926-eb2933bcb46f",
+        "position": {
+          "x": "786.0",
+          "y": "-1540.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.2252252252252251,
+        "queryData": {
+          "list4": [
+            "Trade"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Ellis"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Trade"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "71629a7d-778d-463c-a748-945201cc7660",
+        "position": {
+          "x": "361.0",
+          "y": "-1479.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Coordinate Ellis",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "45491e87-5e15-4af4-a074-3f96c822b57e",
+        "position": {
+          "x": "-62.0",
+          "y": "-1290.0"
+        },
+        "flowTasks": {
+          "success": "6ec60051-fd63-4bde-995d-49f6327be598",
+          "failure": "178d5197-0b88-4a59-9890-6db9bb3ba9d4"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Coordinate bank"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "178d5197-0b88-4a59-9890-6db9bb3ba9d4",
+        "position": {
+          "x": "360.0",
+          "y": "-955.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Coordinate bank",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "6ec60051-fd63-4bde-995d-49f6327be598",
+        "position": {
+          "x": "361.0",
+          "y": "-1185.0"
+        },
+        "flowTasks": {
+          "failure": "a9c4381a-8201-4bd6-8733-0f431ebb79fe"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Green dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "a9c4381a-8201-4bd6-8733-0f431ebb79fe",
+        "position": {
+          "x": "787.0",
+          "y": "-1140.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Green dragonhides"
+        ],
+        "ItemRegex": true,
+        "Condition": "VisualRm preset",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "b7a30b0d-4c3c-46d5-9dc4-6a8fd432fae4",
+        "position": {
+          "x": "1880.0",
+          "y": "-598.0"
+        },
+        "flowTasks": {
+          "success": "94f9528c-b6ca-43d9-967f-eacbddc671e1",
+          "failure": "76d6722b-f3c7-43bc-8ff3-3f9603172d03"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Black dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "94f9528c-b6ca-43d9-967f-eacbddc671e1",
+        "position": {
+          "x": "2323.0",
+          "y": "-850.0"
+        },
+        "flowTasks": {
+          "success": "9ad2f6ef-622c-4151-a25d-d480066899fd",
+          "failure": "74f15748-5a1f-4bc4-ba0b-8f021f3abd0d"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Ellis"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "NPC"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "76d6722b-f3c7-43bc-8ff3-3f9603172d03",
+        "position": {
+          "x": "2317.0",
+          "y": "-462.0"
+        },
+        "flowTasks": {
+          "success": "560c2bc6-af94-4d8e-ab33-feca57b78d37",
+          "failure": "ff993292-d1b0-456a-8012-684098d67934"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "Distance 10",
+        "Comparators": [
+          "Coordinate bank"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "InterfaceCondition",
+      "base": {
+        "id": "9ad2f6ef-622c-4151-a25d-d480066899fd",
+        "position": {
+          "x": "2728.0",
+          "y": "-1030.0"
+        },
+        "flowTasks": {
+          "success": "3aa78b04-6b32-435b-9538-484890c0841d",
+          "failure": "2784bc20-33f7-4641-b50e-8e7299b80b1c"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list0": [
+            "324"
+          ],
+          "list4": [
+            "131"
+          ],
+          "TypeList": [],
+          "type": "ICQuery"
+        }
+      },
+      "variables": {
+        "TextValues": [],
+        "TextRegex": false,
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ActionRegex": true,
+        "InterfaceObject": "Tan interface",
+        "Cache container": false
+      }
+    },
+    {
+      "name": "InterfaceAction",
+      "base": {
+        "id": "3aa78b04-6b32-435b-9538-484890c0841d",
+        "position": {
+          "x": "3163.0",
+          "y": "-1173.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "Action",
+        "Values": [
+          "Tan interface"
+        ],
+        "ActionValues": [
+          "Tan All"
+        ],
+        "ItemRegex": false,
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "74f15748-5a1f-4bc4-ba0b-8f021f3abd0d",
+        "position": {
+          "x": "2743.0",
+          "y": "-675.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Coordinate Ellis",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "560c2bc6-af94-4d8e-ab33-feca57b78d37",
+        "position": {
+          "x": "2741.0",
+          "y": "-365.0"
+        },
+        "flowTasks": {
+          "failure": "cb675e12-b597-4743-b086-dec89910a876"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Black dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "ff993292-d1b0-456a-8012-684098d67934",
+        "position": {
+          "x": "2743.0",
+          "y": "-123.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinate": "Coordinate bank",
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "2784bc20-33f7-4641-b50e-8e7299b80b1c",
+        "position": {
+          "x": "3169.0",
+          "y": "-849.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.3603603603603602,
+        "queryData": {
+          "list4": [
+            "Trade"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Ellis"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Trade"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "cb675e12-b597-4743-b086-dec89910a876",
+        "position": {
+          "x": "3169.0",
+          "y": "-266.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Black dragonhides"
+        ],
+        "ItemRegex": true,
+        "Condition": "VisualRm preset",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "f58640dd-a41f-47f6-9762-9888de266772",
+        "position": {
+          "x": "-704.0",
+          "y": "-1580.0"
+        },
+        "flowTasks": {
+          "success": "d851e92b-28e1-4f33-9bce-17de8b6a5672"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "Al-Kharid Green dragonhides"
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "97086143-db82-457a-83d2-c789fcb03ce0",
+        "position": {
+          "x": "-662.0",
+          "y": "-374.0"
+        },
+        "flowTasks": {
+          "success": "4018825b-1a84-4ebf-bc4f-6c67bc499706"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "Al-Kharid Blue dragonhides"
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "54c4ccda-63b3-480e-8776-62e0aca6d40a",
+        "position": {
+          "x": "-701.0",
+          "y": "906.0"
+        },
+        "flowTasks": {
+          "success": "fd638b4b-84e8-4121-beab-46211eff6b01"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "Al-Kharid Red dragonhides"
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "a88f49e7-07be-41a1-8404-7c4c006473bf",
+        "position": {
+          "x": "1598.0",
+          "y": "-763.0"
+        },
+        "flowTasks": {
+          "success": "b7a30b0d-4c3c-46d5-9dc4-6a8fd432fae4"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "Al-Kharid Black dragonhides"
+      }
+    },
+    {
+      "name": "InterfaceAction",
+      "base": {
+        "id": "8e7d0bc1-ae07-4435-aff1-502f49f060fa",
+        "position": {
+          "x": "-1259.0",
+          "y": "-1095.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "Action",
+        "Values": [
+          "Bank"
+        ],
+        "ActionValues": [
+          "Close"
+        ],
+        "ItemRegex": false,
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InterfaceCondition",
+      "base": {
+        "id": "1e9c8fee-8bf8-4c98-b5ae-d4901f119934",
+        "position": {
+          "x": "-1703.0",
+          "y": "-1073.0"
+        },
+        "flowTasks": {
+          "success": "8e7d0bc1-ae07-4435-aff1-502f49f060fa"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "TypeList": [],
+          "type": "ICQuery"
+        }
+      },
+      "variables": {
+        "TextValues": [],
+        "TextRegex": false,
+        "ActionValues": [
+          "Close"
+        ],
+        "ActionRegex": false,
+        "InterfaceObject": "Bank",
+        "Cache container": false
+      }
+    },
+    {
+      "name": "BankCondition",
+      "base": {
+        "id": "88917b5f-7e34-4ec6-81d5-258b7cf48efa",
+        "position": {
+          "x": "-2163.0",
+          "y": "-833.0"
+        },
+        "flowTasks": {
+          "success": "1e9c8fee-8bf8-4c98-b5ae-d4901f119934",
+          "failure": "fd39fda3-439e-4a36-8cc5-fe7bad599a8f"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": "Is open"
+      }
+    },
+    {
+      "name": "SpecialInteractionAction",
+      "base": {
+        "id": "fd39fda3-439e-4a36-8cc5-fe7bad599a8f",
+        "position": {
+          "x": "-1701.0",
+          "y": "-689.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "Tan leather"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Lunar"
+        ],
+        "CompRegex": false,
+        "Condition": "Cast magic",
+        "Type": "",
+        "ClickRegex": false
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "8dfcddbe-3721-43f9-8c64-15afe56f2c36",
+        "position": {
+          "x": "-2143.0",
+          "y": "-546.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ItemRegex": true,
+        "Condition": "VisualRm preset",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "67c3cafb-7e71-4bd6-97f8-7adfe05710e8",
+        "position": {
+          "x": "-2597.0",
+          "y": "-735.0"
+        },
+        "flowTasks": {
+          "success": "88917b5f-7e34-4ec6-81d5-258b7cf48efa",
+          "failure": "8dfcddbe-3721-43f9-8c64-15afe56f2c36"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Green dragonhide",
+          "Blue dragonhide",
+          "Red dragonhide",
+          "Black dragonhide"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "371fad14-ee17-41d6-bcce-5218990aa127",
+        "position": {
+          "x": "-2859.0",
+          "y": "-915.0"
+        },
+        "flowTasks": {
+          "success": "67c3cafb-7e71-4bd6-97f8-7adfe05710e8"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "Magic Tanning"
+      }
+    },
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "ce44fa6c-9d1c-4fa8-a895-c053794e7dd9",
+        "position": {
+          "x": "-2127.0",
+          "y": "203.0"
+        },
+        "flowTasks": {
+          "success": "0076af98-2ee6-4f38-8235-b5e0bacd98f9"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "OSRS",
+        "IntervalLow": 302.58618426579295,
+        "IntervalHigh": 808.3953062693278
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "2536946e-58cb-42f4-8221-7db2a626d324",
+        "position": {
+          "x": "-2670.0",
+          "y": "129.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "Al-Kharid Red dragonhides",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "314e06c2-139d-4cf7-99ba-6f07a63b3ac5",
+        "position": {
+          "x": "-1634.0",
+          "y": "124.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "Al-Kharid Black dragonhides",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "a2b4c819-d8e2-41ef-a84c-332707ccda84",
+        "position": {
+          "x": "-2151.0",
+          "y": "-173.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "Magic Tanning",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "0076af98-2ee6-4f38-8235-b5e0bacd98f9",
+        "position": {
+          "x": "-1889.0",
+          "y": "-27.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "Al-Kharid Blue dragonhides",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "1648c65d-7d7e-4ffa-85da-28e812b3e230",
+        "position": {
+          "x": "-2410.0",
+          "y": "-20.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "Al-Kharid Green dragonhides",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "fd88d4a3-f838-48bc-8521-6a6eecd5b96e",
+        "position": {
+          "x": "903.0",
+          "y": "247.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Blue dragonhides"
+        ],
+        "ItemRegex": true,
+        "Condition": "VisualRm preset",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "ResetToStart",
+      "base": {
+        "id": "a915bae3-0cf7-4cbe-b9c9-ecb23f28cfc7",
+        "position": {
+          "x": "-2111.0",
+          "y": "509.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {}
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "709eee33-f504-4b98-a18c-274f86ebc2bd",
+        "position": {
+          "x": "-2107.0",
+          "y": "679.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "89e5a5df-fd41-4fe5-979e-c0af23753b46",
+        "position": {
+          "x": "-2110.0",
+          "y": "866.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "9f1b7829-513f-4c8d-bf7d-6263335e5c1b",
+        "position": {
+          "x": "-2109.0",
+          "y": "1037.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "b94c98e5-9c41-419c-9be2-f570276e48b3",
+        "position": {
+          "x": "-2383.0",
+          "y": "152.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "b14b9ee5-cfc4-42df-a921-7795e6ad1be3",
+        "position": {
+          "x": "-1868.0",
+          "y": "159.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {
+    "invPreset_Add new preset...": [
+      {
+        "name": "Green dragonhide",
+        "id": 1753,
+        "noted": false,
+        "quantity": 27,
+        "selected": true
+      },
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 10,
+        "selected": true
+      }
+    ],
+    "invPresets": [
+      "Magic Green dragonhides",
+      "Magic Blue dragonhides",
+      "Magic Red dragonhides",
+      "Magic Black dragonhides",
+      "Blue dragonhides",
+      "Green dragonhides",
+      "Black dragonhides",
+      "Red dragonhides"
+    ],
+    "invPreset_Green dragonhides": [
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Green dragonhide",
+        "id": 1753,
+        "noted": false,
+        "quantity": 26,
+        "selected": true
+      },
+      {
+        "name": "Stamina potion",
+        "id": 12627,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ],
+    "invPreset_Blue dragonhides": [
+      {
+        "name": "Stamina potion",
+        "id": 12625,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Blue dragonhide",
+        "id": 1751,
+        "noted": false,
+        "quantity": 26,
+        "selected": true
+      },
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ],
+    "invPreset_Red dragonhides": [
+      {
+        "name": "Red dragonhide",
+        "id": 1749,
+        "noted": false,
+        "quantity": 26,
+        "selected": true
+      },
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Stamina potion",
+        "id": 12627,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ],
+    "invPreset_Magic Green dragonhides": [
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Astral rune",
+        "id": 9075,
+        "noted": false,
+        "quantity": 2,
+        "selected": true
+      },
+      {
+        "name": "Green dragonhide",
+        "id": 1753,
+        "noted": false,
+        "quantity": 25,
+        "selected": true
+      },
+      {
+        "name": "Nature rune",
+        "id": 561,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ],
+    "invPreset_Magic Blue dragonhides": [
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Astral rune",
+        "id": 9075,
+        "noted": false,
+        "quantity": 2,
+        "selected": true
+      },
+      {
+        "name": "Blue dragonhide",
+        "id": 1751,
+        "noted": false,
+        "quantity": 25,
+        "selected": true
+      },
+      {
+        "name": "Nature rune",
+        "id": 561,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ],
+    "invPreset_Magic Red dragonhides": [
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Red dragonhide",
+        "id": 1749,
+        "noted": false,
+        "quantity": 25,
+        "selected": true
+      },
+      {
+        "name": "Astral rune",
+        "id": 9075,
+        "noted": false,
+        "quantity": 2,
+        "selected": true
+      },
+      {
+        "name": "Nature rune",
+        "id": 561,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ],
+    "invPreset_Magic Black dragonhides": [
+      {
+        "name": "Black dragonhide",
+        "id": 1747,
+        "noted": false,
+        "quantity": 25,
+        "selected": true
+      },
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Astral rune",
+        "id": 9075,
+        "noted": false,
+        "quantity": 2,
+        "selected": true
+      },
+      {
+        "name": "Nature rune",
+        "id": 561,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ],
+    "invPreset_test stamia": [
+      {
+        "name": "Stamina potion",
+        "id": 12625,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Blue dragonhide",
+        "id": 1751,
+        "noted": false,
+        "quantity": 26,
+        "selected": true
+      }
+    ],
+    "invPreset_test stamia 2": [
+      {
+        "name": "Blue dragonhide",
+        "id": 1751,
+        "noted": false,
+        "quantity": 26,
+        "selected": true
+      }
+    ],
+    "invPreset_Black dragonhides": [
+      {
+        "name": "Black dragonhide",
+        "id": 1747,
+        "noted": false,
+        "quantity": 26,
+        "selected": true
+      },
+      {
+        "name": "Coins",
+        "id": 995,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      },
+      {
+        "name": "Stamina potion",
+        "id": 12627,
+        "noted": false,
+        "quantity": 1,
+        "selected": true
+      }
+    ]
+  },
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}
