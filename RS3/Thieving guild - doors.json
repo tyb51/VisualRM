@@ -1,1 +1,357 @@
-{"Variables":[{"name":"Door 25 1","value":"4776,5917,0","type":"COORDINATE"},{"name":"Door 25 2","value":"4778,5917,0","type":"COORDINATE"},{"name":"Door 25 3","value":"4780,5917,0","type":"COORDINATE"},{"name":"Door 35 1","value":"4776,5914,0","type":"COORDINATE"},{"name":"Door 35 2","value":"4778,5914,0","type":"COORDINATE"},{"name":"Door 35 3","value":"4780,5914,0","type":"COORDINATE"},{"name":"Door","value":"Door","type":"GO"},{"name":"Open","value":"Open","type":"ACTION"},{"name":"level 35","value":"35","type":"NUMBER"}],"NodeCollection":[{"name":"StartCondition","base":{"id":"bb51df66-79a4-48dc-bc49-bcd3288f629c","position":{"x":"58.0","y":"42.0"},"flowTasks":{"success":"40da1c21-7a3d-4495-bbdd-5813195a3fc7"},"delayMultiplier":1.0},"variables":{"GameMode":"RS3","IntervalLow":452.17722316408845,"IntervalHigh":866.6632578752904}},{"name":"SkillCondition","base":{"id":"40da1c21-7a3d-4495-bbdd-5813195a3fc7","position":{"x":"108.0","y":"324.0"},"flowTasks":{"success":"68070cd9-1dcb-44a0-b053-0b0aef4f025e","failure":"4413af0d-d5ec-4ba1-b6e5-1bfab5ff39ca"},"delayMultiplier":1.0},"variables":{"Comparator":"level 35","Condition":"Less than (\u003c)","Type":"Thieving"}},{"name":"GameObjectCondition","base":{"id":"68070cd9-1dcb-44a0-b053-0b0aef4f025e","position":{"x":"533.0","y":"216.0"},"flowTasks":{"success":"8edcd037-44ae-44e6-b66e-23de2314c73d","failure":"0a098aae-2067-452d-9d30-d39adb3b47e7"},"delayMultiplier":1.0,"queryData":{"bool0":false,"bool1":false,"bool2":false,"bool3":false,"list1":["Door 25 1","Door 25 2","Door 25 3"],"list3":["Open"],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"ItemValues":["Door"],"ItemRegex":false,"ActionValues":["Open"],"ActionRegex":false}},{"name":"PlayerCondition","base":{"id":"8edcd037-44ae-44e6-b66e-23de2314c73d","position":{"x":"956.0","y":"138.0"},"flowTasks":{"failure":"163d6279-daa8-4014-8161-2632d7758ad6"},"delayMultiplier":1.0},"variables":{"Value":"","Condition":"Is animating:"}},{"name":"InteractionAction","base":{"id":"163d6279-daa8-4014-8161-2632d7758ad6","position":{"x":"1431.0","y":"104.0"},"flowTasks":{},"delayMultiplier":1.0,"queryData":{"bool0":false,"bool1":false,"bool2":false,"bool3":false,"list1":["Door 25 1","Door 25 2","Door 25 3"],"list3":["Open"],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Door"],"ItemRegex":false,"ActionValues":["Open"],"ActionRegex":false}},{"name":"GameObjectCondition","base":{"id":"4413af0d-d5ec-4ba1-b6e5-1bfab5ff39ca","position":{"x":"534.0","y":"505.0"},"flowTasks":{"success":"559d1f80-aaec-49bd-bd9b-5db06c27ee40","failure":"0a098aae-2067-452d-9d30-d39adb3b47e7"},"delayMultiplier":1.0,"queryData":{"bool0":false,"bool1":false,"bool2":false,"bool3":false,"list3":["Open"],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"ItemValues":["Door"],"ItemRegex":false,"ActionValues":["Open"],"ActionRegex":false}},{"name":"PlayerCondition","base":{"id":"559d1f80-aaec-49bd-bd9b-5db06c27ee40","position":{"x":"948.0","y":"527.0"},"flowTasks":{"success":"6a9a1944-0eb5-4408-add2-50c886004460"},"delayMultiplier":1.0},"variables":{"Value":"","Condition":"Is animating:"}},{"name":"InteractionAction","base":{"id":"6a9a1944-0eb5-4408-add2-50c886004460","position":{"x":"1388.0","y":"516.0"},"flowTasks":{},"delayMultiplier":1.0,"queryData":{"bool0":false,"bool1":false,"bool2":false,"bool3":false,"list3":["Open"],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Door"],"ItemRegex":false,"ActionValues":["Open"],"ActionRegex":false}},{"name":"WorldHopAction","base":{"id":"0a098aae-2067-452d-9d30-d39adb3b47e7","position":{"x":"958.0","y":"911.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"WhiteValue":["MembersOnly"],"BlackValue":["LegacyOnly"],"Condition":"Random"}}],"BotCategory":"OTHER","inventoryData":{}}
+{
+  "Variables": [
+    {
+      "name": "Door 25 1",
+      "value": "4776,5917,0",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Door 25 2",
+      "value": "4778,5917,0",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Door 25 3",
+      "value": "4780,5917,0",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Door 35 1",
+      "value": "4776,5914,0",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Door 35 2",
+      "value": "4778,5914,0",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Door 35 3",
+      "value": "4780,5914,0",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Door",
+      "value": "Door",
+      "type": "GO"
+    },
+    {
+      "name": "Open",
+      "value": "Open",
+      "type": "ACTION"
+    },
+    {
+      "name": "level 35",
+      "value": "35",
+      "type": "NUMBER"
+    },
+    {
+      "name": "true",
+      "value": "true",
+      "type": "BOOL"
+    },
+    {
+      "name": "Lockpick",
+      "value": "Lockpick",
+      "type": "SPRITE_ITEM"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "20def498-7afc-4150-abcb-ad76f0a19483",
+        "position": {
+          "x": "-291.0",
+          "y": "-92.0"
+        },
+        "flowTasks": {
+          "success": "ad2060da-172f-43d9-ab3d-080a28b32c74"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 229.05217558291824,
+        "IntervalHigh": 920.7013056658177
+      }
+    },
+    {
+      "name": "SkillCondition",
+      "base": {
+        "id": "ad2060da-172f-43d9-ab3d-080a28b32c74",
+        "position": {
+          "x": "-160.0",
+          "y": "305.0"
+        },
+        "flowTasks": {
+          "success": "0c993e7d-fc83-4f14-bae2-93638afcc01b",
+          "failure": "b3fad07c-4b7e-4809-ba2b-76fb9db9bc33"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "level 35",
+        "Condition": "Less than (\u003c)",
+        "Type": "Thieving"
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "0c993e7d-fc83-4f14-bae2-93638afcc01b",
+        "position": {
+          "x": "475.0",
+          "y": "174.0"
+        },
+        "flowTasks": {
+          "success": "3362d221-1afb-46bd-be4e-7dd4f7e43271",
+          "failure": "a171efb2-1ece-4016-a180-81709c04e96a"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list1": [
+            "Door 25 1",
+            "Door 25 2",
+            "Door 25 3"
+          ],
+          "list3": [
+            "Open"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Door"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Open"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "3362d221-1afb-46bd-be4e-7dd4f7e43271",
+        "position": {
+          "x": "898.0",
+          "y": "96.0"
+        },
+        "flowTasks": {
+          "failure": "93893ef7-5d09-4654-a9b3-6bb5d677fd2a"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "true",
+        "Condition": "Is animating:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "93893ef7-5d09-4654-a9b3-6bb5d677fd2a",
+        "position": {
+          "x": "1373.0",
+          "y": "62.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.1801801801801801,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list1": [
+            "Door 25 1",
+            "Door 25 2",
+            "Door 25 3"
+          ],
+          "list3": [
+            "Open"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Door"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Open"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "c7ed4be5-df65-4e51-9f9b-1029655d28b0",
+        "position": {
+          "x": "476.0",
+          "y": "463.0"
+        },
+        "flowTasks": {
+          "success": "148447d4-20f8-4f96-abb1-44f17fad87a9",
+          "failure": "a171efb2-1ece-4016-a180-81709c04e96a"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list1": [
+            "Door 25 1",
+            "Door 25 2",
+            "Door 25 3",
+            "Door 35 1",
+            "Door 35 2",
+            "Door 35 3"
+          ],
+          "list3": [
+            "Open"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Door"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Open"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "148447d4-20f8-4f96-abb1-44f17fad87a9",
+        "position": {
+          "x": "890.0",
+          "y": "485.0"
+        },
+        "flowTasks": {
+          "failure": "f83ae240-c2c4-4869-a86e-afe1e774ee1c"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "true",
+        "Condition": "Is animating:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "f83ae240-c2c4-4869-a86e-afe1e774ee1c",
+        "position": {
+          "x": "1330.0",
+          "y": "474.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.1801801801801801,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Open"
+          ],
+          "TypeList": [],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Door"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Open"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "WorldHopAction",
+      "base": {
+        "id": "a171efb2-1ece-4016-a180-81709c04e96a",
+        "position": {
+          "x": "900.0",
+          "y": "869.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "WhiteValue": [
+          "MembersOnly"
+        ],
+        "BlackValue": [
+          "LegacyOnly",
+          "EoCOnly",
+          "SkillTotal2000",
+          "SkillTotal2600"
+        ],
+        "Condition": "Next"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "b3fad07c-4b7e-4809-ba2b-76fb9db9bc33",
+        "position": {
+          "x": "-37.0",
+          "y": "635.0"
+        },
+        "flowTasks": {
+          "success": "c7ed4be5-df65-4e51-9f9b-1029655d28b0",
+          "failure": "0c993e7d-fc83-4f14-bae2-93638afcc01b"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Lockpick"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

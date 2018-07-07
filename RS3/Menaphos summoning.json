@@ -1,0 +1,304 @@
+{
+  "Variables": [
+    {
+      "name": "Ingredient",
+      "value": "Jug of water",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Obelisk",
+      "value": "Obelisk",
+      "type": "GO"
+    },
+    {
+      "name": "Infuse-pouch",
+      "value": "Infuse-pouch",
+      "type": "ACTION"
+    },
+    {
+      "name": "2",
+      "value": "2",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Charm",
+      "value": "Blue charm",
+      "type": "SPRITE_ITEM"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "4d452719-4461-4e4d-9ad5-4dce41310fb5",
+        "position": {
+          "x": "0.0",
+          "y": "0.0"
+        },
+        "flowTasks": {
+          "success": "e6d95950-70e8-4c11-9db3-915a5db9a130"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 369.3375069183059,
+        "IntervalHigh": 784.6369783940507
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "7567b4c6-9612-4df6-953b-059c041c962b",
+        "position": {
+          "x": "108.0",
+          "y": "280.0"
+        },
+        "flowTasks": {
+          "success": "73b3ff5f-26e0-428a-8be8-89dc6a53af43",
+          "failure": "6cc632a4-6da8-473d-a63a-5a0fabcf329f"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is moving:"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "e6d95950-70e8-4c11-9db3-915a5db9a130",
+        "position": {
+          "x": "-55.0",
+          "y": "557.0"
+        },
+        "flowTasks": {
+          "success": "f1e39ec6-7703-4752-81f7-7fa3da0bc309",
+          "failure": "38cb839b-2a2b-4ae0-8d7e-50f0426b104a"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Ingredient",
+          "Charm"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains all of:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "6cc632a4-6da8-473d-a63a-5a0fabcf329f",
+        "position": {
+          "x": "1223.0",
+          "y": "556.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.8558558558558558,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Infuse-pouch"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Obelisk"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Infuse-pouch"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "MakeXWindowCondition",
+      "base": {
+        "id": "f1e39ec6-7703-4752-81f7-7fa3da0bc309",
+        "position": {
+          "x": "338.0",
+          "y": "520.0"
+        },
+        "flowTasks": {
+          "success": "13f40d49-973c-4bcd-98cc-6a45dd8ac30b",
+          "failure": "7567b4c6-9612-4df6-953b-059c041c962b"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ItemRegex": false,
+        "Condition": "Is open"
+      }
+    },
+    {
+      "name": "MakeXWindowAction",
+      "base": {
+        "id": "13f40d49-973c-4bcd-98cc-6a45dd8ac30b",
+        "position": {
+          "x": "1106.0",
+          "y": "329.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ItemRegex": false,
+        "Condition": "Confirm"
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "b342bf37-cae0-4d94-9ecf-8015a33d2e09",
+        "position": {
+          "x": "626.0",
+          "y": "821.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "2"
+        ],
+        "ItemRegex": true,
+        "Condition": "Preset (#)",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "705c5c26-83ba-41f7-a51c-337e5e3da8f6",
+        "position": {
+          "x": "618.0",
+          "y": "1112.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "PauseMode": "Indefinite",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 2000.0
+      }
+    },
+    {
+      "name": "BankCondition",
+      "base": {
+        "id": "38cb839b-2a2b-4ae0-8d7e-50f0426b104a",
+        "position": {
+          "x": "60.0",
+          "y": "825.0"
+        },
+        "flowTasks": {
+          "success": "7f4f6ce7-a82e-40a8-a94b-37c147b300d6",
+          "failure": "b342bf37-cae0-4d94-9ecf-8015a33d2e09"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": "Is open"
+      }
+    },
+    {
+      "name": "BankCondition",
+      "base": {
+        "id": "7f4f6ce7-a82e-40a8-a94b-37c147b300d6",
+        "position": {
+          "x": "150.0",
+          "y": "1071.0"
+        },
+        "flowTasks": {
+          "success": "b342bf37-cae0-4d94-9ecf-8015a33d2e09",
+          "failure": "705c5c26-83ba-41f7-a51c-337e5e3da8f6"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Ingredient",
+          "Charm"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains all of:"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "73b3ff5f-26e0-428a-8be8-89dc6a53af43",
+        "position": {
+          "x": "477.0",
+          "y": "-2.0"
+        },
+        "flowTasks": {
+          "success": "6cc632a4-6da8-473d-a63a-5a0fabcf329f"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Comparators": [
+          "Obelisk"
+        ],
+        "CompRegex": false,
+        "Condition": "Visible",
+        "Type": "Game Object"
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

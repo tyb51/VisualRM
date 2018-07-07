@@ -1,0 +1,215 @@
+{
+  "Variables": [
+    {
+      "name": "porter",
+      "value": "porter",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Desert Phoenix",
+      "value": "Desert Phoenix",
+      "type": "NPC"
+    },
+    {
+      "name": "grab",
+      "value": "Grab",
+      "type": "ACTION"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "e8330412-913e-486b-9416-ec2936036e9c",
+        "position": {
+          "x": "-29.0",
+          "y": "39.0"
+        },
+        "flowTasks": {
+          "success": "4ab62f66-64d9-4d70-b71c-008f11ba3855"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 1000.0
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "4ab62f66-64d9-4d70-b71c-008f11ba3855",
+        "position": {
+          "x": "48.0",
+          "y": "298.0"
+        },
+        "flowTasks": {
+          "failure": "5d7cda12-f1f8-4a97-b3c1-61cc49e7d707"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is animating:"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "3bf5d0e2-75ce-4802-8e1e-fa017ff2057d",
+        "position": {
+          "x": "184.0",
+          "y": "697.0"
+        },
+        "flowTasks": {
+          "success": "c7b93c1b-b717-4ca8-a1c0-16a426a58f30",
+          "failure": "6f198ebb-4e1b-4b04-ae14-b1f9df7731d2"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "porter"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "EquipmentCondition",
+      "base": {
+        "id": "5d7cda12-f1f8-4a97-b3c1-61cc49e7d707",
+        "position": {
+          "x": "398.0",
+          "y": "454.0"
+        },
+        "flowTasks": {
+          "success": "7babc904-0206-4a96-9843-c3d25972bec3",
+          "failure": "3bf5d0e2-75ce-4802-8e1e-fa017ff2057d"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "ItemValues": [
+          "porter"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "c7b93c1b-b717-4ca8-a1c0-16a426a58f30",
+        "position": {
+          "x": "645.0",
+          "y": "829.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Inventory",
+        "ItemValues": [
+          "porter"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "6f198ebb-4e1b-4b04-ae14-b1f9df7731d2",
+        "position": {
+          "x": "289.0",
+          "y": "1001.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "PauseMode": "Indefinite",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 2000.0
+      }
+    },
+    {
+      "name": "NpcCondition",
+      "base": {
+        "id": "7babc904-0206-4a96-9843-c3d25972bec3",
+        "position": {
+          "x": "866.0",
+          "y": "406.0"
+        },
+        "flowTasks": {
+          "success": "baa94d3f-59d7-4e52-b954-527c7355b238"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Desert Phoenix"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "baa94d3f-59d7-4e52-b954-527c7355b238",
+        "position": {
+          "x": "1277.0",
+          "y": "443.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Grab"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Desert Phoenix"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "grab"
+        ],
+        "ActionRegex": true
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

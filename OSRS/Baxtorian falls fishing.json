@@ -1,0 +1,339 @@
+{
+  "Variables": [
+    {
+      "name": "Ready_fish_boolean",
+      "value": "true",
+      "type": "BOOL"
+    },
+    {
+      "name": "TwentySix",
+      "value": "26",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Fishing Spot",
+      "value": "Fishing spot",
+      "type": "NPC"
+    },
+    {
+      "name": "Drop",
+      "value": "Drop",
+      "type": "ACTION"
+    },
+    {
+      "name": "Fly fishing rod",
+      "value": "Barbarian rod",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Feather",
+      "value": "Feather",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Barbarian Fishing Coord",
+      "value": "Coordinate(3109, 3432, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Leaping fish",
+      "value": "Leaping",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Drop fish",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "Bait",
+      "value": "Fishing bait",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Use-rod",
+      "value": "Use-rod",
+      "type": "ACTION"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "e404c0e2-cb3f-4f08-8e37-f743b52950df",
+        "position": {
+          "x": "225.0",
+          "y": "-74.0"
+        },
+        "flowTasks": {
+          "success": "d6212454-4901-42cd-ada9-088a82f6f368"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "OSRS",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 1000.0
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "585ef7de-b56b-4bdf-ab52-82ac58c9c2e3",
+        "position": {
+          "x": "801.0",
+          "y": "434.0"
+        },
+        "flowTasks": {
+          "success": "c333570f-71ae-4e19-85dd-120cb006ceb7",
+          "failure": "df59868f-1ec6-4431-a997-a60452ef95af"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "Condition": "Is Full"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "36f62fb0-ff87-4f11-a178-e2810c3bad4d",
+        "position": {
+          "x": "1031.0",
+          "y": "1016.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list5": [
+            "Drop"
+          ],
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Inventory",
+        "ItemValues": [
+          "Leaping fish"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Drop"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "df59868f-1ec6-4431-a997-a60452ef95af",
+        "position": {
+          "x": "1017.0",
+          "y": "-126.0"
+        },
+        "flowTasks": {
+          "success": "4b6666ce-a849-4aeb-bb3a-0567223034c3",
+          "failure": "ef2b90c3-13eb-4f7f-b68b-77a83e17bd21"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Fly fishing rod",
+          "Bait"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains all of:"
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "ef2b90c3-13eb-4f7f-b68b-77a83e17bd21",
+        "position": {
+          "x": "1418.0",
+          "y": "-31.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    },
+    {
+      "name": "NpcCondition",
+      "base": {
+        "id": "4b6666ce-a849-4aeb-bb3a-0567223034c3",
+        "position": {
+          "x": "1419.0",
+          "y": "-297.0"
+        },
+        "flowTasks": {
+          "success": "afdd5a35-c24a-441b-92dd-d87d2828af4f"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Use-rod"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Fishing Spot"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Use-rod"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "afdd5a35-c24a-441b-92dd-d87d2828af4f",
+        "position": {
+          "x": "1917.0",
+          "y": "-406.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Use-rod"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Fishing Spot"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Use-rod"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "c333570f-71ae-4e19-85dd-120cb006ceb7",
+        "position": {
+          "x": "1153.0",
+          "y": "274.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "Drop fish",
+        "ItemRegex": true
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "7b5d6b36-56f9-4355-a304-1837da46604e",
+        "position": {
+          "x": "350.0",
+          "y": "682.0"
+        },
+        "flowTasks": {
+          "success": "45a0eef4-4217-4a40-b20b-ec9d3ec3e46f"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "Drop fish"
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "45a0eef4-4217-4a40-b20b-ec9d3ec3e46f",
+        "position": {
+          "x": "541.0",
+          "y": "856.0"
+        },
+        "flowTasks": {
+          "success": "5cdf11d1-8a5a-47a5-9011-467efcb80da0",
+          "failure": "36f62fb0-ff87-4f11-a178-e2810c3bad4d"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Leaping fish"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains none of:"
+      }
+    },
+    {
+      "name": "ResetToStart",
+      "base": {
+        "id": "5cdf11d1-8a5a-47a5-9011-467efcb80da0",
+        "position": {
+          "x": "956.0",
+          "y": "786.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {}
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "d6212454-4901-42cd-ada9-088a82f6f368",
+        "position": {
+          "x": "304.0",
+          "y": "267.0"
+        },
+        "flowTasks": {
+          "failure": "585ef7de-b56b-4bdf-ab52-82ac58c9c2e3"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Is animating:"
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

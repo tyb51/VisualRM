@@ -1,0 +1,132 @@
+{
+  "Variables": [
+    {
+      "name": "Disassemble",
+      "value": "Disassemble",
+      "type": "ABILITY"
+    },
+    {
+      "name": "Item to disassemble",
+      "value": "pouch",
+      "type": "SPRITE_ITEM"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "28fed7ba-f5d3-49fd-84a8-91512a7fbfb4",
+        "position": {
+          "x": "22.0",
+          "y": "-1.0"
+        },
+        "flowTasks": {
+          "success": "c9726637-410a-40aa-a856-70e3de7d0e6d"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 1000.0
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "c9726637-410a-40aa-a856-70e3de7d0e6d",
+        "position": {
+          "x": "86.0",
+          "y": "274.0"
+        },
+        "flowTasks": {
+          "success": "b2734bc0-da6e-41fc-80dd-b3029edb383e",
+          "failure": "58d715b0-3bfb-4b4e-9966-867cdf21fba9"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Item to disassemble"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "StopAction",
+      "base": {
+        "id": "58d715b0-3bfb-4b4e-9966-867cdf21fba9",
+        "position": {
+          "x": "507.0",
+          "y": "544.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      }
+    },
+    {
+      "name": "MakeXWindowCondition",
+      "base": {
+        "id": "b2734bc0-da6e-41fc-80dd-b3029edb383e",
+        "position": {
+          "x": "483.0",
+          "y": "247.0"
+        },
+        "flowTasks": {
+          "failure": "820ead3a-b62f-4899-906f-109f36b847bf"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ItemRegex": false,
+        "Condition": "Is crafting"
+      }
+    },
+    {
+      "name": "SpecialInteractionAction",
+      "base": {
+        "id": "820ead3a-b62f-4899-906f-109f36b847bf",
+        "position": {
+          "x": "924.0",
+          "y": "333.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Item to disassemble"
+        ],
+        "ValueRegex": true,
+        "Comparators": [
+          "Disassemble"
+        ],
+        "CompRegex": false,
+        "Condition": "Cast action bar on",
+        "Type": "Inventory item",
+        "ClickRegex": false
+      }
+    }
+  ],
+  "BotCategory": "INVENTION",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

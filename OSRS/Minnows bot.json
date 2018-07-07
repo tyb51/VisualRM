@@ -1,0 +1,232 @@
+{
+  "Variables": [
+    {
+      "name": "Fly fish spotanim id",
+      "value": "1387",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Fishing spot",
+      "value": "Fishing spot",
+      "type": "NPC"
+    },
+    {
+      "name": "Small Net",
+      "value": "Small Net",
+      "type": "ACTION"
+    },
+    {
+      "name": "null anim",
+      "value": "0",
+      "type": "NUMBER"
+    },
+    {
+      "name": "multi x4",
+      "value": "4",
+      "type": "NUMBER"
+    },
+    {
+      "name": "multi 1000",
+      "value": "1000",
+      "type": "NUMBER"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "ab37aebf-29e0-4e53-ade0-56518541d4ee",
+        "position": {
+          "x": "-555.0",
+          "y": "-437.0"
+        },
+        "flowTasks": {
+          "success": "48b2f938-f2b9-49c4-b206-7c3427564d19"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "OSRS",
+        "IntervalLow": 1520.5927459457405,
+        "IntervalHigh": 1969.0449777513138
+      }
+    },
+    {
+      "name": "NpcCondition",
+      "base": {
+        "id": "0d1c1fa4-31ea-4840-98ae-08164fe692fd",
+        "position": {
+          "x": "543.0",
+          "y": "674.0"
+        },
+        "flowTasks": {
+          "success": "1a5173aa-dc11-4dee-9140-0a7d23a556ca"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool3": true,
+          "list4": [
+            "Small Net"
+          ],
+          "list5": [
+            "Fly fish spotanim id"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Fishing spot"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Small Net"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "1a5173aa-dc11-4dee-9140-0a7d23a556ca",
+        "position": {
+          "x": "1121.0",
+          "y": "387.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Small Net"
+          ],
+          "list5": [
+            "null anim"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Fishing spot"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Small Net"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "9a4fab70-4b2c-49ff-bdc0-95f800d4201d",
+        "position": {
+          "x": "167.0",
+          "y": "443.0"
+        },
+        "flowTasks": {
+          "success": "0d1c1fa4-31ea-4840-98ae-08164fe692fd",
+          "failure": "1a5173aa-dc11-4dee-9140-0a7d23a556ca"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Condition": "Has target:"
+      }
+    },
+    {
+      "name": "TimerCondition",
+      "base": {
+        "id": "6adff022-0692-436f-ba33-4d5b3d4697c4",
+        "position": {
+          "x": "-320.0",
+          "y": "123.0"
+        },
+        "flowTasks": {
+          "success": "cdaefd56-8f8d-4e00-9b5c-ab74f312634b",
+          "failure": "9a4fab70-4b2c-49ff-bdc0-95f800d4201d"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "multi x4",
+        "Condition": "Every X seconds",
+        "IntervalLow": 6.000499102657578,
+        "IntervalHigh": 29.89723641669725
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "cdaefd56-8f8d-4e00-9b5c-ab74f312634b",
+        "position": {
+          "x": "689.0",
+          "y": "-154.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "PauseMode": "Random duration",
+        "IntervalLow": 2198.991043719003,
+        "IntervalHigh": 4963.998721104885
+      }
+    },
+    {
+      "name": "TimerCondition",
+      "base": {
+        "id": "48b2f938-f2b9-49c4-b206-7c3427564d19",
+        "position": {
+          "x": "-522.0",
+          "y": "-159.0"
+        },
+        "flowTasks": {
+          "success": "7a19b508-9b65-46f5-9c0c-3abab0365b8c",
+          "failure": "6adff022-0692-436f-ba33-4d5b3d4697c4"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "multi 1000",
+        "Condition": "Every X seconds",
+        "IntervalLow": 5685.003674413428,
+        "IntervalHigh": 9071.384927208814
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "7a19b508-9b65-46f5-9c0c-3abab0365b8c",
+        "position": {
+          "x": "-42.0",
+          "y": "-217.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "PauseMode": "Indefinite",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 2000.0
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}
