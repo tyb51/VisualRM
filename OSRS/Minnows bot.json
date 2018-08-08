@@ -35,32 +35,32 @@
     {
       "name": "StartCondition",
       "base": {
-        "id": "ab37aebf-29e0-4e53-ade0-56518541d4ee",
+        "id": "a9105271-498b-485f-acbe-619d417cc583",
         "position": {
-          "x": "-555.0",
-          "y": "-437.0"
+          "x": "0.0",
+          "y": "0.0"
         },
         "flowTasks": {
-          "success": "48b2f938-f2b9-49c4-b206-7c3427564d19"
+          "success": "419d6e8d-6541-499d-ba0d-dde9c625d65f"
         },
         "delayMultiplier": 1.0
       },
       "variables": {
         "GameMode": "OSRS",
-        "IntervalLow": 1520.5927459457405,
-        "IntervalHigh": 1969.0449777513138
+        "IntervalLow": 290.2455196834818,
+        "IntervalHigh": 1259.2904974347948
       }
     },
     {
       "name": "NpcCondition",
       "base": {
-        "id": "0d1c1fa4-31ea-4840-98ae-08164fe692fd",
+        "id": "a4bbb24a-463d-4a21-8691-440aebcb37cb",
         "position": {
-          "x": "543.0",
-          "y": "674.0"
+          "x": "1098.0",
+          "y": "1111.0"
         },
         "flowTasks": {
-          "success": "1a5173aa-dc11-4dee-9140-0a7d23a556ca"
+          "success": "6a02a408-3ecc-4fdc-93e2-43a34908a0b8"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -89,10 +89,10 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "1a5173aa-dc11-4dee-9140-0a7d23a556ca",
+        "id": "6a02a408-3ecc-4fdc-93e2-43a34908a0b8",
         "position": {
-          "x": "1121.0",
-          "y": "387.0"
+          "x": "1676.0",
+          "y": "824.0"
         },
         "flowTasks": {},
         "delayMultiplier": 1.0,
@@ -122,14 +122,14 @@
     {
       "name": "PlayerCondition",
       "base": {
-        "id": "9a4fab70-4b2c-49ff-bdc0-95f800d4201d",
+        "id": "b2c06f20-4183-4e63-95ed-a88f4e6ca789",
         "position": {
-          "x": "167.0",
-          "y": "443.0"
+          "x": "722.0",
+          "y": "880.0"
         },
         "flowTasks": {
-          "success": "0d1c1fa4-31ea-4840-98ae-08164fe692fd",
-          "failure": "1a5173aa-dc11-4dee-9140-0a7d23a556ca"
+          "success": "a4bbb24a-463d-4a21-8691-440aebcb37cb",
+          "failure": "6a02a408-3ecc-4fdc-93e2-43a34908a0b8"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -148,77 +148,79 @@
     {
       "name": "TimerCondition",
       "base": {
-        "id": "6adff022-0692-436f-ba33-4d5b3d4697c4",
+        "id": "2ef1b167-2e12-4326-811b-c10aeccc5f30",
         "position": {
-          "x": "-320.0",
-          "y": "123.0"
+          "x": "235.0",
+          "y": "560.0"
         },
         "flowTasks": {
-          "success": "cdaefd56-8f8d-4e00-9b5c-ab74f312634b",
-          "failure": "9a4fab70-4b2c-49ff-bdc0-95f800d4201d"
+          "success": "7b101aad-0801-4015-a08e-cc4ed9dbaae4",
+          "failure": "b2c06f20-4183-4e63-95ed-a88f4e6ca789"
         },
         "delayMultiplier": 1.0
       },
       "variables": {
-        "Comparator": "multi x4",
+        "Comparator": "20",
         "Condition": "Every X seconds",
-        "IntervalLow": 6.000499102657578,
-        "IntervalHigh": 29.89723641669725
+        "IntervalLow": 8.281149694715301,
+        "IntervalHigh": 21.62644289870493
       }
     },
     {
       "name": "PauseAction",
       "base": {
-        "id": "cdaefd56-8f8d-4e00-9b5c-ab74f312634b",
+        "id": "7b101aad-0801-4015-a08e-cc4ed9dbaae4",
         "position": {
-          "x": "689.0",
-          "y": "-154.0"
+          "x": "1244.0",
+          "y": "283.0"
         },
         "flowTasks": {},
         "delayMultiplier": 1.0
       },
       "variables": {
+        "Multiplier": "1",
         "PauseMode": "Random duration",
-        "IntervalLow": 2198.991043719003,
-        "IntervalHigh": 4963.998721104885
+        "IntervalLow": 396.8525667611331,
+        "IntervalHigh": 2040.8758322640067
       }
     },
     {
       "name": "TimerCondition",
       "base": {
-        "id": "48b2f938-f2b9-49c4-b206-7c3427564d19",
+        "id": "419d6e8d-6541-499d-ba0d-dde9c625d65f",
         "position": {
-          "x": "-522.0",
-          "y": "-159.0"
+          "x": "33.0",
+          "y": "278.0"
         },
         "flowTasks": {
-          "success": "7a19b508-9b65-46f5-9c0c-3abab0365b8c",
-          "failure": "6adff022-0692-436f-ba33-4d5b3d4697c4"
+          "success": "0cf2aa17-eab0-44bb-9850-a2df22aeaf8b",
+          "failure": "2ef1b167-2e12-4326-811b-c10aeccc5f30"
         },
         "delayMultiplier": 1.0
       },
       "variables": {
-        "Comparator": "multi 1000",
+        "Comparator": "1000",
         "Condition": "Every X seconds",
-        "IntervalLow": 5685.003674413428,
-        "IntervalHigh": 9071.384927208814
+        "IntervalLow": 1.856153905463981,
+        "IntervalHigh": 4.23541999665178
       }
     },
     {
       "name": "PauseAction",
       "base": {
-        "id": "7a19b508-9b65-46f5-9c0c-3abab0365b8c",
+        "id": "0cf2aa17-eab0-44bb-9850-a2df22aeaf8b",
         "position": {
-          "x": "-42.0",
-          "y": "-217.0"
+          "x": "508.0",
+          "y": "185.0"
         },
         "flowTasks": {},
         "delayMultiplier": 1.0
       },
       "variables": {
-        "PauseMode": "Indefinite",
-        "IntervalLow": 100.0,
-        "IntervalHigh": 2000.0
+        "Multiplier": "500",
+        "PauseMode": "Random duration",
+        "IntervalLow": 9.87198336201276,
+        "IntervalHigh": 25.884444726282002
       }
     }
   ],

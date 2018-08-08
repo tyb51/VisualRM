@@ -1,0 +1,626 @@
+{
+  "Variables": [
+    {
+      "name": "IsAttacked",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "NoAttacked",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "Health",
+      "value": "30",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Eat",
+      "value": "Eat",
+      "type": "ACTION"
+    },
+    {
+      "name": "Shark",
+      "value": "Shark",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "HellHounds",
+      "value": "Coordinate(1368, 4574, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "ExitFull",
+      "value": "Coordinate(2854, 9841, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Exit",
+      "value": "Coordinate(1394, 4587, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Distance",
+      "value": "2",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Sealed",
+      "value": "Sealed",
+      "type": "GI"
+    },
+    {
+      "name": "Take",
+      "value": "Take",
+      "type": "ACTION"
+    },
+    {
+      "name": "Hellhound",
+      "value": "Hellhound",
+      "type": "NPC"
+    },
+    {
+      "name": "Attack",
+      "value": "Attack",
+      "type": "ACTION"
+    },
+    {
+      "name": "True",
+      "value": "True",
+      "type": "BOOL"
+    },
+    {
+      "name": "False",
+      "value": "False",
+      "type": "BOOL"
+    },
+    {
+      "name": "MovingToExit",
+      "value": "False",
+      "type": "BOOL"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "7ee130b3-ba9c-40b0-bb69-41577b32eb80",
+        "position": {
+          "x": "0.0",
+          "y": "0.0"
+        },
+        "flowTasks": {
+          "success": "202758d0-1fb8-42ed-b446-497435708093"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 1000.0,
+        "IntervalHigh": 2000.0
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "4540c576-1f50-47fd-8a9f-7d404560254c",
+        "position": {
+          "x": "1112.0",
+          "y": "357.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "IsAttacked",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "699e4bc9-0295-4af9-922e-9b729bd546a2",
+        "position": {
+          "x": "1187.0",
+          "y": "559.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "NoAttacked",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "a75bdc0b-116e-44f6-8ad0-9d21754e7ba6",
+        "position": {
+          "x": "-260.0",
+          "y": "1197.0"
+        },
+        "flowTasks": {
+          "success": "0db5a641-b7ec-4654-a2b9-107dfd9de988"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "NoAttacked"
+      }
+    },
+    {
+      "name": "StatusCondition",
+      "base": {
+        "id": "38f8d2ac-82b3-48ff-993c-28681ff5a82d",
+        "position": {
+          "x": "192.0",
+          "y": "700.0"
+        },
+        "flowTasks": {
+          "success": "3f3c49bf-a911-4989-9b3e-74c099521680",
+          "failure": "6b2ec88d-5fe7-4347-9ab5-51d860e4c821"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "Health",
+        "Condition": "Less than (\u003c)",
+        "Type": "Health (%)"
+      }
+    },
+    {
+      "name": "StatusCondition",
+      "base": {
+        "id": "0db5a641-b7ec-4654-a2b9-107dfd9de988",
+        "position": {
+          "x": "270.0",
+          "y": "1296.0"
+        },
+        "flowTasks": {
+          "success": "3f3c49bf-a911-4989-9b3e-74c099521680",
+          "failure": "3dd76509-361d-4411-aeea-028a12156f97"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "Health",
+        "Condition": "Less than (\u003c)",
+        "Type": "Health (%)"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "3f3c49bf-a911-4989-9b3e-74c099521680",
+        "position": {
+          "x": "998.0",
+          "y": "1058.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list5": [
+            "Eat"
+          ],
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Inventory",
+        "ItemValues": [
+          "Shark"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Eat"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "bf9b0c08-74b9-4a61-9e80-ff83241ca1e4",
+        "position": {
+          "x": "1211.0",
+          "y": "711.0"
+        },
+        "flowTasks": {
+          "success": "de1e3be2-a430-444d-8a21-95559bc75401",
+          "failure": "de1e3be2-a430-444d-8a21-95559bc75401"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Condition": "Is being attacked:"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "e5aac63e-eaea-4d84-914c-2d76ce148de8",
+        "position": {
+          "x": "1728.0",
+          "y": "1447.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinates": [
+          "ExitFull"
+        ],
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "3dd76509-361d-4411-aeea-028a12156f97",
+        "position": {
+          "x": "976.0",
+          "y": "1366.0"
+        },
+        "flowTasks": {
+          "success": "0f40eb90-5f84-4412-bae1-0559113ebada",
+          "failure": "e5aac63e-eaea-4d84-914c-2d76ce148de8"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Comparators": [
+          "ExitFull"
+        ],
+        "CompRegex": false,
+        "Condition": "Visible",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "db2d41e6-4eb5-4130-9a43-e21454cd4607",
+        "position": {
+          "x": "-249.0",
+          "y": "792.0"
+        },
+        "flowTasks": {
+          "success": "38f8d2ac-82b3-48ff-993c-28681ff5a82d",
+          "failure": "5f71edba-e3b4-446f-9cfa-251cabbc0992"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "Distance"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "HellHounds"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "5f71edba-e3b4-446f-9cfa-251cabbc0992",
+        "position": {
+          "x": "168.0",
+          "y": "944.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate (no tele):",
+        "Coordinates": [
+          "HellHounds"
+        ],
+        "Exact": true,
+        "Radius": "Distance"
+      }
+    },
+    {
+      "name": "CheckpointEndTask",
+      "base": {
+        "id": "3be49dfa-8e04-4457-8f79-6784588bade6",
+        "position": {
+          "x": "1866.0",
+          "y": "1209.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Checkpoint name": "IsAttacked",
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "ebf9f47a-dff3-459c-9f0f-37b6dfc109ae",
+        "position": {
+          "x": "2550.0",
+          "y": "928.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Multiplier": "20",
+        "PauseMode": "Random duration",
+        "IntervalLow": 9.789744756555049,
+        "IntervalHigh": 16.24930500984193
+      }
+    },
+    {
+      "name": "GroundItemCondition",
+      "base": {
+        "id": "133ae6b3-4239-4aff-8b39-79ee4f36b1ab",
+        "position": {
+          "x": "2056.0",
+          "y": "547.0"
+        },
+        "flowTasks": {
+          "success": "505de536-1dd7-4919-9a9b-54e683e0da26",
+          "failure": "ebf9f47a-dff3-459c-9f0f-37b6dfc109ae"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "bool4": false,
+          "bool5": false,
+          "list7": [
+            "Take"
+          ],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Sealed"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Take"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "505de536-1dd7-4919-9a9b-54e683e0da26",
+        "position": {
+          "x": "2483.0",
+          "y": "536.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "bool4": false,
+          "bool5": false,
+          "list7": [
+            "Take"
+          ],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Ground item",
+        "ItemValues": [
+          "Sealed"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Take"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "CheckpointStart",
+      "base": {
+        "id": "c52ec1ee-90a4-4a8e-a575-e8d7f66a91e9",
+        "position": {
+          "x": "-520.0",
+          "y": "532.0"
+        },
+        "flowTasks": {
+          "success": "db2d41e6-4eb5-4130-9a43-e21454cd4607"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "CheckpointTask name": "IsAttacked"
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "de1e3be2-a430-444d-8a21-95559bc75401",
+        "position": {
+          "x": "1686.0",
+          "y": "543.0"
+        },
+        "flowTasks": {
+          "success": "133ae6b3-4239-4aff-8b39-79ee4f36b1ab",
+          "failure": "3353fdfb-70a3-4f1a-8a38-7d77743000f0"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Condition": "Has target:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "3353fdfb-70a3-4f1a-8a38-7d77743000f0",
+        "position": {
+          "x": "2111.0",
+          "y": "878.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "list4": [
+            "Attack"
+          ],
+          "within": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Npc",
+        "ItemValues": [
+          "Hellhound"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Attack"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "BooleanModulator",
+      "base": {
+        "id": "15931d20-3ae7-4247-a7e5-aaa2ec8c8a0d",
+        "position": {
+          "x": "1500.0",
+          "y": "944.0"
+        },
+        "flowTasks": {
+          "success": "202758d0-1fb8-42ed-b446-497435708093"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": "True",
+        "Booleans": "MovingToExit"
+      }
+    },
+    {
+      "name": "BooleanCheckModulator",
+      "base": {
+        "id": "202758d0-1fb8-42ed-b446-497435708093",
+        "position": {
+          "x": "546.0",
+          "y": "456.0"
+        },
+        "flowTasks": {
+          "success": "699e4bc9-0295-4af9-922e-9b729bd546a2",
+          "failure": "4540c576-1f50-47fd-8a9f-7d404560254c"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "MovingToExit"
+        ],
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "BooleanModulator",
+      "base": {
+        "id": "0f40eb90-5f84-4412-bae1-0559113ebada",
+        "position": {
+          "x": "1430.0",
+          "y": "1223.0"
+        },
+        "flowTasks": {
+          "success": "3be49dfa-8e04-4457-8f79-6784588bade6"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": "False",
+        "Booleans": "MovingToExit"
+      }
+    },
+    {
+      "name": "BooleanCheckModulator",
+      "base": {
+        "id": "b72595b7-16dc-4890-bf8e-7becc89518f5",
+        "position": {
+          "x": "0.0",
+          "y": "0.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ItemRegex": false
+      }
+    },
+    {
+      "name": "TimerCondition",
+      "base": {
+        "id": "6b2ec88d-5fe7-4347-9ab5-51d860e4c821",
+        "position": {
+          "x": "758.0",
+          "y": "718.0"
+        },
+        "flowTasks": {
+          "success": "15931d20-3ae7-4247-a7e5-aaa2ec8c8a0d",
+          "failure": "bf9b0c08-74b9-4a61-9e80-ff83241ca1e4"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "500",
+        "Condition": "Every X seconds",
+        "IntervalLow": 9.050746062494095,
+        "IntervalHigh": 10.09117501974106
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

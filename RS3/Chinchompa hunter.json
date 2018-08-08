@@ -1,0 +1,499 @@
+{
+  "Variables": [
+    {
+      "name": "Box trap amount",
+      "value": "3",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Coo1",
+      "value": "Coordinate(3667, 3420, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Coo2",
+      "value": "Coordinate(3666, 3419, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Coo3",
+      "value": "Coordinate(3667, 3418, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Coo4",
+      "value": "Coordinate(3668, 3419, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Coo5",
+      "value": "Coordinate(2442, 3539, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Lay",
+      "value": "Lay",
+      "type": "ACTION"
+    },
+    {
+      "name": "Boxtrap",
+      "value": "Box trap",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Check",
+      "value": "Check",
+      "type": "ACTION"
+    },
+    {
+      "name": "Shaking box",
+      "value": "Shaking box",
+      "type": "GO"
+    },
+    {
+      "name": "Place box",
+      "value": "",
+      "type": "CHECKPOINT"
+    },
+    {
+      "name": "Rebuild",
+      "value": "Rebuild",
+      "type": "ACTION"
+    },
+    {
+      "name": "Box trap",
+      "value": "Box trap",
+      "type": "GO"
+    },
+    {
+      "name": "lvl20",
+      "value": "19",
+      "type": "NUMBER"
+    },
+    {
+      "name": "lvl40",
+      "value": "39",
+      "type": "NUMBER"
+    },
+    {
+      "name": "lvl60",
+      "value": "69",
+      "type": "NUMBER"
+    },
+    {
+      "name": "lvl80",
+      "value": "79",
+      "type": "NUMBER"
+    },
+    {
+      "name": "0",
+      "value": "1",
+      "type": "NUMBER"
+    },
+    {
+      "name": "ox",
+      "value": "ox",
+      "type": "GO"
+    },
+    {
+      "name": "true",
+      "value": "true",
+      "type": "BOOL"
+    },
+    {
+      "name": "false",
+      "value": "false",
+      "type": "BOOL"
+    },
+    {
+      "name": "should hover",
+      "value": "false",
+      "type": "BOOL"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "5b74a728-65c4-40f1-89cc-724c72228588",
+        "position": {
+          "x": "0.0",
+          "y": "0.0"
+        },
+        "flowTasks": {
+          "success": "4b941664-7b56-4b3a-913f-00afb85dcbad",
+          "failure": "12690268-25e6-4742-8c5d-7b408beb7cd1"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Boxtrap"
+        ],
+        "ItemRegex": false,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "2a39750c-d56d-4cf4-9ecc-50120b8987d1",
+        "position": {
+          "x": "883.0",
+          "y": "89.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.7657657657657655,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list5": [
+            "Lay"
+          ],
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Inventory",
+        "ItemValues": [
+          "Boxtrap"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Lay"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PauseAction",
+      "base": {
+        "id": "12690268-25e6-4742-8c5d-7b408beb7cd1",
+        "position": {
+          "x": "431.0",
+          "y": "196.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "PauseMode": "Indefinite",
+        "IntervalLow": 100.0,
+        "IntervalHigh": 2000.0
+      }
+    },
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "08818891-6b59-4bc1-8a13-1e3b110d9da7",
+        "position": {
+          "x": "-1271.0",
+          "y": "-90.0"
+        },
+        "flowTasks": {
+          "success": "e160715b-9989-49af-a92a-f6227b3c17e8"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "RS3",
+        "IntervalLow": 99.67406455504877,
+        "IntervalHigh": 360.9754072013298
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "e160715b-9989-49af-a92a-f6227b3c17e8",
+        "position": {
+          "x": "-1108.0",
+          "y": "148.0"
+        },
+        "flowTasks": {
+          "failure": "98a70278-9cf5-4c27-9b1a-24d69b6410d1"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "true",
+        "Condition": "Is animating:"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "b2debdc0-e97c-4d9c-be2b-dd78480c4c39",
+        "position": {
+          "x": "-406.0",
+          "y": "257.0"
+        },
+        "flowTasks": {
+          "success": "5b74a728-65c4-40f1-89cc-724c72228588",
+          "failure": "a6506895-372f-4eac-9c38-81a250bbcb1c"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "0"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Coo1",
+          "Coo2",
+          "Coo3",
+          "Coo4"
+        ],
+        "CompRegex": false,
+        "Condition": "Position (\u003d)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "a6506895-372f-4eac-9c38-81a250bbcb1c",
+        "position": {
+          "x": "89.0",
+          "y": "337.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 0.3693693693693695
+      },
+      "variables": {
+        "Condition": "To unoccupied coordinate",
+        "Coordinates": [
+          "Coo1",
+          "Coo2",
+          "Coo3",
+          "Coo4"
+        ],
+        "Exact": false,
+        "Radius": "ox"
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "dec0b124-edbb-4647-b5c8-3996ada798ec",
+        "position": {
+          "x": "-420.0",
+          "y": "686.0"
+        },
+        "flowTasks": {
+          "success": "e0e368cf-fe04-4a01-9cd6-6b3fef694f1f"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Lay",
+            "Check",
+            "Rebuild"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Shaking box",
+          "Box trap"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Lay",
+          "Check",
+          "Rebuild"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "e0e368cf-fe04-4a01-9cd6-6b3fef694f1f",
+        "position": {
+          "x": "89.0",
+          "y": "673.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.1261261261261262,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Lay",
+            "Check",
+            "Rebuild"
+          ],
+          "TypeList": [
+            "PRIMARY"
+          ],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Shaking box",
+          "Box trap"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Lay",
+          "Check",
+          "Rebuild"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "98a70278-9cf5-4c27-9b1a-24d69b6410d1",
+        "position": {
+          "x": "-937.0",
+          "y": "682.0"
+        },
+        "flowTasks": {
+          "success": "dec0b124-edbb-4647-b5c8-3996ada798ec",
+          "failure": "b2debdc0-e97c-4d9c-be2b-dd78480c4c39"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "TypeList": [
+            "PRIMARY"
+          ],
+          "within": "",
+          "results": "Box trap amount",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Shaking box",
+          "Box trap"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "GroundItemCondition",
+      "base": {
+        "id": "4b941664-7b56-4b3a-913f-00afb85dcbad",
+        "position": {
+          "x": "436.0",
+          "y": "-181.0"
+        },
+        "flowTasks": {
+          "success": "432d503e-b952-4a07-8538-42c6f11d88d7",
+          "failure": "2a39750c-d56d-4cf4-9ecc-50120b8987d1"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "bool4": false,
+          "bool5": false,
+          "list7": [
+            "Lay"
+          ],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Lay"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "432d503e-b952-4a07-8538-42c6f11d88d7",
+        "position": {
+          "x": "886.0",
+          "y": "-284.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "bool4": false,
+          "bool5": false,
+          "list7": [
+            "Lay"
+          ],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Ground item",
+        "ItemValues": [],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Lay"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "e383c5a8-d210-47af-a948-c12cf2bdfd03",
+        "position": {
+          "x": "-1089.0",
+          "y": "411.0"
+        },
+        "flowTasks": {
+          "failure": "98a70278-9cf5-4c27-9b1a-24d69b6410d1"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Value": "",
+        "Condition": "Has destination:"
+      }
+    }
+  ],
+  "BotCategory": "OTHER",
+  "inventoryData": {},
+  "internalData": {
+    "Mouse multiplier": 3.7419354838709684,
+    "Mouse path": "DEFAULT_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}

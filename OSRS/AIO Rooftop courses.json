@@ -1,1 +1,1455 @@
-{"Variables":[{"name":"Climb","value":"Climb","type":"ACTION"},{"name":"Cross","value":"Cross","type":"ACTION"},{"name":"Swing-across","value":"Swing-across","type":"ACTION"},{"name":"Teeth-grip","value":"Teeth-grip","type":"ACTION"},{"name":"Jump","value":"Jump","type":"ACTION"},{"name":"Gap","value":"Gap","type":"GO"},{"name":"Tightrope","value":"Tightrope","type":"GO"},{"name":"Roof Top Beams","value":"Roof top beams","type":"GO"},{"name":"Tropical Tree","value":"Tropical tree","type":"GO"},{"name":"Zip Line","value":"Zip line","type":"GO"},{"name":"Cable","value":"Cable","type":"GO"},{"name":"Rough Wall","value":"Rough wall","type":"GO"},{"name":"Start Coordinate","value":"Coordinate(3352, 2961, 0)","type":"COORDINATE"},{"name":"Mark","value":"Mark","type":"GI"},{"name":"Take","value":"Take","type":"ACTION"},{"name":"VarrockStartPosition","value":"Coordinate(3222, 3413, 0)","type":"COORDINATE"},{"name":"Clothes line","value":"Clothes line","type":"GO"},{"name":"Leap","value":"Leap","type":"ACTION"},{"name":"Balance","value":"Balance","type":"ACTION"},{"name":"Wall","value":"Wall","type":"GO"},{"name":"Jump-off","value":"Jump-off","type":"ACTION"},{"name":"Edge","value":"Edge","type":"GO"},{"name":"Hurdle","value":"Hurdle","type":"ACTION"},{"name":"ledge","value":"Ledge","type":"GO"},{"name":"Health threshold","value":"40","type":"NUMBER"},{"name":"Food","value":"wine","type":"SPRITE_ITEM"},{"name":"Eat action","value":"Drink","type":"ACTION"},{"name":"Tall tree","value":"Tall tree","type":"GO"},{"name":"Pole-vault","value":"Pole-vault","type":"GO"},{"name":"Vault","value":"Vault","type":"ACTION"},{"name":"Sign","value":"Sign","type":"GO"},{"name":"Climb-up","value":"Climb-up","type":"ACTION"},{"name":"DistanceTostart","value":"8","type":"NUMBER"},{"name":"Eat action 2","value":"Eat","type":"ACTION"},{"name":"Basket","value":"Basket","type":"GO"},{"name":"Market stall","value":"Market stall","type":"GO"},{"name":"banner","value":"Banner","type":"GO"},{"name":"Grab","value":"Grab","type":"ACTION"},{"name":"Monkeybars","value":"Monkeybars","type":"GO"},{"name":"Drying line","value":"Drying line","type":"GO"},{"name":"Jump-on","value":"Jump-on","type":"ACTION"},{"name":"Tree","value":"Tree","type":"GO"},{"name":"Banner launching area","value":"Coordinate(3354, 2974, 1)","type":"COORDINATE"},{"name":"Banner distance","value":"5","type":"NUMBER"}],"NodeCollection":[{"name":"StartCondition","base":{"id":"77f6dc2e-b671-4dc7-b356-4b2a11c4fb5e","position":{"x":"0.0","y":"0.0"},"flowTasks":{"success":"4aa4dfa1-54fe-411b-bd89-30c6d9aa590b"},"delayMultiplier":1.0},"variables":{"GameMode":"OSRS","IntervalLow":660.008183213695,"IntervalHigh":1215.9221617083188}},{"name":"GameObjectCondition","base":{"id":"75b4a6ec-e1c2-45a7-aed3-d7298e5eb858","position":{"x":"674.0","y":"820.0"},"flowTasks":{"success":"b000519e-6cad-4019-91e7-5b3cbc5b24d8","failure":"90d148e4-51aa-47a6-a6d2-f80bd45dbd20"},"delayMultiplier":1.0,"enableQuery":true,"queryData":{"bool0":false,"bool1":false,"bool2":true,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"ItemValues":["Gap","Tightrope","Roof Top Beams","Tropical Tree","Zip Line","Cable","Rough Wall","Clothes line","Wall","Edge","Tall tree","Pole-vault","Basket","Market stall","banner","Monkeybars","Drying line","Tree"],"ItemRegex":true,"ActionValues":["Climb","Cross","Swing-across","Teeth-grip","Jump","Leap","Balance","Jump-off","Vault","Climb-up","Grab","Jump-on"],"ActionRegex":true}},{"name":"InteractionAction","base":{"id":"6a73537b-2468-45d1-84f2-885d4de58322","position":{"x":"1996.0","y":"191.0"},"flowTasks":{},"delayMultiplier":1.8108108108108114,"enableQuery":true,"queryData":{"bool0":false,"bool1":false,"bool2":true,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Gap","Tightrope","Roof Top Beams","Tropical Tree","Zip Line","Cable","Rough Wall","Clothes line","Wall","Edge","Tall tree","Pole-vault","Basket","Market stall","banner","Monkeybars","Drying line","Tree"],"ItemRegex":true,"ActionValues":["Climb","Cross","Swing-across","Teeth-grip","Jump","Leap","Balance","Jump-off","Vault","Climb-up","Grab","Jump-on"],"ActionRegex":true}},{"name":"PlayerCondition","base":{"id":"7a720039-f41c-4b25-99c4-a55dd61aac4d","position":{"x":"276.0","y":"881.0"},"flowTasks":{"failure":"75b4a6ec-e1c2-45a7-aed3-d7298e5eb858"},"delayMultiplier":1.0},"variables":{"Value":"","Condition":"Is animating:"}},{"name":"GroundItemCondition","base":{"id":"d2b5d27f-e5bb-451b-b354-b8d0d920a2ac","position":{"x":"245.0","y":"582.0"},"flowTasks":{"success":"9ec9b11c-3266-4197-9f59-01c300f7f8d4","failure":"7a720039-f41c-4b25-99c4-a55dd61aac4d"},"delayMultiplier":1.0,"enableQuery":true,"queryData":{"bool0":false,"bool1":true,"bool2":false,"bool3":false,"bool4":false,"bool5":false,"list0":[],"within":"","type":"GOQuery"}},"variables":{"ItemValues":["Mark"],"ItemRegex":true,"ActionValues":["Take"],"ActionRegex":false}},{"name":"InteractionAction","base":{"id":"9ec9b11c-3266-4197-9f59-01c300f7f8d4","position":{"x":"804.0","y":"474.0"},"flowTasks":{},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"bool3":false,"bool4":false,"bool5":false,"list0":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"Ground item","ItemValues":["Mark"],"ItemRegex":true,"ActionValues":["Take"],"ActionRegex":false}},{"name":"GameObjectCondition","base":{"id":"90d148e4-51aa-47a6-a6d2-f80bd45dbd20","position":{"x":"808.0","y":"1107.0"},"flowTasks":{"success":"53ae817c-0fd1-4218-a4b3-558d8f74dd46","failure":"219132f2-365f-4fd5-bc4c-424da92e3741"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"ItemValues":["Wall","ledge","Market stall","banner"],"ItemRegex":true,"ActionValues":["Balance","Hurdle","Grab","Jump-on"],"ActionRegex":false}},{"name":"InteractionAction","base":{"id":"c1868b1c-acbb-4cab-9b87-e191ae021f68","position":{"x":"2078.0","y":"1351.0"},"flowTasks":{},"delayMultiplier":1.3153153153153152,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["Wall","ledge","Market stall","banner"],"ItemRegex":true,"ActionValues":["Balance","Hurdle","Grab","Jump-on"],"ActionRegex":false}},{"name":"StatusCondition","base":{"id":"4aa4dfa1-54fe-411b-bd89-30c6d9aa590b","position":{"x":"239.0","y":"267.0"},"flowTasks":{"success":"59d19e25-fab4-450e-9bf8-6f4a463c3b38","failure":"d2b5d27f-e5bb-451b-b354-b8d0d920a2ac"},"delayMultiplier":1.0},"variables":{"Comparator":"Health threshold","Condition":"Less than (\u003c)","Type":"Health (amount)"}},{"name":"InteractionAction","base":{"id":"11f31d65-dd2a-4c48-8e3c-0d7415b528d4","position":{"x":"835.0","y":"-264.0"},"flowTasks":{},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"Condition":"Inventory","ItemValues":[],"ItemRegex":true,"ActionValues":["Eat action","Eat action 2"],"ActionRegex":false}},{"name":"InventoryCondition","base":{"id":"59d19e25-fab4-450e-9bf8-6f4a463c3b38","position":{"x":"645.0","y":"154.0"},"flowTasks":{"success":"11f31d65-dd2a-4c48-8e3c-0d7415b528d4","failure":"e091c4f7-874a-453c-b7d9-0a0f0318c060"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"type":"InventoryQuery"}},"variables":{"ItemValues":["Food"],"ItemRegex":true,"Condition":"Contains any of:"}},{"name":"PauseAction","base":{"id":"2cfe501c-22d0-4ae8-9cec-7630de30f882","position":{"x":"1267.0","y":"296.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"PauseMode":"Indefinite","IntervalLow":20.0,"IntervalHigh":70.0}},{"name":"GameObjectCondition","base":{"id":"cb888792-bbc3-459f-8ef7-2c72bb2e55df","position":{"x":"1319.0","y":"1679.0"},"flowTasks":{"success":"d7312442-622a-4603-b044-68cab7076df7"},"delayMultiplier":1.0,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"ItemValues":["Sign"],"ItemRegex":true,"ActionValues":[],"ActionRegex":false}},{"name":"SpecialInteractionAction","base":{"id":"d7312442-622a-4603-b044-68cab7076df7","position":{"x":"1772.0","y":"1587.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"Value":"Sign","ValueRegex":false,"Comparator":"","CompRegex":false,"Condition":"Click","Type":"Game Object"}},{"name":"PlayerCondition","base":{"id":"219132f2-365f-4fd5-bc4c-424da92e3741","position":{"x":"1113.0","y":"1441.0"},"flowTasks":{"failure":"cb888792-bbc3-459f-8ef7-2c72bb2e55df"},"delayMultiplier":1.0},"variables":{"Value":"","Condition":"Is moving:"}},{"name":"PlayerCondition","base":{"id":"b000519e-6cad-4019-91e7-5b3cbc5b24d8","position":{"x":"1149.0","y":"737.0"},"flowTasks":{"success":"dcef5fa2-8576-4f69-b701-e18673d88df5","failure":"6a73537b-2468-45d1-84f2-885d4de58322"},"delayMultiplier":1.0},"variables":{"Value":"","Condition":"Is moving:"}},{"name":"TraversalAction","base":{"id":"5600284d-ac74-4321-8d36-6c6a3f86cbfa","position":{"x":"2435.0","y":"565.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"Condition":"To coordinate:","Coordinate":"Start Coordinate","Exact":false,"Radius":""}},{"name":"CalculationCondition","base":{"id":"dcef5fa2-8576-4f69-b701-e18673d88df5","position":{"x":"1560.0","y":"677.0"},"flowTasks":{"success":"85818acc-5116-40da-af16-c9be0b3fa901"},"delayMultiplier":1.0},"variables":{"Value":"","Comparator":"Start Coordinate","CompRegex":false,"Condition":"Reachable","Type":"Coordinate"}},{"name":"CalculationCondition","base":{"id":"85818acc-5116-40da-af16-c9be0b3fa901","position":{"x":"1962.0","y":"683.0"},"flowTasks":{"success":"6a73537b-2468-45d1-84f2-885d4de58322","failure":"5600284d-ac74-4321-8d36-6c6a3f86cbfa"},"delayMultiplier":1.0},"variables":{"Value":"DistanceTostart","Comparator":"Start Coordinate","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"BankWithdrawAction","base":{"id":"e091c4f7-874a-453c-b7d9-0a0f0318c060","position":{"x":"1180.0","y":"49.0"},"flowTasks":{},"delayMultiplier":1.0},"variables":{"Values":["Food preset"],"ItemRegex":false,"Condition":"VisualRm preset","ConditionRegex":false}},{"name":"CalculationCondition","base":{"id":"53ae817c-0fd1-4218-a4b3-558d8f74dd46","position":{"x":"1422.0","y":"1092.0"},"flowTasks":{"success":"902279ea-f660-4b35-b6ad-9b770b3fdcb2","failure":"c1868b1c-acbb-4cab-9b87-e191ae021f68"},"delayMultiplier":1.0},"variables":{"Value":"Banner distance","Comparator":"Banner launching area","CompRegex":false,"Condition":"Distance to (\u003c)","Type":"Coordinate"}},{"name":"InteractionAction","base":{"id":"902279ea-f660-4b35-b6ad-9b770b3fdcb2","position":{"x":"1929.0","y":"1054.0"},"flowTasks":{},"delayMultiplier":1.810810810810811,"enableQuery":false,"queryData":{"bool0":false,"bool1":false,"bool2":false,"list0":[],"TypeList":[],"within":"","type":"GOQuery"}},"variables":{"Condition":"GameObject","ItemValues":["banner"],"ItemRegex":false,"ActionValues":["Grab"],"ActionRegex":false}}],"BotCategory":"AGILITY","inventoryData":{"invPreset_Cooking":[{"name":"Raw lobster","id":377,"noted":false,"quantity":28,"selected":false}],"invPresets":["Lobbies","Food preset"],"invPreset_Lobsters":[{"name":"Raw lobster","id":377,"noted":false,"quantity":28,"selected":true}],"invPreset_Lobsters to cook":[{"name":"Raw lobster","id":377,"noted":false,"quantity":28,"selected":true}],"invPreset_Lobbies":[{"name":"Raw lobster","id":377,"noted":false,"quantity":28,"selected":true}],"invPreset_Food preset":[{"name":"Jug of wine","id":1993,"noted":false,"quantity":20,"selected":true}]}}
+{
+  "Variables": [
+    {
+      "name": "Climb",
+      "value": "Climb",
+      "type": "ACTION"
+    },
+    {
+      "name": "Cross",
+      "value": "Cross",
+      "type": "ACTION"
+    },
+    {
+      "name": "Swing-across",
+      "value": "Swing-across",
+      "type": "ACTION"
+    },
+    {
+      "name": "Teeth-grip",
+      "value": "Teeth-grip",
+      "type": "ACTION"
+    },
+    {
+      "name": "Jump",
+      "value": "Jump",
+      "type": "ACTION"
+    },
+    {
+      "name": "Gap",
+      "value": "Gap",
+      "type": "GO"
+    },
+    {
+      "name": "Tightrope",
+      "value": "Tightrope",
+      "type": "GO"
+    },
+    {
+      "name": "Roof Top Beams",
+      "value": "Roof top beams",
+      "type": "GO"
+    },
+    {
+      "name": "Tropical Tree",
+      "value": "Tropical tree",
+      "type": "GO"
+    },
+    {
+      "name": "Zip Line",
+      "value": "Zip line",
+      "type": "GO"
+    },
+    {
+      "name": "Cable",
+      "value": "Cable",
+      "type": "GO"
+    },
+    {
+      "name": "Rough Wall",
+      "value": "Rough wall",
+      "type": "GO"
+    },
+    {
+      "name": "Start Coordinate",
+      "value": "Coordinate(2672, 3297, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Mark",
+      "value": "Mark",
+      "type": "GI"
+    },
+    {
+      "name": "Take",
+      "value": "Take",
+      "type": "ACTION"
+    },
+    {
+      "name": "VarrockStartPosition",
+      "value": "Coordinate(2634, 3675, 0)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Clothes line",
+      "value": "Clothes line",
+      "type": "GO"
+    },
+    {
+      "name": "Leap",
+      "value": "Leap",
+      "type": "ACTION"
+    },
+    {
+      "name": "Balance",
+      "value": "Balance",
+      "type": "ACTION"
+    },
+    {
+      "name": "Wall",
+      "value": "Wall",
+      "type": "GO"
+    },
+    {
+      "name": "Jump-off",
+      "value": "Jump-off",
+      "type": "ACTION"
+    },
+    {
+      "name": "Edge",
+      "value": "Edge",
+      "type": "GO"
+    },
+    {
+      "name": "Hurdle",
+      "value": "Hurdle",
+      "type": "ACTION"
+    },
+    {
+      "name": "ledge",
+      "value": "Ledge",
+      "type": "GO"
+    },
+    {
+      "name": "Health threshold",
+      "value": "40",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Food",
+      "value": "wine",
+      "type": "SPRITE_ITEM"
+    },
+    {
+      "name": "Eat action",
+      "value": "Drink",
+      "type": "ACTION"
+    },
+    {
+      "name": "Tall tree",
+      "value": "Tall tree",
+      "type": "GO"
+    },
+    {
+      "name": "Pole-vault",
+      "value": "Pole-vault",
+      "type": "GO"
+    },
+    {
+      "name": "Vault",
+      "value": "Vault",
+      "type": "ACTION"
+    },
+    {
+      "name": "Sign",
+      "value": "Sign",
+      "type": "GO"
+    },
+    {
+      "name": "Climb-up",
+      "value": "Climb-up",
+      "type": "ACTION"
+    },
+    {
+      "name": "DistanceTostart",
+      "value": "8",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Eat action 2",
+      "value": "Eat",
+      "type": "ACTION"
+    },
+    {
+      "name": "Basket",
+      "value": "Basket",
+      "type": "GO"
+    },
+    {
+      "name": "Market stall",
+      "value": "Market stall",
+      "type": "GO"
+    },
+    {
+      "name": "banner",
+      "value": "Banner",
+      "type": "GO"
+    },
+    {
+      "name": "Grab",
+      "value": "Grab",
+      "type": "ACTION"
+    },
+    {
+      "name": "Monkeybars",
+      "value": "Monkeybars",
+      "type": "GO"
+    },
+    {
+      "name": "Drying line",
+      "value": "Drying line",
+      "type": "GO"
+    },
+    {
+      "name": "Jump-on",
+      "value": "Jump-on",
+      "type": "ACTION"
+    },
+    {
+      "name": "Tree",
+      "value": "Tree",
+      "type": "GO"
+    },
+    {
+      "name": "Banner launching area",
+      "value": "Coordinate(3354, 2974, 1)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Banner distance",
+      "value": "5",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Jump-in",
+      "value": "Jump-in",
+      "type": "ACTION"
+    },
+    {
+      "name": "Pile of fish",
+      "value": "Pile of fish",
+      "type": "GO"
+    },
+    {
+      "name": "Hand holds",
+      "value": "Hand holds",
+      "type": "GO"
+    },
+    {
+      "name": "Ledge coordinate",
+      "value": "Coordinate(3011, 3343, 3)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Ledge coordinate 2",
+      "value": "Coordinate(3012, 3334, 3)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Ledge coordinate 2.1",
+      "value": "Coordinate(3014, 3335, 3)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Ledge coordinate 3",
+      "value": "Coordinate(3018, 3332, 3)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Wooden Beams",
+      "value": "Wooden Beams",
+      "type": "GO"
+    },
+    {
+      "name": "Plank",
+      "value": "Plank",
+      "type": "GO"
+    },
+    {
+      "name": "Walk-on",
+      "value": "Walk-on",
+      "type": "ACTION"
+    },
+    {
+      "name": "Balance-across",
+      "value": "Balance-across",
+      "type": "ACTION"
+    },
+    {
+      "name": "Steep roof",
+      "value": "Steep roof",
+      "type": "GO"
+    },
+    {
+      "name": "Ardougne mark loc",
+      "value": "Coordinate(2657, 3318, 3)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Mark min quantity",
+      "value": "7",
+      "type": "NUMBER"
+    },
+    {
+      "name": "Narrow wall",
+      "value": "Narrow wall",
+      "type": "GO"
+    },
+    {
+      "name": "Draynor gap 1",
+      "value": "Coordinate(3095, 3255, 3)",
+      "type": "COORDINATE"
+    },
+    {
+      "name": "Crate",
+      "value": "Crate",
+      "type": "GO"
+    }
+  ],
+  "NodeCollection": [
+    {
+      "name": "StartCondition",
+      "base": {
+        "id": "931ddebe-7c49-4fdd-9074-a118cc52f1bb",
+        "position": {
+          "x": "0.0",
+          "y": "0.0"
+        },
+        "flowTasks": {
+          "success": "420dc43c-849f-44e9-88e8-675c0111bc77"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "GameMode": "OSRS",
+        "IntervalLow": 660.008183213695,
+        "IntervalHigh": 1215.9221617083188
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "db879afb-3085-4ee1-94b3-97a67d3e4d6f",
+        "position": {
+          "x": "973.0",
+          "y": "943.0"
+        },
+        "flowTasks": {
+          "success": "8abc81d7-39e4-4b8f-8cf9-ef48eab705f1",
+          "failure": "d612b636-e3a8-4700-932a-fc16685e4fed"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Climb",
+            "Cross",
+            "Swing-across",
+            "Teeth-grip",
+            "Jump",
+            "Leap",
+            "Balance",
+            "Jump-off",
+            "Vault",
+            "Climb-up",
+            "Grab",
+            "Jump-on",
+            "Jump-in",
+            "Walk-on"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Tightrope",
+          "Roof Top Beams",
+          "Tropical Tree",
+          "Zip Line",
+          "Cable",
+          "Rough Wall",
+          "Clothes line",
+          "Edge",
+          "Tall tree",
+          "Pole-vault",
+          "Basket",
+          "Market stall",
+          "banner",
+          "Monkeybars",
+          "Drying line",
+          "Tree",
+          "Pile of fish",
+          "Hand holds",
+          "Wooden Beams",
+          "Plank",
+          "Narrow wall",
+          "Crate"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Climb",
+          "Cross",
+          "Swing-across",
+          "Teeth-grip",
+          "Jump",
+          "Leap",
+          "Balance",
+          "Jump-off",
+          "Vault",
+          "Climb-up",
+          "Grab",
+          "Jump-on",
+          "Jump-in",
+          "Walk-on"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "3510e940-3ac2-4bcc-a781-2da46e5aaae8",
+        "position": {
+          "x": "2295.0",
+          "y": "314.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.8108108108108114,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Climb",
+            "Cross",
+            "Swing-across",
+            "Teeth-grip",
+            "Jump",
+            "Leap",
+            "Balance",
+            "Jump-off",
+            "Vault",
+            "Climb-up",
+            "Grab",
+            "Jump-on",
+            "Jump-in",
+            "Walk-on",
+            "Balance-across"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Tightrope",
+          "Roof Top Beams",
+          "Tropical Tree",
+          "Zip Line",
+          "Cable",
+          "Rough Wall",
+          "Clothes line",
+          "Edge",
+          "Tall tree",
+          "Pole-vault",
+          "Basket",
+          "Market stall",
+          "banner",
+          "Monkeybars",
+          "Drying line",
+          "Tree",
+          "Pile of fish",
+          "Hand holds",
+          "Wooden Beams",
+          "Plank",
+          "Steep roof",
+          "Narrow wall",
+          "Crate"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Climb",
+          "Cross",
+          "Swing-across",
+          "Teeth-grip",
+          "Jump",
+          "Leap",
+          "Balance",
+          "Jump-off",
+          "Vault",
+          "Climb-up",
+          "Grab",
+          "Jump-on",
+          "Jump-in",
+          "Walk-on",
+          "Balance-across"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "38da2637-c993-4fb1-ba5d-74cb6bbd7ce6",
+        "position": {
+          "x": "575.0",
+          "y": "1004.0"
+        },
+        "flowTasks": {
+          "failure": "db879afb-3085-4ee1-94b3-97a67d3e4d6f"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Condition": "Is animating:"
+      }
+    },
+    {
+      "name": "GroundItemCondition",
+      "base": {
+        "id": "9da58608-9f45-4266-832a-54db6b4232f6",
+        "position": {
+          "x": "236.0",
+          "y": "513.0"
+        },
+        "flowTasks": {
+          "success": "2423299d-ca8e-4189-a0b1-e468ad4f15c8",
+          "failure": "df303e6c-ff89-4154-8329-2fb5bcfeb4e7"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "bool4": false,
+          "bool5": false,
+          "list0": [
+            "Ardougne mark loc"
+          ],
+          "list7": [
+            "Take"
+          ],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Mark"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Take"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "2423299d-ca8e-4189-a0b1-e468ad4f15c8",
+        "position": {
+          "x": "1103.0",
+          "y": "597.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "bool4": false,
+          "bool5": false,
+          "list7": [
+            "Take"
+          ],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Ground item",
+        "ItemValues": [
+          "Mark"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Take"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "d612b636-e3a8-4700-932a-fc16685e4fed",
+        "position": {
+          "x": "1107.0",
+          "y": "1230.0"
+        },
+        "flowTasks": {
+          "success": "26db966f-0299-40d0-8890-8f7a6c1becf8",
+          "failure": "d121c309-009e-4d7b-bc83-00aba14c998c"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Climb",
+            "Jump",
+            "Leap",
+            "Balance",
+            "Hurdle",
+            "Grab",
+            "Jump-on"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Gap",
+          "ledge",
+          "Market stall",
+          "banner"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Climb",
+          "Jump",
+          "Leap",
+          "Balance",
+          "Hurdle",
+          "Grab",
+          "Jump-on"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "022fb223-ee8a-428d-b5fc-f5fce7c1c43a",
+        "position": {
+          "x": "3321.0",
+          "y": "2108.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.3153153153153152,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Climb",
+            "Jump",
+            "Leap",
+            "Balance",
+            "Hurdle",
+            "Grab",
+            "Jump-on"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Gap",
+          "ledge",
+          "Market stall",
+          "banner"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Climb",
+          "Jump",
+          "Leap",
+          "Balance",
+          "Hurdle",
+          "Grab",
+          "Jump-on"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "StatusCondition",
+      "base": {
+        "id": "420dc43c-849f-44e9-88e8-675c0111bc77",
+        "position": {
+          "x": "233.0",
+          "y": "238.0"
+        },
+        "flowTasks": {
+          "success": "61bb1174-48d8-4149-a45b-4ed6fb3c3787",
+          "failure": "9da58608-9f45-4266-832a-54db6b4232f6"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Comparator": "Health threshold",
+        "Condition": "Less than (\u003c)",
+        "Type": "Health (amount)"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "4d0b20fc-966c-45ae-8102-b04ced4d10fc",
+        "position": {
+          "x": "1134.0",
+          "y": "-141.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "list5": [
+            "Drink",
+            "Eat"
+          ],
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "Condition": "Inventory",
+        "ItemValues": [],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Eat action",
+          "Eat action 2"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InventoryCondition",
+      "base": {
+        "id": "61bb1174-48d8-4149-a45b-4ed6fb3c3787",
+        "position": {
+          "x": "944.0",
+          "y": "277.0"
+        },
+        "flowTasks": {
+          "success": "4d0b20fc-966c-45ae-8102-b04ced4d10fc",
+          "failure": "57465270-15ec-4e66-b78a-56635c29a931"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "type": "InventoryQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Food"
+        ],
+        "ItemRegex": true,
+        "Condition": "Contains any of:"
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "aa59e7a6-268a-4cd7-ab97-800ccc87e561",
+        "position": {
+          "x": "1624.0",
+          "y": "1954.0"
+        },
+        "flowTasks": {
+          "success": "92e7f4eb-7502-4a97-86fc-5cd3cfdef62d"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Tall tree",
+          "Sign"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "SpecialInteractionAction",
+      "base": {
+        "id": "92e7f4eb-7502-4a97-86fc-5cd3cfdef62d",
+        "position": {
+          "x": "2067.0",
+          "y": "2045.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Tall tree",
+          "Sign"
+        ],
+        "ValueRegex": true,
+        "Comparators": [],
+        "CompRegex": false,
+        "Condition": "Click",
+        "Type": "Game Object",
+        "ClickRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "d121c309-009e-4d7b-bc83-00aba14c998c",
+        "position": {
+          "x": "1261.0",
+          "y": "1509.0"
+        },
+        "flowTasks": {
+          "failure": "710ff580-ee05-48c7-87ec-08abd884fda6"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Condition": "Is moving:"
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "8abc81d7-39e4-4b8f-8cf9-ef48eab705f1",
+        "position": {
+          "x": "1448.0",
+          "y": "860.0"
+        },
+        "flowTasks": {
+          "success": "327f07b8-82ac-4b06-8755-b5d807fcc2c5",
+          "failure": "3510e940-3ac2-4bcc-a781-2da46e5aaae8"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Condition": "Is moving:"
+      }
+    },
+    {
+      "name": "TraversalAction",
+      "base": {
+        "id": "e86e56aa-40cd-46de-a113-396fb77daa52",
+        "position": {
+          "x": "2734.0",
+          "y": "688.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Condition": "To coordinate:",
+        "Coordinates": [
+          "Start Coordinate"
+        ],
+        "Exact": false,
+        "Radius": ""
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "327f07b8-82ac-4b06-8755-b5d807fcc2c5",
+        "position": {
+          "x": "1859.0",
+          "y": "800.0"
+        },
+        "flowTasks": {
+          "success": "3bfd3c15-8c83-4052-b22f-53c7e19b755a"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Comparators": [
+          "Start Coordinate"
+        ],
+        "CompRegex": false,
+        "Condition": "Reachable",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "3bfd3c15-8c83-4052-b22f-53c7e19b755a",
+        "position": {
+          "x": "2261.0",
+          "y": "806.0"
+        },
+        "flowTasks": {
+          "success": "3510e940-3ac2-4bcc-a781-2da46e5aaae8",
+          "failure": "e86e56aa-40cd-46de-a113-396fb77daa52"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "DistanceTostart"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Start Coordinate"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "BankWithdrawAction",
+      "base": {
+        "id": "57465270-15ec-4e66-b78a-56635c29a931",
+        "position": {
+          "x": "1479.0",
+          "y": "172.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "type": "BankQuery"
+        }
+      },
+      "variables": {
+        "Values": [
+          "Food preset"
+        ],
+        "ItemRegex": false,
+        "Condition": "VisualRm preset",
+        "ConditionRegex": false
+      }
+    },
+    {
+      "name": "CalculationCondition",
+      "base": {
+        "id": "48cc431f-65a7-4c6d-9682-e01c8bd40a28",
+        "position": {
+          "x": "1875.0",
+          "y": "1200.0"
+        },
+        "flowTasks": {
+          "success": "965c622e-3c06-48c2-b002-4a0dd8973046",
+          "failure": "c9b57538-b987-49ce-b772-995c3ecea8b9"
+        },
+        "delayMultiplier": 1.0
+      },
+      "variables": {
+        "Values": [
+          "Banner distance"
+        ],
+        "ValueRegex": false,
+        "Comparators": [
+          "Banner launching area"
+        ],
+        "CompRegex": false,
+        "Condition": "Distance to (\u003c)",
+        "Type": "Coordinate"
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "965c622e-3c06-48c2-b002-4a0dd8973046",
+        "position": {
+          "x": "2707.0",
+          "y": "1038.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.810810810810811,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": false,
+          "bool3": false,
+          "list3": [
+            "Grab"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "banner"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Grab"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "PlayerCondition",
+      "base": {
+        "id": "26db966f-0299-40d0-8890-8f7a6c1becf8",
+        "position": {
+          "x": "1463.0",
+          "y": "1194.0"
+        },
+        "flowTasks": {
+          "failure": "48cc431f-65a7-4c6d-9682-e01c8bd40a28"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "within": "",
+          "MinLvl": "",
+          "MaxLvl": "",
+          "type": "NpcQuery"
+        }
+      },
+      "variables": {
+        "Values": [],
+        "ValueRegex": false,
+        "Condition": "Is moving:"
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "c9b57538-b987-49ce-b772-995c3ecea8b9",
+        "position": {
+          "x": "2509.0",
+          "y": "1690.0"
+        },
+        "flowTasks": {
+          "success": "9ebe899b-2252-474f-9277-37131cb04d33",
+          "failure": "90ef0015-eb63-4658-87ce-0ad7584a2b81"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list1": [
+            "Ledge coordinate"
+          ],
+          "list3": [
+            "Jump"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "ledge"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Jump"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "e4f871c1-4777-46ee-b4bb-7fb662a054f1",
+        "position": {
+          "x": "3410.0",
+          "y": "1725.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Jump"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "ledge"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Jump"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "9ebe899b-2252-474f-9277-37131cb04d33",
+        "position": {
+          "x": "2932.0",
+          "y": "1577.0"
+        },
+        "flowTasks": {
+          "success": "b993f1d0-460c-4f00-8504-71bb4b2cbefb",
+          "failure": "e4f871c1-4777-46ee-b4bb-7fb662a054f1"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Jump"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "ledge"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Jump"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "b993f1d0-460c-4f00-8504-71bb4b2cbefb",
+        "position": {
+          "x": "3411.0",
+          "y": "1367.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Jump"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "ledge"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Jump"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "90ef0015-eb63-4658-87ce-0ad7584a2b81",
+        "position": {
+          "x": "2875.0",
+          "y": "1999.0"
+        },
+        "flowTasks": {
+          "success": "e4f871c1-4777-46ee-b4bb-7fb662a054f1",
+          "failure": "022fb223-ee8a-428d-b5fc-f5fce7c1c43a"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Jump"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "ledge"
+        ],
+        "ItemRegex": false,
+        "ActionValues": [
+          "Jump"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "GroundItemCondition",
+      "base": {
+        "id": "df303e6c-ff89-4154-8329-2fb5bcfeb4e7",
+        "position": {
+          "x": "230.0",
+          "y": "762.0"
+        },
+        "flowTasks": {
+          "success": "2423299d-ca8e-4189-a0b1-e468ad4f15c8",
+          "failure": "38da2637-c993-4fb1-ba5d-74cb6bbd7ce6"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "bool4": false,
+          "bool5": false,
+          "list5": [
+            "Mark min quantity"
+          ],
+          "list7": [
+            "Take"
+          ],
+          "within": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Mark"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Take"
+        ],
+        "ActionRegex": false
+      }
+    },
+    {
+      "name": "GameObjectCondition",
+      "base": {
+        "id": "710ff580-ee05-48c7-87ec-08abd884fda6",
+        "position": {
+          "x": "1557.0",
+          "y": "1701.0"
+        },
+        "flowTasks": {
+          "success": "951810e9-4d4e-48f5-85dc-927ce0677cec",
+          "failure": "aa59e7a6-268a-4cd7-ab97-800ccc87e561"
+        },
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Jump",
+            "Balance-across"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "ItemValues": [
+          "Wall",
+          "Steep roof"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Jump",
+          "Balance-across"
+        ],
+        "ActionRegex": true
+      }
+    },
+    {
+      "name": "InteractionAction",
+      "base": {
+        "id": "951810e9-4d4e-48f5-85dc-927ce0677cec",
+        "position": {
+          "x": "2065.0",
+          "y": "1660.0"
+        },
+        "flowTasks": {},
+        "delayMultiplier": 1.0,
+        "queryData": {
+          "bool0": false,
+          "bool1": false,
+          "bool2": true,
+          "bool3": false,
+          "list3": [
+            "Jump",
+            "Balance-across"
+          ],
+          "TypeList": [],
+          "within": "",
+          "results": "",
+          "type": "GOQuery"
+        }
+      },
+      "variables": {
+        "Condition": "GameObject",
+        "ItemValues": [
+          "Wall",
+          "Steep roof"
+        ],
+        "ItemRegex": true,
+        "ActionValues": [
+          "Jump",
+          "Balance-across"
+        ],
+        "ActionRegex": true
+      }
+    }
+  ],
+  "BotCategory": "AGILITY",
+  "inventoryData": {
+    "invPreset_Cooking": [
+      {
+        "name": "Raw lobster",
+        "id": 377,
+        "noted": false,
+        "quantity": 28,
+        "selected": false
+      }
+    ],
+    "invPresets": [
+      "Lobbies",
+      "Food preset"
+    ],
+    "invPreset_Lobsters": [
+      {
+        "name": "Raw lobster",
+        "id": 377,
+        "noted": false,
+        "quantity": 28,
+        "selected": true
+      }
+    ],
+    "invPreset_Lobsters to cook": [
+      {
+        "name": "Raw lobster",
+        "id": 377,
+        "noted": false,
+        "quantity": 28,
+        "selected": true
+      }
+    ],
+    "invPreset_Lobbies": [
+      {
+        "name": "Raw lobster",
+        "id": 377,
+        "noted": false,
+        "quantity": 28,
+        "selected": true
+      }
+    ],
+    "invPreset_Food preset": [
+      {
+        "name": "Jug of wine",
+        "id": 1993,
+        "noted": false,
+        "quantity": 20,
+        "selected": true
+      }
+    ]
+  },
+  "internalData": {
+    "Mouse multiplier": 1.0,
+    "Mouse path": "CLOUSE_PATH_GENERATOR",
+    "Disable advanced": false
+  }
+}
