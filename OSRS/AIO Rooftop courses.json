@@ -310,13 +310,13 @@
     {
       "name": "StartCondition",
       "base": {
-        "id": "931ddebe-7c49-4fdd-9074-a118cc52f1bb",
+        "id": "56589403-fe9e-4d06-ba74-c2e6234a568c",
         "position": {
           "x": "0.0",
           "y": "0.0"
         },
         "flowTasks": {
-          "success": "420dc43c-849f-44e9-88e8-675c0111bc77"
+          "success": "9f86dcb7-42b5-482a-8f5d-d29cb755daf1"
         },
         "delayMultiplier": 1.0
       },
@@ -329,14 +329,14 @@
     {
       "name": "GameObjectCondition",
       "base": {
-        "id": "db879afb-3085-4ee1-94b3-97a67d3e4d6f",
+        "id": "e4991963-ca88-475f-80d9-04ea0f0a37c5",
         "position": {
           "x": "973.0",
           "y": "943.0"
         },
         "flowTasks": {
-          "success": "8abc81d7-39e4-4b8f-8cf9-ef48eab705f1",
-          "failure": "d612b636-e3a8-4700-932a-fc16685e4fed"
+          "success": "87529788-c057-427d-b305-0d1329487f79",
+          "failure": "bc5ada52-fe20-499c-b008-ae1e202e4776"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -414,7 +414,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "3510e940-3ac2-4bcc-a781-2da46e5aaae8",
+        "id": "5db6375b-2d6d-49f0-872e-c53664057bb7",
         "position": {
           "x": "2295.0",
           "y": "314.0"
@@ -500,13 +500,13 @@
     {
       "name": "PlayerCondition",
       "base": {
-        "id": "38da2637-c993-4fb1-ba5d-74cb6bbd7ce6",
+        "id": "b61698ff-ff92-4f11-a9b2-23cb73f96822",
         "position": {
           "x": "575.0",
           "y": "1004.0"
         },
         "flowTasks": {
-          "failure": "db879afb-3085-4ee1-94b3-97a67d3e4d6f"
+          "failure": "e4991963-ca88-475f-80d9-04ea0f0a37c5"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -525,14 +525,14 @@
     {
       "name": "GroundItemCondition",
       "base": {
-        "id": "9da58608-9f45-4266-832a-54db6b4232f6",
+        "id": "891c8145-ab50-4815-9a06-210f6e4f4500",
         "position": {
           "x": "236.0",
           "y": "513.0"
         },
         "flowTasks": {
-          "success": "2423299d-ca8e-4189-a0b1-e468ad4f15c8",
-          "failure": "df303e6c-ff89-4154-8329-2fb5bcfeb4e7"
+          "success": "35ecfef3-7666-4f70-95a0-f1db541da295",
+          "failure": "aa6713b1-2095-4abd-8921-8f3b3794cc30"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -566,7 +566,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "2423299d-ca8e-4189-a0b1-e468ad4f15c8",
+        "id": "35ecfef3-7666-4f70-95a0-f1db541da295",
         "position": {
           "x": "1103.0",
           "y": "597.0"
@@ -602,14 +602,14 @@
     {
       "name": "GameObjectCondition",
       "base": {
-        "id": "d612b636-e3a8-4700-932a-fc16685e4fed",
+        "id": "bc5ada52-fe20-499c-b008-ae1e202e4776",
         "position": {
           "x": "1107.0",
           "y": "1230.0"
         },
         "flowTasks": {
-          "success": "26db966f-0299-40d0-8890-8f7a6c1becf8",
-          "failure": "d121c309-009e-4d7b-bc83-00aba14c998c"
+          "success": "1e958f21-5da8-4657-a44e-b9fef636fc89",
+          "failure": "e7b5a08a-9fe0-4557-b3b1-c3e2d7c19c9c"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -655,7 +655,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "022fb223-ee8a-428d-b5fc-f5fce7c1c43a",
+        "id": "34b44c4f-5e5d-4fc8-b91a-b7a754da1cde",
         "position": {
           "x": "3321.0",
           "y": "2108.0"
@@ -706,14 +706,14 @@
     {
       "name": "StatusCondition",
       "base": {
-        "id": "420dc43c-849f-44e9-88e8-675c0111bc77",
+        "id": "9f86dcb7-42b5-482a-8f5d-d29cb755daf1",
         "position": {
           "x": "233.0",
           "y": "238.0"
         },
         "flowTasks": {
-          "success": "61bb1174-48d8-4149-a45b-4ed6fb3c3787",
-          "failure": "9da58608-9f45-4266-832a-54db6b4232f6"
+          "success": "70d6bd98-b975-41ac-82f7-c1f5beaa42bf",
+          "failure": "891c8145-ab50-4815-9a06-210f6e4f4500"
         },
         "delayMultiplier": 1.0
       },
@@ -726,7 +726,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "4d0b20fc-966c-45ae-8102-b04ced4d10fc",
+        "id": "e6d32180-e8b8-4be1-b6cb-53517a02fdf2",
         "position": {
           "x": "1134.0",
           "y": "-141.0"
@@ -758,14 +758,14 @@
     {
       "name": "InventoryCondition",
       "base": {
-        "id": "61bb1174-48d8-4149-a45b-4ed6fb3c3787",
+        "id": "70d6bd98-b975-41ac-82f7-c1f5beaa42bf",
         "position": {
           "x": "944.0",
           "y": "277.0"
         },
         "flowTasks": {
-          "success": "4d0b20fc-966c-45ae-8102-b04ced4d10fc",
-          "failure": "57465270-15ec-4e66-b78a-56635c29a931"
+          "success": "e6d32180-e8b8-4be1-b6cb-53517a02fdf2",
+          "failure": "16deccff-06f3-4162-b9a8-4749ad6dd6f5"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -786,13 +786,13 @@
     {
       "name": "GameObjectCondition",
       "base": {
-        "id": "aa59e7a6-268a-4cd7-ab97-800ccc87e561",
+        "id": "538cadbb-2e5c-43e8-858a-749036af1b62",
         "position": {
           "x": "1624.0",
           "y": "1954.0"
         },
         "flowTasks": {
-          "success": "92e7f4eb-7502-4a97-86fc-5cd3cfdef62d"
+          "success": "b421573f-1be6-4917-87a6-99dca45ce288"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -819,7 +819,7 @@
     {
       "name": "SpecialInteractionAction",
       "base": {
-        "id": "92e7f4eb-7502-4a97-86fc-5cd3cfdef62d",
+        "id": "b421573f-1be6-4917-87a6-99dca45ce288",
         "position": {
           "x": "2067.0",
           "y": "2045.0"
@@ -853,13 +853,13 @@
     {
       "name": "PlayerCondition",
       "base": {
-        "id": "d121c309-009e-4d7b-bc83-00aba14c998c",
+        "id": "e7b5a08a-9fe0-4557-b3b1-c3e2d7c19c9c",
         "position": {
           "x": "1261.0",
           "y": "1509.0"
         },
         "flowTasks": {
-          "failure": "710ff580-ee05-48c7-87ec-08abd884fda6"
+          "failure": "5a64639e-64c4-4e92-91a9-6efecfaa7ea9"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -878,14 +878,14 @@
     {
       "name": "PlayerCondition",
       "base": {
-        "id": "8abc81d7-39e4-4b8f-8cf9-ef48eab705f1",
+        "id": "87529788-c057-427d-b305-0d1329487f79",
         "position": {
           "x": "1448.0",
           "y": "860.0"
         },
         "flowTasks": {
-          "success": "327f07b8-82ac-4b06-8755-b5d807fcc2c5",
-          "failure": "3510e940-3ac2-4bcc-a781-2da46e5aaae8"
+          "success": "51642577-9f52-4cf2-92cf-eb8c93a67f56",
+          "failure": "5db6375b-2d6d-49f0-872e-c53664057bb7"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -904,7 +904,7 @@
     {
       "name": "TraversalAction",
       "base": {
-        "id": "e86e56aa-40cd-46de-a113-396fb77daa52",
+        "id": "f573ff7a-0253-483b-9974-a3654088f655",
         "position": {
           "x": "2734.0",
           "y": "688.0"
@@ -924,13 +924,13 @@
     {
       "name": "CalculationCondition",
       "base": {
-        "id": "327f07b8-82ac-4b06-8755-b5d807fcc2c5",
+        "id": "51642577-9f52-4cf2-92cf-eb8c93a67f56",
         "position": {
           "x": "1859.0",
           "y": "800.0"
         },
         "flowTasks": {
-          "success": "3bfd3c15-8c83-4052-b22f-53c7e19b755a"
+          "success": "b59ed02e-9a7f-43eb-9858-5d3e643a301e"
         },
         "delayMultiplier": 1.0
       },
@@ -948,14 +948,14 @@
     {
       "name": "CalculationCondition",
       "base": {
-        "id": "3bfd3c15-8c83-4052-b22f-53c7e19b755a",
+        "id": "b59ed02e-9a7f-43eb-9858-5d3e643a301e",
         "position": {
           "x": "2261.0",
           "y": "806.0"
         },
         "flowTasks": {
-          "success": "3510e940-3ac2-4bcc-a781-2da46e5aaae8",
-          "failure": "e86e56aa-40cd-46de-a113-396fb77daa52"
+          "success": "5db6375b-2d6d-49f0-872e-c53664057bb7",
+          "failure": "f573ff7a-0253-483b-9974-a3654088f655"
         },
         "delayMultiplier": 1.0
       },
@@ -975,7 +975,7 @@
     {
       "name": "BankWithdrawAction",
       "base": {
-        "id": "57465270-15ec-4e66-b78a-56635c29a931",
+        "id": "16deccff-06f3-4162-b9a8-4749ad6dd6f5",
         "position": {
           "x": "1479.0",
           "y": "172.0"
@@ -999,14 +999,14 @@
     {
       "name": "CalculationCondition",
       "base": {
-        "id": "48cc431f-65a7-4c6d-9682-e01c8bd40a28",
+        "id": "f757dd12-02ec-49d2-bebd-40aecc891690",
         "position": {
           "x": "1875.0",
           "y": "1200.0"
         },
         "flowTasks": {
-          "success": "965c622e-3c06-48c2-b002-4a0dd8973046",
-          "failure": "c9b57538-b987-49ce-b772-995c3ecea8b9"
+          "success": "220b3032-a280-48d5-8e7c-e85b69b8320d",
+          "failure": "b937069d-6094-4562-a2f4-c737ad8ce732"
         },
         "delayMultiplier": 1.0
       },
@@ -1026,7 +1026,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "965c622e-3c06-48c2-b002-4a0dd8973046",
+        "id": "220b3032-a280-48d5-8e7c-e85b69b8320d",
         "position": {
           "x": "2707.0",
           "y": "1038.0"
@@ -1062,13 +1062,13 @@
     {
       "name": "PlayerCondition",
       "base": {
-        "id": "26db966f-0299-40d0-8890-8f7a6c1becf8",
+        "id": "1e958f21-5da8-4657-a44e-b9fef636fc89",
         "position": {
           "x": "1463.0",
           "y": "1194.0"
         },
         "flowTasks": {
-          "failure": "48cc431f-65a7-4c6d-9682-e01c8bd40a28"
+          "failure": "f757dd12-02ec-49d2-bebd-40aecc891690"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -1087,14 +1087,14 @@
     {
       "name": "GameObjectCondition",
       "base": {
-        "id": "c9b57538-b987-49ce-b772-995c3ecea8b9",
+        "id": "b937069d-6094-4562-a2f4-c737ad8ce732",
         "position": {
           "x": "2509.0",
           "y": "1690.0"
         },
         "flowTasks": {
-          "success": "9ebe899b-2252-474f-9277-37131cb04d33",
-          "failure": "90ef0015-eb63-4658-87ce-0ad7584a2b81"
+          "success": "7339a4f5-5aea-412b-bf63-8641caa0e9c5",
+          "failure": "b2a1ddbc-6e8a-4f45-8af5-18ace32b5052"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -1128,7 +1128,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "e4f871c1-4777-46ee-b4bb-7fb662a054f1",
+        "id": "b6092173-29cb-425d-8609-7bbb60691300",
         "position": {
           "x": "3410.0",
           "y": "1725.0"
@@ -1164,14 +1164,14 @@
     {
       "name": "GameObjectCondition",
       "base": {
-        "id": "9ebe899b-2252-474f-9277-37131cb04d33",
+        "id": "7339a4f5-5aea-412b-bf63-8641caa0e9c5",
         "position": {
           "x": "2932.0",
           "y": "1577.0"
         },
         "flowTasks": {
-          "success": "b993f1d0-460c-4f00-8504-71bb4b2cbefb",
-          "failure": "e4f871c1-4777-46ee-b4bb-7fb662a054f1"
+          "success": "a1c7b1c7-6cbb-4a68-8aa5-8fb84ea2d480",
+          "failure": "b6092173-29cb-425d-8609-7bbb60691300"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -1202,7 +1202,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "b993f1d0-460c-4f00-8504-71bb4b2cbefb",
+        "id": "a1c7b1c7-6cbb-4a68-8aa5-8fb84ea2d480",
         "position": {
           "x": "3411.0",
           "y": "1367.0"
@@ -1238,14 +1238,14 @@
     {
       "name": "GameObjectCondition",
       "base": {
-        "id": "90ef0015-eb63-4658-87ce-0ad7584a2b81",
+        "id": "b2a1ddbc-6e8a-4f45-8af5-18ace32b5052",
         "position": {
           "x": "2875.0",
           "y": "1999.0"
         },
         "flowTasks": {
-          "success": "e4f871c1-4777-46ee-b4bb-7fb662a054f1",
-          "failure": "022fb223-ee8a-428d-b5fc-f5fce7c1c43a"
+          "success": "b6092173-29cb-425d-8609-7bbb60691300",
+          "failure": "34b44c4f-5e5d-4fc8-b91a-b7a754da1cde"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -1276,14 +1276,14 @@
     {
       "name": "GroundItemCondition",
       "base": {
-        "id": "df303e6c-ff89-4154-8329-2fb5bcfeb4e7",
+        "id": "aa6713b1-2095-4abd-8921-8f3b3794cc30",
         "position": {
           "x": "230.0",
           "y": "762.0"
         },
         "flowTasks": {
-          "success": "2423299d-ca8e-4189-a0b1-e468ad4f15c8",
-          "failure": "38da2637-c993-4fb1-ba5d-74cb6bbd7ce6"
+          "success": "35ecfef3-7666-4f70-95a0-f1db541da295",
+          "failure": "b61698ff-ff92-4f11-a9b2-23cb73f96822"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -1317,14 +1317,14 @@
     {
       "name": "GameObjectCondition",
       "base": {
-        "id": "710ff580-ee05-48c7-87ec-08abd884fda6",
+        "id": "5a64639e-64c4-4e92-91a9-6efecfaa7ea9",
         "position": {
           "x": "1557.0",
           "y": "1701.0"
         },
         "flowTasks": {
-          "success": "951810e9-4d4e-48f5-85dc-927ce0677cec",
-          "failure": "aa59e7a6-268a-4cd7-ab97-800ccc87e561"
+          "success": "e7394e26-bfdf-44d4-b191-8cf869eee59b",
+          "failure": "538cadbb-2e5c-43e8-858a-749036af1b62"
         },
         "delayMultiplier": 1.0,
         "queryData": {
@@ -1333,6 +1333,7 @@
           "bool2": true,
           "bool3": false,
           "list3": [
+            "Climb",
             "Jump",
             "Balance-across"
           ],
@@ -1349,6 +1350,7 @@
         ],
         "ItemRegex": true,
         "ActionValues": [
+          "Climb",
           "Jump",
           "Balance-across"
         ],
@@ -1358,7 +1360,7 @@
     {
       "name": "InteractionAction",
       "base": {
-        "id": "951810e9-4d4e-48f5-85dc-927ce0677cec",
+        "id": "e7394e26-bfdf-44d4-b191-8cf869eee59b",
         "position": {
           "x": "2065.0",
           "y": "1660.0"
@@ -1371,6 +1373,7 @@
           "bool2": true,
           "bool3": false,
           "list3": [
+            "Climb",
             "Jump",
             "Balance-across"
           ],
@@ -1388,6 +1391,7 @@
         ],
         "ItemRegex": true,
         "ActionValues": [
+          "Climb",
           "Jump",
           "Balance-across"
         ],
